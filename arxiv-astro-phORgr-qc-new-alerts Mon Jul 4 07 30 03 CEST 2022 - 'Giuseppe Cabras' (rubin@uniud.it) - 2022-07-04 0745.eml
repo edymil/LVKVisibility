@@ -1,0 +1,149 @@
+Received: from VI1PR03MB4527.eurprd03.prod.outlook.com (2603:10a6:803:52::29)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Mon, 4 Jul 2022
+ 05:47:22 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=uniud.it;
+Received: from DB3PR0302MB3417.eurprd03.prod.outlook.com (2603:10a6:8:c::24)
+ by VI1PR03MB4527.eurprd03.prod.outlook.com (2603:10a6:803:52::29) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5395.20; Mon, 4 Jul
+ 2022 05:47:20 +0000
+Received: from DB3PR0302MB3417.eurprd03.prod.outlook.com
+ ([fe80::d88e:55f7:3acf:bd5]) by DB3PR0302MB3417.eurprd03.prod.outlook.com
+ ([fe80::d88e:55f7:3acf:bd5%5]) with mapi id 15.20.5395.020; Mon, 4 Jul 2022
+ 05:47:20 +0000
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Mon,  4 Jul 2022 07:45:49 +0200
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Mon Jul 4 07:30:03 CEST 2022
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 04 Jul 2022 05:47:18.7689
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 12a06eb0-f684-4e3d-0afd-08da5d80a855
+X-MS-Exchange-Organization-AuthSource:
+ DB3PR0302MB3417.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: MR1P264CA0167.FRAP264.PROD.OUTLOOK.COM
+ (2603:10a6:501:55::8) To DB3PR0302MB3417.eurprd03.prod.outlook.com
+ (2603:10a6:8:c::24)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: rubin@uniud.it
+Message-ID:
+ <DB3PR0302MB34173F5BB71BFCA8AEFB3F80C8BE9@DB3PR0302MB3417.eurprd03.prod.outlook.com>
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 12a06eb0-f684-4e3d-0afd-08da5d80a855
+X-MS-TrafficTypeDiagnostic: VI1PR03MB4527:EE_
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DB3PR0302MB3417.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-Network-Message-Id: 12a06eb0-f684-4e3d-0afd-08da5d80a855
+X-MS-Exchange-CrossTenant-AuthSource: DB3PR0302MB3417.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 04 Jul 2022 05:47:20.2063
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: LaTuFa7M+TBFIzOzoeEk12fZuaWwn1DNoLGbA4Oyp/uN4/zGFzsSn38oTRKkqTQG
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: VI1PR03MB4527
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.0600490
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5395.017
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	2CEgJK8tJ/qZ+4NjqJtIG1Q6MAlB3KtEtNu2P28DfMgUCWBOsoZKv3v0p9POCSu7E2/0kGFxgFLUoeqa+3Dy4ps/wjjZg36boeRL4pCjNRhlQQeKCWp49hqJ9o54P0HF/sz+nbrGwvbvWTb5VMHIUoAyWNQ19yKDhKFtfnbXVXsMPOarSVAcbxPdS/fjM308SVAqowNQXek4edNxxyIhEmCgBeCo4OHsZFLi3xnhvVMZoZnRrhIMHtW/wXoJKtg929G4krKgOJ0n/3lT4S/Z1J2XmcYOfk4RcJvzcHf+eg9TdkSYeptdufK5c06dy/w7Zz2/6nS8da2AOLgxYd1vmDrN4jGLgOwtVUk9B4OXw4niCKmuv5hVXYGeRlocevbXUq5XoLRYpo96xxRXqwsyWhOIBdUODWTL/U6703sWYfVS700RJQNcwFDJGtwepZeFSIb21Vc2Zuy+F89N4yq9IcEpTfr6thKyqJd4ai+yC6q26c7rqUqAoE2PL/e64AA4e1jMr2VHyHvrXBcTRdvK07iJoOvnkOKgB7RuGsfTBk91TRNJm3FkR1zc/73+rfhyrKhGKG8Ob2940qpJFiQrlIeSGDFaRe3Fw/leFdH37qeM2a3VUGBCGCFYwmQF3pC/Sjx/+EIVWemjl17AUE8cUQ9FWSbCbXG8A9Fd+b+iIubquRJIlKN0OgAwcaFJq+i8HZIkWPQuacMMRWC5yhAEzWCXQ+ByiQ/oGkHNVTkyFXWOlkaZ7amSeNZhdDZirGzi8f9QsAV2xn2/7TRvALr4c0w4BTunc1umoU8mUN6XFGPGyYSB6eQ544s0NF17RRCx
+MIME-Version: 1.0
+
+<div class="list-dateline">Submissions received from  Thu 30 Jun 22  to  Fri  1 Jul 22, announced Mon,  4 Jul 22</div>
+129 new astro-phORgr-qc preprint found (with repetitions)
+110 new astro-phORgr-qc pdf processed
+148 occurrences of LIGO word
+90 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2106.04303.pdf#page=1&search=ligo%20virgo ; 511 keV gamma-ray line [63–66], BH evaporation [67], Neutron Stars (NS) [68], NANOGrav [69, 70], LIGO [71], Leo-I == dwarf galaxy [72], Gravitational-Wave Lensing (GW-Lensing) [73] and so on [139]. Owing to Hawking radiation,
+	https://arxiv.org/pdf/2106.04303.pdf#page=9&search=ligo%20virgo ; LIGO == 
+	https://arxiv.org/pdf/2106.04303.pdf#page=10&search=ligo%20virgo ; LIGO == 
+2	https://arxiv.org/pdf/2201.01905.pdf#page=1&search=ligo%20virgo ; 2021b; Tiwari & Fairhurst 2021; Tiwari 2022) were carbeen reported (Abbott et al. 2019a, 2021a; The LIGO == ried out, and some formation / evolutionary processes
+	https://arxiv.org/pdf/2201.01905.pdf#page=2&search=ligo%20virgo ; GWTC-2 (Abbott et al. 2021a), GWTC-2.1 (The LIGO == Scientiﬁc Collaboration et al. 2021b) and GWTC-3 (The
+	https://arxiv.org/pdf/2201.01905.pdf#page=2&search=ligo%20virgo ; PowerLaw Peak model is still acceptable (The LIGO == Scientiﬁc Collaboration et al. 2021c). Therefore, in our
+	https://arxiv.org/pdf/2201.01905.pdf#page=4&search=ligo%20virgo ; Default spin model as deﬁned in The LIGO Scientiﬁc == Collaboration et al. (2021c) is adopted.
+3	https://arxiv.org/pdf/2207.00033.pdf#page=5&search=ligo%20virgo ; upperbound is R < 13.4 km (Annala et al., 2018; Most et al., 2018). The LIGO col+1.4 == laboration yielded the estimate R = 11.9−1.4 for neutron stars in GW170817 (Abbott
+4	https://arxiv.org/pdf/2207.00207.pdf#page=2&search=ligo%20virgo ; detection of a binary neutron star merger GW170817 [10] had a large glitch in the LIGO == Livingston detector data ∼ 1 s before the merger time. A further sixteen signals in the
+	https://arxiv.org/pdf/2207.00207.pdf#page=5&search=ligo%20virgo ; observing runs of Advanced LIGO. The time-frequency spectrogram images are produced == by performing a Q-transform [32], which works by using a sine-Gaussian template
+5	https://arxiv.org/pdf/2207.00325.pdf#page=1&search=ligo%20virgo ; (LIGO), the Einstein Telescope (ET), the Cosmic Explorer (CE), Gravitational-wave Lunar Observatory for Cosmology (GLOC), the Deci-Hertz Interferometer Gravitational Wave Observatory == (DECIGO), and the Big Bang Observer (BBO). We ﬁnd that GLOC may detect one such events
+	https://arxiv.org/pdf/2207.00325.pdf#page=5&search=ligo%20virgo ; LIGO, LIGO A+ [40], Einstein Telescope (ET) [41], Cosmic Explorer (CE) [42], Gravitational-wave Lunar Observatory for Cosmology (GLOC) [43]), Deci-Hertz Interfer- == 
+	https://arxiv.org/pdf/2207.00325.pdf#page=8&search=ligo%20virgo ; TABLE I. Expected diﬀraction lensing rate N (yr ) of stellar sBBH mergers/inspiral for LIGO, LIGO A+, ET, CE, GLOC, == 
+	https://arxiv.org/pdf/2207.00325.pdf#page=8&search=ligo%20virgo ; LIGO == 
+	https://arxiv.org/pdf/2207.00325.pdf#page=8&search=ligo%20virgo ; LIGO A+ == 
+	https://arxiv.org/pdf/2207.00325.pdf#page=9&search=ligo%20virgo ; events for diﬀerent GW detectors including the groundbased GW observatories (LIGO, LIGO A+, ET, CE, and == GLOC) and the middle frequency GW detectors (DECIGO and BBO), by assuming diﬀerent DM models and
+	https://arxiv.org/pdf/2207.00325.pdf#page=9&search=ligo%20virgo ; 9.67, and 189 yr−1 for LIGO, LIGO A+, ET, CE, GLOC, == DECIGO, and BBO, respectively, while it is ∼ 0.344,
+	https://arxiv.org/pdf/2207.00325.pdf#page=9&search=ligo%20virgo ; 115, 516, and 996 yr−1 ) for LIGO, LIGO A+, ET, CE, == GLOC, DECIGO, and BBO, respectively, by adopting
+	https://arxiv.org/pdf/2207.00325.pdf#page=10&search=ligo%20virgo ; by using the LIGO, LIGO A+, ET, CE, and GLOC sensitivity curves, respectively. The red, green, and blue lines represent == the diﬀerential lensing rates obtained from the CDM, WDM-30keV, and WDM-3keV models, respectively. For illustration, the
+	https://arxiv.org/pdf/2207.00325.pdf#page=10&search=ligo%20virgo ; observatories, such as LIGO, LIGO A+, and ET, are == almost unlikely to detect mini-halos (with the NFW proﬁle) via the gravitational lensing of GW within a limited
+
+5 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	zrf2021@mails.ccnu.edu.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2106.04303.pdf
+2	yzfan@pmo.ac.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2201.01905.pdf
+3	sumi@numazu-ct.ac.jp?subject=Your%20preprint%20https://arxiv.org/pdf/2207.00033.pdf
+4	jade.powell@ligo.org?subject=Your%20preprint%20https://arxiv.org/pdf/2207.00207.pdf
+5	luyj@nao.cas.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2207.00325.pdf
+
+
+19 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2106.04303.pdf
+2	https://arxiv.org/pdf/2110.14913.pdf
+3	https://arxiv.org/pdf/2110.14959.pdf
+4	https://arxiv.org/pdf/2111.09163.pdf
+5	https://arxiv.org/pdf/2201.01905.pdf
+6	https://arxiv.org/pdf/2204.05047.pdf
+7	https://arxiv.org/pdf/2207.00030.pdf
+8	https://arxiv.org/pdf/2207.00033.pdf
+9	https://arxiv.org/pdf/2207.00078.pdf
+10	https://arxiv.org/pdf/2207.00207.pdf
+11	https://arxiv.org/pdf/2207.00226.pdf
+12	https://arxiv.org/pdf/2207.00242.pdf
+13	https://arxiv.org/pdf/2207.00325.pdf
+14	https://arxiv.org/pdf/2207.00366.pdf
+15	https://arxiv.org/pdf/2207.00374.pdf
+16	https://arxiv.org/pdf/2207.00442.pdf
+17	https://arxiv.org/pdf/2207.00567.pdf
+18	https://arxiv.org/pdf/2207.00569.pdf
+19	https://arxiv.org/pdf/2207.00580.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

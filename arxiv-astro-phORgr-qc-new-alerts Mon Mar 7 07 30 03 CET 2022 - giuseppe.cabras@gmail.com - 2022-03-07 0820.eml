@@ -1,0 +1,87 @@
+Return-Path: <giuseppe.cabras@gmail.com>
+Received: from lugh.fisica.uniud.it (lugh.fisica.uniud.it. [158.110.40.216])
+        by smtp.gmail.com with ESMTPSA id a10-20020a7bc1ca000000b00389bc87db45sm228179wmj.7.2022.03.06.23.19.46
+        for <giuseppe.cabras@uniud.it>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 06 Mar 2022 23:19:47 -0800 (PST)
+Message-ID: <6225b213.1c69fb81.3657a.0a97@mx.google.com>
+From: giuseppe.cabras@gmail.com
+X-Google-Original-From: gc@lugh.fisica.uniud.it
+Received: by lugh.fisica.uniud.it (sSMTP sendmail emulation); Mon,  7 Mar 2022 08:20:34 +0100
+Date: Mon,  7 Mar 2022 08:20:34 +0100
+To: giuseppe.cabras@uniud.it
+To: livia.conti@pd.infn.it
+To: milotti@ts.infn.it
+To: cohadon@lkb.upmc.fr
+To: davide.guerra@uv.es
+To: trovato@apc.in2p3.fr
+To: andrea.virtuoso@hotmail.com
+To: jerome.novak@obspm.fr
+To: pablobarneo@icc.ub.edu
+Subject: arxiv-astro-phORgr-qc-new-alerts Mon Mar 7 07:30:03 CET 2022
+Content-Type: text/plain
+MIME-Version: 1.0
+
+n
+<div class="list-dateline">Submissions received from  Thu  3 Mar 22  to  Fri  4 Mar 22, announced Mon,  7 Mar 22</div>
+118 new astro-phORgr-qc preprint found (with repetitions)
+112 new astro-phORgr-qc pdf processed
+35 occurrences of LIGO word
+33 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2111.05743.pdf#page=3&search=ligo%20virgo ; LIGO Posterior == 
+	https://arxiv.org/pdf/2111.05743.pdf#page=3&search=ligo%20virgo ; from LIGO [66] collaboration. == 
+	https://arxiv.org/pdf/2111.05743.pdf#page=4&search=ligo%20virgo ; the posterior predicted by the LIGO collaboration [66]. == All the models overlap quite consistently with the LIGO
+	https://arxiv.org/pdf/2111.05743.pdf#page=4&search=ligo%20virgo ; All the models overlap quite consistently with the LIGO == posterior throughout the concerned density range. It is
+2	https://arxiv.org/pdf/2203.01943.pdf#page=1&search=ligo%20virgo ; by LIGO (Zaldarriaga et al. 2018; Roulet et al. 2021) all == indicate eﬃcient angular momentum transport in the
+3	https://arxiv.org/pdf/2203.01982.pdf#page=13&search=ligo%20virgo ; detectors such as LIGO. == In Appendix F 2, we begin a study of the cosmological eﬀects of the diﬀusion by studying the observational trade-oﬀ
+	https://arxiv.org/pdf/2203.01982.pdf#page=13&search=ligo%20virgo ; We leave a detailed study of the eﬀect of gravitational diﬀusion on LIGO to future work. It suﬃces to mention that == the eﬀect will again depend on the form of the kernel D2 (x, x ). Our estimates [84] suggest that local eﬀects from tabletop experiments currently place stronger bound on gravitational theories than LIGO currently does. In particular,
+	https://arxiv.org/pdf/2203.01982.pdf#page=13&search=ligo%20virgo ; the eﬀect will again depend on the form of the kernel D2 (x, x ). Our estimates [84] suggest that local eﬀects from tabletop experiments currently place stronger bound on gravitational theories than LIGO currently does. In particular, == unlike for gravitational wave measurements, which are reasonably high frequency events requiring extraordinary high
+	https://arxiv.org/pdf/2203.01982.pdf#page=14&search=ligo%20virgo ; with a smaller uncertainty in the average length of the arm itself. Furthermore, since the LIGO arm is kept in a == vacuum, we do not expect strong bounds on discrete models where the diﬀusion is associated to an energy density.
+	https://arxiv.org/pdf/2203.01982.pdf#page=15&search=ligo%20virgo ; that the stochastic production of gravitational kinetic energy waves is in a regime which could be detectable by LIGO, == an eﬀect which constrains the form of D2 (x, x ). However, initial estimates suggest that this is less constraining than
+
+3 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	mondal@lpccaen.in2p3.fr?subject=Your%20preprint%20https://arxiv.org/pdf/2111.05743.pdf
+2	skoutnev@princeton.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2203.01943.pdf
+3	?subject=Your%20preprint%20https://arxiv.org/pdf/2203.01982.pdf
+
+
+9 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2111.04520.pdf
+2	https://arxiv.org/pdf/2111.05743.pdf
+3	https://arxiv.org/pdf/2111.05857.pdf
+4	https://arxiv.org/pdf/2202.13819.pdf
+5	https://arxiv.org/pdf/2203.01938.pdf
+6	https://arxiv.org/pdf/2203.01943.pdf
+7	https://arxiv.org/pdf/2203.01955.pdf
+8	https://arxiv.org/pdf/2203.01982.pdf
+9	https://arxiv.org/pdf/2203.02272.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

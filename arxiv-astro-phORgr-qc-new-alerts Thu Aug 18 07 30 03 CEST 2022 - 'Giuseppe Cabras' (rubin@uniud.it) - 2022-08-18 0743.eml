@@ -1,0 +1,181 @@
+Received: from DB7PR03MB4011.eurprd03.prod.outlook.com (2603:10a6:5:32::25) by
+ AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Thu, 18 Aug 2022
+ 05:46:02 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=uniud.it;
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22) by DB7PR03MB4011.eurprd03.prod.outlook.com
+ (2603:10a6:5:32::25) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5504.28; Thu, 18 Aug
+ 2022 05:46:01 +0000
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::e1aa:cc85:3afa:e91b]) by DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::e1aa:cc85:3afa:e91b%4]) with mapi id 15.20.5525.011; Thu, 18 Aug 2022
+ 05:46:00 +0000
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Thu, 18 Aug 2022 07:43:36 +0200
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Thu Aug 18 07:30:03 CEST 2022
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 18 Aug 2022 05:45:59.5911
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ da6fc88b-1d21-4c77-393e-08da80dcedba
+X-MS-Exchange-Organization-AuthSource:
+ DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: MR2P264CA0135.FRAP264.PROD.OUTLOOK.COM
+ (2603:10a6:500:30::27) To DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: rubin@uniud.it
+Message-ID:
+ <DB3PR0302MB901608F15898238926BF108BC86D9@DB3PR0302MB9016.eurprd03.prod.outlook.com>
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: da6fc88b-1d21-4c77-393e-08da80dcedba
+X-MS-TrafficTypeDiagnostic: DB7PR03MB4011:EE_
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DB3PR0302MB9016.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-Network-Message-Id: da6fc88b-1d21-4c77-393e-08da80dcedba
+X-MS-Exchange-CrossTenant-AuthSource: DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 18 Aug 2022 05:46:00.7015
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: 5vfPTawLsQL0+Lv9przbaQ7GCCFb72w7udqqYDk5dwm6iOFC/QJ7jQn33YPfXnyc
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB7PR03MB4011
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6226424
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5546.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	D0RFDWlDm+NtpwjtE73atA+d7bYQ1hWZqtsi1KZO0KKouhM9uUI14zvn6yeQ2r2CbFldGlvgCYtLiOj1DmcZDcbeo9CnhIwtPml51agaunD5thetR37VLhK6kxmL9yOzp8UB1UiW1HCRhSwU4FpdDIXsw0TnYAWhT1SLWs7vJnrV0SyaygA4KYOPd9rwQzAnbfUaJbsHnKJJwn/1QY9qzgT7aItQzXK0ih1/hXLUSXqqgYuz7PkI27n0L5axWiq9WDrkwwa1MPQmxii/CYCd13x9SPKCMYNOuC0rGVeUMCMlsoSIhpQOsZV4BFld2FPTLjBCRiQ3K9/GIP/5lQVDfqJOTH4wD+A2KcDNiBzx/Ye+2QQVNcXnsubrR0tIWOb8yrevxcCuffLZB0F9aziKWJzEBm92LdjL/uhpqmQ0hHWVgsXpcXnqnUUrdJaPI+HEZeYVIWIsyEUpgR7mPu8lY2mEUqvuiiZhmnKmSQDkqUVPEmGfVvRz6CRfhV4ybWkKdbl1tcDqq/U8iWok5cbNlhwmgc+jF1zGmCRINOTuMoh3JbAI9Ifwygu2FQSRHWj0Ru8tYgFGP+fkBO0/ZmraAS7HxkbUQw7F/Dm+OHnSE6FujkhvKL/B3oCDhL3qSFtd32RR195HdJ+yHOqSfjcZ2HUcQ/ozO7Qoh1wmD72SN8VdGuWIW4nn7GvAWlFuUeksAfxxg1Y6rvyqzIxB/UTFx27yK4XIoZcfIuLRTCRLENt7AljteeYn+Aa2sVinBFJxayA/8MoGQvNNBJF/9puMguXCe4agZv4irXI6VpMUbA4mbudWSQZH2vQ0OvX+ZOrT
+MIME-Version: 1.0
+
+<div class="list-dateline">Submissions received from  Tue 16 Aug 22  to  Wed 17 Aug 22, announced Thu, 18 Aug 22</div>
+108 new astro-phORgr-qc preprint found (with repetitions)
+95 new astro-phORgr-qc pdf processed
+204 occurrences of LIGO word
+175 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2111.15608.pdf#page=11&search=ligo%20virgo ; (EM) counterpart. Indeed, on August 17, 2017, LIGO == detected its ﬁrst binary NS (BNS) merger, GW170817
+	https://arxiv.org/pdf/2111.15608.pdf#page=12&search=ligo%20virgo ; BH formation, and relativistic phenomena. LIGO reported detections of the ﬁrst NS-BH mergers in its O3 == observing run (Gottlieb et al. 2018). However, either the
+	https://arxiv.org/pdf/2111.15608.pdf#page=12&search=ligo%20virgo ; months beginning in 2028 with LIGO India added, dramatically improving the number of well-localized BNS == events. In O4, O5 and O6, the expected rate of BNS
+	https://arxiv.org/pdf/2111.15608.pdf#page=48&search=ligo%20virgo ; merger. Assuming the BNS merger rate from The LIGO == Scientiﬁc Collaboration et al. (2021b) and a conservative
+2	https://arxiv.org/pdf/2203.05876.pdf#page=2&search=ligo%20virgo ; of gravitational wave [6–9] was announced by the Adv-LIGO team, which was soon recognized as one of the most == signiﬁcant achievements in this new century of general relativity. The subsequent gravitational wave detections by
+3	https://arxiv.org/pdf/2205.08448.pdf#page=9&search=ligo%20virgo ; We then perform simulations of BBH events on the design sensitivity of Advanced LIGO [73]. We set the primary mass at 30M , and mass ratio at 1, 0.8, 0.5 and 0.2. == The spin of each component is randomly generated
+4	https://arxiv.org/pdf/2205.13580.pdf#page=2&search=ligo%20virgo ; For LIGO analyses and stationary, Gaussian noise with == power spectral density (PSD) Sn (f ) in each detector, the
+	https://arxiv.org/pdf/2205.13580.pdf#page=10&search=ligo%20virgo ; scattered oﬀ the LIGO optical systems, particularly == during ground motion [82]. They were the most common glitch type in LLO in O3, comprising 27% of
+	https://arxiv.org/pdf/2205.13580.pdf#page=22&search=ligo%20virgo ; that overlap with real LIGO glitches and show that we == can reliably separate signals and glitches, estimate the
+5	https://arxiv.org/pdf/2208.07881.pdf#page=2&search=ligo%20virgo ; over-density of BHs at M ≈ 30 M (The LIGO Scientiﬁc == Collaboration et al. 2021).
+	https://arxiv.org/pdf/2208.07881.pdf#page=11&search=ligo%20virgo ; the latest rate reported by the LIGO Collaboration, == 17.9–44 Gpc−3 yr−1 (The LIGO Scientiﬁc Collaboration et al. 2021). Furthermore, in our models, the
+6	https://arxiv.org/pdf/2208.07980.pdf#page=6&search=ligo%20virgo ; para detecção. Nosso trabalho indica que há boas perspectivas para a detecção de modos subdominantes com detectores futuros. As taxas de eventos para o LIGO são muito == menores, porém não são impeditivas.
+	https://arxiv.org/pdf/2208.07980.pdf#page=8&search=ligo%20virgo ; wave detectors. The event rate for LIGO is much smaller, but not prohibitively so. == 
+	https://arxiv.org/pdf/2208.07980.pdf#page=12&search=ligo%20virgo ; Interferometer Gravitational-Wave Observatory (LIGO) [1]. The importance of this == 
+	https://arxiv.org/pdf/2208.07980.pdf#page=14&search=ligo%20virgo ; Earth. The fractional length variation of LIGO’s arms, which have length L = 4 km, == 
+	https://arxiv.org/pdf/2208.07980.pdf#page=16&search=ligo%20virgo ; improvements in the current LIGO instruments [15] and build new gravitational wave == 
+	https://arxiv.org/pdf/2208.07980.pdf#page=32&search=ligo%20virgo ; L-shaped detector, that is, interferometers with perpendicular arms, such as LIGO and == 
+	https://arxiv.org/pdf/2208.07980.pdf#page=33&search=ligo%20virgo ; Figure 3.2 ==  Antenna response pattern for L-shaped GW detectors, such as LIGO and
+	https://arxiv.org/pdf/2208.07980.pdf#page=33&search=ligo%20virgo ; X sin θdθ. For the L-shaped detectors (LIGO and == 
+	https://arxiv.org/pdf/2208.07980.pdf#page=34&search=ligo%20virgo ; Figure 3.3 shows the ASD of LIGO at the design sensitivity [81], CE [82], ET [83] == 
+	https://arxiv.org/pdf/2208.07980.pdf#page=34&search=ligo%20virgo ; all limited in low and high frequencies. The ground based detectors (LIGO, CE and ET) == 
+	https://arxiv.org/pdf/2208.07980.pdf#page=35&search=ligo%20virgo ; LIGO == 
+	https://arxiv.org/pdf/2208.07980.pdf#page=35&search=ligo%20virgo ; Figure 3.3 ==  Amplitude spectral density Sn (f ) as a function of the frequency of LIGO
+	https://arxiv.org/pdf/2208.07980.pdf#page=35&search=ligo%20virgo ; the detector. ET will be more sensitive than LIGO and CE to lower frequencies because == it will be build underground, which reduces the seismic noise.
+	https://arxiv.org/pdf/2208.07980.pdf#page=35&search=ligo%20virgo ; detectors have lower ADS than LIGO’s. == There are several other sources of noise [8, 9], and the improvement of the detectors
+	https://arxiv.org/pdf/2208.07980.pdf#page=58&search=ligo%20virgo ; blue) and Advanced LIGO at design sensitivity (light pink). == Figure 5.1 on the left shows the strain of the + polarization (real part) of the modes
+	https://arxiv.org/pdf/2208.07980.pdf#page=58&search=ligo%20virgo ; near the time of the GW150914 event and the LIGO noise curve at the design sensitivity. == The position of the signal curves relative to the noise curves gives us an estimate of the
+	https://arxiv.org/pdf/2208.07980.pdf#page=61&search=ligo%20virgo ; best prospects for detection. Notice that in the LIGO literature, a “range” refers to the == angular average, while a “horizon” is deﬁned as the maximum distance obtained with
+	https://arxiv.org/pdf/2208.07980.pdf#page=61&search=ligo%20virgo ; by LIGO. == 
+	https://arxiv.org/pdf/2208.07980.pdf#page=63&search=ligo%20virgo ; The solid curves indicate the horizons for LIGO (for masses Mf < 104 ) and LISA (for == masses Mf > 104 ), the dotted curves are the horizons for CE and the dashed curves are
+	https://arxiv.org/pdf/2208.07980.pdf#page=63&search=ligo%20virgo ; Rayleigh criterion, and events outside the curve do not. The horizons for LIGO are also == shown separately in Figure 5.5.
+	https://arxiv.org/pdf/2208.07980.pdf#page=63&search=ligo%20virgo ; For LIGO, the horizon of the overtone is 10 to 80 times larger than the higher == harmonic horizon for masses smaller than the mass at the peak of the overtone horizon.
+	https://arxiv.org/pdf/2208.07980.pdf#page=64&search=ligo%20virgo ; (2, 1, 0) (orange). The solid curves are the LIGO horizons (for M < 104 M ) and the == LISA horizons (for M > 104 M ), the dotted curves are the CE horizons and the dashed
+	https://arxiv.org/pdf/2208.07980.pdf#page=64&search=ligo%20virgo ; Figure 5.5 ==  Zoom-in on the LIGO curves from Figure 5.4. The gray vertical band
+	https://arxiv.org/pdf/2208.07980.pdf#page=66&search=ligo%20virgo ; used in LIGO ringdown analysis have parameters estimated with precision inside this == interval [35, 37, 38].
+	https://arxiv.org/pdf/2208.07980.pdf#page=70&search=ligo%20virgo ; events distributed within ±50% around the ﬁrst estimated horizon, for the LIGO (CE) == detector. This reﬁnement step results in BH horizon points with small scattering, as
+	https://arxiv.org/pdf/2208.07980.pdf#page=70&search=ligo%20virgo ; the obtained points, whose coeﬃcients are found in Tables 5.2 (LIGO) and 5.3 (CE). == 59
+	https://arxiv.org/pdf/2208.07980.pdf#page=71&search=ligo%20virgo ; ﬁxed ﬁnal mass Mf = 156.4M , mass ratio q = 1.5 and LIGO noise realizations. The == solid curve is a Laurent polynomial c1 + c2 z −1 + c3 z −2 ﬁtted to the points. The redshift
+	https://arxiv.org/pdf/2208.07980.pdf#page=71&search=ligo%20virgo ; (∼ 800M ) for LIGO (CE), the == 
+	https://arxiv.org/pdf/2208.07980.pdf#page=72&search=ligo%20virgo ; spectroscopy horizons for LIGO (squared and solid lines) and CE (crosses and dashed == lines). We can see that after the reﬁnement the points are more uniformly distributed
+	https://arxiv.org/pdf/2208.07980.pdf#page=73&search=ligo%20virgo ; The event rates for Bayes factor BH spectroscopy for LIGO at design sensitivity is == 62
+	https://arxiv.org/pdf/2208.07980.pdf#page=74&search=ligo%20virgo ; Figure 5.11 on the left shows the unspeciﬁed horizons for LIGO, using the threshold == n
+	https://arxiv.org/pdf/2208.07980.pdf#page=75&search=ligo%20virgo ; Figure 5.11 ==  Left
+	https://arxiv.org/pdf/2208.07980.pdf#page=79&search=ligo%20virgo ; corresponding Rayleigh horizons for LIGO and q = 1.5. We considered 50 log-distributed == masses and 500 injections with independent noise realizations for each mass. We found
+	https://arxiv.org/pdf/2208.07980.pdf#page=79&search=ligo%20virgo ; Rayleigh horizons for LIGO and q = 1.5 (Figure 5.5). We considered 50 log-distributed == masses and 500 injections with independent noise realizations for each mass. We found
+	https://arxiv.org/pdf/2208.07980.pdf#page=80&search=ligo%20virgo ; The left panel of Figure 5.15 shows the LIGO BH spectroscopy horizons by requiring == the resolvability of the frequency or the damping time. As it requires just the easiest
+	https://arxiv.org/pdf/2208.07980.pdf#page=80&search=ligo%20virgo ; Figure 5.15 ==  LIGO BH spectroscopy horizons (solid lines) obtained by requiring only
+	https://arxiv.org/pdf/2208.07980.pdf#page=80&search=ligo%20virgo ; curves show the LIGO BH spectroscopy horizons obtained with a Bayes factor threshold ln B > 8 (same as in Figure 5.10). Circles show detections from GWTC-1 and == GWTC-2; yellow circles are compatible with the mass ratio in each case, whereas gray
+	https://arxiv.org/pdf/2208.07980.pdf#page=81&search=ligo%20virgo ; Figure 5.15 shows on the right panel the LIGO BH spectroscopy horizons obtained using == equation (5.5) and the Fisher matrix formalism. We can see that these horizons are very
+	https://arxiv.org/pdf/2208.07980.pdf#page=81&search=ligo%20virgo ; Figure 5.16 shows on the left panel the LIGO BH spectroscopy horizons obtained == by requiring the resolvability of the frequencies (5.1a) and the quality factors (5.6).
+	https://arxiv.org/pdf/2208.07980.pdf#page=82&search=ligo%20virgo ; more restrictive. Right ==  LIGO SNR horizons obtained by requiring ρ mn > 8 for each
+	https://arxiv.org/pdf/2208.07980.pdf#page=84&search=ligo%20virgo ; LIGO analyses [36, 37, 38], in which the Kerr model is assumed to be true and a single == 73
+	https://arxiv.org/pdf/2208.07980.pdf#page=86&search=ligo%20virgo ; the no-hair theorem done by LIGO look for deviations in the frequencies and damping == times of the subdominant mode. Our analysis is similar to the analysis presented in
+	https://arxiv.org/pdf/2208.07980.pdf#page=89&search=ligo%20virgo ; and the overtone, is 0.03 − 0.10 year−1 for LIGO == 
+
+6 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	srk@astro.caltech.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2111.15608.pdf
+2	xupeng@imech.ac.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2203.05876.pdf
+3	q.hu.2@research.gla.ac.uk?subject=Your%20preprint%20https://arxiv.org/pdf/2205.08448.pdf
+4	?subject=Your%20preprint%20https://arxiv.org/pdf/2205.13580.pdf
+5	elena.prieto@northwestern.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2208.07881.pdf
+6	?subject=Your%20preprint%20https://arxiv.org/pdf/2208.07980.pdf
+
+
+15 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2110.15139.pdf
+2	https://arxiv.org/pdf/2111.15608.pdf
+3	https://arxiv.org/pdf/2202.12735.pdf
+4	https://arxiv.org/pdf/2203.05876.pdf
+5	https://arxiv.org/pdf/2205.08448.pdf
+6	https://arxiv.org/pdf/2205.13580.pdf
+7	https://arxiv.org/pdf/2206.05760.pdf
+8	https://arxiv.org/pdf/2207.03347.pdf
+9	https://arxiv.org/pdf/2208.05506.pdf
+10	https://arxiv.org/pdf/2208.07881.pdf
+11	https://arxiv.org/pdf/2208.07980.pdf
+12	https://arxiv.org/pdf/2208.08050.pdf
+13	https://arxiv.org/pdf/2208.08107.pdf
+14	https://arxiv.org/pdf/2208.08137.pdf
+15	https://arxiv.org/pdf/2208.08333.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+
