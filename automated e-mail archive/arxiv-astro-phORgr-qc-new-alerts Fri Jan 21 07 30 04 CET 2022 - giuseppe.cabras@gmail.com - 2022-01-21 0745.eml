@@ -1,0 +1,234 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Received: from PR2PR03MB5324.eurprd03.prod.outlook.com (2603:10a6:101:27::12)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Fri, 21 Jan 2022
+ 06:43:51 +0000
+Received: from SV0P279CA0050.NORP279.PROD.OUTLOOK.COM (2603:10a6:f10:13::19)
+ by PR2PR03MB5324.eurprd03.prod.outlook.com (2603:10a6:101:27::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4909.11; Fri, 21 Jan
+ 2022 06:43:49 +0000
+Received: from HE1EUR01FT036.eop-EUR01.prod.protection.outlook.com
+ (2603:10a6:f10:13:cafe::fa) by SV0P279CA0050.outlook.office365.com
+ (2603:10a6:f10:13::19) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4909.8 via Frontend
+ Transport; Fri, 21 Jan 2022 06:43:48 +0000
+Authentication-Results: spf=pass (sender IP is 209.85.128.46)
+ smtp.mailfrom=gmail.com; dkim=fail (signature did not verify)
+ header.d=gmail.com;dmarc=pass action=none header.from=gmail.com;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.128.46 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.128.46; helo=mail-wm1-f46.google.com;
+Received: from mail-wm1-f46.google.com (209.85.128.46) by
+ HE1EUR01FT036.mail.protection.outlook.com (10.152.1.30) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4909.7 via Frontend Transport; Fri, 21 Jan 2022 06:43:48 +0000
+Received: by mail-wm1-f46.google.com with SMTP id v123so16079768wme.2
+        for <giuseppe.cabras@uniud.it>; Thu, 20 Jan 2022 22:43:48 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=message-id:from:date:to:to:to:to:to:to:subject;
+        bh=Vwcu/P6TtSW4NRhqPGUlTub0/Et/6sNuSsZcMmFTHFg=;
+        b=GZx6zj0NwaSt4EL+dYzvpksMj2YhtxcyegQPjINF7XaAzXelmxZVirI3nGGCsUC9EQ
+         tBpGhluYWEZ8PW9cjGR7xz7p0S+KwvRcKK9eIpPbBkbD1wN/9S2gQFQwQjBS0i+f/4g8
+         i8q12TYdoTDTBtK3sM4ziJ4pdD9XqEjaWb7VC0AXylGKFTI4I4gU4NXxUf1i/m8KLpWV
+         FbTgikUwiAZFXHL0jC/6CawLDAney+G7OoJwhItZH6ek4VX2XXVenmoZJcNY5HjI0z/0
+         C1n7J1d2DzaMz3WF9o9biyOCITbVRHH1bZjcdFlfbsXvtr5fRN17PGPrEYZuQRMZaC4B
+         oBeQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:message-id:from:date:to:to:to:to:to:to:subject;
+        bh=Vwcu/P6TtSW4NRhqPGUlTub0/Et/6sNuSsZcMmFTHFg=;
+        b=RAEvOMnRTu/2ruXLUMEdiniUIxbUQvcvQ6VJeVVMfNHiqiwIDgMSlGAtNNfINveAWV
+         u0LpFVYqEMJfTL1xopW01wGl42wj8uDG/nEUqNAFbvxulgdr6GcJ3AajcDpUCUFEP8JE
+         9Pn9PbJ328Eokb/YtN2BjXOtbEwEu4iGSJ8yCBSp/AyzhSTtBskim8T8H6r+vmsgcUTm
+         /4fcSjJqWcwv0TivyZDlKbJU2br5XVo2qQHHzVvgaGpYhsHZKeQLFEfcbLKsrvh0dQfl
+         smaLxYx8uIKdr/DZP14uolKHR/7Z/zaGDlpbmfGJ4KNvbN7nRgPUYjNl966XFQEEwOkm
+         6Miw==
+X-Gm-Message-State: AOAM531S9lzLh7Ek33I+k80de1HGn6JStNSzjyfiRkMWIkCuYcs7lifu
+	5IAzTp85GWRSkrpIgY28OdB6ki5ELi4=
+X-Google-Smtp-Source: ABdhPJxMCEl5VS8lIplzhJHpoYU5JIYPlKiqIVsMuRPvtG+MGo4jlOxJxXN2cy3kGgTJJy4et0o0OA==
+X-Received: by 2002:a05:6000:186b:: with SMTP id d11mr2379912wri.461.1642747427132;
+        Thu, 20 Jan 2022 22:43:47 -0800 (PST)
+Return-Path: giuseppe.cabras@gmail.com
+Received: from lugh.fisica.uniud.it (lugh.fisica.uniud.it. [158.110.40.216])
+        by smtp.gmail.com with ESMTPSA id p8sm5195027wre.72.2022.01.20.22.43.45
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 20 Jan 2022 22:43:46 -0800 (PST)
+Message-ID: <61ea5622.1c69fb81.bf6ad.4c69@mx.google.com>
+From: giuseppe.cabras@gmail.com
+X-Google-Original-From: gc@lugh.fisica.uniud.it
+Received: by lugh.fisica.uniud.it (sSMTP sendmail emulation); Fri, 21 Jan 2022 07:45:24 +0100
+Date: Fri, 21 Jan 2022 07:45:24 +0100
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>
+Subject: arxiv-astro-phORgr-qc-new-alerts Fri Jan 21 07:30:04 CET 2022
+X-MS-Exchange-Organization-ExpirationStartTime: 21 Jan 2022 06:43:48.1764
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ c98259c2-5231-496b-9605-08d9dca960d4
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+Content-Type: text/plain
+X-MS-Exchange-Organization-AuthSource:
+ HE1EUR01FT036.eop-EUR01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: c98259c2-5231-496b-9605-08d9dca960d4
+X-MS-TrafficTypeDiagnostic: PR2PR03MB5324:EE_
+X-MS-Oob-TLC-OOBClassifiers: OLM:9508;
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:209.85.128.46;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SFE;H:mail-wm1-f46.google.com;PTR:mail-wm1-f46.google.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 21 Jan 2022 06:43:48.1608
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: c98259c2-5231-496b-9605-08d9dca960d4
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-AuthSource:
+ HE1EUR01FT036.eop-EUR01.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PR2PR03MB5324
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.0486678
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4909.010
+X-Microsoft-Antispam-Mailbox-Delivery:
+	wl:1;pcwl:1;ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(810001)(250001)(410001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?Uk9IZ3JyMnpQM2Y5SkVFV3Z2WitsTU1maUJ0Z09XRGJEbTNWc2xLSWN6anVw?=
+ =?utf-8?B?QTVuK0Vudy9HRzNTYTdJKzc2REREckRSMHMwbHN0OEVEd1E4dmpDaHVKN2pY?=
+ =?utf-8?B?VUM5eGFjZ2J5MWcyWE5ObDh1UjZRdG16Znl3VU1hN2piL1krcG1SNHNyRzYy?=
+ =?utf-8?B?SEU5QkJRKzRvN1ozbThORVdmNkhWdzFnZFB6eE5iZUFneDFoWTJiSXpXZ3dK?=
+ =?utf-8?B?dkFkYkpuNU92ZFdVREp2UjMzRk1sY0JiZnhNTWVaRUVBTnA2SVpUMmVSYWNt?=
+ =?utf-8?B?MWdOS1dxd2dFWWl0dFJySlI4SGJWd3VWZnp1Y3ZxY2VZR0dyTEhOUy9VUm1p?=
+ =?utf-8?B?dTZYWXZvOHA4QXZWd05XTm9VbkVtcFp2RmNxVzVucGZIcndxU2lHUnV3bHF4?=
+ =?utf-8?B?OGZSc3pPUkdmaTNIc0gvTHNobjVteC9pbGJlY0ZwVWhwSC9RR0k0aHlFcDN1?=
+ =?utf-8?B?am45UDhTUDB1V1pIalVVTEM4S3NEZ2RJRTZZRVEwbzJiNnZ4RzM0TkxueXJF?=
+ =?utf-8?B?RTNVaERhRUpMN1VmNGNVbjVqM1ZqS0NSSGl4WjBCN1habWg2a3FTRzllaDZK?=
+ =?utf-8?B?a1FVbXBKbmRQNHpOM3laMEdqWTN4VlBpN3ozaHBIVVZOVXdFckxlNmZrNGhP?=
+ =?utf-8?B?VWlrN1dHVGhYcHAzOHg3bDBnTjV1dU5MR1ZKZmZRMTVrZ0JTN2c2Nk5XZm9i?=
+ =?utf-8?B?QWordllwTGFDd2Nmb1N2dXh0NkxyOVBLYXpYTnlJYUN4aTFnMWV3U0hlYUtl?=
+ =?utf-8?B?ejdGSk9XQ1ZTN2piOFJNR0pvR1N6cW96VFJha0txdURxRXNOV3FKbGl5bS95?=
+ =?utf-8?B?a05LNnFJQk5lUUlqNVRNbkI2SFpTa3E3azdIMjhCQ2ZzSVkveTBZM09yUW51?=
+ =?utf-8?B?NmNGam11YXYzRWdiZVNLbVFxbHB0TnhlL1M1NWVMVFZ4akpVNEkvZG5XcmNm?=
+ =?utf-8?B?Z1VlRWV6Tmp0WmJWdW4vZEhTZlFNOUhRTituOVJrcnAzaHRQaCtQaXZxLzNJ?=
+ =?utf-8?B?TFA2b3V3Q0prTjRGUnpwclVRRUxRSVNpRTVmMHhMdlRweEtVZ0hISFp3UEFs?=
+ =?utf-8?B?WVBxS2UzbTlVbElwRDg0VjN5MUhmZHVlTzFKS1pUWFdCaVZEK3cxdHFuQmNZ?=
+ =?utf-8?B?bzVJMzRXbk5Nb014QjU4TjN4c2JabG45Wisyd084NnZoTy9kdmJLazRxay9O?=
+ =?utf-8?B?TTF2MDRqN2NMMDRMKzZHejBseENSOGw2SkNMZUlWOG0wSXRHaGJscFJuK1l1?=
+ =?utf-8?B?bHZMQm4rZVhKdDFwZkZtUmJSdHgyRHpNcnlIbUE3dEFKdmo0bXNMRWpROEg5?=
+ =?utf-8?B?S3YyanZRSlcyMkN6eDh0SjN4SnNFeXozaWZLZExhUVFzZTVUVENTbEs3YWZJ?=
+ =?utf-8?B?T2srVllrakx3OUUzdmhGSTFaT3QxWDlDNm5NSG5MREFQVzV6YzlCeXU2Mkp5?=
+ =?utf-8?B?Umg3OHZYR25hT0t2QUlYRkUwc05xeFROekszWWg4WENYWE43OWtxeklKcjF4?=
+ =?utf-8?B?QjBCTjhkcUduWjNDRnBhU2V5SzdaM3lqOStsK0ZONFY5VWt2cEMxZmt3OGZW?=
+ =?utf-8?B?b2lPZmlPVGU0OFgwMHNqQUZWb3hFR1R6K2gyQUhYRitTTEJiOE5sdWE2cHgw?=
+ =?utf-8?B?ZU1KbmtKOE1qYVkvalE5aWJ1R2gyRVR6blkzT3JNMHlqR1kxcy91OUJBTGIv?=
+ =?utf-8?B?U2ZZdWZncThzYWhXQmJWaTBKcElSWHZ2TXNHTmk4dmh5REN2cS91eUtUR0lY?=
+ =?utf-8?B?NkZJc1FFN3FQTU5EUlFzand1VXBXVkwxaFVmZy9JQVEwbmF5ZEpRSDN2R0gv?=
+ =?utf-8?B?dDc1VHpZaVpHUWU4ck1DTU5nK0docjFsY08zdjBPMU5WUEFLaFozYytWRUF5?=
+ =?utf-8?B?TGVvMDVzdU9mYlhnTmVLQWxLWTlpM2RyV1FSMXo2UDdqOGROSGR0M0tkZW10?=
+ =?utf-8?B?Q3pIOXhIU2lsL3Z3N3hBQXhKVHA5VlVZV1Y2VjdkT1Z1cWFNSFNHSWM5eHJa?=
+ =?utf-8?B?NHpKdUM4R2QxVzFuT1ZnQmZ6OUxwb2Y0ckVwQUJIckMrc3d0YzF1NjFxcDF2?=
+ =?utf-8?B?dHJJQ3RsQmdrSU9GME4wRXhZSkxPOXJIS21mc0dLdC9yUUdWcmI2dDA4ZE9i?=
+ =?utf-8?B?MlNORFVlM1Vwci9ZODhRSnB3UDdVUDFRWmdZK2JONFA0RS8rc3U1czUyeVpa?=
+ =?utf-8?B?K0FxVldsNE51NGQyQmZpUmxqUkwwb2VzY2Q0azhwbzNwR3lNdTdvMWxCOW1B?=
+ =?utf-8?B?Z2FsbW5MRjFNaG1SM0M0NUgvRVlSeXJCQkdscU0wS1Z3OEd1RU84VkVibmxP?=
+ =?utf-8?B?K2NXelBRSFptcUJoYU8yaFEzY2l4TmVLT2tSSHl3QlFObW8vaFQ2WXBpckRM?=
+ =?utf-8?B?dUhJcGxoM0JDeEtzT1BMRXIzTjRleXVGVEZJS3ZtRGxCZW1LeFFMWUlicFpU?=
+ =?utf-8?B?ZjFSU3BtZFhpSWFEcFhPdHc0RFVpcDFHdXpnSVdxemdYK25vR1dBVk1zU3FL?=
+ =?utf-8?B?UVBnWmtZU3o3eFJQYXVWcGJ0T2RTSWp6a3lXcDNiYzlxdkw5MVZ1Y1lqR2h0?=
+ =?utf-8?B?VlVBS3JTT01PL0xpSndKTTY0U2R5OVVMbGV0MzF2RGptV2cvSFlmOTY1aER1?=
+ =?utf-8?B?TGlPdkhUQT09?=
+MIME-Version: 1.0
+
+n
+<div class="list-dateline">Submissions received from  Wed 19 Jan 22  to  Thu 20 Jan 22, announced Fri, 21 Jan 22</div>
+129 new astro-phORgr-qc preprint found (with repetitions)
+116 new astro-phORgr-qc pdf processed
+126 occurrences of LIGO word
+82 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2107.02998.pdf#page=14&search=ligo%20virgo ; ‘isolated’ region. For example, the current LIGO band == covers the frequency range of a few tens of Hertz to
+2	https://arxiv.org/pdf/2107.07036.pdf#page=1&search=ligo%20virgo ; The operation of the Advanced LIGO detector [1] has allowed the ﬁrst detection of the fundamental quadrupolar mode == of a black hole (BH) in event GW150914 [2], providing complementary information about the source properties [3]. Observation of higher overtones would allow for a direct probe
+	https://arxiv.org/pdf/2107.07036.pdf#page=2&search=ligo%20virgo ; the Advanced LIGO design sensitivity [52]. For more detailed == information on the post-merger GW spectrum of BNS mergers, see the reviews [62–65].
+3	https://arxiv.org/pdf/2107.12787.pdf#page=5&search=ligo%20virgo ; distance. As a result, the cross-correlation study becomes effective with a network of GW detectors. We consider a network of four GW detectors namely the two LIGO detectors == (LIGO-Hanford and LIGO-Livingston) (Aasi et al. 2015b),
+	https://arxiv.org/pdf/2107.12787.pdf#page=10&search=ligo%20virgo ; model for the BH mass distribution is used in LIGO data == analysis, (Abbott et al. 2019b, 2016a). More recently, a
+	https://arxiv.org/pdf/2107.12787.pdf#page=14&search=ligo%20virgo ; upon work supported by NSF’s LIGO Laboratory which is a == major facility fully funded by the National Science Foundation.
+4	https://arxiv.org/pdf/2108.12044.pdf#page=1&search=ligo%20virgo ; Transient glitch mitigation in Advanced LIGO data with glitschen == J.D. Merritt,1 Ben Farr,1 Rachel Hur,1 Bruce Edelman,1 and Zoheyr Doctor1, 2
+	https://arxiv.org/pdf/2108.12044.pdf#page=1&search=ligo%20virgo ; signal models, it can be easily incorporated into existing search and detector characterization techniques. We have implemented our approach with the open source glitschen package. Using LIGO’s == currently most problematic glitch types, the ‘blip’ and ‘tomte’, we demonstrate that parametric
+	https://arxiv.org/pdf/2108.12044.pdf#page=1&search=ligo%20virgo ; In Advanced LIGO data there are some transient noise == sources for which no physical cause has been identiﬁed
+	https://arxiv.org/pdf/2108.12044.pdf#page=2&search=ligo%20virgo ; Modeling the Advanced LIGO Noise == Background
+	https://arxiv.org/pdf/2108.12044.pdf#page=9&search=ligo%20virgo ; workshops that help make LIGO data analysis work more == accessible.
+	https://arxiv.org/pdf/2108.12044.pdf#page=9&search=ligo%20virgo ; provided by the LIGO Lab (CIT, LHO, LLO) and supported by National Science Foundation Grants PHY0757058 and PHY-0823459. This material is based upon == work supported in part by the National Science Foundation under Grant PHY-2110636. We are grateful for
+5	https://arxiv.org/pdf/2110.04087.pdf#page=2&search=ligo%20virgo ; next generation of gravitational wave observatories such as LIGO India [25], the Einstein Telescope [26] and LISA [27], == among others, which will drastically increase the number of event observations enlarging the possibility of observing
+6	https://arxiv.org/pdf/2110.05248.pdf#page=3&search=ligo%20virgo ; iii. LIGO A+ ==  a right angle shaped ground-based detector. We adopt the power spectral density (PSD) from LIGO
+	https://arxiv.org/pdf/2110.05248.pdf#page=3&search=ligo%20virgo ; LIGO A+ == 
+	https://arxiv.org/pdf/2110.05248.pdf#page=3&search=ligo%20virgo ; LIGO == 
+	https://arxiv.org/pdf/2110.05248.pdf#page=3&search=ligo%20virgo ; before the ﬁnal merger. The detectors (TianQin, LISA, LIGO A+, ET-D, and CE) are plotted separately. The GW signals are == averaged over direction, inclination, and polarization. Note that for the triangle shaped detectors, the noise strains as shown
+	https://arxiv.org/pdf/2110.05248.pdf#page=10&search=ligo%20virgo ; LIGO A+ == 
+7	https://arxiv.org/pdf/2201.08272.pdf#page=2&search=ligo%20virgo ; PI in GW detectors were predicted in 2001 [25, 26] and observed for the ﬁrst time in the LIGO detector in 2015 [1]. == Next generation ground-based GW detectors like the Cosmic Explorer [27] and the Einstein-Telescope [28] intend
+	https://arxiv.org/pdf/2201.08272.pdf#page=2&search=ligo%20virgo ; the LIGO interferometer consists in applying a damping force on the mirrors comprises damping of mechanical modes == involved in PI by means of the electro-static drive actuators [33], normally used to control the mirror position. But this
+8	https://arxiv.org/pdf/2201.08324.pdf#page=1&search=ligo%20virgo ; current observations, mostly at eLISA and LIGO. The == gravitational critical behavior has been thoroughly studied in several contexts, employing a variety of theoretical
+
+8 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	jasjeet@iisermohali.ac.in?subject=Your%20preprint%20https://arxiv.org/pdf/2107.02998.pdf
+2	nestor.ortiz@nucleares.unam.mx?subject=Your%20preprint%20https://arxiv.org/pdf/2107.07036.pdf
+3	s.mukherjee@uva.nl?subject=Your%20preprint%20https://arxiv.org/pdf/2107.12787.pdf
+4	?subject=Your%20preprint%20https://arxiv.org/pdf/2108.12044.pdf
+5	sbahamonde@ut.ee?subject=Your%20preprint%20https://arxiv.org/pdf/2110.04087.pdf
+6	liushuai5@mail.sysu.edu.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2110.05248.pdf
+7	?subject=Your%20preprint%20https://arxiv.org/pdf/2201.08272.pdf
+8	willians.barreto@ufabc.edu.br?subject=Your%20preprint%20https://arxiv.org/pdf/2201.08324.pdf
+
+
+14 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2106.02595.pdf
+2	https://arxiv.org/pdf/2107.02998.pdf
+3	https://arxiv.org/pdf/2107.07036.pdf
+4	https://arxiv.org/pdf/2107.12787.pdf
+5	https://arxiv.org/pdf/2108.12044.pdf
+6	https://arxiv.org/pdf/2109.01193.pdf
+7	https://arxiv.org/pdf/2110.04087.pdf
+8	https://arxiv.org/pdf/2110.04594.pdf
+9	https://arxiv.org/pdf/2110.05248.pdf
+10	https://arxiv.org/pdf/2110.12972.pdf
+11	https://arxiv.org/pdf/2111.00016.pdf
+12	https://arxiv.org/pdf/2201.08272.pdf
+13	https://arxiv.org/pdf/2201.08305.pdf
+14	https://arxiv.org/pdf/2201.08324.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, in line....
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

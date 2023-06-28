@@ -1,0 +1,301 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Received: from AM6PR03MB5767.eurprd03.prod.outlook.com (2603:10a6:20b:f6::29)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Tue, 22 Feb 2022
+ 06:57:02 +0000
+Received: from AS8PR05CA0003.eurprd05.prod.outlook.com (2603:10a6:20b:311::8)
+ by AM6PR03MB5767.eurprd03.prod.outlook.com (2603:10a6:20b:f6::29) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4995.27; Tue, 22 Feb
+ 2022 06:57:01 +0000
+Received: from VE1EUR01FT030.eop-EUR01.prod.protection.outlook.com
+ (2603:10a6:20b:311:cafe::91) by AS8PR05CA0003.outlook.office365.com
+ (2603:10a6:20b:311::8) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5017.21 via Frontend
+ Transport; Tue, 22 Feb 2022 06:57:00 +0000
+Authentication-Results: spf=pass (sender IP is 209.85.221.42)
+ smtp.mailfrom=gmail.com; dkim=fail (signature did not verify)
+ header.d=gmail.com;dmarc=pass action=none header.from=gmail.com;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.221.42 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.221.42; helo=mail-wr1-f42.google.com;
+Received: from mail-wr1-f42.google.com (209.85.221.42) by
+ VE1EUR01FT030.mail.protection.outlook.com (10.152.2.228) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4995.15 via Frontend Transport; Tue, 22 Feb 2022 06:57:00 +0000
+Received: by mail-wr1-f42.google.com with SMTP id s1so4703495wrg.10
+        for <giuseppe.cabras@uniud.it>; Mon, 21 Feb 2022 22:57:00 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=message-id:from:date:to:to:to:to:to:to:to:to:to:subject;
+        bh=1bFEqdwlm0hFGkGuNEnXuWiV4rvyu5NdOnsbXhnLBM0=;
+        b=qYYeGPFGYzHlYWkWfz1lAizbXXtUSlqWkIgOfdA7z5X1u11ik6eygHE5it8voWb2de
+         s/mL5IJbM15SZysLI3Uldd1GY7oE22U5eDSCRWpVyh0FIYVb2zfzhTAZIIubRVGUuPwr
+         Bf7KD2lEOSMgX5XQrxf+yjJzXb1z1nbZJbd2a33gISQqyaae2YVn0Hj3PD41sEpvAIm2
+         tcEBHStzerFowyGYiv+/6FcDPlhpV6x1f7softNYUZzbvqp+a0rT2UJZoLUuvbUFaAJx
+         qChl+HUMzItSZjJgAbWRQni+my2TkmxNrcxfCNsM/bbZUswol4QbB/0QSGVv5w9YgEh7
+         IW+g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:message-id:from:date:to:to:to:to:to:to:to:to:to
+         :subject;
+        bh=1bFEqdwlm0hFGkGuNEnXuWiV4rvyu5NdOnsbXhnLBM0=;
+        b=TQ2v45OdIGxsrA3F3G5GdJaHpaBHqApgMCc/AtL7q178IjRzPDiYiGrqJEfVrKXx1o
+         mxAh+vcjvnBkEaesnIsvR5wwPwrNSougPhAyiboX5nHounxot+N5qNJdGD5KN/ccUM+h
+         81fKHnxLe8kOtsnBHdxHh1GwxBxG3DMWtnGh8Zzri3dmaPdzNGcbAcUrIsGSxk3k+/29
+         PGcc61OjO9jRdhvepKhRyqGqHF3p8Uy7oTzOqFs11EoT4MIOtda0G+5iN8F6LdwnH28J
+         QdCM3VAwY4DCjgS11wNkmFfRhSc8eQaoJwAX0DHb1UlHTB7AtCEBTmDEn4UDEbkZNMCp
+         0NTQ==
+X-Gm-Message-State: AOAM531Flf96ds0cj28DTKgYNzlkZSKJJytnC5wLUXU/8XKxTAnRn3qn
+	LDzmtFPGruSTfgw0L5SSLnDxqlCgtVQ=
+X-Google-Smtp-Source: ABdhPJxZyFIJRxI+DBxuzx0sS1c8NIlmgyj2xhJcpcZc8w4HIhADJfGu3+UWGzJtvI9EjJ0uB3yv5g==
+X-Received: by 2002:adf:fd48:0:b0:1e4:99d8:48bd with SMTP id h8-20020adffd48000000b001e499d848bdmr17905338wrs.497.1645513019600;
+        Mon, 21 Feb 2022 22:56:59 -0800 (PST)
+Return-Path: giuseppe.cabras@gmail.com
+Received: from lugh.fisica.uniud.it (lugh.fisica.uniud.it. [158.110.40.216])
+        by smtp.gmail.com with ESMTPSA id p2sm1467226wmc.33.2022.02.21.22.56.57
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 21 Feb 2022 22:56:59 -0800 (PST)
+Message-ID: <6214893b.1c69fb81.ac7b1.4cfd@mx.google.com>
+From: giuseppe.cabras@gmail.com
+X-Google-Original-From: gc@lugh.fisica.uniud.it
+Received: by lugh.fisica.uniud.it (sSMTP sendmail emulation); Tue, 22 Feb 2022 07:58:00 +0100
+Date: Tue, 22 Feb 2022 07:58:00 +0100
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Tue Feb 22 07:30:03 CET 2022
+X-MS-Exchange-Organization-ExpirationStartTime: 22 Feb 2022 06:57:00.7751
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 3dfd8e4c-c495-48cf-8eac-08d9f5d08679
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+Content-Type: text/plain
+X-MS-Exchange-Organization-AuthSource:
+ VE1EUR01FT030.eop-EUR01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 3dfd8e4c-c495-48cf-8eac-08d9f5d08679
+X-MS-TrafficTypeDiagnostic: AM6PR03MB5767:EE_
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:209.85.221.42;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SFE;H:mail-wr1-f42.google.com;PTR:mail-wr1-f42.google.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Feb 2022 06:57:00.7706
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3dfd8e4c-c495-48cf-8eac-08d9f5d08679
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-AuthSource:
+ VE1EUR01FT030.eop-EUR01.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM6PR03MB5767
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.9104575
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5017.021
+X-Microsoft-Antispam-Mailbox-Delivery:
+	wl:1;pcwl:1;ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(810001)(250001)(410001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?WHFRNE5ZbnU3ekRyTkc5NXR3L1BhakVGUHJlZzNnUEhkZ1BEOGVUQm9qWFd5?=
+ =?utf-8?B?WVg5UFAvU1YyZDNQWlpwT1kvTXFDVlRVMVJpamtnY00zNndpSGtzbTgzdUtR?=
+ =?utf-8?B?TUQwRWlIUHdNalZ4cE5ySGw1cWdCYXBLb0loTmpxZGZQUDJhTmpMZHRkbEM2?=
+ =?utf-8?B?NDU1Y1gxRm5vMHhveloxWEl2UHI1V2FVR1NQL3Y1TlB0WDZrVE56alZHZDhY?=
+ =?utf-8?B?WE1yZWRaODF5MEhjUzJpeDNxd2lDaER3OXJueEpMRVE0WGJ4UldyYk93UkdD?=
+ =?utf-8?B?cGlDL0k1VXVLU1p2WE91TENiQ2RVNjhhT002VTVjZ3Zud0NQNURpQ1QvaGwz?=
+ =?utf-8?B?Ulh3ZzZLdjRLdWRpQTFCMmN5Rlo3ekRDaUdsSmJ5elVCaGxvZTRWY0xHQk0r?=
+ =?utf-8?B?bkI4Y29Eazg0cWZkbWRjZnFCZWxQWi8waC9wNlNlQVkySVFnRktReVJaQjZL?=
+ =?utf-8?B?ZDRpQ3l0eExyTVpuNS9CRUpzNDdMZnBMNXJpRWNOUVdlVkpxakcyQ2J3WUQ5?=
+ =?utf-8?B?Z2s3ZEd1VWJFWjJVNzRJaVI4aHd0eVNnRDJ3cjBpK3FkTlJYbjVrNEFRcjEv?=
+ =?utf-8?B?ODEyQkNWR2pYTk9EcFdNNDMxTXI4QXZJYks1K3RVNkc0akczcmMrc0xlRFJY?=
+ =?utf-8?B?VUZYLzRjdk0vUXdibE9RaDQ2RWxNTCtreGR0dDIyQUlKSDdQdFNKUm53OUhV?=
+ =?utf-8?B?eHVocUJ5U0xHOXltS2VUcG9oWnIwbG56YmVldWpHZDNtbFVCK29qV3NhZGln?=
+ =?utf-8?B?SU1JblVqTC9pZ005Q29iV0l2VWtMRGt0dnFhYlBsbVkwZXBlbjFIRUpZVWVZ?=
+ =?utf-8?B?OFAvTkFKRExRZCt6cGJXRzkzdHRwWFZDZTYzdGF3bTFQMHptOC9kV1ZYM3Ir?=
+ =?utf-8?B?L3ZHKzBBaGd3ZHBnQnE2dWhhbFM3Y1g0M2JOMmxuajN3a3lXZGdza3o0b2VQ?=
+ =?utf-8?B?RmNSY0lIbzRnRGw1TEYwaFFTc0wvbEZWbzd0ekRNT3o2TGd5bm9oWTFucHds?=
+ =?utf-8?B?aVdTUkJRNCtnYUFubVRmV204M1dQT2w5TEpqV3IrTUpTVDJ6SENxTjBxZ2Zs?=
+ =?utf-8?B?K2QwRTdkS3pRajBkT0FPZlRGUzhzbjV6c2E3akJuTDVoVjMxSzNrRnRTMUti?=
+ =?utf-8?B?Y1grYTBpTVdEWWg0bUY5K1gzRjhyeXIxRzhmZFlNVlRvcVlZU2QwRVVBOXpU?=
+ =?utf-8?B?YndPdlVQbDRrQUFuTEEzUGZLUUh2ZTR0eEZ4c3A0TldtK2NnRWk0SEE2dWtM?=
+ =?utf-8?B?MGRKbnQyVzc2ZkdDWGYxRzFKSUJoLzQ5R1QxeDRhZ3B3bzBtbW13SUNlTkVT?=
+ =?utf-8?B?N1d5aThXY0FLbU5TOG9CSjF5L2xvT3REeVdVbTNwaXVBNWR1OUFoRzF4K2hq?=
+ =?utf-8?B?QUxaZzEwTHVwY1p3TEcwU2JZU1VIT1V6MkN5ZTBxeEVrUGJlNlY5MUZXaTBP?=
+ =?utf-8?B?RldlVUdtaU9JTlc2RDlDY2ZpUnhQZDNrbG9OVG82am1aVXJYbmNySHFqSitG?=
+ =?utf-8?B?alZ6aFFOaFFtR1UxbEphSlhZYml3eWRBc1FXYVhraFpDNGhnOXZiZEpGMGJD?=
+ =?utf-8?B?cVl4OUpGUE54Q2tWT1NWd0VTZ0FWcStUV2R1NGZyUjQ4Q3VHR09wTURabFd6?=
+ =?utf-8?B?ZWJMREMzdmRRbU9MV1k2VWc0L2doeit5VnVYdGZ6U3RQUzRDWlFDZ2l6MGhx?=
+ =?utf-8?B?S29xa01UU1VwL2kvOTJSeHRjRmtMNmhEQml1alFIUDkxWWZFc3JaNElBWENo?=
+ =?utf-8?B?MnlTZjhrVzY2ZWtxLzhDd3B6UDZmT1FPVDBIN1p4b2N4Rkg0UWlsdDFRQWpD?=
+ =?utf-8?B?SVNXMEVXaFEvb3krV2VNenF4ODNJcEFoRnF1RnZFblltMkJkTGlyRmJoN1BF?=
+ =?utf-8?B?Y2pHbWZmdzZhWkxSME1JY1hOQWxGcWhxSWcxZVQ1M05Id1IxTm92bG40WVcv?=
+ =?utf-8?B?N0FFQVF0QTgvUFAydXMzOFdJdC9OcEJsOCtaOTJvQjgxS0tNYlVSbUN0U2da?=
+ =?utf-8?B?V0dHWkQyOEYrZkhDZWVGRFFnWnVCbURoeXJvK09jZi90Z0Qrd2YrYXJ5REs0?=
+ =?utf-8?B?alJJOVU4WThQTzNpVU1aajBadFpQZi9FUjhrMGpJTEtrQ21zeTFCZHc1Sno5?=
+ =?utf-8?B?UjViTVZGd1BDWlFCWE5ZY3hDRzhKblpVcHdaRUxZMGU2Vzh3SU9EcW9oRENq?=
+ =?utf-8?B?K0pTVlYyQ2J1WFhWZUhPeGUraCtIN0F0eWV2Wml5c2piTXVzKzNwVXA0RnNu?=
+ =?utf-8?B?Yi9NT0NIVE1XOGE5WGl6SWRnaDc2MWRhRXFTWm02eXVFcGNPSlJtalZWRTNV?=
+ =?utf-8?B?d1VhYnNuR2EzR0tSb25aZHZNZVc2cyt3MnRUTUxxdFRPZ3NsRG5PM0F6Qlhx?=
+ =?utf-8?B?M3NwTlh0SGZqU0dqTnJrdmdzalNZU3dMbUtNYzdLRE5Rd2hpcElnSTJicGcr?=
+ =?utf-8?B?OGt3Q0pRQ01GK1IzeHlGWWVrVGVuU2FzWVdRQkFVTmtqTk1MWnVxSmZBb1Bl?=
+ =?utf-8?B?QmxERERIcTY4UW5hdTBkOXY1NzhraVJNMzBvbU81VzJJTUc5RXFZQUJNNWpv?=
+ =?utf-8?Q?glBgE45VTpVpbSnkYYG1hcBIHFUX/S?=
+MIME-Version: 1.0
+
+n
+<div class="list-dateline">Submissions received from  Fri 18 Feb 22  to  Mon 21 Feb 22, announced Tue, 22 Feb 22</div>
+166 new astro-phORgr-qc preprint found (with repetitions)
+152 new astro-phORgr-qc pdf processed
+341 occurrences of LIGO word
+194 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2107.04811.pdf#page=1&search=ligo%20virgo ; LIGO experiment [1], the extraordinary observation of == the M87* black hole shadow by the Event Horizon Collaboration [2–7], and the observations of the electromagnetic spectrum emitted from an accretion disk around a
+2	https://arxiv.org/pdf/2108.04065.pdf#page=6&search=ligo%20virgo ; [18] C. de Rham, S. Melville, Gravitational Rainbows ==  LIGO and Dark Energy
+3	https://arxiv.org/pdf/2111.13991.pdf#page=9&search=ligo%20virgo ; Advanced LIGO. We are also grateful for computational == resources provided by the Leonard E Parker Center
+	https://arxiv.org/pdf/2111.13991.pdf#page=9&search=ligo%20virgo ; and Advanced LIGO are funded by the United States == National Science Foundation (NSF) as well as the Science and Technology Facilities Council (STFC) of the
+	https://arxiv.org/pdf/2111.13991.pdf#page=9&search=ligo%20virgo ; construction of Advanced LIGO and construction and == operation of the GEO600 detector. Additional support
+4	https://arxiv.org/pdf/2112.12718.pdf#page=1&search=ligo%20virgo ; 5.7 LIGO Laboratory Perspective . . . . . . . . . . . . . . . . . . . . . . . . . == 
+	https://arxiv.org/pdf/2112.12718.pdf#page=5&search=ligo%20virgo ; design closely based on NSF’s Advanced LIGO detector, and increasing the length of the == interferometer arms to increase sensitivity; it trades away technical risk for a larger infrastructure,
+	https://arxiv.org/pdf/2112.12718.pdf#page=5&search=ligo%20virgo ; entities that played key roles in the success of Advanced LIGO were provided ==  LIGO Laboratory, LIGO
+	https://arxiv.org/pdf/2112.12718.pdf#page=7&search=ligo%20virgo ; the LIGO Laboratory management team, and the NSF. == • It is urgent that the CE project design phase take place within an organizational structure developed
+	https://arxiv.org/pdf/2112.12718.pdf#page=8&search=ligo%20virgo ; Interferometer Gravitational-Wave Observatory (LIGO), and to prepare for the next large == facility.” Further, “The survey committee strongly endorses gravitational wave observations
+	https://arxiv.org/pdf/2112.12718.pdf#page=10&search=ligo%20virgo ; and LIGO have launched studies of the use of the present 3- and 4-km infrastructures to help explore next-generation detector designs. There is good communication but no formal coordination == between the technical studies, and this should be encouraged.
+	https://arxiv.org/pdf/2112.12718.pdf#page=11&search=ligo%20virgo ; attenuating seismic motion. LIGO uses sensors and high-gain servo systems in series with pendulum stages to == attenuate mechanically-coupled seismic motion. Thermal motion of the test mass can also mask gravitational
+	https://arxiv.org/pdf/2112.12718.pdf#page=23&search=ligo%20virgo ; will depend on the seeding mechanism. In the 100-solar mass range LIGO and its upgrades will provide the == evidence for gravitational run-away processes. LISA will also observe mergers involving extreme mass ratios
+	https://arxiv.org/pdf/2112.12718.pdf#page=27&search=ligo%20virgo ; The O5 observing run, with the LIGO detectors ultimately operating at the design sensitivity targeted for == A+, is currently expected to run through mid-2028.
+	https://arxiv.org/pdf/2112.12718.pdf#page=28&search=ligo%20virgo ; The teams looking at the upgrade path for LIGO are considering a range of options, in terms of magnitude == of change and magnitude of sensitivity improvements. Changes in the system which leave the wavelength at
+	https://arxiv.org/pdf/2112.12718.pdf#page=30&search=ligo%20virgo ; times that of LIGO was described in the 2014 LSC Instrument White Paper,68 and a growing level and focus == of activity has continued since that time to ﬁnd the best path forward.
+	https://arxiv.org/pdf/2112.12718.pdf#page=31&search=ligo%20virgo ; was contracted. The LIGO Lab and OzGrav, along with members of the gravitational-wave community == broadly, helped to form, critique, and share the concept. A CE Consortium has been formed72 to focus this
+	https://arxiv.org/pdf/2112.12718.pdf#page=31&search=ligo%20virgo ; 10 times better sensitivity than the 4 km LIGO A+ design, with a primary observational science goal of == access to most neutron star and (stellar to intermediate mass) black hole mergers in the universe. The 20 km
+	https://arxiv.org/pdf/2112.12718.pdf#page=31&search=ligo%20virgo ; infrastructure, and the vast majority of the detector optical, mechanical, and electronic components. The experience with LIGO’s two sites demonstrated the utility of commonality for cost savings in construction, and == the advantages for commissioning of solving problems once and training staﬀ who can work interchangeably
+	https://arxiv.org/pdf/2112.12718.pdf#page=31&search=ligo%20virgo ; construction phases are based on scaling from Initial LIGO, Advanced LIGO, and engineering estimates == made speciﬁcally for CE. The cost for construction of the two sites and the detectors for them is
+	https://arxiv.org/pdf/2112.12718.pdf#page=31&search=ligo%20virgo ; advantage of the success of Advanced LIGO’s design as much as possible; ii) “Let observational == science drive the design”, i.e., match the antenna length to known sources and address the
+	https://arxiv.org/pdf/2112.12718.pdf#page=31&search=ligo%20virgo ; known issues with Advanced LIGO’s design; and iii) “Keep it ﬂexible”, designing an observatory that will be able to accommodate any new technology developments. == Other than the increase in arm length (from 4 km to 40 km/20 km, including larger vacuum system), the
+	https://arxiv.org/pdf/2112.12718.pdf#page=31&search=ligo%20virgo ; reference design asks for larger test masses (320 kg, 70 cm diameter, compared to Advanced LIGO’s 40 kg, == 69 https
+	https://arxiv.org/pdf/2112.12718.pdf#page=32&search=ligo%20virgo ; funding agencies), in a mode resembling Advanced LIGO in its coordination of the nascent LIGO Scientiﬁc == Collaboration R&D.
+	https://arxiv.org/pdf/2112.12718.pdf#page=33&search=ligo%20virgo ; LIGO for testing. The ﬂowdown of observational science goals will inﬂuence the priorities in the design. == Seismic isolation and thermal noise considerations will drive the isolation and suspension systems. Mirror
+	https://arxiv.org/pdf/2112.12718.pdf#page=33&search=ligo%20virgo ; increased bandwidth requires only 2-3x more computational power than Advanced LIGO. However, there == are a number of technical challenges facing compact-binary searches that will need research and development
+	https://arxiv.org/pdf/2112.12718.pdf#page=34&search=ligo%20virgo ; LIGO Laboratory Perspective == 
+	https://arxiv.org/pdf/2112.12718.pdf#page=34&search=ligo%20virgo ; Perspectives on current LIGO Laboratory involvement in Cosmic Explorer as well as exploring future == paths for further participation and integration with CE were presented. The LIGO Laboratory eﬀectively
+	https://arxiv.org/pdf/2112.12718.pdf#page=34&search=ligo%20virgo ; paths for further participation and integration with CE were presented. The LIGO Laboratory eﬀectively == functions as the US national laboratory for gravitational-wave detector development and observatory operations, and is thus poised to play a foundational role in CE as it moves forward. LIGO Laboratory staﬀ are
+	https://arxiv.org/pdf/2112.12718.pdf#page=34&search=ligo%20virgo ; functions as the US national laboratory for gravitational-wave detector development and observatory operations, and is thus poised to play a foundational role in CE as it moves forward. LIGO Laboratory staﬀ are == already playing key roles in many CE activities, including the overall leadership of the CE Horizon Study
+	https://arxiv.org/pdf/2112.12718.pdf#page=34&search=ligo%20virgo ; The LIGO Lab brings unique expertise in areas critical to the success of CE, including interferometric == gravitational-wave detector R&D and the management of large-scale observatory construction projects, having successfully built the LIGO Hanford and Livingston Observatories and the Initial and Advanced LIGO
+	https://arxiv.org/pdf/2112.12718.pdf#page=34&search=ligo%20virgo ; LIGO Laboratory can provide, however its capabilities in key areas will be essential for CE to move forward == on the timescales envisioned in the Horizon Study. To foster the engagement of the LIGO Lab in CE,
+	https://arxiv.org/pdf/2112.12718.pdf#page=34&search=ligo%20virgo ; on the timescales envisioned in the Horizon Study. To foster the engagement of the LIGO Lab in CE, == discussions should begin soon among the CE team, the LIGO Laboratory management team,
+	https://arxiv.org/pdf/2112.12718.pdf#page=34&search=ligo%20virgo ; discussions should begin soon among the CE team, the LIGO Laboratory management team, == and the NSF.
+	https://arxiv.org/pdf/2112.12718.pdf#page=34&search=ligo%20virgo ; International contributions to CE - the Advanced LIGO Project beneﬁted greatly from in-kind hardware == contributions from institutions in Europe and Australia. Given CE’s much larger scale and its estimated
+	https://arxiv.org/pdf/2112.12718.pdf#page=35&search=ligo%20virgo ; The LSC and the LIGO Lab are currently examining options for additional instrumental upgrades to be == implemented after O5 that could be installed within the current LIGO facilities. The goal is a plan that
+	https://arxiv.org/pdf/2112.12718.pdf#page=35&search=ligo%20virgo ; implemented after O5 that could be installed within the current LIGO facilities. The goal is a plan that == dovetails with Cosmic Explorer (and Einstein Telescope) construction and initial observations. The research,
+	https://arxiv.org/pdf/2112.12718.pdf#page=35&search=ligo%20virgo ; The US National Science Foundation has been the source for all US funding of NSF’s LIGO and for == the greater ground-based gravitational-wave program in the US. Its support continued beyond the initial
+	https://arxiv.org/pdf/2112.12718.pdf#page=35&search=ligo%20virgo ; the Caltech/MIT LIGO Laboratory has engineered, installed, commissioned, and operated. == The NSF funding mechanism for large projects is the Major Research Equipment and Facilities Construction (MREFC) account, currently targeting projects of US$70 million and greater. Initial planning and
+	https://arxiv.org/pdf/2112.12718.pdf#page=36&search=ligo%20virgo ; Division. LIGO is a signiﬁcant operations cost for the Physics division. The NSF may in the coming years == adopt a diﬀerent approach, but in any event the accumulated cost of some decades of operation of Cosmic
+	https://arxiv.org/pdf/2112.12718.pdf#page=37&search=ligo%20virgo ; suggest models that may involve the LIGO Laboratory, management and operating contractors of the type == currently acting for NSF, national laboratories or new corporations. The roadmap should deﬁne a clear
+	https://arxiv.org/pdf/2112.12718.pdf#page=38&search=ligo%20virgo ; LIGO has shown that it can generate a steady inﬂux of the brightest young people. CE can be a catalyst == for frontier activity and involvement at universities. University involvement generates diversity as well as
+	https://arxiv.org/pdf/2112.12718.pdf#page=38&search=ligo%20virgo ; novelty and inﬂuence in other ﬁelds. And a careful look at university engagement in LIGO shows that it == created many of the key successes of LIGO.
+	https://arxiv.org/pdf/2112.12718.pdf#page=38&search=ligo%20virgo ; created many of the key successes of LIGO. == As NSF is likely the lead sponsor, lessons can be learned beyond LIGO, from the history of the astronomy
+	https://arxiv.org/pdf/2112.12718.pdf#page=38&search=ligo%20virgo ; As NSF is likely the lead sponsor, lessons can be learned beyond LIGO, from the history of the astronomy == observatories. Site selection, host community support and opposition including legal challenges, managing
+	https://arxiv.org/pdf/2112.12718.pdf#page=39&search=ligo%20virgo ; • A very signiﬁcant upgrade to the current LIGO observatories may well delay the start of funding of == CE.
+	https://arxiv.org/pdf/2112.12718.pdf#page=40&search=ligo%20virgo ; Caltech/LIGO and UCR == MIT
+	https://arxiv.org/pdf/2112.12718.pdf#page=42&search=ligo%20virgo ; LIGO Caltech == University of Washington
+5	https://arxiv.org/pdf/2112.15529.pdf#page=1&search=ligo%20virgo ; 10 − 13% in the Advanced LIGO mass range. The initial data and coupling constants are chosen == such the theory remains in the weakly coupled regime throughout the evolution. In all cases that
+	https://arxiv.org/pdf/2112.15529.pdf#page=5&search=ligo%20virgo ; function of frequency f (e.g., updated Advanced LIGO == sensitivity design curve [57]), fmin and fmax is the lowest
+	https://arxiv.org/pdf/2112.15529.pdf#page=11&search=ligo%20virgo ; LIGO PSD == 
+	https://arxiv.org/pdf/2112.15529.pdf#page=11&search=ligo%20virgo ; updated Advanced LIGO sensitivity design curve (aLIGODesign.txt in [57], which imposes fmin = 5Hz) and a ﬂat noise == mismatches (Sn = 1). This allows us to estimate a range for
+	https://arxiv.org/pdf/2112.15529.pdf#page=12&search=ligo%20virgo ; the updated Advanced LIGO sensitivity design curve == (aLIGODesign.txt in [57], which imposes fmin = 5Hz)
+	https://arxiv.org/pdf/2112.15529.pdf#page=13&search=ligo%20virgo ; LIGO band in the ﬁnal stages of the inspiral and merger == phase, thus allowing to contrast the GR prediction for
+6	https://arxiv.org/pdf/2202.02941.pdf#page=5&search=ligo%20virgo ; construction of Advanced LIGO and construction and == operation of the GEO600 detector. Additional support
+7	https://arxiv.org/pdf/2202.09380.pdf#page=1&search=ligo%20virgo ; LIGO Laboratories, MIT == (Dated
+	https://arxiv.org/pdf/2202.09380.pdf#page=2&search=ligo%20virgo ; physics in LIGO data. Meanwhile, we found it diﬃcult == to integrate the eﬃcient geometric template bank generation scheme from Ref. [17] into existing GW search
+	https://arxiv.org/pdf/2202.09380.pdf#page=12&search=ligo%20virgo ; LIGO O2c == 51 min 46 s
+8	https://arxiv.org/pdf/2202.09382.pdf#page=12&search=ligo%20virgo ; instead work with the Advanced LIGO design sensitivity [144] and gradually lower the noise PSD, emulating == improving detector sensitivity and higher signal SNR.
+	https://arxiv.org/pdf/2202.09382.pdf#page=12&search=ligo%20virgo ; to the LIGO design sensitivity (i.e., the design sensitivity divided by 2, 4 and 6). In terms of amplitude == spectral density, they correspond to 8.23×10−24 Hz−1/2 ,
+	https://arxiv.org/pdf/2202.09382.pdf#page=13&search=ligo%20virgo ; advanced LIGO design sensitivity. The grey line gives the simulated data, which are the same in all cases, while the black == dashed line gives the detection noise amplitude spectral density. The dashed and dotted vertical lines denote, respectively, the
+	https://arxiv.org/pdf/2202.09382.pdf#page=19&search=ligo%20virgo ; based upon work supported by NSF’s LIGO Laboratory == which is a major facility fully funded by the National Science Foundation. The authors are grateful for computational resources provided by the LIGO Laboratory and
+	https://arxiv.org/pdf/2202.09382.pdf#page=19&search=ligo%20virgo ; which is a major facility fully funded by the National Science Foundation. The authors are grateful for computational resources provided by the LIGO Laboratory and == supported by National Science Foundation Grants PHY0757058 and PHY-0823459. NJC was supported by NSF
+9	https://arxiv.org/pdf/2202.09961.pdf#page=5&search=ligo%20virgo ; of Advanced LIGO (O1 and O2). However, we ﬁnd that about == 
+10	https://arxiv.org/pdf/2202.10063.pdf#page=12&search=ligo%20virgo ; vanced LIGO noise was FEOB/NR = 0.25% (see Ref. [21] == and Fig. 10 below). The left panel of Fig. 9 highlights
+	https://arxiv.org/pdf/2202.10063.pdf#page=13&search=ligo%20virgo ; FIG. 10. EOB/NR unfaithfulness computation with the Advanced LIGO noise using the standard NCN TEOBResumS == model of Ref. [21] or the QC version discussed here. The
+	https://arxiv.org/pdf/2202.10063.pdf#page=13&search=ligo%20virgo ; Following Ref. [13], we calculate the EOB/NR unfaithfulness with LIGO noise, and present it in Fig. 10. == EOB
+11	https://arxiv.org/pdf/2202.10274.pdf#page=1&search=ligo%20virgo ; LIGO Laboratory, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA == 5
+	https://arxiv.org/pdf/2202.10274.pdf#page=1&search=ligo%20virgo ; in the universe in the form of GW strain. In particular, Advanced LIGO is √ == capable of measuring displacements as ﬁne
+	https://arxiv.org/pdf/2202.10274.pdf#page=1&search=ligo%20virgo ; Advanced LIGO is limited in its sensitivity below 30 Hz by == controls noise [6], which can be improved with more sensitive devices. The astrophysical case for expanding sensitivity towards lower frequency in contemporary GW detectors is
+	https://arxiv.org/pdf/2202.10274.pdf#page=1&search=ligo%20virgo ; for applications where space is at a premium, such as the sensing of the Advanced LIGO quadruple suspension [17]. Some == devices conform to the label of ‘compact’ better than others, for example the design by Royer et al. [18] is conﬁned
+	https://arxiv.org/pdf/2202.10274.pdf#page=4&search=ligo%20virgo ; LIGO [8]. In this section, we discuss the noise analysis of the == measured sensitivity.
+	https://arxiv.org/pdf/2202.10274.pdf#page=6&search=ligo%20virgo ; 6D seismometer [25] and the Advanced LIGO quadruple suspensions [17], can beneﬁt from compact interferometers. The == current sensors have suﬃcient range but their current level of
+
+11 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	liucheng@zjut.edu.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2107.04811.pdf
+2	andreas.finke@unige.ch?subject=Your%20preprint%20https://arxiv.org/pdf/2108.04065.pdf
+3	?subject=Your%20preprint%20https://arxiv.org/pdf/2111.13991.pdf
+4	gwadw2022@gw.phys.titech.ac.jp?subject=Your%20preprint%20https://arxiv.org/pdf/2112.12718.pdf
+5	gueras@qmul.ac.uk?subject=Your%20preprint%20https://arxiv.org/pdf/2112.15529.pdf
+6	?subject=Your%20preprint%20https://arxiv.org/pdf/2202.02941.pdf
+7	adam.coogan@umontreal.ca?subject=Your%20preprint%20https://arxiv.org/pdf/2202.09380.pdf
+8	?subject=Your%20preprint%20https://arxiv.org/pdf/2202.09382.pdf
+9	lgp@st.gxu.edu.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2202.09961.pdf
+10	?subject=Your%20preprint%20https://arxiv.org/pdf/2202.10063.pdf
+11	?subject=Your%20preprint%20https://arxiv.org/pdf/2202.10274.pdf
+
+
+26 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/1905.02773.pdf
+2	https://arxiv.org/pdf/2107.04811.pdf
+3	https://arxiv.org/pdf/2108.04065.pdf
+4	https://arxiv.org/pdf/2111.03870.pdf
+5	https://arxiv.org/pdf/2111.06197.pdf
+6	https://arxiv.org/pdf/2111.13991.pdf
+7	https://arxiv.org/pdf/2112.01706.pdf
+8	https://arxiv.org/pdf/2112.12718.pdf
+9	https://arxiv.org/pdf/2112.15529.pdf
+10	https://arxiv.org/pdf/2201.11755.pdf
+11	https://arxiv.org/pdf/2202.02941.pdf
+12	https://arxiv.org/pdf/2202.09380.pdf
+13	https://arxiv.org/pdf/2202.09382.pdf
+14	https://arxiv.org/pdf/2202.09640.pdf
+15	https://arxiv.org/pdf/2202.09641.pdf
+16	https://arxiv.org/pdf/2202.09726.pdf
+17	https://arxiv.org/pdf/2202.09739.pdf
+18	https://arxiv.org/pdf/2202.09766.pdf
+19	https://arxiv.org/pdf/2202.09794.pdf
+20	https://arxiv.org/pdf/2202.09961.pdf
+21	https://arxiv.org/pdf/2202.10063.pdf
+22	https://arxiv.org/pdf/2202.10143.pdf
+23	https://arxiv.org/pdf/2202.10274.pdf
+24	https://arxiv.org/pdf/2202.10288.pdf
+25	https://arxiv.org/pdf/2202.10293.pdf
+26	https://arxiv.org/pdf/2202.10300.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

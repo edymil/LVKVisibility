@@ -1,0 +1,335 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Received: from AM0PR03MB4852.eurprd03.prod.outlook.com (2603:10a6:208:109::32)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Wed, 19 Jan 2022
+ 07:02:18 +0000
+Received: from DB8PR09CA0014.eurprd09.prod.outlook.com (2603:10a6:10:a0::27)
+ by AM0PR03MB4852.eurprd03.prod.outlook.com (2603:10a6:208:109::32) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4909.7; Wed, 19 Jan
+ 2022 07:02:17 +0000
+Received: from DB5EUR01FT004.eop-EUR01.prod.protection.outlook.com
+ (2603:10a6:10:a0:cafe::4d) by DB8PR09CA0014.outlook.office365.com
+ (2603:10a6:10:a0::27) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4909.8 via Frontend
+ Transport; Wed, 19 Jan 2022 07:02:17 +0000
+Authentication-Results: spf=pass (sender IP is 209.85.128.41)
+ smtp.mailfrom=gmail.com; dkim=fail (signature did not verify)
+ header.d=gmail.com;dmarc=pass action=none header.from=gmail.com;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.128.41 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.128.41; helo=mail-wm1-f41.google.com;
+Received: from mail-wm1-f41.google.com (209.85.128.41) by
+ DB5EUR01FT004.mail.protection.outlook.com (10.152.4.112) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4909.7 via Frontend Transport; Wed, 19 Jan 2022 07:02:17 +0000
+Received: by mail-wm1-f41.google.com with SMTP id p18so3225434wmg.4
+        for <giuseppe.cabras@uniud.it>; Tue, 18 Jan 2022 23:02:17 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=message-id:from:date:to:to:to:to:to:to:subject;
+        bh=FbgouaElll0RAAxhSPQVELRQw+8lMrGkLZDGdV6PU+8=;
+        b=cvnpVQp+cuJOSazb2+Sfz++unkvuqtjwoNBETZv0rPKyAs4T1KUKP2y36dPmp+E5T7
+         Xm8zXJAX/f9FLHlETlaicSwOpaElV24zuGTsd7WjYgJA6h4otcSNdu/+cPwMy8IO8TUJ
+         nYJKxIcECq0BIXhbNp2eDjtGNaFfTprZye6xL+nxBpURMi+F1r6Kql/9pqjhe3byI78N
+         81OICHQN5vXdJSxzcOMYomlFcrlLdE7CWO+Q+skO94R/8XrSJn2RtOojKV/dzac9apB4
+         oA05UEBgrRlJDcepJSA1SCGa+P3wgVJLKX32eZAMrhRDDRfvOQajQK/AU7AFSOzqKbrs
+         W/Fg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:message-id:from:date:to:to:to:to:to:to:subject;
+        bh=FbgouaElll0RAAxhSPQVELRQw+8lMrGkLZDGdV6PU+8=;
+        b=Tyzq6nAnp2N8i7TPgF/mWQ1z67DpgHh3rTEOXjMDJ+ufOZZgJbH5rjP3ZBeT3Eh0G0
+         Uxhph6jWT3ZRsph7qsx7DSivjIxXnHDGTXpMby6V5GeLnobbRRPfELhZ+msK1EOW2bke
+         IQvGYL1EZJc1A3Fl6IvIQMeLGafT3aJjhYFVhRRzcQ7tChCQ9Z5uHRAfXaAkkZZPiU6S
+         cuBBER01mjvzXLoI9spv4uK/ai39XHzVv4hF9+c0N+sHwf7T62JyMXfqvs5s1XbF7s2n
+         pQeEh2mgNfMuTsMkPV2rartYO48m7g/l00BsmtPJFhGun7gMGmxsvF5wukA8+EoeDtZ7
+         Ko+Q==
+X-Gm-Message-State: AOAM532OOIqtvvDhnirFGXCswAUQi020Vul1IhStFw4gVIEOLQgnh165
+	qUkXewQECweMsFxzN6TyJzYlZ6vi7G4=
+X-Google-Smtp-Source: ABdhPJydO4NmvxuL5SAA6QvXTD7Q6A+5AmqziyZUp2KFJ/U+RdBhXTRBEl/QPYS0wHD7qMsMsb1I0w==
+X-Received: by 2002:a5d:4386:: with SMTP id i6mr1563515wrq.137.1642575736462;
+        Tue, 18 Jan 2022 23:02:16 -0800 (PST)
+Return-Path: giuseppe.cabras@gmail.com
+Received: from lugh.fisica.uniud.it (lugh.fisica.uniud.it. [158.110.40.216])
+        by smtp.gmail.com with ESMTPSA id n14sm4391257wmq.42.2022.01.18.23.02.14
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 18 Jan 2022 23:02:16 -0800 (PST)
+Message-ID: <61e7b778.1c69fb81.f4fe0.f710@mx.google.com>
+From: giuseppe.cabras@gmail.com
+X-Google-Original-From: gc@lugh.fisica.uniud.it
+Received: by lugh.fisica.uniud.it (sSMTP sendmail emulation); Wed, 19 Jan 2022 08:03:56 +0100
+Date: Wed, 19 Jan 2022 08:03:56 +0100
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>
+Subject: arxiv-astro-phORgr-qc-new-alerts Wed Jan 19 07:30:04 CET 2022
+X-MS-Exchange-Organization-ExpirationStartTime: 19 Jan 2022 07:02:17.3433
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 549cb8d5-7c7b-4142-853b-08d9db19a11e
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+Content-Type: text/plain
+X-MS-Exchange-Organization-AuthSource:
+ DB5EUR01FT004.eop-EUR01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 549cb8d5-7c7b-4142-853b-08d9db19a11e
+X-MS-TrafficTypeDiagnostic: AM0PR03MB4852:EE_
+X-MS-Oob-TLC-OOBClassifiers: OLM:10000;
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:209.85.128.41;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SFE;H:mail-wm1-f41.google.com;PTR:mail-wm1-f41.google.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 19 Jan 2022 07:02:17.3433
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 549cb8d5-7c7b-4142-853b-08d9db19a11e
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-AuthSource:
+ DB5EUR01FT004.eop-EUR01.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM0PR03MB4852
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.2633849
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4888.014
+X-Microsoft-Antispam-Mailbox-Delivery:
+	wl:1;pcwl:1;ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(810001)(250001)(410001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?WkM4Z1ZLSmtodkV1V20vT05TZDlTZnF2clZuV0U2dVhwSmJTRFJYM3pVazFF?=
+ =?utf-8?B?dnpDTmtpM3M1d3R4Z1l1dTFkaE8xWnp1aHlWeDRKczZTWUFJZjFsSXoyenlR?=
+ =?utf-8?B?MFNBZEFRSHExV1FKcVF0eFhrRFhwUERCQjB1OEhXc0ljL1RJZmFVbjRFdTBt?=
+ =?utf-8?B?T2p2WTdtRDM2cGJzTDlnY3JCMmlwRDk5RHJnYmlmM3JxSmk2N3BFdXlVTll1?=
+ =?utf-8?B?UUVwdGZjL2dmUTBZOGFKWTlueUJ4dFVsbG04YWloeDRaZUsra0lNVFpBVWxG?=
+ =?utf-8?B?SFU1NTM1R1FXVVF0dWdicnNQN3FJUEhBYWsxOEptZGR5WHFIQWplY3NIVHVh?=
+ =?utf-8?B?VUQ3QXpmWSt1ak9BSHVPL25KQU9JYTRFcWFFL0J1WDRNZ0RGeDJ3dEI5R1JB?=
+ =?utf-8?B?Tmh4UU12RjZGQndvcWF1KzM0c3RGZTRSTUptUXU0eUl6RW9QbHRDcU82dC8w?=
+ =?utf-8?B?VVZ4V0xlMUdGaGtseE9EaG1uNUhRNjlwSFdnVzNLd1VLQ2huMzNIckwwSTlm?=
+ =?utf-8?B?NkdYenB5bytkd255VTVISndIM21saFRCWkdqeHd4dXhPeTFVQmVxbjZrb3ZP?=
+ =?utf-8?B?M1A2SHRXOWpkZFRpenh2b3FQU2EyUU5LTStDTXBkMlBLWlA2NE5oVmQ0RTVz?=
+ =?utf-8?B?a2RlQWs3WSt0Mmk4K3JvTVgvNFlDNzVVaTQ2YjNzL1Y1QUsrUzJpYStoVzBD?=
+ =?utf-8?B?RW9yc3psbzFBY1dVWEhQMW1vbGVRcW5HRWtpM1VvcWk1SnNMaHpOUmZ3bTJO?=
+ =?utf-8?B?NkNVdUtrTUtEUURmazFPN3N6Q3RQK2ZWVGpHbVlmNkxJcG5oY0JXRmplbk03?=
+ =?utf-8?B?aE9MQ1VOc1N0ZGNZM2tDNGRLdTVaSGJSeGh2OGtIb0t6NWx3NWVaRUVRRVJS?=
+ =?utf-8?B?M1dxem1mL0QwUC9rTjBqQjJJak5jYStBak9WN2FiR20xK2Q0THJNSGZxdUcy?=
+ =?utf-8?B?ZmJSZDZkbGlVVlRidUV5cjNtaTU3cFVkckk2Q3JZVDg4VkhHOWRvZUVYRGFB?=
+ =?utf-8?B?SDBkakpWVUFORUovY0FWYy94eFhITGo5L3UwRDU3SG8zOWdWZkx5T2Uwb0R1?=
+ =?utf-8?B?UnBIVXFqWmJRams3QzBvU2xzSlJxcERHTkFZTVAyZjFzbFJqV2JYallWWnJn?=
+ =?utf-8?B?SWJWV2J1V0hlVWpLT0dJazhMRytxRTR1Ym5GOTV1cGYwcVFFK0VkZDlENWRx?=
+ =?utf-8?B?cTAva2lNYW5OeDU1V3YyWGQ3YkZ0RlQ5c3pBcEhOZU4waDk4S1M4OTFrQkg2?=
+ =?utf-8?B?cVJhS24xckU3b3pUeDhlWnMybG14SnBOYk9qYTRTRzBtRzAzZ0F5MC9YazdI?=
+ =?utf-8?B?d1M2Z2RSY0wrYis1ZnNkMyttdzNoY0ZhWjY3aWEzWSs0ZUYrT044UHlLRU40?=
+ =?utf-8?B?NHlHL3FFQUdiTTlxMDRjMEd1eUxIbDBMc2MxQ0tkdmNvYnJFd0J4M1N4cEtm?=
+ =?utf-8?B?bHFYWFNOTlFQQVVHUUxiYk0rUmhlMEtUS2hENUdrazdPQlNOS2tvQzhpVkFJ?=
+ =?utf-8?B?UldtUDZlQ2UxckVEaXZHMmd6SGpEZ2cwbm1MOHMxbE1MR2FsL2I3VjJsRVpM?=
+ =?utf-8?B?Vk5vdzhyNWk0SytMYTJKTnIwUE1Gc1hlcjhLMFNGTnhSZmtGUlVrMEUyL0k0?=
+ =?utf-8?B?RHF3NzdNQmtRWEUzeEtob21HZWlxR2xtcUVlc2tiL0hENW43Y3hoRGU4VllY?=
+ =?utf-8?B?Yi9yV3pURXh3NW1kU3pETkpUR2hnUWdBeG5QTGJpKzlXNzNBNnlhL2xUNUxj?=
+ =?utf-8?B?Y3AxeDFQZ25uM05YZmNVNHZsYXVQMDd5TkhiTWNiUWV4Q1NDdXpiWVlYSTVQ?=
+ =?utf-8?B?RDE5cktEa1kwbHFDVGZwRU85MWRWWUpOcDJiNTF3TFBsL1lsdWFMamtvaWtk?=
+ =?utf-8?B?QzY0YVhRVElVU0liaTB2Sy9pRzBtZy9CWUN0bElwR0x4Qng1UnZuK1Q0RTRj?=
+ =?utf-8?B?RkZkQVpYU3FUNmp0dUFkMXhYSVczMStpRWhvK2NZT3NBSWN3eDhZa3dSQVpz?=
+ =?utf-8?B?SEU5UDZ3US9wS2J1eG84TFZuNWVBOFV6aFNIdzRSV1lwWXQ4WWZkbHROdGZh?=
+ =?utf-8?B?MW04WGtDMjlZRk9SREtDYkNvVDZYYUVYUzlINnkzNlU4L1hlYURSWGhSRURB?=
+ =?utf-8?B?QTVZQ3ptanFPbzh1T0kzRGl1L0t0N3FNWXNXbVhTQUo3ajNtdUMrRERYVkMy?=
+ =?utf-8?B?R1IxQng4VjJ1NGE1VkFaU1pRWjhDdWNteXAwRjNHNHV5Ky9SVHc4R2MvT3pF?=
+ =?utf-8?B?TXlYZit6ZE9CQ2tPMkhRam53ZnVVUnBXOFFPNmNPb1dhdlhvT1BrVlBaMTdk?=
+ =?utf-8?B?dzhrRU1VWHlPODhIWGE3cFZCWHZqbVBPR09VMGhLOHVzaWhSUWZ5MHhOekxW?=
+ =?utf-8?B?V0lwRi9tVEZ5Sm13dHJJNHNzaTZmdDBtcThWWXA2Z0VaSThZZ3JZek5LZW1W?=
+ =?utf-8?B?WlNBUlgzYW9Qb0NnMHRpNHNWZCtBc21vSWxHRmdpVFVNYTVLRGRFdTFnRTFU?=
+ =?utf-8?B?Mm9uMnpyUkxQQTJIUVBydDFoYXE0dk03aWgrMTRYSmJkRHZrbjBFMXNtWThu?=
+ =?utf-8?Q?Oa+Q8HihwKK6jT8eUtyIVlYmUtFTPy?=
+MIME-Version: 1.0
+
+n
+<div class="list-dateline">Submissions received from  Fri 14 Jan 22  to  Tue 18 Jan 22, announced Wed, 19 Jan 22</div>
+303 new astro-phORgr-qc preprint found (with repetitions)
+265 new astro-phORgr-qc pdf processed
+446 occurrences of LIGO word
+211 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2005.02469.pdf#page=2&search=ligo%20virgo ; the LIGO gravitational wave observatory. == Despite the huge success that GR has achieved, still it is unable to explain
+2	https://arxiv.org/pdf/2106.06265.pdf#page=1&search=ligo%20virgo ; most of the black hole mergers recorded by the LIGO detectors are related to the black holes with masses around == 30 M . This fact certainly provides suggestive information on the mass distribution of black holes in the Universe.
+	https://arxiv.org/pdf/2106.06265.pdf#page=1&search=ligo%20virgo ; from diﬀerent channels) [7, 8]. The other interesting conjecture is that the LIGO detectors have detected primordial black holes (PBHs). These gravitational-wave obser- == 
+	https://arxiv.org/pdf/2106.06265.pdf#page=2&search=ligo%20virgo ; around 10 - 30 M can be obtained from the LIGO observations. Shortly after the ﬁrst observation of a binary == black hole merger, several groups of researchers claimed
+	https://arxiv.org/pdf/2106.06265.pdf#page=2&search=ligo%20virgo ; black holes had a primordial origin and the LIGO detectors had detected dark matter. Assuming that PBHs == be a fraction of dark matter and their merging happens
+	https://arxiv.org/pdf/2106.06265.pdf#page=7&search=ligo%20virgo ; LIGO detectors would be compatible with the merger == rate of PBHs with a typical mass 30 M , if a signiﬁcant fraction of dark matter is formed by PBHs. In this
+	https://arxiv.org/pdf/2106.06265.pdf#page=8&search=ligo%20virgo ; event rate of PBHs that are consistent with the mergers obtained via the LIGO detectors, i.e., 30 M - 30 M == events in the dark matter halos. For this purpose, we
+	https://arxiv.org/pdf/2106.06265.pdf#page=10&search=ligo%20virgo ; to probe events in higher redshifts. Nowadays, the Advanced LIGO (aLIGO) detectors can detect binary mergers up to z ∼ 0.75, which approximately corresponds to == a comoving volume around 50 Gpc3 [69, 70]. For this
+	https://arxiv.org/pdf/2106.06265.pdf#page=11&search=ligo%20virgo ; mergers could not be recorded by the LIGO detectors. == Although the method presented in this work yields a suitable framework for the calculation of the PBH merger
+	https://arxiv.org/pdf/2106.06265.pdf#page=12&search=ligo%20virgo ; merger events recorded by the LIGO detectors are a convenient and accessible criterion to evaluate the validity of == PBH mergers generated by various halo models. On the
+	https://arxiv.org/pdf/2106.06265.pdf#page=12&search=ligo%20virgo ; LIGO detectors leads to a constraint on the fraction of == PBHs. Note that, the arising constraints from the merger
+	https://arxiv.org/pdf/2106.06265.pdf#page=12&search=ligo%20virgo ; likely to be recorded by the LIGO detectors. == On the other hand, according to the criterion related
+	https://arxiv.org/pdf/2106.06265.pdf#page=13&search=ligo%20virgo ; the core-cusp problems. On the other hand, the cutting edge of gravitational-waves detection in the LIGO == detectors has started a new era of cosmology in recent
+	https://arxiv.org/pdf/2106.06265.pdf#page=15&search=ligo%20virgo ; and their contribution to the LIGO mergers, and mass == distribution of PBHs. Although the presence of such factors may lead to computational errors, with the development of the instrument and a better understanding of
+3	https://arxiv.org/pdf/2106.13662.pdf#page=2&search=ligo%20virgo ; – Advanced LIGO in O3 == – Advanced LIGO at ﬁnal design sensitivity
+	https://arxiv.org/pdf/2106.13662.pdf#page=3&search=ligo%20virgo ; Fig. 2. Screen shot of the GWT start page (left) and ground-based observatories page with results for advanced LIGO (right). == 
+4	https://arxiv.org/pdf/2107.00536.pdf#page=1&search=ligo%20virgo ; merger were detected by the LIGO experiment [1]. Since == the ﬁrst detection, many GW events from compact binary coalescences have been observed in Advanced LIGO
+5	https://arxiv.org/pdf/2110.06968.pdf#page=1&search=ligo%20virgo ; Gravitational Wave Observatory (LIGO) data [2] into == production scale AI frameworks that process advanced
+	https://arxiv.org/pdf/2110.06968.pdf#page=1&search=ligo%20virgo ; LIGO data in bulk [29–31] within just ﬁve years, and that == these methodologies have been embraced and developed
+6	https://arxiv.org/pdf/2112.14198.pdf#page=9&search=ligo%20virgo ; and NICER limit. Hence, from the observational data, such as advance LIGO and NICER, == one can ﬁx the percentage of DM inside the NS. Theoretically, by generating many such
+7	https://arxiv.org/pdf/2201.05611.pdf#page=1&search=ligo%20virgo ; waves from ∼ 76 binary BH (BBH) mergers (The LIGO Scientiﬁc Co == 2021). One of the most intriguing results is that the ef-
+8	https://arxiv.org/pdf/2201.05626.pdf#page=1&search=ligo%20virgo ; other, or with astrophysical compact objects could be revealed by gravitational wave detectors, such as LIGO. == Alternatively, dark matter capture by ordinary compact objects could result in the formation of compact,
+	https://arxiv.org/pdf/2201.05626.pdf#page=5&search=ligo%20virgo ; to match recent LIGO usage[44, 45]. == With the assumption that the strain can be approximated as originated from a quadrupole source and truncated to Newtonian order, its Fourier transform can be
+	https://arxiv.org/pdf/2201.05626.pdf#page=6&search=ligo%20virgo ; Advanced LIGO, and the design sensitivity curves for == LISA and DECIGO [46–48]. We compute the SNR at
+	https://arxiv.org/pdf/2201.05626.pdf#page=7&search=ligo%20virgo ; be visible by diﬀerent observatories. While LIGO can == observe only the mL ∈ 0.01 − 1 GeV, mH ∈ 0.1 − 3 GeV
+	https://arxiv.org/pdf/2201.05626.pdf#page=7&search=ligo%20virgo ; mL ∼ 10−6 − 0.01 GeV, mH ∼ 10−4 − 1 GeV regime, encompassing the light-light and SM cases, and nicely complimenting the LIGO region. Finally DECIGO would be == able to explore below 10−6 GeV(10−4 GeV) and up to
+	https://arxiv.org/pdf/2201.05626.pdf#page=7&search=ligo%20virgo ; 1 GeV(30 GeV) in mL (mH ) space, verifying LIGO/LISA == results and even including the light-heavy cases.
+	https://arxiv.org/pdf/2201.05626.pdf#page=7&search=ligo%20virgo ; DL = {100, 250, 450}Mpc (lighter to darker) using design sensitivity curves for LIGO, LISA and DECIGO [46–48]. Clearly, == the diﬀerent detectors will probe diﬀerent regions of the parameter space in a complementary fashion and combined,
+	https://arxiv.org/pdf/2201.05626.pdf#page=7&search=ligo%20virgo ; LIGO and LISA will probe much of the mL ∼ 10−3 − 1 GeV, == mH ∼ 10−4 − 3 GeV parameter space.
+	https://arxiv.org/pdf/2201.05626.pdf#page=8&search=ligo%20virgo ; gravitational wave observatories would probe diﬀerent regions of the space (Figure 4). For example, LIGO should == be able to detect mergers of high-compactness, lowermass dark white dwarfs corresponding to a dark light
+	https://arxiv.org/pdf/2201.05626.pdf#page=9&search=ligo%20virgo ; rates from LIGO observations should be tractable, assuming the current state of nondetection holds. Likewise, == identifying a particular merger as a possible dark white
+9	https://arxiv.org/pdf/2201.05866.pdf#page=6&search=ligo%20virgo ; LIGO == 
+10	https://arxiv.org/pdf/2201.06196.pdf#page=1&search=ligo%20virgo ; be used to constrain the merger rate as function of redshift and masses. We study advanced LIGO (aLIGO) and == Einstein Telescope (ET) as two representatives for the 2nd and 3rd generation GW observatories. We also simulate the
+	https://arxiv.org/pdf/2201.06196.pdf#page=1&search=ligo%20virgo ; peak. With the LIGO catalogue, the parametric Bayesian method can still give some constraints on the merger rate == 
+	https://arxiv.org/pdf/2201.06196.pdf#page=2&search=ligo%20virgo ; function of BH can be constrained by GW observations using advanced LIGO (aLIGO) and ET. The cosmic merger == 
+	https://arxiv.org/pdf/2201.06196.pdf#page=2&search=ligo%20virgo ; LIGO == 
+	https://arxiv.org/pdf/2201.06196.pdf#page=3&search=ligo%20virgo ; Fig. 2. LIGO 10 years’ catalogue ==  Black dashed lines are
+	https://arxiv.org/pdf/2201.06196.pdf#page=4&search=ligo%20virgo ; with ET observation compared to LIGO, and 2) ==  The catalogue observed by ET covers larger redshift and mass ranges
+	https://arxiv.org/pdf/2201.06196.pdf#page=4&search=ligo%20virgo ; than that of LIGO. For half-ET and ET, at low red-shift == and high mass, both detectors result in a similar number
+	https://arxiv.org/pdf/2201.06196.pdf#page=4&search=ligo%20virgo ; LIGO’s catalogue is z ∼ 1.5, while R(z) can still be constrained for z > 1.5, and even be more stringent towards == larger red-shift. This constraint on R(z) at large redshift
+	https://arxiv.org/pdf/2201.06196.pdf#page=5&search=ligo%20virgo ; function (µ, c, γ, middle and right panel). Blue markers correspond to 10 years observation with LIGO; Green markers correspond == to 1 month observation with half-ET, and orange markers correspond to 1 month observation with ET. The red cross in each panel
+	https://arxiv.org/pdf/2201.06196.pdf#page=6&search=ligo%20virgo ; In ﬁgures 8 and 10 we plot the R(z) and R(m1 ) reconstructed with equations 10 and 11 from the synthetic LIGO, == ET and half-ET catalogues. The shaded areas are the 95%
+	https://arxiv.org/pdf/2201.06196.pdf#page=6&search=ligo%20virgo ; We note in ﬁgure 8 that, for LIGO’s observation, the == obtained R(z) in z > 0.3 is an underestimate of the underlying model. This is not diﬃcult to understand, given
+	https://arxiv.org/pdf/2201.06196.pdf#page=6&search=ligo%20virgo ; that LIGO’s detectable range of BBH masses is increasingly incomplete towards higher redshift. An intuitive illustration is in Figure 9. There, we plot the two dimensional == merger rate density as function of m1 and z. The underlying black region marks the parameters space region where
+	https://arxiv.org/pdf/2201.06196.pdf#page=6&search=ligo%20virgo ; LIGO’s horizon. When ploting Figure 9, we set the cut at == D(z, m1 , m2 = m1 ) < 10−2 . We can see the fraction of the
+	https://arxiv.org/pdf/2201.06196.pdf#page=6&search=ligo%20virgo ; small masses cannot be detected with LIGO at higher redshift. == Similarly, in ﬁgure 10, we see R(m1 ) is deviating the
+	https://arxiv.org/pdf/2201.06196.pdf#page=6&search=ligo%20virgo ; model, we limit both the LIGO catalogue and the theory == in the range z < 0.6. Therefore, the meaning of R(m1 ) is
+	https://arxiv.org/pdf/2201.06196.pdf#page=6&search=ligo%20virgo ; in the parameters space that is not reachable by LIGO. == 
+11	https://arxiv.org/pdf/2201.06602.pdf#page=35&search=ligo%20virgo ; than considered in either LIGO or EHT contexts [70, 71], but has been chosen to illustrate == >
+12	https://arxiv.org/pdf/2201.06722.pdf#page=1&search=ligo%20virgo ; waves (GWs) by the LIGO collaboration [1, 2, 3] == marks the inauguration of a new era in observational astrophysics and cosmology1 . For the ﬁrst
+	https://arxiv.org/pdf/2201.06722.pdf#page=11&search=ligo%20virgo ; from binary merges detected at LIGO have typically |hµν | == 10−21 [4]. Thus the non-linear
+	https://arxiv.org/pdf/2201.06722.pdf#page=25&search=ligo%20virgo ; LIGO Scientific, == 
+	https://arxiv.org/pdf/2201.06722.pdf#page=25&search=ligo%20virgo ; stein, An analysis of the LIGO dis[1707.09914]. == covery based on Introductory Physics,
+13	https://arxiv.org/pdf/2201.06791.pdf#page=12&search=ligo%20virgo ; based upon work supported by NSF’s LIGO Laboratory == which is a major facility fully funded by the National
+	https://arxiv.org/pdf/2201.06791.pdf#page=12&search=ligo%20virgo ; Science Foundation. The authors are grateful for computational resources provided by the LIGO Laboratory == and supported by National Science Foundation Grants
+14	https://arxiv.org/pdf/2201.06923.pdf#page=1&search=ligo%20virgo ; latest LIGO datasets published by the LIGO Open Science Centre [56] [102] along with testing a == generalized approach for a non-scientiﬁc use-case, which has been demonstrated using the Tableau
+	https://arxiv.org/pdf/2201.06923.pdf#page=1&search=ligo%20virgo ; both on a store sales data and LIGO data. (2) These topological structures have emergent properties == that when evaluated and compared to, have the capacity to provide meaningful insights into the
+	https://arxiv.org/pdf/2201.06923.pdf#page=1&search=ligo%20virgo ; case study with LIGO data analysis, we recorded a high accuracy of compact binary classiﬁcations, == and a average similarity measure of BH-BH Mergers falling between the range of [0.9, 0.96] and
+	https://arxiv.org/pdf/2201.06923.pdf#page=2&search=ligo%20virgo ; on scientiﬁc (LIGO Open Science) [56] [102] and commercial (Tableau Superstore Sales) datasets, producing == 
+	https://arxiv.org/pdf/2201.06923.pdf#page=11&search=ligo%20virgo ; measures on the LIGO dataset.[102]Then for any such == dataset Di containing Mj measures to be accepted into
+	https://arxiv.org/pdf/2201.06923.pdf#page=14&search=ligo%20virgo ; cluster in our LIGO analysis. In the Tableau Super Store == Sales Dataset, we deﬁned a custom ontology that we
+	https://arxiv.org/pdf/2201.06923.pdf#page=18&search=ligo%20virgo ; LIGO data. These signatures would preserve the same == 
+	https://arxiv.org/pdf/2201.06923.pdf#page=20&search=ligo%20virgo ; 1. Since the initial analysis was done on LIGO == data, we decided to choose an unrelated and orthogonal dataset to prove that the core concepts
+	https://arxiv.org/pdf/2201.06923.pdf#page=25&search=ligo%20virgo ; Other use cases such as classiﬁcation also become possible. The classiﬁcation use case is used in LIGO (described below), which used R-K Diagrams to describe == Binary Merger Event Classiﬁcations. Since a pipeline
+	https://arxiv.org/pdf/2201.06923.pdf#page=25&search=ligo%20virgo ; Theory Analysis on a canonical and standard, nonscientiﬁc dataset. It proves our ﬁrst case of generalizability outside the initial models made for the LIGO == analysis.
+	https://arxiv.org/pdf/2201.06923.pdf#page=26&search=ligo%20virgo ; Case Study ==  LIGO Data Analysis
+	https://arxiv.org/pdf/2201.06923.pdf#page=26&search=ligo%20virgo ; on LIGO data, which would aid in the identiﬁcation == and classiﬁcation of Compact Binary Merger Events
+	https://arxiv.org/pdf/2201.06923.pdf#page=26&search=ligo%20virgo ; the LIGO Open Science Centre [56] [102] for the the == successful demonstration of our computational framework.This dataset was speciﬁcally chosen over other
+	https://arxiv.org/pdf/2201.06923.pdf#page=26&search=ligo%20virgo ; As mentioned in the previous section, the LIGO data was == divided into 2 parts for primary and secondary analysis.
+	https://arxiv.org/pdf/2201.06923.pdf#page=26&search=ligo%20virgo ; We can deﬁne Primary Analysis on LIGO data as follows ==  The Primary dataset consisted of strain data with
+	https://arxiv.org/pdf/2201.06923.pdf#page=26&search=ligo%20virgo ; LIGO data. == 
+	https://arxiv.org/pdf/2201.06923.pdf#page=26&search=ligo%20virgo ; • For the Advanced LIGO detectors, the calibration is valid above 10 Hz and below 5 kHz. == • The detectors also record hundreds of thousands of auxiliary channels, time series
+	https://arxiv.org/pdf/2201.06923.pdf#page=27&search=ligo%20virgo ; We can deﬁne Tertiary Analysis on LIGO data as the == data that is obtained from carrying our mathematical
+	https://arxiv.org/pdf/2201.06923.pdf#page=27&search=ligo%20virgo ; We can deﬁne Secondary Analysis on LIGO data as follows ==  The Secondary analysis was carried out on tabular
+	https://arxiv.org/pdf/2201.06923.pdf#page=27&search=ligo%20virgo ; left out of scope due to our focus on LIGO == data in the initial version of this computational
+	https://arxiv.org/pdf/2201.06923.pdf#page=27&search=ligo%20virgo ; • Hence based on the ontological clustering of dependent and independent clusters the R-K models pertaining to secondary analysis of LIGO == Data consisted of 4 independent clusters of
+	https://arxiv.org/pdf/2201.06923.pdf#page=27&search=ligo%20virgo ; nodes of of R-K diagrams on LIGO data would be represented by the binary-merger event label e.g. GW150914 == 27
+	https://arxiv.org/pdf/2201.06923.pdf#page=28&search=ligo%20virgo ; foundation for each R-K Diagram in this LIGO data == analysis case study.
+	https://arxiv.org/pdf/2201.06923.pdf#page=28&search=ligo%20virgo ; Figure 29 ==  R-K Pipeline Modiﬁcations for LIGO
+	https://arxiv.org/pdf/2201.06923.pdf#page=28&search=ligo%20virgo ; We ingested the secondary data into the pipeline and processed. In future versions of the LIGO R-K Pipeline, the == process is intended to be much more elaborate, and eventually involving Bayesian Parameter Estimation over
+	https://arxiv.org/pdf/2201.06923.pdf#page=28&search=ligo%20virgo ; Figure 30 ==  R-K Pipeline Modiﬁcations for LIGO
+	https://arxiv.org/pdf/2201.06923.pdf#page=29&search=ligo%20virgo ; Figure 31 ==  Raw Data Strain from LIGO
+	https://arxiv.org/pdf/2201.06923.pdf#page=29&search=ligo%20virgo ; Advanced LIGO detectors are currently quantum noise == limited, and their noise curves are dominated by shot
+	https://arxiv.org/pdf/2201.06923.pdf#page=30&search=ligo%20virgo ; Figure 32 ==  LIGO Spectrograms with Q Transformed
+	https://arxiv.org/pdf/2201.06923.pdf#page=31&search=ligo%20virgo ; using established secondary data from LIGO, thereby == establishing the validity of this technique as shown in
+	https://arxiv.org/pdf/2201.06923.pdf#page=32&search=ligo%20virgo ; note that the current version of the LIGO R-K pipeline == does not address the computation of posterior probabilities and Bayesian parameter estimates from Primary
+	https://arxiv.org/pdf/2201.06923.pdf#page=32&search=ligo%20virgo ; The we have built an ontology of from the LIGO data == based on dependent and independent variables pertaining to the various intrinsic physical parameters of the
+	https://arxiv.org/pdf/2201.06923.pdf#page=33&search=ligo%20virgo ; a limited set of parameters from the source data (LIGO == or otherwise) for the hierarchical feature extraction and
+	https://arxiv.org/pdf/2201.06923.pdf#page=33&search=ligo%20virgo ; on LIGO data. == 
+	https://arxiv.org/pdf/2201.06923.pdf#page=34&search=ligo%20virgo ; The modiﬁed R-K pipeline for LIGO comes with a builtin visualizer and a GUI to track each step of the process == from loading primary/raw strain data all the way up to
+	https://arxiv.org/pdf/2201.06923.pdf#page=38&search=ligo%20virgo ; from Multi-messenger data-streams and future advancements in LIGO. == 6.9
+	https://arxiv.org/pdf/2201.06923.pdf#page=38&search=ligo%20virgo ; LIGO Analysis Pipeline which has been published by == Abbott et.al. [21] as shown in the diagram below.
+	https://arxiv.org/pdf/2201.06923.pdf#page=38&search=ligo%20virgo ; of the LIGO Analysis Pipeline with Topology, Graph == Theory & Machine Learning driven components of the
+	https://arxiv.org/pdf/2201.06923.pdf#page=38&search=ligo%20virgo ; represent the existing components of the LIGO Analysis == pipeline as established by Abbott et.al. However, the
+	https://arxiv.org/pdf/2201.06923.pdf#page=38&search=ligo%20virgo ; Thus, the LIGO case study has clearly demonstrated the == validity of this novel approach to Topological Graph Theory using R-K diagrams by providing a robust, ﬂexible
+	https://arxiv.org/pdf/2201.06923.pdf#page=39&search=ligo%20virgo ; done so both on a store sales data and LIGO data. (2) == These topological structures have emergent properties
+	https://arxiv.org/pdf/2201.06923.pdf#page=39&search=ligo%20virgo ; A specialised scientiﬁc implementation on LIGO Open == Science Gravitational Wave data. This resulted in in
+	https://arxiv.org/pdf/2201.06923.pdf#page=39&search=ligo%20virgo ; with LIGO data analysis, we recorded a high accuracy == 
+
+14 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	?subject=Your%20preprint%20https://arxiv.org/pdf/2005.02469.pdf
+2	fakhry@sbu.ac.ir?subject=Your%20preprint%20https://arxiv.org/pdf/2106.06265.pdf
+3	sxyi@ihep.ac.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2106.13662.pdf
+4	?subject=Your%20preprint%20https://arxiv.org/pdf/2107.00536.pdf
+5	?subject=Your%20preprint%20https://arxiv.org/pdf/2110.06968.pdf
+6	kumarbh@nitrkl.ac.in?subject=Your%20preprint%20https://arxiv.org/pdf/2112.14198.pdf
+7	yingqin2013@hotmail.com?subject=Your%20preprint%20https://arxiv.org/pdf/2201.05611.pdf
+8	mzr55@psu.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2201.05626.pdf
+9	?subject=Your%20preprint%20https://arxiv.org/pdf/2201.05866.pdf
+10	sxyi@ihep.ac.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2201.06196.pdf
+11	schuot@physics.mcgill.ca?subject=Your%20preprint%20https://arxiv.org/pdf/2201.06602.pdf
+12	?subject=Your%20preprint%20https://arxiv.org/pdf/2201.06722.pdf
+13	?subject=Your%20preprint%20https://arxiv.org/pdf/2201.06791.pdf
+14	ar505@sussex.ac.uk?subject=Your%20preprint%20https://arxiv.org/pdf/2201.06923.pdf
+
+
+33 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2005.02469.pdf
+2	https://arxiv.org/pdf/2103.08510.pdf
+3	https://arxiv.org/pdf/2106.06265.pdf
+4	https://arxiv.org/pdf/2106.08464.pdf
+5	https://arxiv.org/pdf/2106.13662.pdf
+6	https://arxiv.org/pdf/2107.00536.pdf
+7	https://arxiv.org/pdf/2107.12358.pdf
+8	https://arxiv.org/pdf/2110.06968.pdf
+9	https://arxiv.org/pdf/2110.12500.pdf
+10	https://arxiv.org/pdf/2110.13508.pdf
+11	https://arxiv.org/pdf/2111.06388.pdf
+12	https://arxiv.org/pdf/2112.05669.pdf
+13	https://arxiv.org/pdf/2112.14198.pdf
+14	https://arxiv.org/pdf/2201.01498.pdf
+15	https://arxiv.org/pdf/2201.05611.pdf
+16	https://arxiv.org/pdf/2201.05626.pdf
+17	https://arxiv.org/pdf/2201.05641.pdf
+18	https://arxiv.org/pdf/2201.05866.pdf
+19	https://arxiv.org/pdf/2201.06113.pdf
+20	https://arxiv.org/pdf/2201.06186.pdf
+21	https://arxiv.org/pdf/2201.06196.pdf
+22	https://arxiv.org/pdf/2201.06234.pdf
+23	https://arxiv.org/pdf/2201.06461.pdf
+24	https://arxiv.org/pdf/2201.06489.pdf
+25	https://arxiv.org/pdf/2201.06602.pdf
+26	https://arxiv.org/pdf/2201.06713.pdf
+27	https://arxiv.org/pdf/2201.06722.pdf
+28	https://arxiv.org/pdf/2201.06733.pdf
+29	https://arxiv.org/pdf/2201.06754.pdf
+30	https://arxiv.org/pdf/2201.06767.pdf
+31	https://arxiv.org/pdf/2201.06791.pdf
+32	https://arxiv.org/pdf/2201.06923.pdf
+33	https://arxiv.org/pdf/2201.06988.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, in line....
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

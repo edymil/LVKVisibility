@@ -1,0 +1,343 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Received: from AM0PR0302MB3234.eurprd03.prod.outlook.com (2603:10a6:208:f::15)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Thu, 3 Feb 2022
+ 06:42:52 +0000
+Received: from AS9PR06CA0224.eurprd06.prod.outlook.com (2603:10a6:20b:45e::21)
+ by AM0PR0302MB3234.eurprd03.prod.outlook.com (2603:10a6:208:f::15) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4951.12; Thu, 3 Feb
+ 2022 06:42:50 +0000
+Received: from HE1EUR01FT060.eop-EUR01.prod.protection.outlook.com
+ (2603:10a6:20b:45e:cafe::b1) by AS9PR06CA0224.outlook.office365.com
+ (2603:10a6:20b:45e::21) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4951.11 via Frontend
+ Transport; Thu, 3 Feb 2022 06:42:50 +0000
+Authentication-Results: spf=pass (sender IP is 209.85.221.47)
+ smtp.mailfrom=gmail.com; dkim=fail (signature did not verify)
+ header.d=gmail.com;dmarc=pass action=none header.from=gmail.com;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.221.47 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.221.47; helo=mail-wr1-f47.google.com;
+Received: from mail-wr1-f47.google.com (209.85.221.47) by
+ HE1EUR01FT060.mail.protection.outlook.com (10.152.0.249) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4951.12 via Frontend Transport; Thu, 3 Feb 2022 06:42:50 +0000
+Received: by mail-wr1-f47.google.com with SMTP id l25so2926213wrb.13
+        for <giuseppe.cabras@uniud.it>; Wed, 02 Feb 2022 22:42:50 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=message-id:from:date:to:to:to:to:to:to:to:subject;
+        bh=dOv8VVPmENVOKLq/z3iFhs8/cnTDxeXAtLJL0dlBb64=;
+        b=XiKO9mdbYYZOkw+oTDvSLMwODRWQ3zJqlL1MoRlPu4hDQkMafS+hGr7v1Ael4u9QTZ
+         NqV00tpfFVBGDCueVoGlXJ0bff2mc6YbXG4YqihDKlqb9sBzWSTQs8K2jY/2ER5QkbM/
+         XV7NtolhJAvuWo96KXT2LdAf+HhDrOUsHffR/ibV7yOT+NbtCHJIpLteSSycMuwP/+6o
+         oYqaVwzegpTR+swCx63ePrNzrLwFgIxRHGiMfrNHkHPzxbxsKpmGLKc4PNM3VqNHMxL+
+         mc4mdeOPyAB+3AwExV+dF7r+qIyGszMojxAniBwmzk9lm1Y0cx3NfBSzXjdcM3P/pX7f
+         j6Fg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:message-id:from:date:to:to:to:to:to:to:to
+         :subject;
+        bh=dOv8VVPmENVOKLq/z3iFhs8/cnTDxeXAtLJL0dlBb64=;
+        b=pZbH/T0ox8poYPYT2x5wB3W3zb1cHEChHj5pysx+OKzqM841ecxW1JHD4Jnl0EaQ61
+         aL4nUoaQcVENzIxOs/809FnHQCDmFfVwpK0cgnpX4vJJKRVYNMzebkSXxvmpt/RIspcz
+         V8ep67veI1vTe7tu9uA6Kyzpu1a0OBBN6pZ72Ype+1SKpRyHy8REjY79GYNkOgCNIelj
+         ULcJgE8SP0YfeHJg094jvLETEvg9j0xtKZNfGzh3tHHAZgk7c8h07KxZRu7VwNrZEMkU
+         V6UiVPfkSFl4lznU9qjQAwypyJsFkfjnLIwtv1UL9NR85eFvtFGGk8ZKuO5eB2hj8tV3
+         mXGw==
+X-Gm-Message-State: AOAM533kX3RPk3tU/HEZE8in943hs/HQIT4aiEg0xBnRghvljF5H2V0V
+	8PH9IbGJ+zguhCpVhnPdnAcSXc83ug8=
+X-Google-Smtp-Source: ABdhPJwPyAS2FvWQWUO5N8bURyjfl+memApW9+xOs3jE0SbMovXa3iL3RvYHNiSjSgcJ/7ztcBjSfQ==
+X-Received: by 2002:a5d:4943:: with SMTP id r3mr27427379wrs.130.1643870568966;
+        Wed, 02 Feb 2022 22:42:48 -0800 (PST)
+Return-Path: giuseppe.cabras@gmail.com
+Received: from lugh.fisica.uniud.it (lugh.fisica.uniud.it. [158.110.40.216])
+        by smtp.gmail.com with ESMTPSA id e15sm4225417wrg.6.2022.02.02.22.42.47
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 02 Feb 2022 22:42:48 -0800 (PST)
+Message-ID: <61fb7968.1c69fb81.245f8.0c1f@mx.google.com>
+From: giuseppe.cabras@gmail.com
+X-Google-Original-From: gc@lugh.fisica.uniud.it
+Received: by lugh.fisica.uniud.it (sSMTP sendmail emulation); Thu,  3 Feb 2022 07:44:12 +0100
+Date: Thu,  3 Feb 2022 07:44:12 +0100
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>
+Subject: arxiv-astro-phORgr-qc-new-alerts Thu Feb 3 07:30:04 CET 2022
+X-MS-Exchange-Organization-ExpirationStartTime: 03 Feb 2022 06:42:50.2372
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 60de347c-1805-4230-8634-08d9e6e065aa
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+Content-Type: text/plain
+X-MS-Exchange-Organization-AuthSource:
+ HE1EUR01FT060.eop-EUR01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 60de347c-1805-4230-8634-08d9e6e065aa
+X-MS-TrafficTypeDiagnostic: AM0PR0302MB3234:EE_
+X-MS-Oob-TLC-OOBClassifiers: OLM:9508;
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:209.85.221.47;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SFE;H:mail-wr1-f47.google.com;PTR:mail-wr1-f47.google.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 03 Feb 2022 06:42:50.2372
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 60de347c-1805-4230-8634-08d9e6e065aa
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-AuthSource:
+ HE1EUR01FT060.eop-EUR01.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM0PR0302MB3234
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.7148903
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4951.011
+X-Microsoft-Antispam-Mailbox-Delivery:
+	wl:1;pcwl:1;ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(810001)(250001)(410001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?anA5MFJSWUFsWlh0cXBtWW1Qc21Ydm16alB0MzVnU0JGdE5ZTzZjUHdVN1FD?=
+ =?utf-8?B?aVFod3dhN0dXU0lqcWRxMGhFa01pTE9XWlBTNFYyNjgzd3NMSEIrKzdkbWww?=
+ =?utf-8?B?WFZYQmEzVUpuc2xqemhLYXJnOElYRWk2SVZ5Myt2M0s4WENkci9lVkt2UlpJ?=
+ =?utf-8?B?NVVqdjlGMkNZdXFVSGZmdUhMakFSSTJva0k0VDFqZUxYQnA4ZlJBVFFlemR3?=
+ =?utf-8?B?ZUZpQjZGN0dmYXJkMzk4Rnd2Q21XQ1QycUVIN0F0N1ROdzZmNzRNZkZJNGRH?=
+ =?utf-8?B?bG1aTmFDa3AwbEt0Z0dabVU3YWhmVWFwaFdESGRCcVpPU09aT2FVemxsaFE5?=
+ =?utf-8?B?ZmlmT2NsdzFBRmtSenZiNTVXU3JNMkFDanl2TSt0VTlZUWZSZkJsd203eTlZ?=
+ =?utf-8?B?Q1RFektqWmJZaEFOOS8yT1IzWGcrUXc0aWJjRllZK3lPQ3JZaW1hYlpGbzNB?=
+ =?utf-8?B?L285S3E2VVBJakR4Wld1OXF2d1h0U0Ftdlg4S0NrdWRJcVdYMW9OS1FFWnBM?=
+ =?utf-8?B?SGk2RVZPQlh0WE4rOWt1KzR3M2t2YmVSYTREMlMwU1A5dHFkaU9wRnpKYzI0?=
+ =?utf-8?B?UmU2eVlrb3JUMEpsSXlJVm1jajJRdlVFekN5aWNpVlM1NGlCRWpHY1dLeHo0?=
+ =?utf-8?B?SHFhSjRHNmkrSUlBUVVrdnZ1djRMK3gvQ3hnSnNDajZnTzRRRTg1b1NUSEp2?=
+ =?utf-8?B?eXA0K0lBd2IrRlozWmt0b2RVcC8yc2tBVVZtWW9ZNzdidGNGOHY0RUFxS1lB?=
+ =?utf-8?B?bCtXdlpQNEdIYkVObWJYYkNJNzloTmVFZEFKa2RmMmlldjlBK0RJV3VDQ016?=
+ =?utf-8?B?WWZOVXBxeGxxdmRxZ2NUNkFVUkt0dEk0eTBLb21BMzFuaEpHZjg0b2pNZko1?=
+ =?utf-8?B?eVNzMVUzYmppOHd6TVZqOUJxeWh0SENjVml4ZDE0a2xYWUMveGtvRXFqTnJa?=
+ =?utf-8?B?RHFUVmRaTmJFZ2VhWG5iL284Y2RRU2FxaW9iNVpmcEJRMjNuZ0doVUpIaGto?=
+ =?utf-8?B?Q3hXbWp5S1AxZlRSOXBYZGtub1BieHIxQW1wZVpaVWtXZExUekY5OWpIZDNu?=
+ =?utf-8?B?T1c0SzZGUk1INy8xalZUNTBsTE5mSnhkZ2NuTXdhMVFaS29pUk9qUk4zaFhQ?=
+ =?utf-8?B?ZmJUYVFVZHFYNWJOakNEVDdod21ZaXF4RW0zNlpQOHl2elQ4YzdrQ0JoVVBh?=
+ =?utf-8?B?MHlBeWJYMzhsSGpSblFBUG9FY1JkMVowR1hXbWlZRXl0WG1nZGREMTBCNFEv?=
+ =?utf-8?B?RUQ1eUoySG5WWXBsT2Z2RDNGaU9hMVF4TzBod0FnOTNaQTFGTkZheWsyZHkw?=
+ =?utf-8?B?czVKeHUxVzNvZEZrc2RMZnlreEc5WFlBR0IzVHdKYmIzNFVKcmkwaHc0RUU1?=
+ =?utf-8?B?QjMyYlhVamN4RGJ0NVdNTnZsSW9tRmJMUmpVcUtiRzJJU0JLcndUV0lmZUFv?=
+ =?utf-8?B?NEYyZ3EzMHZEckU1SGd1TUhIVHJqZFgwa3RqU29CUXYrcG9RZzhSMHI2OFo1?=
+ =?utf-8?B?eGZFdm0vaHZqTDE2MlptM1lqN2s3UUswU2pPV1FtZlg0bkY1MXVmaElWTUhz?=
+ =?utf-8?B?L2czcWFOaWpoSE0xUVYyMkpZY1VxUk5yUFRrQlNxRGhabHZBYjRrbWhtbWVk?=
+ =?utf-8?B?NWFTK3lhRGVzUktyQmNqMkRBRGlQSmFFS1BqM3VVU0hYMEJHck9jaWZ5NXQx?=
+ =?utf-8?B?TnllZ1czcytoTnYrOGUvV3E1bXBhMXNDQU0weHB4M2tGc0llNFNFNStaUE15?=
+ =?utf-8?B?djVxa0RnQTFseVJYVDdCWm9iYXBWM0dxOVF2dE5ONldyWTF5ZkQrRXNDYUZm?=
+ =?utf-8?B?SFhOWU5CQnhoNzV0bDRXZjFaQXZnbExPek1MZlZEbHBBTmZxUzFQQXMvNGUx?=
+ =?utf-8?B?ZWFhSW5rbUUzbWhpNncreXFxOUhmZWVQMndBNUNoZHU2UGFKVTdpRDVWeFor?=
+ =?utf-8?B?RlY4azdreS94YVBFNllrMHBmYTJpYjdRV1d0NDZaVjhrRi9TaFBvbGlJZmdq?=
+ =?utf-8?B?d044WkJTeXZoNHRUOGpqakF0MnF4R1lOYTRsazNsdWVsME0xaDVEaHFzVFNn?=
+ =?utf-8?B?dy9PRnIvUUhoeEtEMmpKUmxFOGM3UGdrT3JndCtHN0FjeEhDOUVpOFlBTUlV?=
+ =?utf-8?B?N0M0c2tMaFRQNGxJdlpGYzIxNHZYaU1nd2xmWVRNZXN1dkc0NGRTOVhzZzVI?=
+ =?utf-8?B?MXpCQ1NVYUxnSjFUeitYK3RmTzBoTkp2R1BiVTU0bEtzcjMrWVpKLy9lUk9L?=
+ =?utf-8?B?QTlJcnNZdDVyUkJkQkZZdkczb0lxSzZKb2dRd1dTSGJNSXRXeHdpVUdINmRJ?=
+ =?utf-8?B?cWxHLzF3anNnZlJJQU5jYk5zVzJHMGZZQk9UQTBZOVZKUWJuSE1BSW85Q1Mx?=
+ =?utf-8?B?WWxCNmo5akV5dnZwVXRDRU5Ha0JrbGhlUnZqNVNORHY1WVdZWjNTUGIxOUxy?=
+ =?utf-8?B?a0E0MmFpSzJ5R3VzY0xPRHdKNkpmVEJTZTZNQ2xjRkVTWGxwQzNRNmxLSzhK?=
+ =?utf-8?B?Z1ZmNlhQQlM4SkFTNXhhMjdIeU9WeTVFUW5Ld3NoWnpScWtLWHVaejBKKzh2?=
+ =?utf-8?Q?PVigOsoc5dFPinVUHLg0A2obq4QuVi?=
+MIME-Version: 1.0
+
+n
+<div class="list-dateline">Submissions received from  Tue  1 Feb 22  to  Wed  2 Feb 22, announced Thu,  3 Feb 22</div>
+135 new astro-phORgr-qc preprint found (with repetitions)
+113 new astro-phORgr-qc pdf processed
+547 occurrences of LIGO word
+237 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2010.09100.pdf#page=1&search=ligo%20virgo ; in the Laser Interferometer Gravitational-Wave Observatory (LIGO) photon shot noise imposes a fundamental limit == on the sensitivity of the km-length interferometers; but it was possible to exploit quantum interactions to overcome
+2	https://arxiv.org/pdf/2103.08520.pdf#page=5&search=ligo%20virgo ; three observing runs, as well as that from LIGO’s O1+O2 == analysis alone for comparison. The Bayesian upper limits
+	https://arxiv.org/pdf/2103.08520.pdf#page=6&search=ligo%20virgo ; the largest to smallest eigenvalue of the matrix. The normalized eigenvalues of Γµν for the single LIGO baseline == (HL) and for the three-baseline conﬁguration (HLV) are
+	https://arxiv.org/pdf/2103.08520.pdf#page=6&search=ligo%20virgo ; yet comparable to that of its LIGO counterparts. However, the new network has improved in the α = 3 case, == where the smallest eigenvalue has increased by about two
+	https://arxiv.org/pdf/2103.08520.pdf#page=9&search=ligo%20virgo ; the construction and operation of the LIGO Laboratory == and Advanced LIGO as well as the Science and Technology Facilities Council (STFC) of the United Kingdom, the Max-Planck-Society (MPS), and the State of
+	https://arxiv.org/pdf/2103.08520.pdf#page=9&search=ligo%20virgo ; and Advanced LIGO as well as the Science and Technology Facilities Council (STFC) of the United Kingdom, the Max-Planck-Society (MPS), and the State of == Niedersachsen/Germany for support of the construction
+	https://arxiv.org/pdf/2103.08520.pdf#page=9&search=ligo%20virgo ; of Advanced LIGO and construction and operation of == the GEO600 detector. Additional support for Advanced
+	https://arxiv.org/pdf/2103.08520.pdf#page=9&search=ligo%20virgo ; LIGO was provided by the Australian Research Council. The authors gratefully acknowledge the Italian Istituto Nazionale di Fisica Nucleare (INFN), the French == Centre National de la Recherche Scientiﬁque (CNRS)
+3	https://arxiv.org/pdf/2104.03961.pdf#page=1&search=ligo%20virgo ; theoretical ﬁndings are corroborated by experiments using real LIGO data and synthetic injections, == where our proposed methods signiﬁcantly outperform matched ﬁltering at false positive rates above
+	https://arxiv.org/pdf/2104.03961.pdf#page=2&search=ligo%20virgo ; to computationally eﬃcient signal detection. We conducted experiments using real LIGO data [92] in order == to demonstrate the feasibility and power of neural networks in comparison to matched ﬁltering, where we validate our ﬁndings empirically that neural networks via
+	https://arxiv.org/pdf/2104.03961.pdf#page=2&search=ligo%20virgo ; we present experimental results on real LIGO data and == synthetic injections. We discuss some further implications of this work in Section VII, and conclude in Section
+	https://arxiv.org/pdf/2104.03961.pdf#page=9&search=ligo%20virgo ; more negative examples than positive examples. We address this issue by generating our positive training examples by injecting synthetic waveforms into (real) LIGO == noise strains. Below, we describe two diﬀerent training
+	https://arxiv.org/pdf/2104.03961.pdf#page=9&search=ligo%20virgo ; sγ i + z i , where z i is observed LIGO noise strain. We == solve the following optimization problem
+	https://arxiv.org/pdf/2104.03961.pdf#page=10&search=ligo%20virgo ; synthetic waveforms into LIGO noise strains [92], which == we elaborate below.
+	https://arxiv.org/pdf/2104.03961.pdf#page=10&search=ligo%20virgo ; For LIGO noise data, we use the L1 strain from LIGO == O2 run between August 1 and August 25, 2017, with
+	https://arxiv.org/pdf/2104.03961.pdf#page=10&search=ligo%20virgo ; although the templates are not chosen uniformly in actual LIGO deployment [42, 43, 114–116], we make this == 
+	https://arxiv.org/pdf/2104.03961.pdf#page=13&search=ligo%20virgo ; In this paper, we highlighted the idea that matched ﬁltering currently applied by LIGO is formally equivalent == to a particular neural network, which can be deﬁned analytically in closed form. We also modeled the LIGO gravitational wave search as the parametric signal detection
+	https://arxiv.org/pdf/2104.03961.pdf#page=13&search=ligo%20virgo ; to a particular neural network, which can be deﬁned analytically in closed form. We also modeled the LIGO gravitational wave search as the parametric signal detection == problem, and illustrated the suboptimality of matched
+	https://arxiv.org/pdf/2104.03961.pdf#page=13&search=ligo%20virgo ; experiments using LIGO strain data from O2 and synthetic waveform injections, and showed that our trained == network can achieve uniformly better performance than
+	https://arxiv.org/pdf/2104.03961.pdf#page=13&search=ligo%20virgo ; data-driven methods such as deep learning and those detection methods currently in use in LIGO, and explore == the possibility of incorporating them into the gravitational wave search of LIGO, as well as broader areas of
+	https://arxiv.org/pdf/2104.03961.pdf#page=13&search=ligo%20virgo ; the possibility of incorporating them into the gravitational wave search of LIGO, as well as broader areas of == scientiﬁc discovery. In the future work, we aim to explore
+	https://arxiv.org/pdf/2104.03961.pdf#page=14&search=ligo%20virgo ; The authors acknowledge the LIGO Laboratory and Scientiﬁc Collaboration for the detectors, data, and the == game changing computing resources (National Science
+	https://arxiv.org/pdf/2104.03961.pdf#page=14&search=ligo%20virgo ; Wave Open Science Center [92, 118] (https == //www.gwopenscience.org/ ), a service of LIGO Laboratory, the
+	https://arxiv.org/pdf/2104.03961.pdf#page=14&search=ligo%20virgo ; Max-Planck-Society (MPS), and the State of Niedersachsen/Germany for support of the construction of Advanced LIGO and construction and operation of the == GEO600 detector. Additional support for Advanced
+4	https://arxiv.org/pdf/2110.05507.pdf#page=3&search=ligo%20virgo ; a detector-frame quantity. For current LIGO events with == fref = 11, 20 Hz, we ﬁnd 6M r 25M , which is in the
+5	https://arxiv.org/pdf/2112.12159.pdf#page=1&search=ligo%20virgo ; Bound on Quantum Fluctuations in Gravitational Waves from LIGO == Mark P. Hertzberg∗ and Jacob A. Litterer†
+	https://arxiv.org/pdf/2112.12159.pdf#page=1&search=ligo%20virgo ; We then constrain its amplitude with LIGO observations. Using existing LIGO data, we place a == bound on the (exponential) squeezing parameter of the quantum gravitational wave state of ζ < 41.
+	https://arxiv.org/pdf/2112.12159.pdf#page=1&search=ligo%20virgo ; A. Constraints from LIGO == B. Temporal Correlations
+6	https://arxiv.org/pdf/2202.00700.pdf#page=15&search=ligo%20virgo ; and dot–dashed). The current bounds from LIGO (O3) are shown in solid with a shaded region. == The experimental bounds are derived from the power–law integrated sensitivity curves [81] in terms
+	https://arxiv.org/pdf/2202.00700.pdf#page=17&search=ligo%20virgo ; region by using the log-uniform prior. The LIGO O3 constraint means that the entire UV == tails in the range of (4.7) would have been ruled out for the USR spectrum with a pivot
+7	https://arxiv.org/pdf/2202.00735.pdf#page=1&search=ligo%20virgo ; The ﬁrst direct detection of gravitational waves (GWs) from the LIGO interferometers [1], followed by tens of == other events [2–4], opened a new window into the early and late universe and oﬀered a powerful tool to test theories
+	https://arxiv.org/pdf/2202.00735.pdf#page=8&search=ligo%20virgo ; was shown that the merger rate constraints on the abundance of dark matter PBHs, imposed by LIGO, are evaded == entirely [56, 57].
+	https://arxiv.org/pdf/2202.00735.pdf#page=8&search=ligo%20virgo ; is sensitive to only a single polarisation mode. Moreover, even if the twin LIGO detectors were more favorablyoriented, one needs generically a network of at least six detectors to uniquely determine the polarisation content of a == 
+	https://arxiv.org/pdf/2202.00735.pdf#page=9&search=ligo%20virgo ; non-tensorial with Advanced LIGO. Note that Ωgw does not necessarily have the interpretation of an energy density == in modiﬁed theories of gravity; one may think of it as a measure of the strain power in each polarisation. It was
+	https://arxiv.org/pdf/2202.00735.pdf#page=9&search=ligo%20virgo ; also shown [63] that after three years of observation at design sensitivity, Advanced LIGO will be able to limit the == (T)
+	https://arxiv.org/pdf/2202.00735.pdf#page=9&search=ligo%20virgo ; is detected, Advanced LIGO alone will not be able to precisely determine the parameters of the tensor, vector, and/or == scalar components simultaneously due to large degeneracies between modes. It is worth noting that while addition of
+	https://arxiv.org/pdf/2202.00735.pdf#page=12&search=ligo%20virgo ; [18]. It was shown that Advanced LIGO at design sensitivity, can potentially exclude axions wuth mass ma 10−11 eV == and decay constant fa ∼ (1014 − 1017 ) GeV.
+8	https://arxiv.org/pdf/2202.00823.pdf#page=6&search=ligo%20virgo ; amplitude uncertainty induced by errors in the goldstandard integrating sphere [21, 22, 36, 37] used to calibrate all other PCALs in the LIGO detectors. This would == be perfectly degenerate with the luminosity distance to
+9	https://arxiv.org/pdf/2202.00847.pdf#page=1&search=ligo%20virgo ; Review of the Advanced LIGO gravitational wave observatories == leading to observing run four
+	https://arxiv.org/pdf/2202.00847.pdf#page=1&search=ligo%20virgo ; Review of the Advanced LIGO == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=1&search=ligo%20virgo ; LIGO, Massachusetts Institute of Technology, Cambridge, MA 02139, USA == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=1&search=ligo%20virgo ; detected. As of 2021, ninety conﬁdent gravitational wave detections have been made by the LIGO == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=1&search=ligo%20virgo ; LIGO detectors work, including their optical conﬁguration and lock acquisition procedure, discuss the == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=1&search=ligo%20virgo ; On September 14th, 2015, the Advanced LIGO detectors made the ﬁrst direct detection == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=1&search=ligo%20virgo ; Advanced LIGO. The Advanced LIGO detectors featured new technologies and new optical == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=1&search=ligo%20virgo ; Now, in the period between observing runs three and four, major infrastructure improvements known as the A+ upgrades are being installed at the LIGO detectors [10,11]. == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=1&search=ligo%20virgo ; These upgrades are focused on lowering the fundamental noise limit of the Advanced LIGO == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=1&search=ligo%20virgo ; Here we will review the design and performance of the Advanced LIGO detectors leading == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=1&search=ligo%20virgo ; LIGO optical conﬁguration and lock acquisition process. Section 4 will review the fundamental == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=1&search=ligo%20virgo ; limits of the Advanced LIGO detectors’ sensitivity, as well as the current achieved sensitivity. == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=2&search=ligo%20virgo ; Advanced LIGO interferometer. == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=3&search=ligo%20virgo ; 3. Advanced LIGO detectors == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=3&search=ligo%20virgo ; Each Advanced LIGO detector is a long-baseline laser interferometer with two 4 km long == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=3&search=ligo%20virgo ; The core of the Advanced LIGO detectors are dual-recycled, Fabry-Pérot, Michelson == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=3&search=ligo%20virgo ; with pre-stabilized laser light [32]. The entire LIGO optomechanical control system is based == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=3&search=ligo%20virgo ; In this section we will overview the Advanced LIGO optical conﬁguration, as well as == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=3&search=ligo%20virgo ; that make up the Advanced LIGO design. == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=4&search=ligo%20virgo ; Figure 1. Simpliﬁed optical layout of the LIGO detectors for the fourth observing run. The pre-stabilized == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=5&search=ligo%20virgo ; the LIGO detectors to the 4 kilometer scale. Maximizing the arm power Parm increases the == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=5&search=ligo%20virgo ; The Advanced LIGO recycling cavities are designed to be geometrically stable to better == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=6&search=ligo%20virgo ; Most often, in LIGO the detector bandwidth refers to the frequency at which the differential == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=6&search=ligo%20virgo ; Advanced LIGO, this is identical to twice the frequency at which the common arm (CARM) == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=6&search=ligo%20virgo ; the Newtonian calibrator will not be pursued by LIGO as a precision calibration instrument == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=11&search=ligo%20virgo ; Advanced LIGO design sensitivity == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=11&search=ligo%20virgo ; red represents the calibrated sensitivity to GWs. The dashed black curve is the Advanced LIGO design == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=11&search=ligo%20virgo ; Design sensitivity is the ultimate sensitivity Advanced LIGO is expected to achieve given == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=11&search=ligo%20virgo ; Figure 4 shows the Advanced LIGO design sensitivity as the black dashed curve [2,105]. == No squeezing is included in the design sensitivity curve. For design sensitivity, 125 watts of
+	https://arxiv.org/pdf/2202.00847.pdf#page=12&search=ligo%20virgo ; For LIGO test masses, the ﬂuctuating observable is the optic displacement due to dissipation from thermal excitations. The dominant source of mechanical loss, and thus thermal noise, == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=12&search=ligo%20virgo ; The actual LIGO coatings have more than a single layer, and their thermal noise properties == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=13&search=ligo%20virgo ; larger than LIGO optics can tolerate. Enormous effort is put into isolating the core optics from == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=13&search=ligo%20virgo ; Upper limits have been placed on Newtonian noise contributions to LIGO, but have never == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=14&search=ligo%20virgo ; This sets up the fundamental tradeoff involved in LIGO control loop design. Make the == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=14&search=ligo%20virgo ; LIGO controllers are designed to be overtly strong during the locking phase, to hold == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=14&search=ligo%20virgo ; 5. Current performance of the Advanced LIGO detectors == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=14&search=ligo%20virgo ; discuss the power budget and major technical limitations involved with high power interferometry, the status of squeezing in LIGO interferometers, and environmental disturbance == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=15&search=ligo%20virgo ; Advanced LIGO design sensitivity == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=15&search=ligo%20virgo ; O3 [8]. Only the measured O3 spectra includes squeezed light injection. The Advanced LIGO design == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=15&search=ligo%20virgo ; A common performance gauge for the LIGO interferometers is the binary neutron star == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=16&search=ligo%20virgo ; absorption found on the test masses. A full discussion of the point absorbers in LIGO can be == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=17&search=ligo%20virgo ; in LIGO during the ﬁrst three observing runs. Their deformation is visible on Hartmann == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=18&search=ligo%20virgo ; of the angular modes. In Advanced LIGO, the soft modes have been chosen to be statically == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=18&search=ligo%20virgo ; control loop. Optical torques have been observed in initial LIGO [28,30], and accounted for in == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=18&search=ligo%20virgo ; Advanced LIGO design [29]. == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=18&search=ligo%20virgo ; Frequency-independent squeezing was injected into both LIGO detectors for the duration of O3, reducing quantum shot noise and increasing the expected gravitational wave == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=18&search=ligo%20virgo ; into the quantum nature of the LIGO interferometers [73,74,148]. == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=18&search=ligo%20virgo ; A ﬁlter cavity is being installed at both LIGO sites to improve the quantum noise limit. == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=18&search=ligo%20virgo ; LIGO detectors will be published alongside this review [149]. == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=18&search=ligo%20virgo ; Every effort is made to isolate the LIGO optics from environmental noise. Environmental disturbances such as ground motion, acoustic noise, and magnetic noise can couple == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=19&search=ligo%20virgo ; the LIGO detectors during O1 and O2. For O3, a new seismic controls mode was implemented == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=19&search=ligo%20virgo ; LIGO detectors to remain locked through large earthquakes causing ground velocities up to == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=20&search=ligo%20virgo ; LIGO detectors to improve sensitivity as part of the A+ upgrades [10,11]. == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=20&search=ligo%20virgo ; While commissioning the LIGO detectors, the input laser power is maximized to reduce == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=21&search=ligo%20virgo ; about the events that created them. Advanced LIGO has already revolutionized our understanding of astrophysics and astronomy with 90 detections of gravitational waves. More == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=21&search=ligo%20virgo ; The Advanced LIGO detectors switch between periods of upgrades and installs, commissioning those upgrades to work as intended, and observation runs. O4 is scheduled to run for == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=21&search=ligo%20virgo ; one year of coincident observation time between the LIGO detectors, starting in December == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=21&search=ligo%20virgo ; Advanced LIGO’s success would not have been possible if not for the lessons learned == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=21&search=ligo%20virgo ; anticipated to join O4 in observations [169–171]. LIGO India is expected to begin constructing == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=21&search=ligo%20virgo ; More ambitious upgrades to the current facilities are possible for LIGO Voyager, including == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=21&search=ligo%20virgo ; designs are currently being proposed based on results and designs from Advanced LIGO == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=22&search=ligo%20virgo ; LIGO [176], with the initial LISA Pathﬁnder results being extremely promising [177]. == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=22&search=ligo%20virgo ; The technological achievements made with Advanced LIGO will reverberate into the == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=22&search=ligo%20virgo ; LIGO. Every step toward design sensitivity brings the furthest reaches of the universe closer. == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=22&search=ligo%20virgo ; building, operating, and maintaining the LIGO Laboratory and facilities. For locking the interferometer, == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=22&search=ligo%20virgo ; acknowledge the LIGO lab operations teams for locking, running, and managing the detector. We == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=22&search=ligo%20virgo ; acknowledge the LIGO lab detector engineers for fabricating and installing the new Y-arm input test == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=22&search=ligo%20virgo ; the LIGO facilities crew for building the facility, including the new ﬁlter cavity infrastrucuture. == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=22&search=ligo%20virgo ; This material is based upon work supported by NSF’s LIGO Laboratory which is a major facility == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=22&search=ligo%20virgo ; LIGO == 
+	https://arxiv.org/pdf/2202.00847.pdf#page=23&search=ligo%20virgo ; Advanced LIGO detector, and is used to detect differential motion in the arms [147]. This == section will overview how a Michelson is sensitive to differential motion.
+	https://arxiv.org/pdf/2202.00847.pdf#page=24&search=ligo%20virgo ; The Fabry-Pérot interferometer forms a core optomechanical technology in LIGO, with == its resonantly-enhanced sensitivity to length motion. The beam reﬂected from the Fabry-Pérot
+	https://arxiv.org/pdf/2202.00847.pdf#page=32&search=ligo%20virgo ; LIGO == 
+10	https://arxiv.org/pdf/2202.01088.pdf#page=18&search=ligo%20virgo ; frequency band below 400 Hz in O2 LIGO data is provided in [239]. This choice is justiﬁed by == the existence of a sub-threshold candidate at around 369 Hz survived from the search in [237].
+	https://arxiv.org/pdf/2202.01088.pdf#page=19&search=ligo%20virgo ; Figure 3. Results taken from the supernova remnant search in LIGO O3a data for Cas A and Vela Jr using == Weave [235]. Estimated gravitational wave strain amplitude sensitivities are given at 95% conﬁdence
+	https://arxiv.org/pdf/2202.01088.pdf#page=19&search=ligo%20virgo ; using LIGO O2 data, although using respectively a fully coherent method and a less sensitive == but model robust Viterbi tracker. A previous fully coherent O1 search is given in [242], listing
+	https://arxiv.org/pdf/2202.01088.pdf#page=22&search=ligo%20virgo ; the ﬁfth LIGO scientiﬁc run [285]. Updated results using speciﬁcally tailored CW methods in == O3 data are in preparation.
+	https://arxiv.org/pdf/2202.01088.pdf#page=23&search=ligo%20virgo ; the frequency range [20; 610] Hz of the O3 observing run of Advanced LIGO. According to == the expected spin wandering signal model from boson clouds, a small range around the f˙gw
+11	https://arxiv.org/pdf/2202.01131.pdf#page=1&search=ligo%20virgo ; NANOGrav Signal from the End of Inﬂation and the LIGO Mass == and Heavier Primordial Black Holes
+	https://arxiv.org/pdf/2202.01131.pdf#page=1&search=ligo%20virgo ; to LIGO mass and heavier primordial black holes form. We show that the produced gravitational == wave spectrum matches the NANOGrav SGWB signal only when this process happens through a
+	https://arxiv.org/pdf/2202.01131.pdf#page=8&search=ligo%20virgo ; ∼ 36000 solar mass. This not only covers the LIGO mass == PBHs, but also the heavier ones. For the ﬁrst model
+
+11 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	?subject=Your%20preprint%20https://arxiv.org/pdf/2010.09100.pdf
+2	?subject=Your%20preprint%20https://arxiv.org/pdf/2103.08520.pdf
+3	?subject=Your%20preprint%20https://arxiv.org/pdf/2104.03961.pdf
+4	mmould@star.sr.bham.ac.uk?subject=Your%20preprint%20https://arxiv.org/pdf/2110.05507.pdf
+5	?subject=Your%20preprint%20https://arxiv.org/pdf/2112.12159.pdf
+6	sbalaji@lpthe.jussieu.fr?subject=Your%20preprint%20https://arxiv.org/pdf/2202.00700.pdf
+7	?subject=Your%20preprint%20https://arxiv.org/pdf/2202.00735.pdf
+8	?subject=Your%20preprint%20https://arxiv.org/pdf/2202.00823.pdf
+9	ccahilla@caltech.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2202.00847.pdf
+10	ornella.piccinni@ligo.org?subject=Your%20preprint%20https://arxiv.org/pdf/2202.01088.pdf
+11	amjad@ipm.ir?subject=Your%20preprint%20https://arxiv.org/pdf/2202.01131.pdf
+
+
+22 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2010.09100.pdf
+2	https://arxiv.org/pdf/2010.15278.pdf
+3	https://arxiv.org/pdf/2102.06303.pdf
+4	https://arxiv.org/pdf/2103.08520.pdf
+5	https://arxiv.org/pdf/2104.03961.pdf
+6	https://arxiv.org/pdf/2106.03141.pdf
+7	https://arxiv.org/pdf/2109.01149.pdf
+8	https://arxiv.org/pdf/2110.05507.pdf
+9	https://arxiv.org/pdf/2110.13901.pdf
+10	https://arxiv.org/pdf/2112.12159.pdf
+11	https://arxiv.org/pdf/2201.07234.pdf
+12	https://arxiv.org/pdf/2202.00694.pdf
+13	https://arxiv.org/pdf/2202.00695.pdf
+14	https://arxiv.org/pdf/2202.00696.pdf
+15	https://arxiv.org/pdf/2202.00700.pdf
+16	https://arxiv.org/pdf/2202.00735.pdf
+17	https://arxiv.org/pdf/2202.00823.pdf
+18	https://arxiv.org/pdf/2202.00847.pdf
+19	https://arxiv.org/pdf/2202.01028.pdf
+20	https://arxiv.org/pdf/2202.01088.pdf
+21	https://arxiv.org/pdf/2202.01124.pdf
+22	https://arxiv.org/pdf/2202.01131.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+
