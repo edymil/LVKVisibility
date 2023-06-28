@@ -1,0 +1,125 @@
+Return-Path: <giuseppe.cabras@gmail.com>
+Received: from lugh.fisica.uniud.it (lugh.fisica.uniud.it. [158.110.40.216])
+        by smtp.gmail.com with ESMTPSA id e2-20020adfe7c2000000b001f04d622e7fsm5749959wrn.39.2022.03.10.22.48.46
+        for <giuseppe.cabras@uniud.it>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 10 Mar 2022 22:48:47 -0800 (PST)
+Message-ID: <622af0cf.1c69fb81.154be.6a04@mx.google.com>
+From: giuseppe.cabras@gmail.com
+X-Google-Original-From: gc@lugh.fisica.uniud.it
+Received: by lugh.fisica.uniud.it (sSMTP sendmail emulation); Fri, 11 Mar 2022 07:49:30 +0100
+Date: Fri, 11 Mar 2022 07:49:30 +0100
+To: giuseppe.cabras@uniud.it
+To: livia.conti@pd.infn.it
+To: milotti@ts.infn.it
+To: cohadon@lkb.upmc.fr
+To: davide.guerra@uv.es
+To: trovato@apc.in2p3.fr
+To: andrea.virtuoso@hotmail.com
+To: jerome.novak@obspm.fr
+To: pablobarneo@icc.ub.edu
+Subject: arxiv-astro-phORgr-qc-new-alerts Fri Mar 11 07:30:03 CET 2022
+Content-Type: text/plain
+MIME-Version: 1.0
+
+n
+<div class="list-dateline">Submissions received from  Wed  9 Mar 22  to  Thu 10 Mar 22, announced Fri, 11 Mar 22</div>
+129 new astro-phORgr-qc preprint found (with repetitions)
+121 new astro-phORgr-qc pdf processed
+262 occurrences of LIGO word
+131 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2105.13335.pdf#page=30&search=ligo%20virgo ; cubic galileon models however our results are comparable with the LIGO bound for direct == detection of gravitational waves.
+2	https://arxiv.org/pdf/2106.13662.pdf#page=2&search=ligo%20virgo ; – Advanced LIGO in O3 == – Advanced LIGO at ﬁnal design sensitivity
+	https://arxiv.org/pdf/2106.13662.pdf#page=3&search=ligo%20virgo ; Fig. 2. Screen shot of the GWT start page (left) and ground-based observatories page with results for advanced LIGO (right). == 
+3	https://arxiv.org/pdf/2110.09608.pdf#page=26&search=ligo%20virgo ; LIGO with fmin (lower frequency limit in Eq. (80)) being == 30 Hz.
+4	https://arxiv.org/pdf/2110.13316.pdf#page=5&search=ligo%20virgo ; FIG. 2. Left) Dimensionless strain sensitivity for Advanced LIGO, from “Zero Detuning High Power” == spectral noise density implemented in LALSuite [47], and Einstein Telescope, adopting the noise spectral
+	https://arxiv.org/pdf/2110.13316.pdf#page=6&search=ligo%20virgo ; [7], whose noise spectral density is report in Fig. (2) together with the advanced LIGO one. == The signal-to-noise ratio SN R of a real-time GW signal h(t) is deﬁned in terms of its Fourier˜
+5	https://arxiv.org/pdf/2203.04982.pdf#page=1&search=ligo%20virgo ; gravitational wave sources to which LIGO is sensitive to and are == inherently distinct signals from electromagnetic radiation. Since this
+	https://arxiv.org/pdf/2203.04982.pdf#page=1&search=ligo%20virgo ; of considerable interest for the population of LIGO gravitational == wave sources. The formation of these systems in general, including
+	https://arxiv.org/pdf/2203.04982.pdf#page=2&search=ligo%20virgo ; NS+NS binaries and therefore possibly detectable by LIGO. While == there is a slight inconsistency in our approach of using systems that
+	https://arxiv.org/pdf/2203.04982.pdf#page=6&search=ligo%20virgo ; by LIGO. Figure 6 shows what combined initial mass of the system == translates to combined ﬁnal mass of the system. As expected, the
+6	https://arxiv.org/pdf/2203.05010.pdf#page=12&search=ligo%20virgo ; of future observatories such as LISA [65], LIGO [66], ET [67], and BBO [68], depending == 
+7	https://arxiv.org/pdf/2203.05086.pdf#page=1&search=ligo%20virgo ; LIGO as “glitches,” which can obscure or even mimic == 
+	https://arxiv.org/pdf/2203.05086.pdf#page=1&search=ligo%20virgo ; have been a signiﬁcant focus of LIGO’s engineering efforts for more than a decade, and have included multiple machine learning–based approaches [20–41]. In addi- == 
+	https://arxiv.org/pdf/2203.05086.pdf#page=2&search=ligo%20virgo ; gravitational waves, known as the “strain,” each LIGO == 
+	https://arxiv.org/pdf/2203.05086.pdf#page=2&search=ligo%20virgo ; understanding and mitigation include works that investigate the association between glitches and LIGO’s == 
+	https://arxiv.org/pdf/2203.05086.pdf#page=2&search=ligo%20virgo ; (LLO) at various times during LIGO’s Observing Run == 
+	https://arxiv.org/pdf/2203.05086.pdf#page=3&search=ligo%20virgo ; of the LIGO sensitivity region is observationally impor- == 
+	https://arxiv.org/pdf/2203.05086.pdf#page=4&search=ligo%20virgo ; LIGO merge in this regime. As a result, LIGO observed == 
+	https://arxiv.org/pdf/2203.05086.pdf#page=4&search=ligo%20virgo ; conﬁdence in LIGO gravitational-wave detections. == 
+	https://arxiv.org/pdf/2203.05086.pdf#page=4&search=ligo%20virgo ; at the LIGO detector sites [54, 61]. The “microseism” == 
+	https://arxiv.org/pdf/2203.05086.pdf#page=10&search=ligo%20virgo ; they boost performance on a similar LIGO auxiliary == 
+	https://arxiv.org/pdf/2203.05086.pdf#page=12&search=ligo%20virgo ; by NSF’s LIGO Laboratory which is a major facility == 
+	https://arxiv.org/pdf/2203.05086.pdf#page=12&search=ligo%20virgo ; gw-openscience.org), a service of LIGO Laboratory, == 
+	https://arxiv.org/pdf/2203.05086.pdf#page=12&search=ligo%20virgo ; Gabriele Vajente. This paper is assigned a LIGO DCC == 
+	https://arxiv.org/pdf/2203.05086.pdf#page=12&search=ligo%20virgo ; LIGO Collaboration for the production of data used == 
+	https://arxiv.org/pdf/2203.05086.pdf#page=12&search=ligo%20virgo ; in this study and the LIGO Laboratory for enabling == 
+	https://arxiv.org/pdf/2203.05086.pdf#page=12&search=ligo%20virgo ; the LIGO Commissioning and Detector Characterization == 
+	https://arxiv.org/pdf/2203.05086.pdf#page=12&search=ligo%20virgo ; Teams and LSC domain expert Colleagues whose fundamental work on the LIGO detectors enabled the data == 
+8	https://arxiv.org/pdf/2203.05461.pdf#page=1&search=ligo%20virgo ; in the ground based GW detectors [9–11]. In the LIGO observations, the effective tidal deformability (Λ) of a NS of mass == M = 1.4 M was initially deduced to be Λ1.4 < 800 at a 90%
+	https://arxiv.org/pdf/2203.05461.pdf#page=1&search=ligo%20virgo ; small maximum radius bounds from the LIGO observations, == the EOSs that transition from soft to stiff and are consistent
+	https://arxiv.org/pdf/2203.05461.pdf#page=2&search=ligo%20virgo ; LIGO (Λ < 800 for M0 = 1.4 M ) [3], where M0 is the gravitational mass at inﬁnite separation of the binary component) == and it is similar to that of soft hadronic EOSs such as the SLy
+9	https://arxiv.org/pdf/2203.05539.pdf#page=2&search=ligo%20virgo ; distribution in LIGO events. Although potentially eﬃcient angular momentum transfer mechanisms may lead == to low-spin remnants during the core collapse (Fuller &
+	https://arxiv.org/pdf/2203.05539.pdf#page=2&search=ligo%20virgo ; produce low-χeﬀ events consistent with most LIGO detections. == 
+
+9 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	tanmay@prl.res.in?subject=Your%20preprint%20https://arxiv.org/pdf/2105.13335.pdf
+2	sxyi@ihep.ac.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2106.13662.pdf
+3	gihyuk.cho@desy.de?subject=Your%20preprint%20https://arxiv.org/pdf/2110.09608.pdf
+4	?subject=Your%20preprint%20https://arxiv.org/pdf/2110.13316.pdf
+5	weller.133@osu.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2203.04982.pdf
+6	?subject=Your%20preprint%20https://arxiv.org/pdf/2203.05010.pdf
+7	?subject=Your%20preprint%20https://arxiv.org/pdf/2203.05086.pdf
+8	khizetta@sogang.ac.kr?subject=Your%20preprint%20https://arxiv.org/pdf/2203.05461.pdf
+9	liyp@shao.ac.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2203.05539.pdf
+
+
+18 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2105.13335.pdf
+2	https://arxiv.org/pdf/2106.13662.pdf
+3	https://arxiv.org/pdf/2110.09608.pdf
+4	https://arxiv.org/pdf/2110.11835.pdf
+5	https://arxiv.org/pdf/2110.13316.pdf
+6	https://arxiv.org/pdf/2112.01509.pdf
+7	https://arxiv.org/pdf/2202.12845.pdf
+8	https://arxiv.org/pdf/2203.04965.pdf
+9	https://arxiv.org/pdf/2203.04982.pdf
+10	https://arxiv.org/pdf/2203.05003.pdf
+11	https://arxiv.org/pdf/2203.05010.pdf
+12	https://arxiv.org/pdf/2203.05086.pdf
+13	https://arxiv.org/pdf/2203.05216.pdf
+14	https://arxiv.org/pdf/2203.05415.pdf
+15	https://arxiv.org/pdf/2203.05458.pdf
+16	https://arxiv.org/pdf/2203.05461.pdf
+17	https://arxiv.org/pdf/2203.05539.pdf
+18	https://arxiv.org/pdf/2203.05555.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+
