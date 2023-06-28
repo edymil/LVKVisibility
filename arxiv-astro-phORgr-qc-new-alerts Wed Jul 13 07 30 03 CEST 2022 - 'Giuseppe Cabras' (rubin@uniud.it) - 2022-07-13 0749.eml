@@ -1,0 +1,152 @@
+Received: from DB7PR03MB4282.eurprd03.prod.outlook.com (2603:10a6:10:18::19)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Wed, 13 Jul 2022
+ 05:51:22 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=uniud.it;
+Received: from VI1PR0302MB3423.eurprd03.prod.outlook.com
+ (2603:10a6:803:20::30) by DB7PR03MB4282.eurprd03.prod.outlook.com
+ (2603:10a6:10:18::19) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5417.26; Wed, 13 Jul
+ 2022 05:51:21 +0000
+Received: from VI1PR0302MB3423.eurprd03.prod.outlook.com
+ ([fe80::507:aa2b:8684:b41d]) by VI1PR0302MB3423.eurprd03.prod.outlook.com
+ ([fe80::507:aa2b:8684:b41d%6]) with mapi id 15.20.5417.026; Wed, 13 Jul 2022
+ 05:51:21 +0000
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Wed, 13 Jul 2022 07:49:38 +0200
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Wed Jul 13 07:30:03 CEST 2022
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Jul 2022 05:51:19.4967
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 4a7d4f4f-1255-462c-efe2-08da6493b588
+X-MS-Exchange-Organization-AuthSource:
+ VI1PR0302MB3423.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: MR1P264CA0078.FRAP264.PROD.OUTLOOK.COM
+ (2603:10a6:501:3f::24) To VI1PR0302MB3423.eurprd03.prod.outlook.com
+ (2603:10a6:803:20::30)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: rubin@uniud.it
+Message-ID:
+ <VI1PR0302MB3423AC8D658AB054961A7763C8899@VI1PR0302MB3423.eurprd03.prod.outlook.com>
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 4a7d4f4f-1255-462c-efe2-08da6493b588
+X-MS-TrafficTypeDiagnostic: DB7PR03MB4282:EE_
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:VI1PR0302MB3423.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-Network-Message-Id: 4a7d4f4f-1255-462c-efe2-08da6493b588
+X-MS-Exchange-CrossTenant-AuthSource: VI1PR0302MB3423.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Jul 2022 05:51:21.2153
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: zu/tGpa1Mdkf28PaRGNeyHva3Wo4MnzXTf84PucDQoqtPHes0mLJqC0iBmI4ZZ+Y
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB7PR03MB4282
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.1859272
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5438.012
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	ql3zm2bpI14SBZGlssI8jEsU6dXSMTUMr7iYwjsRS/M6ZcVCAcBUtMumBuBUiDVjfrQujd0yaA+7h6KMIXGovvzdO6GmCkTgXbeWkwvzO0QIbtPnMnOdT1K262OFiYke3V126Er0D4B7dYtTKYxnsDwi2BLsli6OduhU0up/RFYE+rwLvKCDVQZ/ivvfwIbHHtQLqRE2kbopAk4q1tLFXhpsc91c8G4GHr9v4yRy4WRmTOeIqgvq0a3ZibuJ+spQAmbZgTKqe/H5SYfJKZExGrLWYyXa1xsxtjzmND8tRsmCc/lyi56QebZlFgRbjFHAOBuyX1NyU5VyKGfOqH1sb1vxuYxs5mW+5v+Q27wAd/kL+9TcFVhFGyzQ8RuwbqQChK7ZqF2BIzrBQAmlZou9ixlYs8A/DJMa0zwqh1AYa++PXLS7fmJ7RW9VqtKTsgZ8AxNAKVXLTKSggbTT7DVXPUBQ5CJtyWCaPC6JODvwUUFoGuHr+YegE1QE6U4B5i0cEaAnCQpwDFvP6d+udKfSr7GUYGR+Q8BvSJgdTK8xTA+7Ib7Ea4vr9YnMeYyiwEAPdHqt+y9E6ymhCaZJ5uk6NnuLo+TbpY8tlhkXABZhL5K9ZlNaAhEX2ZAJ+klVedmcXJpJ5TP5bv1X8czvE8jcU2sswAu+hCZO/WMyRdZHQcurqK0lAUFtJMANc/meKzdL7Yg9ROmz7cAhT+mAlTGxlE0BccWYGPmnF6ZcVgqvj+R5ixJ7qiJ5BAJ35hsvtMd30IKKhdoTurKfPYEsyeGxunSBPkDKfJt076NRQ2G5lKKPZZxveCEb/jNYj/moEt5/
+MIME-Version: 1.0
+
+<div class="list-dateline">Submissions received from  Mon 11 Jul 22  to  Tue 12 Jul 22, announced Wed, 13 Jul 22</div>
+138 new astro-phORgr-qc preprint found (with repetitions)
+123 new astro-phORgr-qc pdf processed
+249 occurrences of LIGO word
+180 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2110.09540.pdf#page=1&search=ligo%20virgo ; 1 http == //www.ligo.caltech.edu/
+2	https://arxiv.org/pdf/2110.13926.pdf#page=29&search=ligo%20virgo ; BDECIGO, ET (SNRFGL > 104 ) and LIGO O5 (SNRFGL > 10) are shown. (The gap between LISA == and ET closes for SNRFGL = 102 .) The GW signal has only been calculated in the runaway regime, so
+	https://arxiv.org/pdf/2110.13926.pdf#page=31&search=ligo%20virgo ; O3 [203], and 1 year for LIGO O5.) Here Ωsens (ν) encodes the sensitivity of the detector, == h2 Ωsens (ν) =
+3	https://arxiv.org/pdf/2201.10668.pdf#page=1&search=ligo%20virgo ; 2 LIGO == 
+	https://arxiv.org/pdf/2201.10668.pdf#page=3&search=ligo%20virgo ; NEMO but require corrections for LIGO due to its more transmissive SEM (McCuller et al. 2021). == 
+	https://arxiv.org/pdf/2201.10668.pdf#page=3&search=ligo%20virgo ; for LIGO), but it can improve the sensitivity centered == around fs if it is narrowed by creating a “resonant dip”
+	https://arxiv.org/pdf/2201.10668.pdf#page=6&search=ligo%20virgo ; upgrade to the current 4 km LIGO facilities. For aLIGO == Hanford and Livingston we only consider changing the
+	https://arxiv.org/pdf/2201.10668.pdf#page=6&search=ligo%20virgo ; not aﬀect the optimal broadband sensitivity of the LIGO == India facility but allows the possibility for it to operate
+	https://arxiv.org/pdf/2201.10668.pdf#page=12&search=ligo%20virgo ; LIGO. Note from Eq. (1) that increasing F also directly == lowers the location of the resonant dip.
+	https://arxiv.org/pdf/2201.10668.pdf#page=13&search=ligo%20virgo ; which is quite short — Ls = 55 m for LIGO and the == mode matching problem is more diﬃcult for Cosmic
+	https://arxiv.org/pdf/2201.10668.pdf#page=13&search=ligo%20virgo ; to Advanced LIGO (Miller et al. 2015) which targets a == factor of two decrease in coating thermal noise. Promising candidates have been identiﬁed (Vajente et al. 2021),
+4	https://arxiv.org/pdf/2203.00013.pdf#page=8&search=ligo%20virgo ; 2013); matplotlib; ligo.skymap2 == 
+5	https://arxiv.org/pdf/2204.03482.pdf#page=1&search=ligo%20virgo ; in the ﬁrst observing run of LIGO. The authors of [21] == excluded scalar bosons with masses [2.0, 3.8] × 10−13 eV
+	https://arxiv.org/pdf/2204.03482.pdf#page=3&search=ligo%20virgo ; LIGO O3 == 
+	https://arxiv.org/pdf/2204.03482.pdf#page=3&search=ligo%20virgo ; [0.5, 1], χi ∈ [0, 1] and χi ∈ [0, 0.5], respectively. The powerlaw integrated sensitivity curves [75] for LIGO, Neutron Star == Extreme Matter Observatory (NEMO) [76], Cosmic Explorer
+6	https://arxiv.org/pdf/2206.06529.pdf#page=1&search=ligo%20virgo ; noise by 2.7 ± 0.1 dB at 1.1–1.4 kHz in LIGO [27–31]. == Alone, however, it is not suﬃcient to achieve the kilohertz sensitivity required for detection [12, 32].
+	https://arxiv.org/pdf/2206.06529.pdf#page=3&search=ligo%20virgo ; LIGO Voyager values [13]. The idler-mode values are shown == in parentheses next to the corresponding signal-mode values
+	https://arxiv.org/pdf/2206.06529.pdf#page=3&search=ligo%20virgo ; loss [60, 61] in Table I based on LIGO Voyager [13]; == 
+	https://arxiv.org/pdf/2206.06529.pdf#page=3&search=ligo%20virgo ; LIGO Voyager to improve kilohertz sensitivity [35]. == 
+	https://arxiv.org/pdf/2206.06529.pdf#page=4&search=ligo%20virgo ; are used. The LIGO Voyager [13] quantum noise–limited design curve is also shown. == 
+	https://arxiv.org/pdf/2206.06529.pdf#page=5&search=ligo%20virgo ; LIGO Voyager == 
+	https://arxiv.org/pdf/2206.06529.pdf#page=5&search=ligo%20virgo ; of a modiﬁed LIGO Voyager, we have shown that optimal ﬁltering without variational readout is this technique’s preferred readout scheme out of those considered == for kilohertz (1–4 kHz) and broadband (100 Hz–4 kHz)
+
+6 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	laszlo.gondan@ttk.elte.hu?subject=Your%20preprint%20https://arxiv.org/pdf/2110.09540.pdf
+2	?subject=Your%20preprint%20https://arxiv.org/pdf/2110.13926.pdf
+3	vasrivas@syr.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2201.10668.pdf
+4	?subject=Your%20preprint%20https://arxiv.org/pdf/2203.00013.pdf
+5	yuanchen@itp.ac.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2204.03482.pdf
+6	james.gardner@anu.edu.au?subject=Your%20preprint%20https://arxiv.org/pdf/2206.06529.pdf
+
+
+19 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2110.08281.pdf
+2	https://arxiv.org/pdf/2110.09540.pdf
+3	https://arxiv.org/pdf/2110.13926.pdf
+4	https://arxiv.org/pdf/2112.10773.pdf
+5	https://arxiv.org/pdf/2201.10668.pdf
+6	https://arxiv.org/pdf/2202.00025.pdf
+7	https://arxiv.org/pdf/2203.00013.pdf
+8	https://arxiv.org/pdf/2204.03482.pdf
+9	https://arxiv.org/pdf/2206.06529.pdf
+10	https://arxiv.org/pdf/2206.09437.pdf
+11	https://arxiv.org/pdf/2207.01253.pdf
+12	https://arxiv.org/pdf/2207.05084.pdf
+13	https://arxiv.org/pdf/2207.05086.pdf
+14	https://arxiv.org/pdf/2207.05245.pdf
+15	https://arxiv.org/pdf/2207.05304.pdf
+16	https://arxiv.org/pdf/2207.05485.pdf
+17	https://arxiv.org/pdf/2207.05494.pdf
+18	https://arxiv.org/pdf/2207.05690.pdf
+19	https://arxiv.org/pdf/2207.05728.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

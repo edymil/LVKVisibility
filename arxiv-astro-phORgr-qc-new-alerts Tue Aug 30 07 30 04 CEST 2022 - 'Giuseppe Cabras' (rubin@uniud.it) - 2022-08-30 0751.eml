@@ -1,0 +1,173 @@
+Received: from VI1PR03MB6576.eurprd03.prod.outlook.com (2603:10a6:800:19e::7)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Tue, 30 Aug 2022
+ 05:54:13 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=uniud.it;
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22) by VI1PR03MB6576.eurprd03.prod.outlook.com
+ (2603:10a6:800:19e::7) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5566.21; Tue, 30 Aug
+ 2022 05:54:11 +0000
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::d5fe:2743:62e0:259]) by DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::d5fe:2743:62e0:259%8]) with mapi id 15.20.5566.015; Tue, 30 Aug 2022
+ 05:54:10 +0000
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Tue, 30 Aug 2022 07:51:32 +0200
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Tue Aug 30 07:30:04 CEST 2022
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 30 Aug 2022 05:54:09.7094
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 86005153-8b80-4a44-56c0-08da8a4c0ed1
+X-MS-Exchange-Organization-AuthSource:
+ DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: MR1P264CA0151.FRAP264.PROD.OUTLOOK.COM
+ (2603:10a6:501:54::8) To DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: rubin@uniud.it
+Message-ID:
+ <DB3PR0302MB901669A806B5D072164B6335C8799@DB3PR0302MB9016.eurprd03.prod.outlook.com>
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 86005153-8b80-4a44-56c0-08da8a4c0ed1
+X-MS-TrafficTypeDiagnostic: VI1PR03MB6576:EE_
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DB3PR0302MB9016.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-Network-Message-Id: 86005153-8b80-4a44-56c0-08da8a4c0ed1
+X-MS-Exchange-CrossTenant-AuthSource: DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 30 Aug 2022 05:54:10.8214
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: GlJWgt263dQkOLe6M/hpuR672hNKNUanhPserc9ItI9/k6FAW+cFkKkYc3jrOnRe
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: VI1PR03MB6576
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.5115351
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5566.021
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	1xtDMHXM1kgww6OHrPic/ef+IGDi/BzPPkwBLrYCKbciYBngff7ejuVSpvJrN6BiemtU1QsIpW+Os05TArrjrpnKesVvFvgEYIOIZEia8OIzDD362fERaSqdK46kllifsbF/1I6/sBqwWt1GnzfzbX74mgjlRnjQ7Wfng9Hzg3+ZJ46qqTM/tvGc+iHEU49z9ZWU4N7NdC3BNAKZSOG3aQuhbxy/0FBfrvodv8U3iHK8C5lP9fSM2A+Xra2acnhbxoqKUgd0vPGJk4APIpB09lzkkh/j36jNwmbnneFD1fjxURx/PrkggOEnRvThCMp4CS453Q5gKHRTtvE2BX92tY0d1bzYkVSUh01c+U9HrL9XFuZRawjmQRPyV78ZtNCnmtjvPJncRVa16u4aOK4UpyVp/XIEKFAcAY5yDPjM6R2UNEhryW07PtFO7KcqVOE21nji9Aik34cWjV7lRqvliu4UiEW3IGgdoRAr18ms4DfVPUq/5XINB2XSN7BeHKXit2lPK/wLhZcv0wuKw4znGNqvAi81P1DVUV+1Qg9RloszzqpFQOgQMOzb1o7Fob4qzqR2KzeKxjHmcUlzoRAigVzDJ7u7EbdvQrB6RSc4Na2JEBt4Ib68tGRh+Zk1MrJaRm5YlmpF+nB+qvvE1Iyxj/e3g6mYpm/JaYryWe3KASuR3/NR1F0euRhDzfH2naovqjScia4S3WAye1thBqL3PifoTr4rzd2ik0usumqNgXjwOUDIkDIztUpUSZHVL0q8u1yDvOKNuPspPQ5sNun+yrPHbOllXPnxi7Sy975KW8QIx+EHtEWa+0QxCQaxYRh7
+MIME-Version: 1.0
+
+<div class="list-dateline">Submissions received from  Fri 26 Aug 22  to  Mon 29 Aug 22, announced Tue, 30 Aug 22</div>
+182 new astro-phORgr-qc preprint found (with repetitions)
+166 new astro-phORgr-qc pdf processed
+305 occurrences of LIGO word
+181 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2109.00345.pdf#page=25&search=ligo%20virgo ; advanced LIGO (10 − 103 Hz), ET (1 − 104 Hz), BBO (10−3 − 10 Hz), DECIGO (10−3 − 1 Hz), eLISA (10−5 − 1 == Hz), and SKA (10−9 − 10−6 Hz) [104–106]. The presence of the parity violating Chern-Simons term in the model
+2	https://arxiv.org/pdf/2110.10469.pdf#page=1&search=ligo%20virgo ; EM counterparts for BNS GW events at the Advanced Plus, LIGO Voyager and ET&CE eras are == detailedly simulated in this paper.
+	https://arxiv.org/pdf/2110.10469.pdf#page=11&search=ligo%20virgo ; https == //www.python.org; LALSuite, (LIGO Scientiﬁc
+	https://arxiv.org/pdf/2110.10469.pdf#page=12&search=ligo%20virgo ; plans include LIGO Voyager (Adhikari et al. 2020) as == 
+	https://arxiv.org/pdf/2110.10469.pdf#page=12&search=ligo%20virgo ; a possible upgrade upon LIGO A+ (strictly speaking, == it’s more like quasi-3rd generation. However, since its
+	https://arxiv.org/pdf/2110.10469.pdf#page=12&search=ligo%20virgo ; 2.5th generation detectors (Miller et al. 2015) and LIGO == Voyager (Adhikari et al. 2020), 5 Hz for CE (Reitze et al.
+	https://arxiv.org/pdf/2110.10469.pdf#page=12&search=ligo%20virgo ; which we abbreviate as “PlusNetwork”. LIGO Voyager == 
+	https://arxiv.org/pdf/2110.10469.pdf#page=14&search=ligo%20virgo ; LIGO Voyager == 
+	https://arxiv.org/pdf/2110.10469.pdf#page=15&search=ligo%20virgo ; the horizon can reach zmax ∼ 0.2. For the LIGO Voyager == in the 3rd generation era, the optimal detection rate can
+	https://arxiv.org/pdf/2110.10469.pdf#page=15&search=ligo%20virgo ; mergers detected at the PlusNetwork, LIGO Voyager == and ET&CE eras can be represented by log-linear
+	https://arxiv.org/pdf/2110.10469.pdf#page=15&search=ligo%20virgo ; that current GW operation plan during the LIGO Voyager era only includes two GW detectors, we ﬁnd that == the sky localizations will span from a few hundred square
+	https://arxiv.org/pdf/2110.10469.pdf#page=15&search=ligo%20virgo ; more GW detectors join the campaign at the LIGO Voyager era. == 
+	https://arxiv.org/pdf/2110.10469.pdf#page=15&search=ligo%20virgo ; of PlusNetwork, LIGO Voyager, and ET&CE, the critical magnitudes for the detection of EM emissions from == all BNS GW events would be ∼ 23.5 mag, ∼ 25 mag, and
+	https://arxiv.org/pdf/2110.10469.pdf#page=15&search=ligo%20virgo ; the LIGO Voyager era shows relatively poor sky localization for GW events, we still estimate the EM detection == rate of this era by assuming Ωcov /ΩGW ∼ 1 in view of
+	https://arxiv.org/pdf/2110.10469.pdf#page=16&search=ligo%20virgo ; signals detectable at PlusNetwork, LIGO Voyager, and ET&CE network eras, respectively. The gray dots in the background == represent undetectable signals. The small panels in the upper right corner are enlarged images of the low-redshift area. The
+	https://arxiv.org/pdf/2110.10469.pdf#page=16&search=ligo%20virgo ; vae per year can be discovered by LSST during the PlusNetwork/LIGO Voyager/ET&CE eras, respectively. At == later GW era, ToO observations of BNS GW events can
+	https://arxiv.org/pdf/2110.10469.pdf#page=18&search=ligo%20virgo ; panel), LIGO Voyager (middle panel) and ET&CE eras, respectively. The density (see the colorbar of each panel) for == the points is calculated via the kernel density estimation.
+	https://arxiv.org/pdf/2110.10469.pdf#page=18&search=ligo%20virgo ; detection eras, i.e., the PlusNetwork, LIGO Voyager, and == ET&CE eras. The gray solid, dashed, dotted, and dasheddotted lines respectively represent the r-band 5σ limiting
+	https://arxiv.org/pdf/2110.10469.pdf#page=19&search=ligo%20virgo ; survey projects. For the LIGO Voyager in the 3rd generation era, the optimal detection rate can be increased to == ∼ 1, 800 yr−1 and the detection distance would be twice
+	https://arxiv.org/pdf/2110.10469.pdf#page=19&search=ligo%20virgo ; is shown to be ∼ 1 deg2 (∼ 10 deg2 ). In the PlusNetwork and LIGO Voyager eras, the critical magnitudes for == the detection of EM emissions from all BNS GW events
+	https://arxiv.org/pdf/2110.10469.pdf#page=19&search=ligo%20virgo ; per year can be discovered by LSST during the PlusNetwork/LIGO Voyager/ET&CE eras, respectively. At == 
+	https://arxiv.org/pdf/2110.10469.pdf#page=20&search=ligo%20virgo ; https == //www.python.org; LALSuite, (LIGO Scientiﬁc
+3	https://arxiv.org/pdf/2208.12849.pdf#page=1&search=ligo%20virgo ; Advanced LIGO ==  Gravity Spy glitch classiﬁcations
+	https://arxiv.org/pdf/2208.12849.pdf#page=1&search=ligo%20virgo ; LIGO, Massachusetts Institute of Technology, Cambridge, MA 02139, USA == 5
+	https://arxiv.org/pdf/2208.12849.pdf#page=1&search=ligo%20virgo ; of glitches diﬀers between the two LIGO sites. This highlights the potential need == for studies of data quality to be individually tailored to each gravitational-wave
+	https://arxiv.org/pdf/2208.12849.pdf#page=3&search=ligo%20virgo ; from the ﬁrst three observing runs of Advanced LIGO. In Section 2 we describe the == gravitational-wave strain data, the machine-learning algorithm and the glitch classes.
+	https://arxiv.org/pdf/2208.12849.pdf#page=5&search=ligo%20virgo ; Figure 1 ==  Example time–frequency spectrograms [68] showing for a selection of LIGO
+	https://arxiv.org/pdf/2208.12849.pdf#page=6&search=ligo%20virgo ; LIGO are strongly correlated with the presence of light scattering. The rate of Scattered == Light glitches decreased during the second half of O3 (O3b) following the introduction of
+	https://arxiv.org/pdf/2208.12849.pdf#page=14&search=ligo%20virgo ; Figure 6 ==  Gravity Spy classiﬁcations around O3 gravitational-wave candidates at LIGO
+4	https://arxiv.org/pdf/2208.12872.pdf#page=8&search=ligo%20virgo ; both of the Advanced LIGO interferometers. We use the == power spectral densities and calibration envelopes used in
+	https://arxiv.org/pdf/2208.12872.pdf#page=10&search=ligo%20virgo ; into the Advanced LIGO gravitational wave detector == network.
+5	https://arxiv.org/pdf/2208.12979.pdf#page=1&search=ligo%20virgo ; supported from the recent astrophysical observations reported by the Event Horizon Telescope (EHT) and LIGO. == This means that we can test gravity in the strong ﬁeld
+6	https://arxiv.org/pdf/2208.13351.pdf#page=3&search=ligo%20virgo ; LIGO [1], one can keep the same arm length up to the == picometer level. Hence, the laser frequency noise can be
+	https://arxiv.org/pdf/2208.13351.pdf#page=5&search=ligo%20virgo ; publicly available as part of the LIGO Algorithm Library == Suite (LALSuite) [38]. The model includes the dominant
+
+6 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	odintsov@ieec.uab.es?subject=Your%20preprint%20https://arxiv.org/pdf/2109.00345.pdf
+2	zhujp@pku.edu.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2110.10469.pdf
+3	christopher.berry.2@glasgow.ac.uk?subject=Your%20preprint%20https://arxiv.org/pdf/2208.12849.pdf
+4	noah.wolfe@ligo.org?subject=Your%20preprint%20https://arxiv.org/pdf/2208.12872.pdf
+5	?subject=Your%20preprint%20https://arxiv.org/pdf/2208.12979.pdf
+6	bhu@bnu.edu.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2208.13351.pdf
+
+
+27 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2109.00345.pdf
+2	https://arxiv.org/pdf/2109.11571.pdf
+3	https://arxiv.org/pdf/2110.10468.pdf
+4	https://arxiv.org/pdf/2110.10469.pdf
+5	https://arxiv.org/pdf/2111.06884.pdf
+6	https://arxiv.org/pdf/2201.10902.pdf
+7	https://arxiv.org/pdf/2204.04519.pdf
+8	https://arxiv.org/pdf/2204.08727.pdf
+9	https://arxiv.org/pdf/2204.10864.pdf
+10	https://arxiv.org/pdf/2205.10610.pdf
+11	https://arxiv.org/pdf/2206.02895.pdf
+12	https://arxiv.org/pdf/2208.07374.pdf
+13	https://arxiv.org/pdf/2208.12849.pdf
+14	https://arxiv.org/pdf/2208.12872.pdf
+15	https://arxiv.org/pdf/2208.12893.pdf
+16	https://arxiv.org/pdf/2208.12948.pdf
+17	https://arxiv.org/pdf/2208.12963.pdf
+18	https://arxiv.org/pdf/2208.12979.pdf
+19	https://arxiv.org/pdf/2208.13033.pdf
+20	https://arxiv.org/pdf/2208.13156.pdf
+21	https://arxiv.org/pdf/2208.13163.pdf
+22	https://arxiv.org/pdf/2208.13185.pdf
+23	https://arxiv.org/pdf/2208.13351.pdf
+24	https://arxiv.org/pdf/2208.13460.pdf
+25	https://arxiv.org/pdf/2208.13565.pdf
+26	https://arxiv.org/pdf/2208.13566.pdf
+27	https://arxiv.org/pdf/2208.13635.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

@@ -1,0 +1,208 @@
+Received: from AS8PR03MB8499.eurprd03.prod.outlook.com (2603:10a6:20b:53b::19)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Wed, 15 Jun 2022
+ 05:48:49 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=uniud.it;
+Received: from DB3PR0302MB3417.eurprd03.prod.outlook.com (2603:10a6:8:c::24)
+ by AS8PR03MB8499.eurprd03.prod.outlook.com (2603:10a6:20b:53b::19) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5353.14; Wed, 15 Jun
+ 2022 05:48:48 +0000
+Received: from DB3PR0302MB3417.eurprd03.prod.outlook.com
+ ([fe80::d88e:55f7:3acf:bd5]) by DB3PR0302MB3417.eurprd03.prod.outlook.com
+ ([fe80::d88e:55f7:3acf:bd5%5]) with mapi id 15.20.5332.017; Wed, 15 Jun 2022
+ 05:48:48 +0000
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Wed, 15 Jun 2022 07:47:38 +0200
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Wed Jun 15 07:30:04 CEST 2022
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Jun 2022 05:48:46.5181
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 19fd7be3-3263-44c8-4194-08da4e92b6c9
+X-MS-Exchange-Organization-AuthSource:
+ DB3PR0302MB3417.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: MR2P264CA0026.FRAP264.PROD.OUTLOOK.COM (2603:10a6:500::14)
+ To DB3PR0302MB3417.eurprd03.prod.outlook.com (2603:10a6:8:c::24)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: rubin@uniud.it
+Message-ID:
+ <DB3PR0302MB341760D17D45E604029E0B50C8AD9@DB3PR0302MB3417.eurprd03.prod.outlook.com>
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 19fd7be3-3263-44c8-4194-08da4e92b6c9
+X-MS-TrafficTypeDiagnostic: AS8PR03MB8499:EE_
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DB3PR0302MB3417.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-Network-Message-Id: 19fd7be3-3263-44c8-4194-08da4e92b6c9
+X-MS-Exchange-CrossTenant-AuthSource: DB3PR0302MB3417.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Jun 2022 05:48:47.9555
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: jBdnkLQncOPcshFnpqlHvrqJJTxtabgR3gDNh4NdmcsSW4kdbWQc9f/Gb+MxVK1v
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS8PR03MB8499
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.4060871
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5353.013
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	WwRElZ7ys7uM6DIdGYpFQLxclohVjl7YWdtDrGdXCM5hYu4+yOK7lp8OtQAx3P+mLtf5UiVtVLRnbaXJcKIjw38nrrvKfswvHrVFGNjfDaFAsjhcJOsmeXBTt+ARWM8Ox39V8nNZstGopdF11MB34v+2jugRaokpe2PlgIVg5O2khd74Sn+K50GwWGat4tHQ6H9pAbBaHnQKqUwiRWiFKi84ZItHbmPAxdpw8Z+z7fBENksZmzDYqXK8USO2lAykucRobCgjwArFt3pqs62v6FdzL30kHaajLXIR2PIj9hpUqEiMMzaiW2nUuZyvo6pYaKtVAoPzYvN75CjuvjWtoDDkN3ye4w/wm06EPnJo6CtE8EFev0ijWyVkR9S8+5M3NnVekT+9Q2aD1EdBumIpyPLngVD8KcH5aSZLtDnABFZ03K06BLz7h6DqbcUNj8VsAgpWLu+T6lVZIdoOe/v5njqL5oCEIWvYswVZ1UbAIQlwPpP+WUGrQ/Ac2IAUp82wpksUo5ywQuaLHw5rhh90UEBlK2340rjkVAGpyps6+CB648Bx47cbqyjs+zfE0gLAfnicyxOxbs3yntEBnBjyskGNoJHxDKa9Yw0+zEmdeA8cpEc0aow4cmk7l96P4px6B9sHLz2ICh38C8yoGMCRWA6o4MS84wCCaco8Cy2X4SN25CAlXLocYatR69nMgv1K2z7Kcf4tce9Eq3WIp1pT7jySWynmWRnAEsxOkQGesrx5BJkHiLAXHyyzSYMpKIWU
+MIME-Version: 1.0
+
+<div class="list-dateline">Submissions received from  Mon 13 Jun 22  to  Tue 14 Jun 22, announced Wed, 15 Jun 22</div>
+159 new astro-phORgr-qc preprint found (with repetitions)
+141 new astro-phORgr-qc pdf processed
+374 occurrences of LIGO word
+154 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2012.07136.pdf#page=1&search=ligo%20virgo ; hole pairs detected by LIGO, thus it is understandable for == past microlensing analysis to focus on them as the primary
+2	https://arxiv.org/pdf/2108.00005.pdf#page=3&search=ligo%20virgo ; this paper will be the Einstein-aether theory [3]. LIGO has given a remarkable constraint == on modiﬁed theories of gravity, namely that the spin-2 graviton speed is constrained to
+	https://arxiv.org/pdf/2108.00005.pdf#page=3&search=ligo%20virgo ; these two speeds deviate signiﬁcantly on scales other than that probed by LIGO[6]. However in classical == Einstein-aether theory which we focus on here wave speeds are not scale dependent.
+	https://arxiv.org/pdf/2108.00005.pdf#page=6&search=ligo%20virgo ; highly constrained by the LIGO neutron star merger observation [4, 5] which imposes to == high precision (one part in ∼ 1015 ) that the spin-2 gravitational wave speed is that of
+	https://arxiv.org/pdf/2108.00005.pdf#page=7&search=ligo%20virgo ; However, having imposed the LIGO constraint, so the spin-2 wavespeed is that of == light, substantially changes the original observational constraints computed in [23]. There
+	https://arxiv.org/pdf/2108.00005.pdf#page=25&search=ligo%20virgo ; LIGO constraints, in order to compare with these older results we take non-vanishing cσ . == In terms of the irreducible couplings cω,σ,θ,a this corresponds to varying cω while ﬁxing
+3	https://arxiv.org/pdf/2109.14612.pdf#page=2&search=ligo%20virgo ; the observed population of merging BHs (The LIGO Scientiﬁc == Collaboration et al. 2021c; Edelman et al. 2021). In that case,
+	https://arxiv.org/pdf/2109.14612.pdf#page=9&search=ligo%20virgo ; bin) of the posteriors of BBH diﬀerential intrinsic merger rate density, over the same range of M1 , as obtained by the LVK (The LIGO Scientiﬁc == Collaboration et al. 2021c, their power law + peak model). The hashed region spans over the 90% credible intervals of the intrinsic merger rate
+4	https://arxiv.org/pdf/2206.02264.pdf#page=10&search=ligo%20virgo ; LIGO == 
+	https://arxiv.org/pdf/2206.02264.pdf#page=10&search=ligo%20virgo ; of Advanced LIGO and LISA are shown. It is evident that our scenario produces marginally == observable (by LISA) primordial gravitational waves.
+5	https://arxiv.org/pdf/2206.06447.pdf#page=4&search=ligo%20virgo ; – The O1 observing run (LIGO only) ==  September 12, 2015 – January 12, 2016
+	https://arxiv.org/pdf/2206.06447.pdf#page=11&search=ligo%20virgo ; line denotes the approximate sensitivity band for Advanced LIGO at design sensitivity == (fGW > 10 Hz, assuming fGW = 2frot ).
+	https://arxiv.org/pdf/2206.06447.pdf#page=19&search=ligo%20virgo ; and open triangles, respectively. A vertical dashed line bounds the approximate detection bandwidth for Advanced LIGO at design sensitivity (∼10 Hz == and above). As in Figure 1, contours are shown for constant magnetic ﬁeld,
+	https://arxiv.org/pdf/2206.06447.pdf#page=19&search=ligo%20virgo ; assumption, where d is the distance to the star. In addition, detector network sensitivities are shown for Advanced LIGO at design sensitivity (Abbott == et al., 2020b) (two detectors for two observing years), henceforth designated
+	https://arxiv.org/pdf/2206.06447.pdf#page=20&search=ligo%20virgo ; LIGO sensitivity signiﬁcantly and to last for more than a year, making the detector sensitivities assumed here conservative. On the other hand, the O4/O5 observing time assumed == here does not account for realistic deadtime losses.
+	https://arxiv.org/pdf/2206.06447.pdf#page=21&search=ligo%20virgo ; Figure 6, where accessible ellipticity values are shown for Advanced LIGO == and Einstein Telescope (ETC) sensitivities. Each vertical bar represents a
+	https://arxiv.org/pdf/2206.06447.pdf#page=21&search=ligo%20virgo ; LIGO, green = accessible to Einstein Telescope), where the asterisk at the top == of the each bar is the ellipticity corresponding to that star’s spin-down limit,
+	https://arxiv.org/pdf/2206.06447.pdf#page=22&search=ligo%20virgo ; pulsars. Black or blue asterisks indicate ellipticities accessible with Advanced LIGO (2 detectors, 2 years) or ETC sensitivities (3 detectors, 5 years), respectively, using targeted == searches, where red vertical lines terminated by red asterisks indicate ellipticity sensitivity
+	https://arxiv.org/pdf/2206.06447.pdf#page=22&search=ligo%20virgo ; range for Advanced LIGO, and green vertical lines and green asterisks indicate additional == ellipticity sensitivity range for ETC. A selection of pulsars accessible with Advanced LIGO
+	https://arxiv.org/pdf/2206.06447.pdf#page=22&search=ligo%20virgo ; ellipticity sensitivity range for ETC. A selection of pulsars accessible with Advanced LIGO == sensitivity are labeled in red. Diagonal dashed lines correspond to corresponding f˙GW values
+	https://arxiv.org/pdf/2206.06447.pdf#page=22&search=ligo%20virgo ; pulsar with an ellipticity below 10 and that is accessible to Advanced LIGO == has a fGW value lower than 70 Hz, and no ellipticity below 10−8 is accessible
+	https://arxiv.org/pdf/2206.06447.pdf#page=22&search=ligo%20virgo ; to Advanced LIGO below 300 Hz. == Another ﬁgure of merit is the distance to which searches can detect sources
+	https://arxiv.org/pdf/2206.06447.pdf#page=22&search=ligo%20virgo ; Advanced LIGO sensitivity range for diﬀerent ellipticity values and dashed == contours for Einstein Telescope. Pulsars with spin-down limits accessible to
+	https://arxiv.org/pdf/2206.06447.pdf#page=23&search=ligo%20virgo ; Fig. 7 Maximum allowed targeted-search ranges for gravitars vs GW frequencies for different assumed ellipticities for Advanced LIGO sensitivity (solid magenta curves) and corresponding ranges for ETC sensitivity (dashed blue curves). Known pulsar distances are == shown vs the expected GW frequencies, where red dots indicate pulsars with accessible
+	https://arxiv.org/pdf/2206.06447.pdf#page=23&search=ligo%20virgo ; spin-down limits for Advanced LIGO sensitivity, and smaller green dots indicated pulsars == with accessible spin-down limits for ETC sensitivity. Known pulsars in distinct horizontal
+	https://arxiv.org/pdf/2206.06447.pdf#page=23&search=ligo%20virgo ; Advanced LIGO are shown in red, and those accessible to Einstein Telescope == are shown in green. Only a handful of pulsars within 500 pc are accessible to
+	https://arxiv.org/pdf/2206.06447.pdf#page=23&search=ligo%20virgo ; Advanced LIGO with ellipticities below 10−8 . On the other hand, to reach the == galactic center (∼8.5 kpc) at a signal frequency of 1 kHz requires an ellipticity
+	https://arxiv.org/pdf/2206.06447.pdf#page=23&search=ligo%20virgo ; vs frequency plot, but for which (optimistic) Advanced LIGO and Einstein == Telescope all-sky sensitivities are assumed. For reference, the all-sky strain
+	https://arxiv.org/pdf/2206.06447.pdf#page=24&search=ligo%20virgo ; sensitivity is taken to be about 20 times worse than its targeted-search sensitivity for Advanced LIGO and the corresponding ratio about 40 times worse == for Einstein Telescope. Consequently, the all-sky range contours corresponding
+	https://arxiv.org/pdf/2206.06447.pdf#page=24&search=ligo%20virgo ; reach the spin-down limit are shown in red for Advanced LIGO and in green == for Einstein Telescope. We see that for Advanced LIGO to reach the galactic
+	https://arxiv.org/pdf/2206.06447.pdf#page=24&search=ligo%20virgo ; for Einstein Telescope. We see that for Advanced LIGO to reach the galactic == center at a signal frequency of 1 kHz requires a minimum spin-down magnitude
+	https://arxiv.org/pdf/2206.06447.pdf#page=25&search=ligo%20virgo ; for diﬀerent assumed spin-down derivatives for Advanced LIGO sensitivity (solid magenta == curves) and corresponding ranges for ETC sensitivity (dashed green curves). Known pulsar
+	https://arxiv.org/pdf/2206.06447.pdf#page=25&search=ligo%20virgo ; accessible spin-down limits for Advanced LIGO sensitivity, and smaller green dots indicated == pulsars with accessible spin-down limits for ETC sensitivity. These all-sky search ranges
+	https://arxiv.org/pdf/2206.06447.pdf#page=28&search=ligo%20virgo ; pulsars is likely to be undetectable by Advanced LIGO (Alford and Schwenzer, == 2015).
+	https://arxiv.org/pdf/2206.06447.pdf#page=30&search=ligo%20virgo ; of which could give rise to non-axisymmetry. From the Advanced LIGO O1, == O2 and O3 data sets more than 20 pulsars were spin-down accessible (Abbott
+	https://arxiv.org/pdf/2206.06447.pdf#page=31&search=ligo%20virgo ; LIGO interferometers. Its inferred rotational kinetic energy loss rate based == on its spin-down is dE/dt ∼ −5 × 1038 erg s−1 , assuming Iz = 1038 kg m2
+	https://arxiv.org/pdf/2206.06447.pdf#page=35&search=ligo%20virgo ; extreme ellipticities are accessible to Advanced LIGO at design sensitivity == (see Figure 8). At the same time, however, young neutron stars are those
+	https://arxiv.org/pdf/2206.06447.pdf#page=46&search=ligo%20virgo ; Fig. 9 Sample signal spectrogram for a LIGO “hardware injection” (negligible noise), where == the pixel dimensions are 0.5 hours by 0.556 mHz.
+	https://arxiv.org/pdf/2206.06447.pdf#page=47&search=ligo%20virgo ; Fig. 10 Zoomed-in sample signal spectrogram for a LIGO “hardware injection” (100 hours == from spectrogram in Figure 9). The sidereal Doppler modulations (∼24 hrs) of frequency
+	https://arxiv.org/pdf/2206.06447.pdf#page=48&search=ligo%20virgo ; Fig. 11 Sample signal amplitude spectral density for a LIGO “hardware injection” (same == injection as for spectrograms in Figure 9).
+	https://arxiv.org/pdf/2206.06447.pdf#page=58&search=ligo%20virgo ; also checked against TEMPO 2 and the LIGO software. These packages choose == steps in time ﬁne enough to allow reliable interpolation of detector motion between sampled times.
+	https://arxiv.org/pdf/2206.06447.pdf#page=58&search=ligo%20virgo ; nominal frequency is precisely known from ephemeris measurements. For example, it has been customary in many LIGO targeted searches to heterodyne, == 
+	https://arxiv.org/pdf/2206.06447.pdf#page=66&search=ligo%20virgo ; et al., 1998; Astone et al., 2010a), but a narrowband frequency implementation (Prix, 2018) has been used extensively in LIGO searches. == In searches for known pulsars for which optical or X-ray observations of
+	https://arxiv.org/pdf/2206.06447.pdf#page=82&search=ligo%20virgo ; of the initial LIGO S6 run (part of a Sco X-1 mock data challenge (Messenger == 
+	https://arxiv.org/pdf/2206.06447.pdf#page=83&search=ligo%20virgo ; from the Advanced LIGO O1, O2 and O3 data (Abbott et al., 2017n, 2019e; == Sun et al., 2020) (see section 4.3). Simultaneous tracking of stellar rotational
+	https://arxiv.org/pdf/2206.06447.pdf#page=86&search=ligo%20virgo ; origin plagued both LIGO interferometers and occurred loudly and frequently == enough to degrade sensitivity to CW signals in the low-frequency band. To
+	https://arxiv.org/pdf/2206.06447.pdf#page=86&search=ligo%20virgo ; early initial LIGO S2 run to the ﬁrst Advanced LIGO run O1. Values range == for templated searches from ∼1000 for targeted searches of ∼2 years down to
+	https://arxiv.org/pdf/2206.06447.pdf#page=91&search=ligo%20virgo ; 2004) in LIGO and GEO 600 S1 data (separately to each interferometer) led == to upper limits on h0 of a few times 10−22 for PSR J1939+2134 (frot = 642
+	https://arxiv.org/pdf/2206.06447.pdf#page=93&search=ligo%20virgo ; A separate analysis (Nieder et al., 2019) of the Advanced LIGO O1 and O2 == data for a newly discovered gamma-ray pulsar (PSR J0952−0607) also set an
+	https://arxiv.org/pdf/2206.06447.pdf#page=94&search=ligo%20virgo ; F-statistic, was for the Crab pulsar in the Inital LIGO S5 data set (Abbott == et al., 2008b), which set a limit slightly below the Crab spin-down limit, despite a large trials factor of 3 × 107 , when the orientation of the assumed signal
+	https://arxiv.org/pdf/2206.06447.pdf#page=95&search=ligo%20virgo ; LIGO O1 and/or O2 data (Abbott et al., 2019b) (closed stars). The pink band shows the == a priori estimated sensitivity range of the search. Also plotted are spin-down limits (closed
+	https://arxiv.org/pdf/2206.06447.pdf#page=97&search=ligo%20virgo ; emission. A coherent search was carried out in a 12-day period of LIGO S5 == data over the band 100-300 Hz, for which it was expected that the age-based
+	https://arxiv.org/pdf/2206.06447.pdf#page=98&search=ligo%20virgo ; in the LIGO (O1) O2 data (Abbott et al., 2019c) (closed diamonds and triangles), where the == GW frequency and derivative are allowed to vary by ∼10−3 with respect to the expectation
+	https://arxiv.org/pdf/2206.06447.pdf#page=100&search=ligo%20virgo ; in initial LIGO S5 data searched for a source at the galactic center (Aasi et al., == 2013a), using 630 segments of 11.5 hours each, where F-statistic values averaged over the segments were computed, where the global correlation transform
+	https://arxiv.org/pdf/2206.06447.pdf#page=108&search=ligo%20virgo ; to be reached at the lower frequencies (below ∼300 Hz). As Advanced LIGO == sensitivity continues to improve and with longer data runs, future searches
+	https://arxiv.org/pdf/2206.06447.pdf#page=112&search=ligo%20virgo ; methods have been applied to searches of the Advanced LIGO O1–O3 data == sets (Abbott et al., 2017a,d, 2018b, 2019a; Steltner et al., 2021; Abbott et al.,
+	https://arxiv.org/pdf/2206.06447.pdf#page=112&search=ligo%20virgo ; 200-400 Hz band of the LIGO S2 data (Abbott et al., 2005a), based on a total == of 3800 30-minute segments of data from the three LIGO interferometers.
+	https://arxiv.org/pdf/2206.06447.pdf#page=112&search=ligo%20virgo ; of 3800 30-minute segments of data from the three LIGO interferometers. == The StackSlide, Sky Hough and PowerFlux methods were used to produce
+	https://arxiv.org/pdf/2206.06447.pdf#page=112&search=ligo%20virgo ; all-sky upper limits in the 50-1000 band of the LIGO S4 data (Abbott et al., == 2008a). The ﬁrst Einstein@Home all-sky search was carried out too on the S4
+	https://arxiv.org/pdf/2206.06447.pdf#page=112&search=ligo%20virgo ; 50-1100 Hz band of the ﬁrst eight months of LIGO S5 data (Abbott et al., == 2009a). The sheer length of data for the full 23-month S5 run required substantial upgrade of the program which was then used to produce all-sky upper
+	https://arxiv.org/pdf/2206.06447.pdf#page=113&search=ligo%20virgo ; et al., 2013b). A ﬁnal all-sky initial LIGO PowerFlux analysis of the S6 data == set (Abbott et al., 2016a) included a 5-stage hierachical search with longer and
+	https://arxiv.org/pdf/2206.06447.pdf#page=113&search=ligo%20virgo ; Since Advanced LIGO observing has begun, multiple all-sky search programs have been applied to data from the ﬁrst three observing runs, O1, O2 == and O3. The ﬁrst publications based on O1 data focused on lower frequencies.
+	https://arxiv.org/pdf/2206.06447.pdf#page=115&search=ligo%20virgo ; of initial LIGO S6 data (Aasi et al., 2014a) is known as TwoSpect (Goetz == and Riles, 2011). The program carries out a semi-coherent search over an
+	https://arxiv.org/pdf/2206.06447.pdf#page=120&search=ligo%20virgo ; of detectable, young and isolated neutron stars for Advanced LIGO sensitivity == is less than one and is ∼10 for Einstein Telescope.
+	https://arxiv.org/pdf/2206.06447.pdf#page=122&search=ligo%20virgo ; are shown from the inital LIGO S6 TwoSpect search (Aasi et al., 2014a), from the GPUenhanced O2 Binary Sky Hough search (Covas and Sintes, 2020) (100-300 Hz), from the == O3a Binary Sky Hough search (Abbott et al., 2021c) (50-300 Hz) and from the O3a Binary
+6	https://arxiv.org/pdf/2206.06529.pdf#page=1&search=ligo%20virgo ; 1.1–1.4 kHz in LIGO [27–31]. Alone, however, it is not == 
+	https://arxiv.org/pdf/2206.06529.pdf#page=4&search=ligo%20virgo ; TABLE I. Baseline parameters for signal readout with deviations shown in boldface next to the corresponding LIGO Voyager values [13]. The idler values are shown in parentheses == next to the corresponding signal values and are achievable by
+	https://arxiv.org/pdf/2206.06529.pdf#page=4&search=ligo%20virgo ; Quantum Limit (SQL) [40] is exceeded using external squeezing. The parameters in Table I are used. The LIGO Voyager [13] quantum noise–limited design curve is also shown. == 
+	https://arxiv.org/pdf/2206.06529.pdf#page=4&search=ligo%20virgo ; in Table I based on LIGO Voyager [13]; Table I contains == 
+	https://arxiv.org/pdf/2206.06529.pdf#page=4&search=ligo%20virgo ; a longer signal-recycling cavity than LIGO Voyager to == improve kilohertz sensitivity [35].
+7	https://arxiv.org/pdf/2206.06693.pdf#page=55&search=ligo%20virgo ; Optical emission of LIGO GW events == AGN optical counterparts
+8	https://arxiv.org/pdf/2206.06809.pdf#page=1&search=ligo%20virgo ; was displayed by LIGO with its H1 and H2 detectors in == its ﬁfth science run; correlated noise prevented the search
+9	https://arxiv.org/pdf/2206.07032.pdf#page=1&search=ligo%20virgo ; universe via leptogenesis. We show that the current LIGO limit on stochastic GW already excludes == part of the B −L parameter space, complementary to the collider searches. Moreover, the future GW
+	https://arxiv.org/pdf/2206.07032.pdf#page=6&search=ligo%20virgo ; the current LIGO exclusion [88], and therefore, LIGO is == already probing part of the leptogenesis parameter space,
+	https://arxiv.org/pdf/2206.07032.pdf#page=6&search=ligo%20virgo ; LIGO constraint on stochastic GW [88] has already ruled == out a new portion of the B − L parameter space giving
+
+9 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	winch@astro.utoronto.ca?subject=Your%20preprint%20https://arxiv.org/pdf/2012.07136.pdf
+2	alexander.g.adam@gmail.com?subject=Your%20preprint%20https://arxiv.org/pdf/2108.00005.pdf
+3	sambaran@astro.uni-bonn.de?subject=Your%20preprint%20https://arxiv.org/pdf/2109.14612.pdf
+4	k.dimopoulos1@lancaster.ac.uk?subject=Your%20preprint%20https://arxiv.org/pdf/2206.02264.pdf
+5	kriles@umich.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2206.06447.pdf
+6	james.gardner@anu.edu.au?subject=Your%20preprint%20https://arxiv.org/pdf/2206.06529.pdf
+7	jge@shao.ac.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2206.06693.pdf
+8	?subject=Your%20preprint%20https://arxiv.org/pdf/2206.06809.pdf
+9	arnabdasgupta@pitt.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2206.07032.pdf
+
+
+20 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2012.07136.pdf
+2	https://arxiv.org/pdf/2108.00005.pdf
+3	https://arxiv.org/pdf/2109.14612.pdf
+4	https://arxiv.org/pdf/2111.04632.pdf
+5	https://arxiv.org/pdf/2205.09827.pdf
+6	https://arxiv.org/pdf/2205.11701.pdf
+7	https://arxiv.org/pdf/2205.14635.pdf
+8	https://arxiv.org/pdf/2206.02264.pdf
+9	https://arxiv.org/pdf/2206.02551.pdf
+10	https://arxiv.org/pdf/2206.06447.pdf
+11	https://arxiv.org/pdf/2206.06529.pdf
+12	https://arxiv.org/pdf/2206.06534.pdf
+13	https://arxiv.org/pdf/2206.06590.pdf
+14	https://arxiv.org/pdf/2206.06599.pdf
+15	https://arxiv.org/pdf/2206.06693.pdf
+16	https://arxiv.org/pdf/2206.06809.pdf
+17	https://arxiv.org/pdf/2206.06831.pdf
+18	https://arxiv.org/pdf/2206.06899.pdf
+19	https://arxiv.org/pdf/2206.07031.pdf
+20	https://arxiv.org/pdf/2206.07032.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

@@ -1,0 +1,159 @@
+Received: from DB3PR0302MB3289.eurprd03.prod.outlook.com (2603:10a6:8:9::33)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Tue, 23 Aug 2022
+ 05:56:17 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=uniud.it;
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22) by DB3PR0302MB3289.eurprd03.prod.outlook.com
+ (2603:10a6:8:9::33) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5566.14; Tue, 23 Aug
+ 2022 05:56:16 +0000
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::d5fe:2743:62e0:259]) by DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::d5fe:2743:62e0:259%8]) with mapi id 15.20.5546.022; Tue, 23 Aug 2022
+ 05:56:16 +0000
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Tue, 23 Aug 2022 07:53:45 +0200
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Tue Aug 23 07:30:03 CEST 2022
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Aug 2022 05:56:14.6507
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ d7ab68ed-2db4-44d7-9f02-08da84cc3065
+X-MS-Exchange-Organization-AuthSource:
+ DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: MR1P264CA0187.FRAP264.PROD.OUTLOOK.COM
+ (2603:10a6:501:58::20) To DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: rubin@uniud.it
+Message-ID:
+ <DB3PR0302MB901641309FBA0EFEB803E3AFC8709@DB3PR0302MB9016.eurprd03.prod.outlook.com>
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: d7ab68ed-2db4-44d7-9f02-08da84cc3065
+X-MS-TrafficTypeDiagnostic: DB3PR0302MB3289:EE_
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DB3PR0302MB9016.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-Network-Message-Id: d7ab68ed-2db4-44d7-9f02-08da84cc3065
+X-MS-Exchange-CrossTenant-AuthSource: DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Aug 2022 05:56:16.0086
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: IbNza4gh/6Q1uDDeGTHi033Z5Zlr3EdHrsNV6Q32lkQid59z9BAqwgzbQDfdlCbr
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB3PR0302MB3289
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.4601888
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5546.022
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	J8YA+Z3MyMRrmOzCNcQEjtb7mHOihp+0A+n8F1JYWkOBjm08v161AXgloycwEjAmybAufDWHvmvhTSGwbeYVBrmxFiwuuYq/1SspONIYbA5+96tDPrX9ScsFH2zRFFNm8zqOLrQBin+7JcqNG5Sl2CILqHBzG0MTIFC8i8RjdjiVRKzKBli4hhwvXYjBRdbzIYAy4mD6hJDTGc9NH4Q0h4Tn2IvLpFl++yveJGoxBAXIUqix+eR5VWde4hNbPCrG+Ea1Bt8FhHIAv/zcI6NQoRf8QiLTpO0jNO1a/HCF/2FRnJT7b2n9FOqDDnnhd/XcZpFNg7ogWbQ/mGSazWF0LObCq6Me0WdPk+cP0kuBxlGM+wJK8peCgKJh/YigELlgCaVEdd5iRRi950PZnr5AHiCsW8v6o9h6wJB9tF8ZXdpAKtHm3mcMNTZVg6RKdsfCvfaZ3VpicQ7eBb4BlT9N079bgWkR+YnazdJ/KBFrgrC9A8fQDmIZtT4CgOBQ3TxReFq+Tvis6NAD/5AA8LJvYrc/TivU1YVFiE/vgWeD4lCIGNp8orNw/YX/FhEXzt1kjPYqp2MYAhUdO8HFIwQLn8OXuW7pjv0f2q4J+D7eN1ygej+z2RWA0IuN0xpGCc3OxMQAl29Q0+l9gBR5Pb8I7S0RcshecBsTvdLScMMxpL7Uo9BjoNagWFSGVwsxiZ1GsKMh3VievYYjaZgJdElx2cm6se4GjCIYHPzDFYbbpnBsnu+/mkg1U6jjnt7o5gK1rAXweXnByympDAXlI4G5fxuTF70EGRBg07/pJyubxLrzDFOKvH0Gap7feCkRr6Du
+MIME-Version: 1.0
+
+<div class="list-dateline">Submissions received from  Fri 19 Aug 22  to  Mon 22 Aug 22, announced Tue, 23 Aug 22</div>
+183 new astro-phORgr-qc preprint found (with repetitions)
+161 new astro-phORgr-qc pdf processed
+252 occurrences of LIGO word
+181 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2012.02786.pdf#page=15&search=ligo%20virgo ; AION/MAGIS [114, 115], AEDGE [116], and LISA [117], and the design sensitivity of LIGO [118] on == equal mass BH binaries of total mass M at signal-to-noise ratio larger than 8. In the shaded regions
+	https://arxiv.org/pdf/2012.02786.pdf#page=16&search=ligo%20virgo ; panel of Fig. 6, LIGO can observe BH mergers only at low redshifts, z < 1, but future GW == ∼
+2	https://arxiv.org/pdf/2012.15001.pdf#page=1&search=ligo%20virgo ; the orbit to decay. The direct evidence of the gravitational waves was presented by Advanced LIGO [2–6]. These observations == of the gravitational waves come from binary black hole and binary neutron star mergers. Compare to the light, the gravitational
+3	https://arxiv.org/pdf/2202.08848.pdf#page=1&search=ligo%20virgo ; The irreducible mass and the horizon area of LIGO’s == black holes
+	https://arxiv.org/pdf/2202.08848.pdf#page=2&search=ligo%20virgo ; irreducible mass in GW astronomy include Ref. [13], where some LIGO events have == been analyzed using a Bayesian prior that is ﬂat in rotational energy. GW data have
+	https://arxiv.org/pdf/2202.08848.pdf#page=10&search=ligo%20virgo ; We now turn our attention to the following question ==  given the entirety of the LIGO
+	https://arxiv.org/pdf/2202.08848.pdf#page=10&search=ligo%20virgo ; hand, we can only model sources that lie within the LIGO horizon redshift, i.e. z zH . == We take zH = 1.5, which is estimated from Fig. 13 in Ref. [19]. It is understood that a
+	https://arxiv.org/pdf/2202.08848.pdf#page=11&search=ligo%20virgo ; of the Universe that is accessible to LIGO. == 
+	https://arxiv.org/pdf/2202.08848.pdf#page=12&search=ligo%20virgo ; targeted by LIGO, the total area of BH horizons increases by 1.69+2.19 × 106 M 2 each == −0.88
+	https://arxiv.org/pdf/2202.08848.pdf#page=12&search=ligo%20virgo ; account ==  our estimate thus refers to BHs that are observable by LIGO, not only to the
+4	https://arxiv.org/pdf/2203.15815.pdf#page=1&search=ligo%20virgo ; the LIGO [24] and to improve measurement techniques == in quantum metrology [25–31]. For a more broad class of
+5	https://arxiv.org/pdf/2208.09532.pdf#page=7&search=ligo%20virgo ; LIGO GCN notice was not received until roughly 19 hours == after the GW merger. This plot only shows the follow-ups
+	https://arxiv.org/pdf/2208.09532.pdf#page=10&search=ligo%20virgo ; mass estimate lower than 3 M (The LIGO Scientiﬁc == Collaboration et al. 2021a,b). The 2-week follow-up is
+6	https://arxiv.org/pdf/2208.09739.pdf#page=19&search=ligo%20virgo ; statistical analysis considering the data points from LIGO and comparing them with our theoretical == results. One also can use the present results to compute the power spectrum of radiations. This
+7	https://arxiv.org/pdf/2208.09949.pdf#page=3&search=ligo%20virgo ; contradicting the bounds from Big-Bang Nucleosynthesis (BBN) and LIGO [63, 64] – this happens == even though the TRH is very high. II) Typically, a peak-dip-peak signal gets imprinted, and the
+	https://arxiv.org/pdf/2208.09949.pdf#page=3&search=ligo%20virgo ; that the LIGO[f ∼25Hz] has the potential to test and constrain LSLs with Mi 104 GeV. == We also show how due to the presence of the GUT-motivated U (1)B−L symmetry, GWs from
+	https://arxiv.org/pdf/2208.09949.pdf#page=11&search=ligo%20virgo ; BBN bound on eﬀective neutrino species [63] as well as the constraint on the SGWB by the LIGO == 5
+	https://arxiv.org/pdf/2208.09949.pdf#page=12&search=ligo%20virgo ; FIG. 5. Constraints on the g − Mi parameter space from BBN (light green) and LIGO (blue). The vertical == colored regions represent the GWs violating BBN and LIGO bounds.
+	https://arxiv.org/pdf/2208.09949.pdf#page=12&search=ligo%20virgo ; colored regions represent the GWs violating BBN and LIGO bounds. == 
+	https://arxiv.org/pdf/2208.09949.pdf#page=12&search=ligo%20virgo ; the LIGO constraint in a much simpler and conservative way. We consider a reference frequency == fLIGO = 25 Hz and discard the GWs having amplitude more than 10−8 , i.e., we allow the spectrum
+	https://arxiv.org/pdf/2208.09949.pdf#page=12&search=ligo%20virgo ; green and the blue regions correspond to those amplitudes that would contradict BBN and LIGO == bounds. Although both of them put a severe constraint on the parameter space, ruling out heavier
+	https://arxiv.org/pdf/2208.09949.pdf#page=12&search=ligo%20virgo ; to the inﬂationary GWs, future LIGO runs, or more generally, the detectors at the interferometer == scales can test and constrain LSL mechanisms for Mi
+	https://arxiv.org/pdf/2208.09949.pdf#page=14&search=ligo%20virgo ; overall GW spectrum must not contradict the BBN and LIGO bounds. In Fig.6 (Fig.7) we show == the numerically extracted parameter space on the vΦ − Mi plane for g = 10−3(−4) , which comply
+	https://arxiv.org/pdf/2208.09949.pdf#page=14&search=ligo%20virgo ; BBN and LIGO bounds. Large Mi s are disallowed for smaller values of vΦ . In this region, the == produced entropy is signiﬁcantly less. Therefore, for a large spectral index nT (= 0.9), the GW
+	https://arxiv.org/pdf/2208.09949.pdf#page=14&search=ligo%20virgo ; amplitudes contradict the BBN and the LIGO bounds easily. == • The parameter space never exhibits ΩBGW (fdip ) > Ωstrings (fdip ). Otherwise, the BGWs
+	https://arxiv.org/pdf/2208.09949.pdf#page=18&search=ligo%20virgo ; on such inﬂationary GWs become testable. Although the LIGO and BBN severely constrain the == model parameter space, we show that if the PTA results are due to blue-tilted inﬂationary GWs,
+
+7 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	gert.hutsi@to.ee?subject=Your%20preprint%20https://arxiv.org/pdf/2012.02786.pdf
+2	jfxu@seu.edu.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2012.15001.pdf
+3	davide.gerosa@unimib.it?subject=Your%20preprint%20https://arxiv.org/pdf/2202.08848.pdf
+4	sayantan.choudhury@icts.res.in?subject=Your%20preprint%20https://arxiv.org/pdf/2203.15815.pdf
+5	analysis@icecube.wisc.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2208.09532.pdf
+6	alechung@xanum.uam.mx?subject=Your%20preprint%20https://arxiv.org/pdf/2208.09739.pdf
+7	satyabrata.datta@saha.ac.in?subject=Your%20preprint%20https://arxiv.org/pdf/2208.09949.pdf
+
+
+20 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2012.02786.pdf
+2	https://arxiv.org/pdf/2012.15001.pdf
+3	https://arxiv.org/pdf/2109.06864.pdf
+4	https://arxiv.org/pdf/2111.13514.pdf
+5	https://arxiv.org/pdf/2201.02357.pdf
+6	https://arxiv.org/pdf/2202.08848.pdf
+7	https://arxiv.org/pdf/2203.15815.pdf
+8	https://arxiv.org/pdf/2204.07592.pdf
+9	https://arxiv.org/pdf/2205.15329.pdf
+10	https://arxiv.org/pdf/2206.13335.pdf
+11	https://arxiv.org/pdf/2208.08050.pdf
+12	https://arxiv.org/pdf/2208.09488.pdf
+13	https://arxiv.org/pdf/2208.09532.pdf
+14	https://arxiv.org/pdf/2208.09589.pdf
+15	https://arxiv.org/pdf/2208.09624.pdf
+16	https://arxiv.org/pdf/2208.09739.pdf
+17	https://arxiv.org/pdf/2208.09949.pdf
+18	https://arxiv.org/pdf/2208.09988.pdf
+19	https://arxiv.org/pdf/2208.10197.pdf
+20	https://arxiv.org/pdf/2208.10482.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+
