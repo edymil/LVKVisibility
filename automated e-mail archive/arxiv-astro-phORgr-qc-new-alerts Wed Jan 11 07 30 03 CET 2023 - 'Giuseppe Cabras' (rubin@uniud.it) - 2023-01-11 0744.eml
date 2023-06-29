@@ -1,0 +1,170 @@
+Received: from AS8PR03MB9560.eurprd03.prod.outlook.com (2603:10a6:20b:5a8::13)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Wed, 11 Jan 2023
+ 06:36:16 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=uniud.it;
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22) by AS8PR03MB9560.eurprd03.prod.outlook.com
+ (2603:10a6:20b:5a8::13) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5986.18; Wed, 11 Jan
+ 2023 06:36:15 +0000
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::115c:1eae:b54e:374]) by DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::115c:1eae:b54e:374%9]) with mapi id 15.20.5986.018; Wed, 11 Jan 2023
+ 06:36:14 +0000
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Wed, 11 Jan 2023 07:44:33 +0100
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Wed Jan 11 07:30:03 CET 2023
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 11 Jan 2023 06:36:13.6297
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 1115d57a-19ac-4418-829d-08daf39e228b
+X-MS-Exchange-Organization-AuthSource:
+ DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: ZR0P278CA0114.CHEP278.PROD.OUTLOOK.COM
+ (2603:10a6:910:20::11) To DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: rubin@uniud.it
+Message-ID:
+ <DB3PR0302MB9016AF969EA0B9FA679B5893C8FC9@DB3PR0302MB9016.eurprd03.prod.outlook.com>
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB3PR0302MB9016:EE_|AS8PR03MB9560:EE_
+X-MS-Office365-Filtering-Correlation-Id: 1115d57a-19ac-4418-829d-08daf39e228b
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DB3PR0302MB9016.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-Network-Message-Id: 1115d57a-19ac-4418-829d-08daf39e228b
+X-MS-Exchange-CrossTenant-AuthSource: DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 11 Jan 2023 06:36:14.7702
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: esIxDV3AR/37yA6TnzeOzRRnggknkntaNqsVFJg+g0XvRBmAlSxzTeMfsiYOquJC
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS8PR03MB9560
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3831215
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5986.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	L/Kld2v6GLk6LTNm+jLiMB1BZHZfdA0yde41tV6jiA6wztqcPlWla4MgZk1YzSi0G6Nr/F8Gx+lekn6ZEIxJfaYlMgIHuUQRIzR/fjXXL4Fj7e8GqGzmpdy1s9eZ8k4VP//3qoQmGlE48gRqx8t2zXEtKr+hlNXCXxviCTnX20I3GQMS67xfg9cu9JpTYDX6tprY5pZAUddt1rTTd2N/MO7kstQT32qCCUP8u5pcbyOjvnINOvkyli/rjP8iruc9Ivt8SXrEKh8O9BaatOQqDWTeFJrFl2ZyBS8FBR/Z35T7y4y6Hc3wF9mRhQ771K72ooMFAHdqxCcvdeLiBJ4b37Yu2x1rANWw3waO90Vyc9fl9HyRDNn62mH1BFEqPFpWSUV0hNQPq/aA/Yy4S+VkTHjuBtxirhe/5EOeC5GQ5ne259bc6kKjTJCG8zaiHC+GgRqvwI7wUKOPKeEWQR8iZ3mMitPJU7EiGHbBpYzA1xrD8G74RoN7SzRgjAXNbaQPpkajrmHAUq07W0r5mzhnv/RDlBfp4QvI516pNVNJnjOdUxku1tQopBEgfMQUFeKLWL1rVxku+lZ+TtlArnQMJzWei0ghsuX3ushnt9jmZvnmWayAQBJCws9QsH51ceO8KVcwETqu2sKoR/YuiNULwI8/CzR5Aiae765jhoqcosvilUbqcFeNFZgUIGkXPVofyLUN9zAJ71PSIkvt4gsKrsJ6z27ab9Lh+GwGz6gXHRp+7I9k/Hibg+K8rH+6IuFh8Q/Qfyqr04CFFeNahWXXzRFN3egnt6fWklPEBQ/gyFvlf3e4zMqxNP3TWEB67pn/QjLKPOGQm63TqNXaRhNjzVxwb/kDAR2UbDWinChKGXg2VF4PFT1R1AX4AwW8N0gM7TRVDL04gdsGbK+0PLr2Ow==
+MIME-Version: 1.0
+
+RUN /home/gc/bin/check_LVC2 release 20221130 by gc
+<div class="list-dateline">Submissions received from  Mon  9 Jan 23  to  Tue 10 Jan 23, announced Wed, 11 Jan 23</div>
+161 new astro-phORgr-qc preprint found (with repetitions)
+147 new astro-phORgr-qc pdf processed
+149 occurrences of LIGO word
+76 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2204.12977.pdf#page=7&search=ligo%20virgo ; arrives. We construct 𝑝 det ( M, 𝐷) for a given GW run using LIGO (the most sensitive of the GW detectors) sensitivity curves based
+	https://arxiv.org/pdf/2204.12977.pdf#page=10&search=ligo%20virgo ; faint distant sources within the LIGO horizon. This is summarised in Figure 6, where we see that the typical lens magniﬁcation relevant
+	https://arxiv.org/pdf/2204.12977.pdf#page=10&search=ligo%20virgo ; predicted to become more likely the longer that LIGO in particular operates at its A+ sensitivity or better in the ﬁfth run. In this ﬁgure 𝑁det is lower than
+	https://arxiv.org/pdf/2204.12977.pdf#page=12&search=ligo%20virgo ; the GW detectors become more sensitive, as seen for example in the LIGO horizon in O5 being rightward of their horizon in O3 in Figure 5.
+	https://arxiv.org/pdf/2204.12977.pdf#page=12&search=ligo%20virgo ; black curve in each panel shows LIGO’s horizon for equal mass mergers based on Martynov et al. (2016).
+2	https://arxiv.org/pdf/2207.00621.pdf#page=1&search=ligo%20virgo ; Improving LIGO calibration accuracy by using time-dependent ﬁlters to compensate for temporal variations
+	https://arxiv.org/pdf/2207.00621.pdf#page=1&search=ligo%20virgo ; The response of the Advanced LIGO interferometers is known to vary with time [1]. Accurate calibration of the interferometers must therefore track and compensate for temporal variations in calibration model parameters.
+	https://arxiv.org/pdf/2207.00621.pdf#page=1&search=ligo%20virgo ; These variations were tracked during the ﬁrst three Advanced LIGO observing runs, and compensation for some of them has been implemented in the calibration procedure. During the second observing run, multiplicative
+	https://arxiv.org/pdf/2207.00621.pdf#page=1&search=ligo%20virgo ; < 2% in magnitude and < 2◦ in phase across LIGO’s most sensitive frequency band of 20 - 2000 Hz [2, 3]. Additionally, this paper shows how such compensation is relevant for astrophysical inference studies by reducing
+	https://arxiv.org/pdf/2207.00621.pdf#page=1&search=ligo%20virgo ; During all three Advanced LIGO observing runs the calibration process has compensated for temporal variations in the calibration model that can be applied as multiplicative
+	https://arxiv.org/pdf/2207.00621.pdf#page=1&search=ligo%20virgo ; waves incident on the LIGO interferometers cause ﬂuctuations in this readout by inducing changes in the diﬀerential arm
+	https://arxiv.org/pdf/2207.00621.pdf#page=1&search=ligo%20virgo ; in LIGO’s most sensitive frequency band [20 Hz, 2 kHz], a signal-recycling mirror is placed just before the GW readout
+	https://arxiv.org/pdf/2207.00621.pdf#page=2&search=ligo%20virgo ; domain for simplicity. The ﬁnal product of Advanced LIGO’s calibration process is the dimensionless strain,
+	https://arxiv.org/pdf/2207.00621.pdf#page=2&search=ligo%20virgo ; into LIGO’s calibration pipelines [10]. For more detailed information on the methods used to compute the calibrated strain h(t), see Refs. [10, 16].
+	https://arxiv.org/pdf/2207.00621.pdf#page=3&search=ligo%20virgo ; FIG. 2  Block diagram of the Advanced LIGO diﬀerential arm (DARM) length feedback control loop during the third observing
+	https://arxiv.org/pdf/2207.00621.pdf#page=3&search=ligo%20virgo ; FT , FP , and FU are ﬁlter functions that occur before the injections are added. During Advanced LIGO’s second observing run (O2), the injection xctrl was also added to dctrl .
+	https://arxiv.org/pdf/2207.00621.pdf#page=5&search=ligo%20virgo ; Historically, the calibration of LIGO strain data has compensated for the TDCF multipliers, κC , κT , κP , κU , and κPU (O2 only) [1, 10]. Here, we outline the methods developed in the
+	https://arxiv.org/pdf/2207.00621.pdf#page=6&search=ligo%20virgo ; implemented during Advanced LIGO’s fourth observing run. There is a small error introduced in magnitude and phase
+	https://arxiv.org/pdf/2207.00621.pdf#page=7&search=ligo%20virgo ; Systematic errors in Advanced LIGO’s calibrated data, such as those introduced by not compensating for the timedependence of some calibration model parameters, have the
+	https://arxiv.org/pdf/2207.00621.pdf#page=7&search=ligo%20virgo ; Since systematic errors in LIGO’s calibrated data impact the reconstructed strain and astrophysical source parameters
+	https://arxiv.org/pdf/2207.00621.pdf#page=8&search=ligo%20virgo ; detail on estimating Advanced LIGO calibration errors and uncertainties in O2 and O3 see Refs. [2, 3, 15].
+	https://arxiv.org/pdf/2207.00621.pdf#page=11&search=ligo%20virgo ; We used the simulated Advanced LIGO sensitivity PSD within the likelihood calculation [31]. The waveform approximant
+	https://arxiv.org/pdf/2207.00621.pdf#page=12&search=ligo%20virgo ; TABLE II  Summary of sky map statistics generated by the ligo.skymap software package [37] for the simulated BNS signal
+	https://arxiv.org/pdf/2207.00621.pdf#page=13&search=ligo%20virgo ; FIG. 10  Sky maps generated using the ligo.skymap software package [37] for the simulated BNS signal with an SNR of 56
+	https://arxiv.org/pdf/2207.00621.pdf#page=13&search=ligo%20virgo ; LIGO’s calibrated data when left uncompensated, as shown in Sec. V. In order to correct these systematic errors, we developed adaptive ﬁltering algorithms in the gstlal calibration
+	https://arxiv.org/pdf/2207.00621.pdf#page=14&search=ligo%20virgo ; ization. It’s important to note that all released LIGO strain data contains the appropriate compensation for TDCF multipliers
+	https://arxiv.org/pdf/2207.00621.pdf#page=15&search=ligo%20virgo ; FIG. 12  Sky maps generated using the ligo.skymap software package [37] for the simulated BNS signal with an SNR of 56
+	https://arxiv.org/pdf/2207.00621.pdf#page=15&search=ligo%20virgo ; TABLE III  Summary of sky map statistics generated by the ligo.skymap software package [37] for the simulated BNS signal
+3	https://arxiv.org/pdf/2301.03619.pdf#page=4&search=ligo%20virgo ; conﬁguration. Also shown are the noise sensitivity curves for advanced LIGO (aLIGO), Einstein Telescope (ET), the 20 km postmerger-optimized conﬁguration for the Cosmic Explorer (CE20) and the 40 km conﬁguration for Cosmic Explorer (CE40).
+4	https://arxiv.org/pdf/2301.03696.pdf#page=2&search=ligo%20virgo ; in [32, 33] when black holes mergers were ﬁrst detected by LIGO [34]. Hawking found that black holes release thermal radiation [35]. As a result, depending on their mass, black holes evaporate. The faster the PBHs evaporate, the
+5	https://arxiv.org/pdf/2301.03969.pdf#page=4&search=ligo%20virgo ; arm length LIGO [65, 97]. Thus, due to such increased arm length, the Einstein Telescope will be a potential GW detector by reducing all displacement noises [65, 97]. It is expected that after 10
+
+5 preprints with alerts
+==================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+==================================================================== 
+1	gps@star.sr.bham.ac.uk?subject=Your%20preprint%20https://arxiv.org/pdf/2204.12977.pdf
+2	?subject=Your%20preprint%20https://arxiv.org/pdf/2207.00621.pdf
+3	?subject=Your%20preprint%20https://arxiv.org/pdf/2301.03619.pdf
+4	k.elbourakadi@yahoo.com?subject=Your%20preprint%20https://arxiv.org/pdf/2301.03696.pdf
+5	d11102004@163.com?subject=Your%20preprint%20https://arxiv.org/pdf/2301.03969.pdf
+
+
+17 preprints mention LIGO
+======================================================================================= 
+=List of preprints mention LIGO with version nubar [subject area] and submission date = 
+======================================================================================= 
+1	https://arxiv.org/pdf/2204.12977.pdf#page=1: arXiv:2204.12977v3 [astro-ph.HE] 10 Jan 2023
+2	https://arxiv.org/pdf/2207.00621.pdf#page=1: arXiv:2207.00621v2 [astro-ph.IM] 10 Jan 2023
+3	https://arxiv.org/pdf/2207.04669.pdf#page=1: arXiv:2207.04669v2 [gr-qc] 10 Jan 2023
+4	https://arxiv.org/pdf/2209.14394.pdf#page=1: arXiv:2209.14394v3 [gr-qc] 9 Jan 2023
+5	https://arxiv.org/pdf/2210.07673.pdf#page=1: arXiv:2210.07673v2 [gr-qc] 9 Jan 2023
+6	https://arxiv.org/pdf/2212.13095.pdf#page=1: arXiv:2212.13095v2 [gr-qc] 10 Jan 2023
+7	https://arxiv.org/pdf/2212.14856.pdf#page=1: arXiv:2212.14856v3 [nucl-th] 10 Jan 2023
+8	https://arxiv.org/pdf/2301.02349.pdf#page=1: arXiv:2301.02349v2 [astro-ph.CO] 10 Jan 2023
+9	https://arxiv.org/pdf/2301.03600.pdf#page=1: arXiv:2301.03600v1 [astro-ph.CO] 9 Jan 2023
+10	https://arxiv.org/pdf/2301.03609.pdf#page=1: arXiv:2301.03609v1 [astro-ph.GA] 9 Jan 2023
+11	https://arxiv.org/pdf/2301.03619.pdf#page=1: arXiv:2301.03619v1 [astro-ph.HE] 9 Jan 2023
+12	https://arxiv.org/pdf/2301.03666.pdf#page=1: arXiv:2301.03666v1 [nucl-th] 9 Jan 2023
+13	https://arxiv.org/pdf/2301.03673.pdf#page=1: arXiv:2301.03673v1 [gr-qc] 9 Jan 2023
+14	https://arxiv.org/pdf/2301.03696.pdf#page=1: arXiv:2301.03696v1 [gr-qc] 9 Jan 2023
+15	https://arxiv.org/pdf/2301.03883.pdf#page=1: arXiv:2301.03883v1 [gr-qc] 10 Jan 2023
+16	https://arxiv.org/pdf/2301.03901.pdf#page=1: arXiv:2301.03901v1 [gr-qc] 10 Jan 2023
+17	https://arxiv.org/pdf/2301.03969.pdf#page=1: arXiv:2301.03969v1 [astro-ph.CO] 10 Jan 2023
+
+========================================= 
+=CUMULASTIVE STATISTICS SINCE 01/09/2022= 
+========================================= 
+14587  total new astro-phORgr-qc preprint found (with repetitions)
+12959  total new astro-phORgr-qc pdf processed
+15596  total occurrences of LIGO word
+12701  total occurrences of VIRGO word
+478  total preprints with alerts
+1807 total preprints mention LIGO
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

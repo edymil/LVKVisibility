@@ -1,0 +1,228 @@
+Received: from PAVPR03MB9162.eurprd03.prod.outlook.com (2603:10a6:102:326::10)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Tue, 1 Nov 2022
+ 06:42:32 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=uniud.it;
+Received: from PAWPR03MB9010.eurprd03.prod.outlook.com (2603:10a6:102:338::16)
+ by PAVPR03MB9162.eurprd03.prod.outlook.com (2603:10a6:102:326::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5769.16; Tue, 1 Nov
+ 2022 06:42:32 +0000
+Received: from PAWPR03MB9010.eurprd03.prod.outlook.com
+ ([fe80::ee02:5845:3a06:2a5c]) by PAWPR03MB9010.eurprd03.prod.outlook.com
+ ([fe80::ee02:5845:3a06:2a5c%3]) with mapi id 15.20.5769.018; Tue, 1 Nov 2022
+ 06:42:32 +0000
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Tue,  1 Nov 2022 07:51:05 +0100
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Tue Nov 1 07:30:03 CET 2022
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 01 Nov 2022 06:42:30.4460
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ ba1766d7-0023-455d-dd33-08dabbd43fd0
+X-MS-Exchange-Organization-AuthSource: PAWPR03MB9010.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: MR2P264CA0016.FRAP264.PROD.OUTLOOK.COM
+ (2603:10a6:500:1::28) To PAWPR03MB9010.eurprd03.prod.outlook.com
+ (2603:10a6:102:338::16)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: rubin@uniud.it
+Message-ID:
+ <PAWPR03MB9010C17B0FFE1DCEBB5FABCFC8369@PAWPR03MB9010.eurprd03.prod.outlook.com>
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: PAWPR03MB9010:EE_|PAVPR03MB9162:EE_
+X-MS-Office365-Filtering-Correlation-Id: ba1766d7-0023-455d-dd33-08dabbd43fd0
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:PAWPR03MB9010.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-Network-Message-Id: ba1766d7-0023-455d-dd33-08dabbd43fd0
+X-MS-Exchange-CrossTenant-AuthSource: PAWPR03MB9010.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 01 Nov 2022 06:42:31.8676
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: 3ioVd6BX95b+CS7SU0APLDEWsjsnoAeQn/p6u5lL9ZGGQ1acGLGbNTdktqnUcAdD
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PAVPR03MB9162
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.1216898
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5769.015
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	OcXi5dq5ddSqAOb24zn9Sjs4Yn6SA0VZKpIJUBvWykHJcFBesItjG2f0vPhPTrAqg8e6M0WG5V0wku84jIQIJO7uvGOmeE228Gfs/FRWcemyY4BI4FAJCN0QhQ39/Y5xsVUQ1XsLl9KECaEtgp4mCh0tsIUUT/3oEK74xiiZI7Bx0gWROH2EJ0CysyqqY2/mJ3G/ZxFHZD7DaLdPL0ZQ2JnjWVpj0bfW9NZYkQXtNUl44OkWLFAfBXKyBXW76uE9dIBsOocZZZT64o/aJQJ1foVrbzedaC88/kuxyFbRLQFZlwfkhZzAwqejl4FWBHIO6rvWOhd1AgSjKX/mVCFZ/hdgGtxwC1t5MbwlF2BcMfa6RiYPiX5EYD0s2YLym8Y8TSv08bXrKEff56pk+L/OUZj3Q2qQX92cYJeZfkAwCekWvHzPl/zm/W4Qx4d2FNIAqsdzEDxf9F0Wjg9cJUcwTJeucCGwQhCXrqNmQL0tg5piJjm8Ebqqhb1BIb6HnFSrVKOZD2oOinioGEL0UUbwgSEBLvXw6oL0sncZBc+Rk/CTu39L+WH6WUT5q0/+fgVqibXkVjGwgwqeD+ff2JxIm0Z+BOl7th4PVpkrnpvJKvjl0gXu5GyyiwU7Hyk+lm3raCBI8qIeAvkg0oIkNgVC8CLZA8CYiwf49UZQWYUuzjaTCcK1+bcvCPbrlefKjqhbTD02lsJ6pbqh5mVpKlRlwZiX7cH5cR6YZj0LWu4OYDZkmE2955mtx/ROOwmZzWBGaGJEeqlGzPe9J0ZngIAdcj7hZrrdcdLzWeF5+/aFmRTBmzPLWA7xHRcIQLMTBL53EWpqSC1eKzlBpyAVZFaKtFuaVmM2FD1AhTm7RJd8T6c=
+MIME-Version: 1.0
+
+RUN /home/gc/bin/check_LVC2 release 20220920 by gc
+<div class="list-dateline">Submissions received from  Fri 28 Oct 22  to  Mon 31 Oct 22, announced Tue,  1 Nov 22</div>
+246 new astro-phORgr-qc preprint found (with repetitions)
+212 new astro-phORgr-qc pdf processed
+277 occurrences of LIGO word
+201 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2204.12874.pdf#page=4&search=ligo%20virgo ; LIGO [73] and PTA-SKA [74–76] experiments. Indeed, the gauge ﬁeld acts as a source for GW [15–18], and the
+2	https://arxiv.org/pdf/2210.12875.pdf#page=18&search=ligo%20virgo ; [30] LIGO Observing runs. In addition, the GBM targeted search detected a weak γray transient 0.4 seconds after the black-hole black-hole merger GW150914. Based on the temporal proximity of the two events, they have a 2.9σ post-trials probability
+3	https://arxiv.org/pdf/2210.16313.pdf#page=6&search=ligo%20virgo ; LIGO [9]. The outgassing rate and residual gas composition were measured both at room temperature after 24 h of pump down and after a bakeout at 100◦ C during 24 h. The PCB was also tested after a bakeout at
+4	https://arxiv.org/pdf/2210.16331.pdf#page=1&search=ligo%20virgo ; channels for binary black holes, such as those detected by LIGO (Rodriguez et al. 2016), and more theoretical work is showing that
+5	https://arxiv.org/pdf/2210.16366.pdf#page=18&search=ligo%20virgo ; [fmin , fmrg ] and employing the Advanced LIGO PSD P1200087 [177] from bajes [178]. Here fmin corresponds to the initial GW frequency, and fmrg to the frequency at the
+	https://arxiv.org/pdf/2210.16366.pdf#page=20&search=ligo%20virgo ; Advanced LIGO PSD [177]. The minimum frequency fmin employed in the integral of Eq. (18) corresponds to the initial frequency of each individual simulation.
+6	https://arxiv.org/pdf/2210.16462.pdf#page=1&search=ligo%20virgo ; postulated to be responsible for some of the LIGO binary merger detected events as well as the existence of supermassive black holes embedded at galactic centers. However, a prominent
+	https://arxiv.org/pdf/2210.16462.pdf#page=2&search=ligo%20virgo ; the LIGO spectrum of detected binary mergers [17–29], act as seeds for the supermassive 
+	https://arxiv.org/pdf/2210.16462.pdf#page=2&search=ligo%20virgo ; CMB bound on IMBH pose problems for the PBH interpretation of LIGO events (fPBH ∼ 
+	https://arxiv.org/pdf/2210.16462.pdf#page=3&search=ligo%20virgo ; galaxy heating, etc., the parameter space for PBH LIGO binary progenitors and supermassive 
+	https://arxiv.org/pdf/2210.16462.pdf#page=7&search=ligo%20virgo ; LIGO 
+	https://arxiv.org/pdf/2210.16462.pdf#page=7&search=ligo%20virgo ; Table 1. Benchmark parameter points for sample LIGO merger and SMBH seed PBH populations. 
+	https://arxiv.org/pdf/2210.16462.pdf#page=7&search=ligo%20virgo ; the hypothetical LIGO population of PBH which requires black holes of mass 102 M and density fPBH = 10−3 − 10−4 . In our FOPT model, false vacuum remnants are only a fraction
+	https://arxiv.org/pdf/2210.16462.pdf#page=7&search=ligo%20virgo ; horizon-scale perturbation collapse. For the proposed LIGO PBH population, the typical parameter space is β/H∗ = O(100) and TSM∗ = O(100 eV). Another interesting parameter
+	https://arxiv.org/pdf/2210.16462.pdf#page=7&search=ligo%20virgo ; TSM∗ . Since the LIGO population is formed at higher temperatures, a more prolonged period is necessary to delay PBH formation, whereas relatively eﬃcient cooling can enable the SMBH
+	https://arxiv.org/pdf/2210.16462.pdf#page=7&search=ligo%20virgo ; LIGO PBH population and the other SMBH seeds. The corresponding PBH mass spectra is plotted in Fig. 3 against relevant constraints using the results in Ref. [40]. In particular,
+	https://arxiv.org/pdf/2210.16462.pdf#page=8&search=ligo%20virgo ; LIGO 
+	https://arxiv.org/pdf/2210.16462.pdf#page=8&search=ligo%20virgo ; Figure 3. LIGO and SMBH model mass spectrums against relevant constraints in the IMBH range. The CMB bound [43, 44] in yellow is drawn with dashed lines to show its reduced applicability to
+	https://arxiv.org/pdf/2210.16462.pdf#page=14&search=ligo%20virgo ; (higher mass) merger events detected by LIGO and to seed the puzzlingly supermassive black holes found at the center of galaxies and clusters. To support our claims, we have presented
+	https://arxiv.org/pdf/2210.16462.pdf#page=14&search=ligo%20virgo ; LIGO and SMBH seed populations, showing our results in Fig. 3. In addition to PBH forming between the CMB era and the present day, we propose
+7	https://arxiv.org/pdf/2210.16479.pdf#page=1&search=ligo%20virgo ; Since LIGO detected the ﬁrst binary black hole(BH) merger [1], it has become possible to directly constrain
+8	https://arxiv.org/pdf/2210.17135.pdf#page=1&search=ligo%20virgo ; stability, laser interferometry allows for ultra-precision measurement of phase variation. At LIGO and future LISA, the GW signals are therefore captured through the interferometry of coherent laser beams in terms of the phase deviation
+9	https://arxiv.org/pdf/2210.17176.pdf#page=9&search=ligo%20virgo ; LIGO and BBO [25, 87], will signiﬁcantly improve the the upper bounds (see Fig. 1 in Ref. [78] or Fig. 4 in Ref.
+10	https://arxiv.org/pdf/2210.17205.pdf#page=15&search=ligo%20virgo ; (aLIGO, AdV, KAGRA) at design sensitivity. For the PSDs of future detectors (LIGO A+, LIGO Voyager, AdV+, KAGRA+, ET, CE), we follow Borhanian & Sathyaprakash (2022) and take them
+	https://arxiv.org/pdf/2210.17205.pdf#page=16&search=ligo%20virgo ; single detector setups of LIGO+ (darkest shade), LIGO Voyager (medium shade) and the Einstein Telescope (lightest shade).
+	https://arxiv.org/pdf/2210.17205.pdf#page=16&search=ligo%20virgo ; LIGO Voyager, ET and CE will strongly depend on the ﬁnal design conﬁgurations, which are subject to uncertainty in the technological
+	https://arxiv.org/pdf/2210.17205.pdf#page=16&search=ligo%20virgo ; of three LIGO Voyager detectors, AdV+ and KAGRA+ will detect on the order of 2000 BNS mergers per year with one percent of the
+11	https://arxiv.org/pdf/2210.17433.pdf#page=1&search=ligo%20virgo ; https //www.wis-tns.org/
+12	https://arxiv.org/pdf/2210.17487.pdf#page=1&search=ligo%20virgo ; Advanced LIGO, LISA, and Cosmic Explorer as dark matter transducers Evan Hall1 and Nancy Aggarwal2, 3
+	https://arxiv.org/pdf/2210.17487.pdf#page=1&search=ligo%20virgo ; mass of the dark matter particle. We study the prospects for looking for such an eﬀect in the LIGO 
+	https://arxiv.org/pdf/2210.17487.pdf#page=1&search=ligo%20virgo ; limits from a similar strain in the LIGO beamsplitter, and with potential limits from upcoming 
+	https://arxiv.org/pdf/2210.17487.pdf#page=1&search=ligo%20virgo ; sensitivity of Advanced LIGO, competitive upper limits on DM coupling can be placed at the level of 
+	https://arxiv.org/pdf/2210.17487.pdf#page=1&search=ligo%20virgo ; and the beamsplitter in LIGO; future experiments could reduce this upper limit to ∼ 10−3 . 
+	https://arxiv.org/pdf/2210.17487.pdf#page=1&search=ligo%20virgo ; Advanced LIGO. We also investigate the prospects of 
+	https://arxiv.org/pdf/2210.17487.pdf#page=1&search=ligo%20virgo ; monitoring the beamsplitter thickness in Advanced LIGO. 
+	https://arxiv.org/pdf/2210.17487.pdf#page=1&search=ligo%20virgo ; Furthermore, we propose cross correlating the two LIGO 
+	https://arxiv.org/pdf/2210.17487.pdf#page=2&search=ligo%20virgo ; FIG. 1  Advanced LIGO frequency stabilization. Noise
+	https://arxiv.org/pdf/2210.17487.pdf#page=2&search=ligo%20virgo ; show that at lower DM masses, the Advanced LIGO reference cavity method can perform better than the GEO600 
+	https://arxiv.org/pdf/2210.17487.pdf#page=2&search=ligo%20virgo ; that the Advanced LIGO beamsplitter constraints will 
+	https://arxiv.org/pdf/2210.17487.pdf#page=2&search=ligo%20virgo ; outperform GEO600 and the Advanced LIGO reference 
+	https://arxiv.org/pdf/2210.17487.pdf#page=2&search=ligo%20virgo ; LIGO REFERENCE CAVITY 
+	https://arxiv.org/pdf/2210.17487.pdf#page=2&search=ligo%20virgo ; Advanced LIGO’s frequency stabilization is shown in 
+	https://arxiv.org/pdf/2210.17487.pdf#page=3&search=ligo%20virgo ; Many of the contributions to Src for the LIGO reference 
+	https://arxiv.org/pdf/2210.17487.pdf#page=4&search=ligo%20virgo ; LIGO cavity (O3) 
+	https://arxiv.org/pdf/2210.17487.pdf#page=4&search=ligo%20virgo ; LIGO cavity (thermal) 
+	https://arxiv.org/pdf/2210.17487.pdf#page=4&search=ligo%20virgo ; In Fig. 4 we show the projected upper limit from LIGO’s 
+	https://arxiv.org/pdf/2210.17487.pdf#page=4&search=ligo%20virgo ; LIGO beamsplitter (O3) 
+	https://arxiv.org/pdf/2210.17487.pdf#page=4&search=ligo%20virgo ; LIGO beamsplitter (O5) 
+	https://arxiv.org/pdf/2210.17487.pdf#page=4&search=ligo%20virgo ; limit if the LIGO cavities were limited by thermal noise 
+	https://arxiv.org/pdf/2210.17487.pdf#page=4&search=ligo%20virgo ; the eﬀect of upgrading the LIGO reference cavity to a 
+	https://arxiv.org/pdf/2210.17487.pdf#page=4&search=ligo%20virgo ; On the same ﬁgure, we also show estimated noise performance of the LIGO A+ conﬁguration, as well as the 
+	https://arxiv.org/pdf/2210.17487.pdf#page=5&search=ligo%20virgo ; LIGO beamsplitter (O3) 
+	https://arxiv.org/pdf/2210.17487.pdf#page=5&search=ligo%20virgo ; LIGO beamsplitter (O5) 
+	https://arxiv.org/pdf/2210.17487.pdf#page=5&search=ligo%20virgo ; LIGO cavity (O3) 
+	https://arxiv.org/pdf/2210.17487.pdf#page=5&search=ligo%20virgo ; LIGO cavity (thermal) 
+	https://arxiv.org/pdf/2210.17487.pdf#page=5&search=ligo%20virgo ; similar fashion as LIGO, GEO600, and Cosmic Explorer 
+	https://arxiv.org/pdf/2210.17487.pdf#page=5&search=ligo%20virgo ; solid reference cavities as part of a laser frequency stabilization scheme. Similar to the case with the LIGO solid 
+	https://arxiv.org/pdf/2210.17487.pdf#page=6&search=ligo%20virgo ; LIGO 
+	https://arxiv.org/pdf/2210.17487.pdf#page=6&search=ligo%20virgo ; technical noise in the Advanced LIGO frequency locking loop for the next observing runs. We show the possible
+	https://arxiv.org/pdf/2210.17487.pdf#page=6&search=ligo%20virgo ; DM coupling limits if the LIGO solid cavity could be operated at its thermal noise limit. We compare this
+	https://arxiv.org/pdf/2210.17487.pdf#page=6&search=ligo%20virgo ; Advanced LIGO beamsplitter, but will not be competitive with limits obtained from thermal-noise limited spacer
+	https://arxiv.org/pdf/2210.17487.pdf#page=6&search=ligo%20virgo ; cavities. It is notable that if the current LIGO reference cavities can be operated at the thermal noise limit, they
+	https://arxiv.org/pdf/2210.17487.pdf#page=6&search=ligo%20virgo ; for valuable discussions. LIGO was constructed by the California Institute of Technology and Massachusetts Institute of Technology with funding from the National Science Foundation, and operates under Cooperative Agreement No. PHY–0757058. Advanced LIGO was built
+
+12 preprints with alerts
+==================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+==================================================================== 
+1	?subject=Your%20preprint%20https://arxiv.org/pdf/2204.12874.pdf
+2	thompson@nasa.gov?subject=Your%20preprint%20https://arxiv.org/pdf/2210.12875.pdf
+3	?subject=Your%20preprint%20https://arxiv.org/pdf/2210.16313.pdf
+4	athukora@msu.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2210.16331.pdf
+5	?subject=Your%20preprint%20https://arxiv.org/pdf/2210.16366.pdf
+6	kiyohaukawana@gmail.com?subject=Your%20preprint%20https://arxiv.org/pdf/2210.16462.pdf
+7	bixm20@lzu.edu.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2210.16479.pdf
+8	wlqian@usp.br?subject=Your%20preprint%20https://arxiv.org/pdf/2210.17135.pdf
+9	iascchao@ust.hk?subject=Your%20preprint%20https://arxiv.org/pdf/2210.17176.pdf
+10	a.j.cooper@uva.nl?subject=Your%20preprint%20https://arxiv.org/pdf/2210.17205.pdf
+11	biswas@apc.in2p3.fr?subject=Your%20preprint%20https://arxiv.org/pdf/2210.17433.pdf
+12	?subject=Your%20preprint%20https://arxiv.org/pdf/2210.17487.pdf
+
+
+37 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2010.03089.pdf
+2	https://arxiv.org/pdf/2102.07363.pdf
+3	https://arxiv.org/pdf/2110.07942.pdf
+4	https://arxiv.org/pdf/2112.09817.pdf
+5	https://arxiv.org/pdf/2202.08608.pdf
+6	https://arxiv.org/pdf/2204.08464.pdf
+7	https://arxiv.org/pdf/2204.12874.pdf
+8	https://arxiv.org/pdf/2205.02871.pdf
+9	https://arxiv.org/pdf/2207.11041.pdf
+10	https://arxiv.org/pdf/2207.13133.pdf
+11	https://arxiv.org/pdf/2208.03026.pdf
+12	https://arxiv.org/pdf/2208.10482.pdf
+13	https://arxiv.org/pdf/2208.11095.pdf
+14	https://arxiv.org/pdf/2208.11894.pdf
+15	https://arxiv.org/pdf/2209.13616.pdf
+16	https://arxiv.org/pdf/2210.12875.pdf
+17	https://arxiv.org/pdf/2210.16308.pdf
+18	https://arxiv.org/pdf/2210.16313.pdf
+19	https://arxiv.org/pdf/2210.16317.pdf
+20	https://arxiv.org/pdf/2210.16331.pdf
+21	https://arxiv.org/pdf/2210.16366.pdf
+22	https://arxiv.org/pdf/2210.16462.pdf
+23	https://arxiv.org/pdf/2210.16479.pdf
+24	https://arxiv.org/pdf/2210.16699.pdf
+25	https://arxiv.org/pdf/2210.16919.pdf
+26	https://arxiv.org/pdf/2210.16983.pdf
+27	https://arxiv.org/pdf/2210.17135.pdf
+28	https://arxiv.org/pdf/2210.17176.pdf
+29	https://arxiv.org/pdf/2210.17205.pdf
+30	https://arxiv.org/pdf/2210.17308.pdf
+31	https://arxiv.org/pdf/2210.17379.pdf
+32	https://arxiv.org/pdf/2210.17422.pdf
+33	https://arxiv.org/pdf/2210.17433.pdf
+34	https://arxiv.org/pdf/2210.17487.pdf
+35	https://arxiv.org/pdf/2210.17509.pdf
+36	https://arxiv.org/pdf/2210.17533.pdf
+37	https://arxiv.org/pdf/2210.17538.pdf
+
+========================================= 
+=CUMULASTIVE STATISTICS SINCE 01/09/2022= 
+========================================= 
+6961  total new astro-phORgr-qc preprint found (with repetitions)
+6176  tota new astro-phORgr-qc pdf processed
+7735  total occurrences of LIGO word
+6966  total occurrences of VIRGO word
+221  total preprints with alerts
+884 total preprints mention LIGO
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

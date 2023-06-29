@@ -1,0 +1,194 @@
+Received: from DU0PR03MB9592.eurprd03.prod.outlook.com (2603:10a6:10:423::7)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Tue, 25 Oct 2022
+ 05:46:17 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=uniud.it;
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22) by DU0PR03MB9592.eurprd03.prod.outlook.com
+ (2603:10a6:10:423::7) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5746.21; Tue, 25 Oct
+ 2022 05:46:16 +0000
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::435:554f:a05d:9e7]) by DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::435:554f:a05d:9e7%7]) with mapi id 15.20.5746.021; Tue, 25 Oct 2022
+ 05:46:16 +0000
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Tue, 25 Oct 2022 07:54:58 +0200
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Tue Oct 25 07:30:03 CEST 2022
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 25 Oct 2022 05:46:15.5959
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ ff570da4-7c9a-4dc4-5e90-08dab64c3b5b
+X-MS-Exchange-Organization-AuthSource:
+ DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: ZR0P278CA0067.CHEP278.PROD.OUTLOOK.COM
+ (2603:10a6:910:21::18) To DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: rubin@uniud.it
+Message-ID:
+ <DB3PR0302MB90164879FA5F75CB2377DA09C8319@DB3PR0302MB9016.eurprd03.prod.outlook.com>
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB3PR0302MB9016:EE_|DU0PR03MB9592:EE_
+X-MS-Office365-Filtering-Correlation-Id: ff570da4-7c9a-4dc4-5e90-08dab64c3b5b
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DB3PR0302MB9016.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-Network-Message-Id: ff570da4-7c9a-4dc4-5e90-08dab64c3b5b
+X-MS-Exchange-CrossTenant-AuthSource: DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 25 Oct 2022 05:46:16.7220
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: JvLPzY6fYUpdwiWW+YdcBx6d9l/rQ47CHCjnCP1zoAz94hdIDnCAX+oPyFiTe3mH
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DU0PR03MB9592
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.2324753
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5746.023
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	oc7rn4lppO5wLBxqohCL8OVczgbiFbckSWlWks3cErrbg84eaQXZUUdrvquzoENe9uHgLOl91yEE5C0b4VwWhoNn8pti1n+aAjzk57lxmnA8tAQB9uQxCTzNbd7cQn6dI8LiuQ/meBsuPd4x+qpHRzVMqKtyt0CPt++45SGbU4ByVieeia+7vrdXShb4Vbr4HVGnWqIwc0AQvFOJV6UglcXSi0mkEIzksIi44bOxnCUp0PQpBk/YBZYdc8eKzU6xrzAy/y+S1NCc10+JV8LYebMsADKvPoRXMxzGypAk9L+wpHeYbtZhGQxA999QrG/5OchVGnzoDlb22yNmYbhRwh0j9fogzGAOwaSn8ejuuwuAj+2PTL3WbGftMXhY+SwxACpmjvyIo+DVEuRL+XqJEH15yQihbEFATwSqTAp41bI5253uO5rnSwFZgtZjS6EjGPAkqtLSMP7TbneOej5ngVOXVbEELMwMIMgq/H8jgoZZVkdxXeJSmpwhM1f+QAQZ1sPCQK0f7WxC5MMS0UhGO9YlYQZLb4LFKVFoDNrApmdwA5kWAenjGE717FwZAsTLTZn8cBVNW/QDFOPy4otePTuhBUDyhRplk3GzilMnJuUEdGMSYK2BuviCfOdGmUZA2TjFPgfWx3gO4syu458flg80nWrPyyIjfMc9Sy03LEpVIvi9nOYajxZtd2Y/4Te0KquQT9BwESdQ9s/m3wUDsWQETBLK5XOBifUyO9ozV+mefanqHi1B7aN14fXDZnl0hdXrXLktBKprDCs3VwEAGWj9pGjJ1edxLVeNeFvlGlkCpvMo7cadD81CGttYEAfMIKIr4h45JttviGJSWJaLnqqb+VUnhiOCdRMB8I31dWOqRRo6iNzFxpDUjVNmReW/
+MIME-Version: 1.0
+
+RUN /home/gc/bin/check_LVC2 release 20220920 by gc
+<div class="list-dateline">Submissions received from  Fri 21 Oct 22  to  Mon 24 Oct 22, announced Tue, 25 Oct 22</div>
+226 new astro-phORgr-qc preprint found (with repetitions)
+208 new astro-phORgr-qc pdf processed
+294 occurrences of LIGO word
+230 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/1902.01974.pdf#page=3&search=ligo%20virgo ; seen by LIGO indicate very low (a ∼ 0.05) inferred spin values. Hence, the distribution of BH spin parameter and its dependence on the progenitor system is still an open question. We discuss the implications of our relatively high spin
+2	https://arxiv.org/pdf/2010.09100.pdf#page=1&search=ligo%20virgo ; in the Laser Interferometer Gravitational-Wave Observatory (LIGO) photon shot noise imposes a fundamental limit on the sensitivity of the km-length interferometers; but it was possible to exploit quantum interactions to overcome
+3	https://arxiv.org/pdf/2203.04528.pdf#page=4&search=ligo%20virgo ; when GWs in the kilohertz band are surveyed with higher sensitivity by an upgraded Advanced LIGO (A+ [53]) and thirdgeneration observatories (e.g., the Einstein Telescope [54] and Cosmic Explorer [55]), also with a speciﬁcally optimized design (e.g., NEMO [56]).
+4	https://arxiv.org/pdf/2209.09273.pdf#page=3&search=ligo%20virgo ; laser [54], and a heavy, low-frequency, mechanical oscillator, such as the 10 kg LIGO mirror [38]. The optomechanical coupling, between these two systems, is induced by gravity. We now quantify the resulting entanglement
+	https://arxiv.org/pdf/2209.09273.pdf#page=4&search=ligo%20virgo ; the 10kg LIGO mirror has been recently cooled to 11 phonons in a trap of frequency ∼ 2π × 100Hz [38]). From
+5	https://arxiv.org/pdf/2210.00814.pdf#page=14&search=ligo%20virgo ; in the LIGO O4 era; see Section 1). Therefore, considering the theoretical and observational uncertainties, it is reasonable to estimate the cocoon’s properties within a factor of a
+6	https://arxiv.org/pdf/2210.02255.pdf#page=22&search=ligo%20virgo ; Hence, our analytic model is ﬂexible in future early observations of GW events (e.g., with LIGO and LISA). We showed for the ﬁrst time that we can deduce the relativistic nature of the cocoon directly from the observations
+	https://arxiv.org/pdf/2210.02255.pdf#page=24&search=ligo%20virgo ; upcoming LIGO O4 and LISA), we estimate that the cocoon emission is detectable in future GW170817-like events if early
+7	https://arxiv.org/pdf/2210.07155.pdf#page=1&search=ligo%20virgo ; as LISA [16] and DECIGO [17] (in single ﬁeld and singlestage axion monodromy models, GWs can fall into LIGO frequencies, see e.g. [18] and Refs. therein). On the other
+8	https://arxiv.org/pdf/2210.12222.pdf#page=1&search=ligo%20virgo ; gravitational wave detectors. In fact, this technique is directly applicable to Advanced LIGO, which could observe similar eﬀects with a detuned signal recycling cavity. By exploiting quantum correlations created by an optical spring, we measure a total sensitivity below the SQL
+	https://arxiv.org/pdf/2210.12222.pdf#page=1&search=ligo%20virgo ; access to sensitivities well below the SQL at frequencies ranges applicable to LIGO, with the potential to extend the reach of gravitational wave detectors further into the universe.
+	https://arxiv.org/pdf/2210.12222.pdf#page=1&search=ligo%20virgo ; limit (SQL) on high precision measurements. Ground based gravitational wave detectors such as LIGO have achieved sensitivities that approach the SQL at frequencies near 100 Hz [1, 2]. As of the conclusion of the
+	https://arxiv.org/pdf/2210.12222.pdf#page=1&search=ligo%20virgo ; In an interferometric measurement such as LIGO, quantum noise exists in two parts  shot noise (imprecision noise) and quantum backaction (radiation pressure noise). Shot noise scales inversely with laser power
+	https://arxiv.org/pdf/2210.12222.pdf#page=5&search=ligo%20virgo ; sensitivity is observed is between 40 kHz - 74 kHz. Such tunability could be exploited for LIGO and other interferometric experiments if there is a speciﬁc frequency range of interest.
+9	https://arxiv.org/pdf/2210.12875.pdf#page=18&search=ligo%20virgo ; [30] LIGO Observing runs. In addition, the GBM targeted search detected a weak γray transient 0.4 seconds after the black-hole black-hole merger GW150914. Based on the temporal proximity of the two events, they have a 2.9σ post-trials probability
+10	https://arxiv.org/pdf/2210.13006.pdf#page=1&search=ligo%20virgo ; ﬁrst detection of GWs by LIGO [3, 4], many tests of GR have been carried out and all the GW data has
+11	https://arxiv.org/pdf/2210.13436.pdf#page=10&search=ligo%20virgo ; LIGO and ET, which are sensitive at f > 1 Hz, can not distinguish the lensed signal from 
+	https://arxiv.org/pdf/2210.13436.pdf#page=11&search=ligo%20virgo ; O(10−3 ). This eﬀect is so small that neither LIGO nor ET can distinguish the lensed signal 
+	https://arxiv.org/pdf/2210.13436.pdf#page=13&search=ligo%20virgo ; LIGO 
+	https://arxiv.org/pdf/2210.13436.pdf#page=13&search=ligo%20virgo ; Figure 7. Noise power spectral density of LIGO at its design sensitivity and various proposed GW detectors. The contributions coming from the unresolved binary backgrounds are shown by the dashed
+	https://arxiv.org/pdf/2210.13436.pdf#page=13&search=ligo%20virgo ; In Sec. 2.3, we show why LIGO and ET cannot probe the NFW halos through gravitational lensing. Instead, as LISA, AEDGE and BBO are sensitive at lower frequencies, they can probe the lens eﬀects from DM halos of virial mass Mv > 104 M for which the lens
+	https://arxiv.org/pdf/2210.13436.pdf#page=13&search=ligo%20virgo ; is detectable with LIGO and ET. If the radius Rc of the object is much smaller than the Einstein radius of a point mass lens of the same mass Mc , Rc
+	https://arxiv.org/pdf/2210.13436.pdf#page=14&search=ligo%20virgo ; where ma denotes the fuzzy DM particle mass. We overlap in Fig. 9 this mass-radius relationship for diﬀerent fuzzy DM masses. We can see that LIGO is sensitive, assuming some 
+	https://arxiv.org/pdf/2210.13436.pdf#page=15&search=ligo%20virgo ; LIGO 
+	https://arxiv.org/pdf/2210.13436.pdf#page=19&search=ligo%20virgo ; We focus on LIGO and ET to detect the cores inside the fuzzy DM halos since they are sensitive to the masses where the cores may be more abundant. The eﬀect of the halo
+	https://arxiv.org/pdf/2210.13436.pdf#page=19&search=ligo%20virgo ; surrounding the core is negligible since for the frequencies of LIGO and ET the eﬀect is in the geometric limit and the constant magniﬁcation of the signal would bias the luminosity
+	https://arxiv.org/pdf/2210.13436.pdf#page=20&search=ligo%20virgo ; LIGO 
+	https://arxiv.org/pdf/2210.13436.pdf#page=20&search=ligo%20virgo ; detect the cores for ma = 10−17 eV, both with LIGO and ET. Roughly, this DM mass leads to the biggest microlensing probability because if DM mass is lighter, then the cores are not
+	https://arxiv.org/pdf/2210.13436.pdf#page=20&search=ligo%20virgo ; number of detectable lensed events for ma = 10−17 eV is 0.001+0.003 for LIGO and 0.03+0.04 −0.0005
+	https://arxiv.org/pdf/2210.13436.pdf#page=21&search=ligo%20virgo ; LIGO, Ml  300 M⊙ 
+	https://arxiv.org/pdf/2210.13436.pdf#page=21&search=ligo%20virgo ; or with LIGO (blue). The error bands reﬂect the uncertainties in the BH merger rate. Right panel 
+	https://arxiv.org/pdf/2210.13436.pdf#page=21&search=ligo%20virgo ; 300M for LIGO. Taking these values as benchmark cases, we show in the left panel of Fig. 17 the expected number of detectable
+	https://arxiv.org/pdf/2210.13436.pdf#page=21&search=ligo%20virgo ; see that if these objects are suﬃciently compact LIGO will in this case see O(1) lensed event per year and ET O(1000) lensed events per year.4 The ﬁnite size of the lens becomes relevant
+	https://arxiv.org/pdf/2210.13436.pdf#page=21&search=ligo%20virgo ; at R > 0.01 pc for LIGO and at R > 0.1 pc for ET, and the expected number of lensed events 4
+	https://arxiv.org/pdf/2210.13436.pdf#page=21&search=ligo%20virgo ; Notice that, our analysis includes only the inspiral phase, whereas, in particular for LIGO, the merger and ringdown phases are important and including them would increase the expected number of detectable
+	https://arxiv.org/pdf/2210.13436.pdf#page=22&search=ligo%20virgo ; of such objects if their radius is R < 0.37 pc. The projected constraint from LIGO in its design sensitivity may reach fDM 0.5, depending on the BH merger rate.
+	https://arxiv.org/pdf/2210.13436.pdf#page=22&search=ligo%20virgo ; microlensing eﬀect by LIGO or ET range roughly from 10−18 eV to 10−16 eV. We have shown 
+	https://arxiv.org/pdf/2210.13436.pdf#page=23&search=ligo%20virgo ; their mass is in the range detectable with LIGO or ET (see Fig. 9), the expected number of detectable microlensed events can be large, O(103 ) for ET and O(1) for LIGO. The ﬁnite
+	https://arxiv.org/pdf/2210.13436.pdf#page=23&search=ligo%20virgo ; of detectable microlensed events can be large, O(103 ) for ET and O(1) for LIGO. The ﬁnite radius of these stars becomes relevant for ET at R > 0.1 pc and for LIGO at R > 0.01 pc,
+	https://arxiv.org/pdf/2210.13436.pdf#page=23&search=ligo%20virgo ; radius of these stars becomes relevant for ET at R > 0.1 pc and for LIGO at R > 0.01 pc, and the microlensing eﬀects become undetectable if the radius is signiﬁcantly larger than
+
+11 preprints with alerts
+==================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+==================================================================== 
+1	lloyd-ronning@lanl.gov?subject=Your%20preprint%20https://arxiv.org/pdf/1902.01974.pdf
+2	?subject=Your%20preprint%20https://arxiv.org/pdf/2010.09100.pdf
+3	?subject=Your%20preprint%20https://arxiv.org/pdf/2203.04528.pdf
+4	?subject=Your%20preprint%20https://arxiv.org/pdf/2209.09273.pdf
+5	hamidani.hamid@yukawa.kyoto-u.ac.jp?subject=Your%20preprint%20https://arxiv.org/pdf/2210.00814.pdf
+6	hamidani.hamid@yukawa.kyoto-u.ac.jp?subject=Your%20preprint%20https://arxiv.org/pdf/2210.02255.pdf
+7	abishevme@gmail.com?subject=Your%20preprint%20https://arxiv.org/pdf/2210.07155.pdf
+8	ctorr23@lsu.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2210.12222.pdf
+9	thompson@nasa.gov?subject=Your%20preprint%20https://arxiv.org/pdf/2210.12875.pdf
+10	meijw@sysu.edu.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2210.13006.pdf
+11	malcolm.fairbairn@kcl.ac.uk?subject=Your%20preprint%20https://arxiv.org/pdf/2210.13436.pdf
+
+
+26 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/1902.01974.pdf
+2	https://arxiv.org/pdf/2010.09100.pdf
+3	https://arxiv.org/pdf/2107.12793.pdf
+4	https://arxiv.org/pdf/2110.05982.pdf
+5	https://arxiv.org/pdf/2203.04528.pdf
+6	https://arxiv.org/pdf/2204.10512.pdf
+7	https://arxiv.org/pdf/2206.09954.pdf
+8	https://arxiv.org/pdf/2207.10096.pdf
+9	https://arxiv.org/pdf/2208.10197.pdf
+10	https://arxiv.org/pdf/2209.09273.pdf
+11	https://arxiv.org/pdf/2210.00814.pdf
+12	https://arxiv.org/pdf/2210.02255.pdf
+13	https://arxiv.org/pdf/2210.07155.pdf
+14	https://arxiv.org/pdf/2210.12174.pdf
+15	https://arxiv.org/pdf/2210.12222.pdf
+16	https://arxiv.org/pdf/2210.12287.pdf
+17	https://arxiv.org/pdf/2210.12502.pdf
+18	https://arxiv.org/pdf/2210.12641.pdf
+19	https://arxiv.org/pdf/2210.12834.pdf
+20	https://arxiv.org/pdf/2210.12875.pdf
+21	https://arxiv.org/pdf/2210.12959.pdf
+22	https://arxiv.org/pdf/2210.13006.pdf
+23	https://arxiv.org/pdf/2210.13190.pdf
+24	https://arxiv.org/pdf/2210.13204.pdf
+25	https://arxiv.org/pdf/2210.13335.pdf
+26	https://arxiv.org/pdf/2210.13436.pdf
+
+========================================= 
+=CUMULASTIVE STATISTICS SINCE 01/09/2022= 
+========================================= 
+6162  total new astro-phORgr-qc preprint found (with repetitions)
+5484  tota new astro-phORgr-qc pdf processed
+6340  total occurrences of LIGO word
+4780  total occurrences of VIRGO word
+186  total preprints with alerts
+765 total preprints mention LIGO
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

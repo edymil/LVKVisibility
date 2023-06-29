@@ -1,0 +1,227 @@
+Received: from AM9PR03MB7122.eurprd03.prod.outlook.com (2603:10a6:20b:2d7::22)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Tue, 6 Dec 2022
+ 08:02:11 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=uniud.it;
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22) by AM9PR03MB7122.eurprd03.prod.outlook.com
+ (2603:10a6:20b:2d7::22) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5880.10; Tue, 6 Dec
+ 2022 08:02:09 +0000
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::115c:1eae:b54e:374]) by DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::115c:1eae:b54e:374%3]) with mapi id 15.20.5880.014; Tue, 6 Dec 2022
+ 08:02:09 +0000
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Tue,  6 Dec 2022 09:11:08 +0100
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Tue Dec 6 07:30:04 CET 2022
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 06 Dec 2022 08:02:08.2272
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ a0de01f9-c676-4e23-ad2e-08dad7602c0d
+X-MS-Exchange-Organization-AuthSource:
+ DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: ZR0P278CA0051.CHEP278.PROD.OUTLOOK.COM
+ (2603:10a6:910:1d::20) To DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: rubin@uniud.it
+Message-ID:
+ <DB3PR0302MB90167304D61696A44EECE2CAC81B9@DB3PR0302MB9016.eurprd03.prod.outlook.com>
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB3PR0302MB9016:EE_|AM9PR03MB7122:EE_
+X-MS-Office365-Filtering-Correlation-Id: a0de01f9-c676-4e23-ad2e-08dad7602c0d
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DB3PR0302MB9016.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-Network-Message-Id: a0de01f9-c676-4e23-ad2e-08dad7602c0d
+X-MS-Exchange-CrossTenant-AuthSource: DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 06 Dec 2022 08:02:09.3526
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: 55fiEhXsvSakKPdFlaQ8Ea+MPGxFFxdxTwxKf2R/jeOuNWVeDOZywJ+7aWI+osUE
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM9PR03MB7122
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.7933280
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5880.013
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	q8x6V+6iWsVTjxDdC5tIwhJIin4vnF6ZJhX4FG+MF2hwDY1vdLjEyYwDJC88E4U9WhubQNmjWG7kb/deMmFJtwNl7QXB9kwsapBZIDQcVtyaeBgOyEE7LkQZ8bWmGQB95H3kz24E6XUDlj6e+YWAXrhtnuAqlpXZXvaOZmvN8BVmzok/Vdm9q572pwb/jq8ArYPNt2eQK5qtRJwz6sLlsInb3UERY3E6q2+KtCj7lw5CxcExjQExAsQUDiPfzsHcukaMoo+a+F3i1ysPa9ZqO8imZXoKOSFmicp1V1rnqUtRFGuURnbzh3I+ckw5KLPWU7OOROwodC8xcgSxC/g+ePZO95zS1A9sE6R88Kl5z2A4bx1ExZVy8W5lUUXc63E3A+3PjS6478vlJ/dYintYo++dS3eyRLThGXZSKA+X9HuupRpebxqsetk9lcpC/uXSDLqAdvl/xaD4LqPaNU8e62SCnF6EQUuGt9D72FILjZHRfm2Yzrs3n+ID+8gVTKE7OrVAn6DKkgV++SSaDRVwp3yj0CMgniyd414s0Bb2F4wb1OvnPFouOPVBuQhAvz1/lmwzBOxLAGPKZjiB4hd3Ob6NK1vwumDHc8mhTxX+RrJEu0D3id3dfpKNaXsH11HulkdPKMQ6JXh8Kv7NYhCBYnyiALNrEcRavEQF6Ke5PUND7YI3sMnhVBJtN0kqTGxRwLruR4LqLF+zACPh8DRs3p7+jyOa5VjZGWdBKCD/6QrxeQjRuJDGQy3j8uIQnc4v6Eq/9gUsr40TaD0+FbFmX1DA2n/KDvj96lOZkHyS//s=
+MIME-Version: 1.0
+
+RUN /home/gc/bin/check_LVC2 release 20221130 by gc
+<div class="list-dateline">Submissions received from  Fri  2 Dec 22  to  Mon  5 Dec 22, announced Tue,  6 Dec 22</div>
+227 new astro-phORgr-qc preprint found (with repetitions)
+200 new astro-phORgr-qc pdf processed
+282 occurrences of LIGO word
+119 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2206.02747.pdf#page=5&search=ligo%20virgo ; LIGO 
+	https://arxiv.org/pdf/2206.02747.pdf#page=6&search=ligo%20virgo ; LIGO 
+	https://arxiv.org/pdf/2206.02747.pdf#page=12&search=ligo%20virgo ; where ALIGO is the LIGO normalization on the local merger rate and dV /dz is the volume element which converts the number density to the number of objects. In the above expression
+2	https://arxiv.org/pdf/2207.01654.pdf#page=1&search=ligo%20virgo ; data from the third observing run of Advanced LIGO. While we ﬁnd no statistically signiﬁcant candidates beyond those already reported elsewhere, our search sets the stage to search for highermode rich signals in future observing runs. The eﬃcient detection of such signals is crucial to
+	https://arxiv.org/pdf/2207.01654.pdf#page=2&search=ligo%20virgo ; Advanced LIGO noise that is free of instrumental transients or “glitches”. These noisy artifacts tend to aﬀect search eﬃciency severely. Here, we turn this prototype
+	https://arxiv.org/pdf/2207.01654.pdf#page=2&search=ligo%20virgo ; search into a fully working one and deploy it on data collected during the third observing run of Advanced LIGO. First, we expand the search to the case of aligned-spin
+	https://arxiv.org/pdf/2207.01654.pdf#page=5&search=ligo%20virgo ; for O3 Advanced LIGO noise sensitivity. We perform this study with waveforms generated using the reducedorder representation of the aligned-spin eﬀective-onebody model with higher-order modes, SEOBNRv4HM
+	https://arxiv.org/pdf/2207.01654.pdf#page=8&search=ligo%20virgo ; noise, a consistently high SNR across the detector network would have suﬃced to assess the presence of gravitational wave in the data. Advanced LIGO noise is, however, known to be neither wide-sense stationary nor Gaussian [26]. Instead, the detector data contains short-duration noise transients or glitches that can
+	https://arxiv.org/pdf/2207.01654.pdf#page=10&search=ligo%20virgo ; to ∼ 100 days of O3 Advanced LIGO data. As described in Sec. III C 1, our simulation set consists of binary blackhole waveforms with strong higher-order mode content.
+	https://arxiv.org/pdf/2207.01654.pdf#page=12&search=ligo%20virgo ; RESULTS FROM THE THIRD LIGO OBSERVING RUN
+3	https://arxiv.org/pdf/2211.02581.pdf#page=2&search=ligo%20virgo ; of gravitational waves by LIGO and the image of supermassive black holes by EHT [1, 2]. However, the black hole interior is riddled with a spacetime singularity. To better understand the properties of these
+4	https://arxiv.org/pdf/2212.01397.pdf#page=2&search=ligo%20virgo ; rates of mergers for interpreting gravitational wave detections like those from LIGO. Such predictions have been explored assuming diﬀerent mass proﬁles (e.g.,
+5	https://arxiv.org/pdf/2212.01477.pdf#page=13&search=ligo%20virgo ; 1 LIGO 
+6	https://arxiv.org/pdf/2212.02026.pdf#page=1&search=ligo%20virgo ; χ2 statistic in real LIGO data. The tuning of the optimal χ2 includes accounting for the phase of the CBC signal and a well informed choice of sine-Gaussian basis vectors to discern how CBC
+	https://arxiv.org/pdf/2212.02026.pdf#page=1&search=ligo%20virgo ; using IMRPhenomPv2 waveform and injected into real LIGO data from the same run. We show that in comparison to the traditional χ2 , the optimal χ2 improves the signal detection rate by
+	https://arxiv.org/pdf/2212.02026.pdf#page=8&search=ligo%20virgo ; BBH signals, we chose real blips from the LIGO O2 run, as identiﬁed by the Gravity Spy tool [23–27]. Blips
+	https://arxiv.org/pdf/2212.02026.pdf#page=10&search=ligo%20virgo ; can be constructed in real LIGO data so as to reduce 
+	https://arxiv.org/pdf/2212.02026.pdf#page=11&search=ligo%20virgo ; and Tanmaya Mishra for discussions related to LIGO data. We also thank Bhooshan Gadre for reviewing the
+7	https://arxiv.org/pdf/2212.02065.pdf#page=1&search=ligo%20virgo ; We show that the Laser Interferometer Gravitational Wave Observatory (LIGO) is a powerful instrument in the Search for Extra-Terrestrial Intelligence (SETI). LIGO’s ability to detect
+	https://arxiv.org/pdf/2212.02065.pdf#page=1&search=ligo%20virgo ; instrument in the Search for Extra-Terrestrial Intelligence (SETI). LIGO’s ability to detect gravitational waves (GWs) from accelerating astrophysical sources, such as binary black
+	https://arxiv.org/pdf/2212.02065.pdf#page=1&search=ligo%20virgo ; And/or Massive Accelerating spacecraft (RAMAcraft). We show that LIGO is sensitive to RAMAcraft of 1 Jupiter mass accelerating to a fraction of the speed of light (e.g. 10%) up to
+	https://arxiv.org/pdf/2212.02065.pdf#page=1&search=ligo%20virgo ; of stars for human-scale technology (e.g. radiowaves), whereas LIGO can probe all 1011 stars in the Milky Way for RAMAcraft. Moreover, thanks to the 𝑓 −1 scaling of the GW signal
+	https://arxiv.org/pdf/2212.02065.pdf#page=1&search=ligo%20virgo ; the Big Bang Observer (BBO) will be about 100 times more sensitive than LIGO, increasing the search volume by 106 . In this paper, we calculate the waveforms for linearly accelerating
+	https://arxiv.org/pdf/2212.02065.pdf#page=2&search=ligo%20virgo ; and plugging the result into existing detection pipelines. In this paper, we take a ﬁrst look at the capabilities of LIGO and future GW detectors, such as LISA, to detect these objects. Speciﬁcally, we
+	https://arxiv.org/pdf/2212.02065.pdf#page=2&search=ligo%20virgo ; constant acceleration will be detectable by either LIGO or LISA. In the case of LIGO, we set novel constraints on the occurrence of
+	https://arxiv.org/pdf/2212.02065.pdf#page=2&search=ligo%20virgo ; In the case of LIGO, we set novel constraints on the occurrence of such trajectories while LIGO was online.
+	https://arxiv.org/pdf/2212.02065.pdf#page=2&search=ligo%20virgo ; such trajectories while LIGO was online. Though our focus is on artiﬁcial objects, it may be the case that
+	https://arxiv.org/pdf/2212.02065.pdf#page=2&search=ligo%20virgo ; by both LIGO and LISA for a given mass and change in velocity. In Section 4, we discuss how detection feasibility can be improved
+	https://arxiv.org/pdf/2212.02065.pdf#page=6&search=ligo%20virgo ; We now move on to computing the distance at which LIGO and LISA can detect RAMAcraft with constant acceleration.
+	https://arxiv.org/pdf/2212.02065.pdf#page=6&search=ligo%20virgo ; curve of LIGO (Abbott et al. 2020) and the projected sensitivity curve of LISA (Robson et al. 2019) can be seen in Figure 4. Speciﬁcally, the curves in Figure 4 are amplitude spectral densities (ASDs)
+	https://arxiv.org/pdf/2212.02065.pdf#page=7&search=ligo%20virgo ; LIGO Noise ASD 
+	https://arxiv.org/pdf/2212.02065.pdf#page=7&search=ligo%20virgo ; Figure 4. (Top) Plot of LIGO sensitivity curve generated using the aLIGOZeroDetHighPower method from the PyCBC library (Nitz et al.
+	https://arxiv.org/pdf/2212.02065.pdf#page=8&search=ligo%20virgo ; LIGO using both the same and diﬀerent data sample lengths. 
+	https://arxiv.org/pdf/2212.02065.pdf#page=8&search=ligo%20virgo ; We are now prepared to compute the ranges at which LIGO and LISA can detect linearly moving RAMAcraft undergoing constant acceleration. Speciﬁcally, we will compute detection ranges
+	https://arxiv.org/pdf/2212.02065.pdf#page=8&search=ligo%20virgo ; detectable regime for LIGO burst searches should have already been detected (if the signal occurred while LIGO was online). The
+	https://arxiv.org/pdf/2212.02065.pdf#page=8&search=ligo%20virgo ; been detected (if the signal occurred while LIGO was online). The lack of burst detections thereby constrains the parameter space for
+	https://arxiv.org/pdf/2212.02065.pdf#page=8&search=ligo%20virgo ; key steps involved for a given parameter set {𝑀, Δ𝑣, 𝑇, 𝑅}, detector (LIGO or LISA), and detection method (burst or MF) are the following
+	https://arxiv.org/pdf/2212.02065.pdf#page=9&search=ligo%20virgo ; (iii) Import data for either the LIGO or LISA noise sensitivity curve 𝑆 𝑛 ( 𝑓 𝑘 ).
+	https://arxiv.org/pdf/2212.02065.pdf#page=9&search=ligo%20virgo ; from the pycbc.psd library for the case of LIGO. For LISA, we use the sensitivity curve data provided in the GitHub from Robson et al.
+	https://arxiv.org/pdf/2212.02065.pdf#page=9&search=ligo%20virgo ; detectable by LIGO or LISA. In particular, we take the limit 𝑣 0 → 0, which corresponds to objects whose change in velocity is much
+	https://arxiv.org/pdf/2212.02065.pdf#page=9&search=ligo%20virgo ; and for LIGO, we choose 𝜏 = 0.1 s. For MF searches, the SNR is independent of 𝜏, up to some oscillations to within a factor of a
+	https://arxiv.org/pdf/2212.02065.pdf#page=9&search=ligo%20virgo ; 𝜏 = 300 s for LIGO. The frequency band that we compute the statistics over also
+	https://arxiv.org/pdf/2212.02065.pdf#page=9&search=ligo%20virgo ; of LISA and 20 points about 100 Hz for the case of LIGO (and the aforementioned frequency spacings 𝜏 −1 ) achieves this goal.
+	https://arxiv.org/pdf/2212.02065.pdf#page=10&search=ligo%20virgo ; [10−3 , 1] Hz for LISA and [1, 200] Hz for LIGO versus a moderate band of [10−3 , 10−2 ] Hz for LISA and [10, 200] Hz for LIGO, so
+	https://arxiv.org/pdf/2212.02065.pdf#page=10&search=ligo%20virgo ; band of [10−3 , 10−2 ] Hz for LISA and [10, 200] Hz for LIGO, so we choose the latter to conserve computational resources 2 .
+	https://arxiv.org/pdf/2212.02065.pdf#page=10&search=ligo%20virgo ; and LIGO burst search, respectively, and 𝑇 = 100 s and 10 s for the LISA and LIGO MF search, respectively. The various acceleration
+	https://arxiv.org/pdf/2212.02065.pdf#page=10&search=ligo%20virgo ; LISA and LIGO MF search, respectively. The various acceleration periods 𝑇 were chosen such that 𝑇 ≤ 𝜏 for each search, ensuring
+	https://arxiv.org/pdf/2212.02065.pdf#page=10&search=ligo%20virgo ; The signal ranges, using both burst and MF search methods, can be seen in Figure 6 for LIGO and LISA. We look at signals with parameters 𝑀 and Δ𝑣 ranging from 𝑀Δ𝑣 2 =
+	https://arxiv.org/pdf/2212.02065.pdf#page=10&search=ligo%20virgo ; curve (LIGO MF search) was approximately 10−1 pc, around and below which the Newtonian contribution to the strain may begin
+	https://arxiv.org/pdf/2212.02065.pdf#page=10&search=ligo%20virgo ; space for which detection is possible. For LIGO burst searches in particular, since the SNR is indiﬀerent to the shape of the signal, the
+	https://arxiv.org/pdf/2212.02065.pdf#page=10&search=ligo%20virgo ; LIGO was online. 
+	https://arxiv.org/pdf/2212.02065.pdf#page=10&search=ligo%20virgo ; are given by the LIGO MF search. On the higher end of this plot, we see that RAMAcraft with masses 10 ·10−3 M (10 Jupiters)
+	https://arxiv.org/pdf/2212.02065.pdf#page=10&search=ligo%20virgo ; Similarly, using the results from the LIGO burst search, we can rule out the occurrence of certain RAMAcraft (while LIGO
+	https://arxiv.org/pdf/2212.02065.pdf#page=10&search=ligo%20virgo ; can rule out the occurrence of certain RAMAcraft (while LIGO was online) by the lack of burst detections. On the upper end of
+	https://arxiv.org/pdf/2212.02065.pdf#page=10&search=ligo%20virgo ; the numbers here, the results from Figure 6 for the LIGO MF search RAMAcraft are accurate for a ten Jupiter mass objects for the
+	https://arxiv.org/pdf/2212.02065.pdf#page=10&search=ligo%20virgo ; summarize, the results for the LIGO MF search are quite robust to the assumption (2.13), though loosening this requirement may
+	https://arxiv.org/pdf/2212.02065.pdf#page=10&search=ligo%20virgo ; for the case of LIGO and about 6 for the case of LISA. Because the 2
+	https://arxiv.org/pdf/2212.02065.pdf#page=10&search=ligo%20virgo ; Comparing LIGO and LISA 
+	https://arxiv.org/pdf/2212.02065.pdf#page=10&search=ligo%20virgo ; From Figure 6, we can see that LIGO and LISA perform comparably for both burst and MF searches, but that LIGO edges LISA in both cases, namely by a factor of a few for burst searches and
+	https://arxiv.org/pdf/2212.02065.pdf#page=10&search=ligo%20virgo ; analytical argument. We aim to compute a ratio of ranges for LIGO and LISA
+	https://arxiv.org/pdf/2212.02065.pdf#page=11&search=ligo%20virgo ; Range for a given M( v)2 (LIGO) 
+	https://arxiv.org/pdf/2212.02065.pdf#page=11&search=ligo%20virgo ; LISA’s sensitivity band than LIGO’s. Since these eﬀects will apply for each SNR contribution (3.25) and (3.26), they should apply to
+	https://arxiv.org/pdf/2212.02065.pdf#page=11&search=ligo%20virgo ; moving from LIGO to LISA, our overall sensitivity drops from about 5 × 10−24 Hz−1/2 to 10−20 Hz−1/2 , and the sensitivity band
+	https://arxiv.org/pdf/2212.02065.pdf#page=11&search=ligo%20virgo ; Then for a given frequency spacing 𝜏 −1 , since the LIGO sensitivity band sits at around 100 Hz vs 5 mHz for the case of LISA, the LIGO
+	https://arxiv.org/pdf/2212.02065.pdf#page=11&search=ligo%20virgo ; band sits at around 100 Hz vs 5 mHz for the case of LISA, the LIGO noise correlation computation contains 100 / 0.005 = 20,000 times
+	https://arxiv.org/pdf/2212.02065.pdf#page=11&search=ligo%20virgo ; the burst SNR scales like 𝜏 −1/2 , LIGO will receive a gain in range by virtue of the fact that it can access its sensitivity band with a
+	https://arxiv.org/pdf/2212.02065.pdf#page=11&search=ligo%20virgo ; [10−9 M (𝑐/s) 2 , 0.25 M 𝑐 2 ] to be detected by LIGO (Top) or LISA (Bottom) using either a burst or MF search.The region under the curves yields the parameter sets {𝑀 , Δ𝑣, 𝑅 } for which the signal would have been detected
+	https://arxiv.org/pdf/2212.02065.pdf#page=11&search=ligo%20virgo ; (LIGO burst) or can be detected (MF). The dotted horizontal lines give, in increasing order, the distance to the nearest star, the distance to the edge of
+	https://arxiv.org/pdf/2212.02065.pdf#page=11&search=ligo%20virgo ; case of LISA, the deﬁcit in overall sensitivity as compared to LIGO is too large to take advantage of the low-frequency sensitivity. There
+	https://arxiv.org/pdf/2212.02065.pdf#page=11&search=ligo%20virgo ; LIGO, increasing the search volume by a factor of 106 . Similarly, 
+	https://arxiv.org/pdf/2212.02065.pdf#page=12&search=ligo%20virgo ; samples than LIGO due to the fact that LISA will be isolated in space, while LIGO experiences the perturbing inﬂuence of groundbased noise. A reasonable prediction would be that LISA will be
+	https://arxiv.org/pdf/2212.02065.pdf#page=12&search=ligo%20virgo ; space, while LIGO experiences the perturbing inﬂuence of groundbased noise. A reasonable prediction would be that LISA will be capable of uninterrupted samples of up to 1 week, whereas LIGO’s
+	https://arxiv.org/pdf/2212.02065.pdf#page=12&search=ligo%20virgo ; capable of uninterrupted samples of up to 1 week, whereas LIGO’s capacity will be approximately 1 day (Professor Neil Cornish, private communication).
+	https://arxiv.org/pdf/2212.02065.pdf#page=12&search=ligo%20virgo ; compared to LIGO. Plugging these values into (3.30) and (3.31) (𝑏)
+	https://arxiv.org/pdf/2212.02065.pdf#page=12&search=ligo%20virgo ; greater than 1 week. Therefore, LISA will be superior to LIGO at detecting bursts but still worse for MF detections.
+	https://arxiv.org/pdf/2212.02065.pdf#page=12&search=ligo%20virgo ; and furthermore could be about 109 times less sensitive than LIGO and still provide a beneﬁt for MF searches. Therefore, sensitivity
+	https://arxiv.org/pdf/2212.02065.pdf#page=12&search=ligo%20virgo ; of nHz, PTAs can be less sensitive than LIGO by a factor of about 105 and still provide a beneﬁt 𝑟 det < 1. Therefore, sensitivity improvements to PTAs, such as SKA, could signiﬁcantly improve the
+	https://arxiv.org/pdf/2212.02065.pdf#page=14&search=ligo%20virgo ; coincident bursts detected by LIGO above (𝑆/𝑁)det = 8. Therefore, there have been no accelerating Jupiter-scale RAMAcraft in our
+	https://arxiv.org/pdf/2212.02065.pdf#page=14&search=ligo%20virgo ; LIGO sensitivity. With the installment of low-frequency detectors like DECIGO and the BBO, we expect that these constraints can be
+	https://arxiv.org/pdf/2212.02065.pdf#page=14&search=ligo%20virgo ; We have computed the ranges at which a linearly moving RAMAcraft with constant acceleration would be detected by LIGO or LISA using either a burst or a MF search with a detection threshold of (𝑆/𝑁)det = 8. We ﬁnd on the upper end that RAMAcraft
+	https://arxiv.org/pdf/2212.02065.pdf#page=14&search=ligo%20virgo ; can use our results for the LIGO burst search to constrain the occurrence of certain RAMAcraft trajectories (while LIGO was operating). At the present moment, we can rule out tenth of a solar mass RAMAcraft achieving Δ𝑣 = 0.1 𝑐 up to 105 − 106 pc and
+
+7 preprints with alerts
+==================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+==================================================================== 
+1	lorenzo.valbusadallarmi@phd.unipd.it?subject=Your%20preprint%20https://arxiv.org/pdf/2206.02747.pdf
+2	koustav.chandra@iitb.ac.in?subject=Your%20preprint%20https://arxiv.org/pdf/2207.01654.pdf
+3	?subject=Your%20preprint%20https://arxiv.org/pdf/2211.02581.pdf
+4	zhuochen@astro.ucla.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2212.01397.pdf
+5	?subject=Your%20preprint%20https://arxiv.org/pdf/2212.01477.pdf
+6	sunil.choudhary@uwa.edu.au?subject=Your%20preprint%20https://arxiv.org/pdf/2212.02026.pdf
+7	luke@appliedphysics.org?subject=Your%20preprint%20https://arxiv.org/pdf/2212.02065.pdf
+
+
+23 preprints mention LIGO
+======================================================================================= 
+=List of preprints mention LIGO with version nubar [subject area] and submission date = 
+======================================================================================= 
+1	https://arxiv.org/pdf/2107.01935.pdf#page=1: arXiv:2107.01935v3 [gr-qc] 4 Dec 2022
+2	https://arxiv.org/pdf/2107.12992.pdf#page=1: arXiv:2107.12992v2 [astro-ph.CO] 5 Dec 2022
+3	https://arxiv.org/pdf/2108.06874.pdf#page=1: arXiv:2108.06874v4 [gr-qc] 3 Dec 2022
+4	https://arxiv.org/pdf/2111.15027.pdf#page=1: arXiv:2111.15027v3 [gr-qc] 4 Dec 2022
+5	https://arxiv.org/pdf/2111.15280.pdf#page=1: arXiv:2111.15280v3 [astro-ph.CO] 5 Dec 2022
+6	https://arxiv.org/pdf/2203.14519.pdf#page=1: arXiv:2203.14519v2 [gr-qc] 11 Aug 2022
+7	https://arxiv.org/pdf/2203.14974.pdf#page=1: arXiv:2203.14974v2 [astro-ph.HE] 3 Dec 2022
+8	https://arxiv.org/pdf/2206.02747.pdf#page=1: arXiv:2206.02747v2 [astro-ph.CO] 5 Dec 2022
+9	https://arxiv.org/pdf/2207.01654.pdf#page=1: arXiv:2207.01654v2 [gr-qc] 5 Dec 2022
+10	https://arxiv.org/pdf/2207.04417.pdf#page=1: arXiv:2207.04417v2 [gr-qc] 3 Dec 2022
+11	https://arxiv.org/pdf/2207.12325.pdf#page=1: arXiv:2207.12325v3 [astro-ph.CO] 5 Dec 2022
+12	https://arxiv.org/pdf/2208.03011.pdf#page=1: arXiv:2208.03011v2 [gr-qc] 3 Dec 2022
+13	https://arxiv.org/pdf/2208.11615.pdf#page=1: arXiv:2208.11615v2 [gr-qc] 4 Dec 2022
+14	https://arxiv.org/pdf/2208.11871.pdf#page=1: arXiv:2208.11871v2 [astro-ph.HE] 5 Dec 2022
+15	https://arxiv.org/pdf/2211.02581.pdf#page=1: arXiv:2211.02581v2 [gr-qc] 5 Dec 2022
+16	https://arxiv.org/pdf/2212.01397.pdf#page=1: arXiv:2212.01397v1 [astro-ph.GA] 2 Dec 2022
+17	https://arxiv.org/pdf/2212.01404.pdf#page=1: arXiv:2212.01404v1 [gr-qc] 2 Dec 2022
+18	https://arxiv.org/pdf/2212.01477.pdf#page=1: arXiv:2212.01477v1 [astro-ph.HE] 2 Dec 2022
+19	https://arxiv.org/pdf/2212.02026.pdf#page=1: arXiv:2212.02026v1 [gr-qc] 5 Dec 2022
+20	https://arxiv.org/pdf/2212.02039.pdf#page=1: arXiv:2212.02039v1 [gr-qc] 5 Dec 2022
+21	https://arxiv.org/pdf/2212.02065.pdf#page=1: arXiv:2212.02065v1 [astro-ph.IM] 5 Dec 2022
+22	https://arxiv.org/pdf/2212.02321.pdf#page=1: arXiv:2212.02321v1 [astro-ph.GA] 5 Dec 2022
+
+========================================= 
+=CUMULASTIVE STATISTICS SINCE 01/09/2022= 
+========================================= 
+11118  total new astro-phORgr-qc preprint found (with repetitions)
+9880  total new astro-phORgr-qc pdf processed
+12403  total occurrences of LIGO word
+10222  total occurrences of VIRGO word
+361  total preprints with alerts
+1399 total preprints mention LIGO
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+
