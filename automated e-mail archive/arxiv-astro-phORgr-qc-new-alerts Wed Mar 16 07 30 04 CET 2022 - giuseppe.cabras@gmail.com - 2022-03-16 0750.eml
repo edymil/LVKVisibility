@@ -1,0 +1,124 @@
+Return-Path: <giuseppe.cabras@gmail.com>
+Received: from lugh.fisica.uniud.it (lugh.fisica.uniud.it. [158.110.40.216])
+        by smtp.gmail.com with ESMTPSA id m20-20020a05600c4f5400b0038b5162260csm1338554wmq.23.2022.03.15.23.49.33
+        for <giuseppe.cabras@uniud.it>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 15 Mar 2022 23:49:35 -0700 (PDT)
+Message-ID: <6231887f.1c69fb81.13718.4d9d@mx.google.com>
+From: giuseppe.cabras@gmail.com
+X-Google-Original-From: gc@lugh.fisica.uniud.it
+Received: by lugh.fisica.uniud.it (sSMTP sendmail emulation); Wed, 16 Mar 2022 07:50:12 +0100
+Date: Wed, 16 Mar 2022 07:50:12 +0100
+To: giuseppe.cabras@uniud.it
+To: livia.conti@pd.infn.it
+To: milotti@ts.infn.it
+To: cohadon@lkb.upmc.fr
+To: davide.guerra@uv.es
+To: trovato@apc.in2p3.fr
+To: andrea.virtuoso@hotmail.com
+To: jerome.novak@obspm.fr
+To: pablobarneo@icc.ub.edu
+Subject: arxiv-astro-phORgr-qc-new-alerts Wed Mar 16 07:30:04 CET 2022
+Content-Type: text/plain
+MIME-Version: 1.0
+
+n
+<div class="list-dateline">Submissions received from  Mon 14 Mar 22  to  Tue 15 Mar 22, announced Wed, 16 Mar 22</div>
+175 new astro-phORgr-qc preprint found (with repetitions)
+158 new astro-phORgr-qc pdf processed
+229 occurrences of LIGO word
+142 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2112.03792.pdf#page=2&search=ligo%20virgo ; requirement translates to an output power of the lasers of roughly 5 W. The LIGO Voyager and == Cosmic Explorer, future plans for GWDs in the US, shall use laser powers from 200 W up to
+	https://arxiv.org/pdf/2112.03792.pdf#page=5&search=ligo%20virgo ; based on photodiode sensors used in the Advanced LIGO PSLs [35]. The in-loop detector == has an improved bias circuit and an updated low noise operational ampliﬁers to increase the
+2	https://arxiv.org/pdf/2201.00369.pdf#page=1&search=ligo%20virgo ; wave emission is calculated. It is found that the Advanced LIGO can detect the inspiraling == of a 10−5 solar mass primordial black hole at a distance of 10 kpc, while a Jovian-mass case
+	https://arxiv.org/pdf/2201.00369.pdf#page=10&search=ligo%20virgo ; Adv. LIGO == 
+	https://arxiv.org/pdf/2201.00369.pdf#page=10&search=ligo%20virgo ; LIGO A+ == 
+	https://arxiv.org/pdf/2201.00369.pdf#page=10&search=ligo%20virgo ; means that the Advanced LIGO and the upcoming LIGO A+ upgrade can safely detect the inspiraling of == a 10−5 solar mass primordial black hole at a distance of 10 kpc. For a Jovian-mass PBH, due to the much
+	https://arxiv.org/pdf/2201.00369.pdf#page=11&search=ligo%20virgo ; 1 kpc away is about one magnitude higher than the sensitivity curve of the Advanced LIGO (see Figure 7 == (a)), the Advanced LIGO’s horizon is therefore ∼ 10 kpc, which nearly includes the whole Milky Way. As
+	https://arxiv.org/pdf/2201.00369.pdf#page=11&search=ligo%20virgo ; (a)), the Advanced LIGO’s horizon is therefore ∼ 10 kpc, which nearly includes the whole Milky Way. As == a result, there are N ∼ 109 compact stars in the detection horizon. This is a logical number, which actually
+	https://arxiv.org/pdf/2201.00369.pdf#page=11&search=ligo%20virgo ; (by the Advanced LIGO) is == −12
+	https://arxiv.org/pdf/2201.00369.pdf#page=12&search=ligo%20virgo ; events by the advanced LIGO up to date. == Future GW detectors like the Einstein Telescope and the Cosmic Explorer have sensitivities nearly two
+	https://arxiv.org/pdf/2201.00369.pdf#page=12&search=ligo%20virgo ; magnitudes better than the advanced LIGO (see Figure 7), thus may have a horizon of ∼ 1 Mpc. About 10 == – 100 galaxies may reside in this range, leading to a total detectable event rate of F ∼ 10−4 – 10−2 year−1 .
+	https://arxiv.org/pdf/2201.00369.pdf#page=12&search=ligo%20virgo ; show signiﬁcant difference between the two cases. Encouragingly, the current Advanced LIGO detector can == detect a 10−5 M PBH case at 10 kpc away from us, and detect a Jovian-mass PBH case up to megaparsecs.
+3	https://arxiv.org/pdf/2203.06444.pdf#page=4&search=ligo%20virgo ; by the LIGO Laboratory and supported by the National Science Foundation Grants No. PHY-0757058 == and No. PHY-0823459.
+4	https://arxiv.org/pdf/2203.07905.pdf#page=4&search=ligo%20virgo ; been given LIGO DCC number P2200061, and the Einstein Telscope ET-OSB number ET-0035A-22. == 
+5	https://arxiv.org/pdf/2203.07914.pdf#page=2&search=ligo%20virgo ; waves observed by LIGO [1, 2], the image of black holes observed by the Event Horizon == Telescope [3]. These progresses not only inject new impetus into the development
+6	https://arxiv.org/pdf/2203.07943.pdf#page=29&search=ligo%20virgo ; of LIGO, e.g., [383]. In the meantime, other commissioned interferometer experiments like == the LISA-Taiji network and TianQin will provide detection channels of cosmological SGWB
+7	https://arxiv.org/pdf/2203.07972.pdf#page=18&search=ligo%20virgo ; Searches have been performed using LIGO, which is most sensitive to a DPDM mass == of mA ∼ 4 × 10−13 eV at its most sensitive frequency ∼ 100Hz, using data from the ﬁrst
+	https://arxiv.org/pdf/2203.07972.pdf#page=19&search=ligo%20virgo ; mergers in the presence of an axion ﬁeld, it was shown [464] that Advanced LIGO at == designed sensitivity can potentially exclude axions with mass ma
+	https://arxiv.org/pdf/2203.07972.pdf#page=38&search=ligo%20virgo ; Phase Transitions == 
+	https://arxiv.org/pdf/2203.07972.pdf#page=53&search=ligo%20virgo ; Dark Matter == 
+8	https://arxiv.org/pdf/2203.07984.pdf#page=1&search=ligo%20virgo ; 24 LIGO Laboratory, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA == 25 TRIUMF, 4004 Wesbrook Mall, Vancouver, BC V6T 2A3, Canada
+	https://arxiv.org/pdf/2203.07984.pdf#page=29&search=ligo%20virgo ; by LIGO observations of transients [403], and probe ﬁfth forces between 101 and 105 km. == Many more such systems will be observed with future gravitational-wave facilities, including
+	https://arxiv.org/pdf/2203.07984.pdf#page=65&search=ligo%20virgo ; Dark Matter == 
+9	https://arxiv.org/pdf/2203.08139.pdf#page=2&search=ligo%20virgo ; in a separate Snowmass White Paper [7]. Proposed detectors on Earth include LIGO Voyager [8], == Cosmic Explorer [9], Einstein Telescope [10], and NEMO [11]; future ground-based gravitationalwave facilities are described in a separate Snowmass white paper [12]. In space, the Laser Interferometer Space Antenna (LISA) [13], the DECi-hertz Interferometer Gravitational-wave Observatory (DECIGO) [14], and TianQin [15] will observe gravitational waves at frequencies too low
+	https://arxiv.org/pdf/2203.08139.pdf#page=3&search=ligo%20virgo ; LIGO A+ == 
+	https://arxiv.org/pdf/2203.08139.pdf#page=3&search=ligo%20virgo ; simulated Cosmic Explorer noise (blue) and simulated LIGO A+ noise (yellow). Taken from == Fig. 5.2 of Ref. [21].
+	https://arxiv.org/pdf/2203.08139.pdf#page=3&search=ligo%20virgo ; one using an upgraded LIGO detector, and the other using Cosmic Explorer, a next-generation == detector.
+	https://arxiv.org/pdf/2203.08139.pdf#page=4&search=ligo%20virgo ; detected by LIGO. The inset shows the black holes’ horizons during the inspiral, merger and == ringdown. Taken from Fig. 2 of Ref. [1].
+	https://arxiv.org/pdf/2203.08139.pdf#page=10&search=ligo%20virgo ; IMRPhenomPv2 phenomenological template waveform at the signal parameters for LIGO’s design == sensitivity. Taken from Fig. 2 of Ref. [114].
+
+9 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	benno.willke@aei.mpg.de?subject=Your%20preprint%20https://arxiv.org/pdf/2112.03792.pdf
+2	hyf@nju.edu.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2201.00369.pdf
+3	?subject=Your%20preprint%20https://arxiv.org/pdf/2203.06444.pdf
+4	?subject=Your%20preprint%20https://arxiv.org/pdf/2203.07905.pdf
+5	gexh@shu.edu.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2203.07914.pdf
+6	cdvorkin@g.harvard.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2203.07943.pdf
+7	?subject=Your%20preprint%20https://arxiv.org/pdf/2203.07972.pdf
+8	?subject=Your%20preprint%20https://arxiv.org/pdf/2203.07984.pdf
+9	?subject=Your%20preprint%20https://arxiv.org/pdf/2203.08139.pdf
+
+
+21 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2104.01982.pdf
+2	https://arxiv.org/pdf/2106.11325.pdf
+3	https://arxiv.org/pdf/2112.03792.pdf
+4	https://arxiv.org/pdf/2112.08773.pdf
+5	https://arxiv.org/pdf/2112.09595.pdf
+6	https://arxiv.org/pdf/2201.00369.pdf
+7	https://arxiv.org/pdf/2203.06444.pdf
+8	https://arxiv.org/pdf/2203.07377.pdf
+9	https://arxiv.org/pdf/2203.07383.pdf
+10	https://arxiv.org/pdf/2203.07442.pdf
+11	https://arxiv.org/pdf/2203.07690.pdf
+12	https://arxiv.org/pdf/2203.07900.pdf
+13	https://arxiv.org/pdf/2203.07905.pdf
+14	https://arxiv.org/pdf/2203.07914.pdf
+15	https://arxiv.org/pdf/2203.07943.pdf
+16	https://arxiv.org/pdf/2203.07972.pdf
+17	https://arxiv.org/pdf/2203.07984.pdf
+18	https://arxiv.org/pdf/2203.08056.pdf
+19	https://arxiv.org/pdf/2203.08096.pdf
+20	https://arxiv.org/pdf/2203.08128.pdf
+21	https://arxiv.org/pdf/2203.08139.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

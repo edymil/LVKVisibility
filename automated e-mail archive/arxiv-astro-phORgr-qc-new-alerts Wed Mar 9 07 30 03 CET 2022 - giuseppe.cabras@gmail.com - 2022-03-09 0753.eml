@@ -1,0 +1,112 @@
+Return-Path: <giuseppe.cabras@gmail.com>
+Received: from lugh.fisica.uniud.it (lugh.fisica.uniud.it. [158.110.40.216])
+        by smtp.gmail.com with ESMTPSA id c1-20020adfed81000000b001f058a92dd2sm794189wro.104.2022.03.08.22.53.11
+        for <giuseppe.cabras@uniud.it>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 08 Mar 2022 22:53:13 -0800 (PST)
+Message-ID: <62284ed9.1c69fb81.c5964.29f3@mx.google.com>
+From: giuseppe.cabras@gmail.com
+X-Google-Original-From: gc@lugh.fisica.uniud.it
+Received: by lugh.fisica.uniud.it (sSMTP sendmail emulation); Wed,  9 Mar 2022 07:53:57 +0100
+Date: Wed,  9 Mar 2022 07:53:57 +0100
+To: giuseppe.cabras@uniud.it
+To: livia.conti@pd.infn.it
+To: milotti@ts.infn.it
+To: cohadon@lkb.upmc.fr
+To: davide.guerra@uv.es
+To: trovato@apc.in2p3.fr
+To: andrea.virtuoso@hotmail.com
+To: jerome.novak@obspm.fr
+To: pablobarneo@icc.ub.edu
+Subject: arxiv-astro-phORgr-qc-new-alerts Wed Mar 9 07:30:03 CET 2022
+Content-Type: text/plain
+MIME-Version: 1.0
+
+n
+<div class="list-dateline">Submissions received from  Mon  7 Mar 22  to  Tue  8 Mar 22, announced Wed,  9 Mar 22</div>
+160 new astro-phORgr-qc preprint found (with repetitions)
+143 new astro-phORgr-qc pdf processed
+170 occurrences of LIGO word
+285 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2109.14612.pdf#page=8&search=ligo%20virgo ; credible interval of the intrinsic merger rate density of GW190521-like BBH merger events, as estimated by the LVK (The LIGO Scientiﬁc == Collaboration et al. 2021b). The horizontal, black-dashed line indicates the LVK-estimated upper limit of aligned-spin (χeﬀ > 0.8) IMBH-IMBH
+2	https://arxiv.org/pdf/2112.05448.pdf#page=18&search=ligo%20virgo ; ness FNR/NR on Advanced LIGO noise, as detailed in == Ref. [24] according to the deﬁnitions that we will recall below. Table IV also reports, for each conﬁguration,
+	https://arxiv.org/pdf/2112.05448.pdf#page=20&search=ligo%20virgo ; Advanced LIGO noise over all the available conﬁgurations. Here we updated the analogous calculation done == in Ref. [25] that was only relying on the simple Newtonfactorized waveform without the 2PN-accurate eccentric
+	https://arxiv.org/pdf/2112.05448.pdf#page=21&search=ligo%20virgo ; high-power noise spectral density of Advanced LIGO [54] == and fmin is the initial frequency approximately corresponding to the frequency of the ﬁrst apastron on
+3	https://arxiv.org/pdf/2202.09961.pdf#page=5&search=ligo%20virgo ; of Advanced LIGO (O1 and O2). However, we ﬁnd that about == 45% of mergers can have q < 0.5 in the AGN disk, and it can
+4	https://arxiv.org/pdf/2203.03651.pdf#page=11&search=ligo%20virgo ; and noise curves representative of the LIGO detector == performance during O1O25 and O36 [131]. While the
+5	https://arxiv.org/pdf/2203.03849.pdf#page=2&search=ligo%20virgo ; planned integration of a 300-m ﬁlter cavity with the Advanced LIGO detectors [26]. == 
+	https://arxiv.org/pdf/2203.03849.pdf#page=2&search=ligo%20virgo ; Similarly to the LIGO squeezed vacuum source [3], in == this experiment squeezed vacuum is produced by parametric down-conversion in a bowtie nonlinear OPO resonator [27], pumped by 532 nm light derived from the
+	https://arxiv.org/pdf/2203.03849.pdf#page=3&search=ligo%20virgo ; in LIGO [3], which stabilizes the relative phase between == the audio diagnostic, local oscillator, and squeezer pump
+	https://arxiv.org/pdf/2203.03849.pdf#page=5&search=ligo%20virgo ; observed in the Advanced LIGO detectors at the time == of observing run O3. From Ref. [19], the four parameters are
+	https://arxiv.org/pdf/2203.03849.pdf#page=9&search=ligo%20virgo ; Fabry-Perot interferometer, such as LIGO. The following == calculations assume on-resonance operation in a lossless
+	https://arxiv.org/pdf/2203.03849.pdf#page=9&search=ligo%20virgo ; squeezing upgrade to LIGO [26]. The ﬁlter cavity has == been designed in order to optimize squeezing rotation
+	https://arxiv.org/pdf/2203.03849.pdf#page=10&search=ligo%20virgo ; parameters, representing design speciﬁcations for frequency-dependent squeezing in LIGO [26], assume round trip ﬁlter cavity == losses of 60 ppm, input mirror transmissivity of 1200 ppm, cavity detuning of 43 Hz, and mode matching eﬃciency of 0.99.
+	https://arxiv.org/pdf/2203.03849.pdf#page=10&search=ligo%20virgo ; The ﬁrst such example is using the ADF above the interferometer arm bandwidth γA ≈ 2π·430 Hz (for LIGO) == but within the signal cavity bandwidth γS ≈ 2π·80 kHz.
+	https://arxiv.org/pdf/2203.03849.pdf#page=11&search=ligo%20virgo ; characterize LIGO during the observing run O4, where == frequency-dependent squeezing will be employed for the
+	https://arxiv.org/pdf/2203.03849.pdf#page=11&search=ligo%20virgo ; LIGO Laboratory which is a major facility fully funded == by the National Science Foundation, operating under
+	https://arxiv.org/pdf/2203.03849.pdf#page=11&search=ligo%20virgo ; LIGO was built under Grant No. PHY-0823459. The == A+ upgrade to Advanced LIGO is funded under Grant
+	https://arxiv.org/pdf/2203.03849.pdf#page=11&search=ligo%20virgo ; A+ upgrade to Advanced LIGO is funded under Grant == No. PHY-1834382. WJ is supported by the MathWorks,
+6	https://arxiv.org/pdf/2203.04014.pdf#page=16&search=ligo%20virgo ; the two LIGO detectors. On the other hand, on-site activites are more evenly distributed == over working days during the post-O3 upgrade. Though, activities were the lowest on
+	https://arxiv.org/pdf/2203.04014.pdf#page=21&search=ligo%20virgo ; run, that relies on the Seismon framework [28, 29, 30] developed at LIGO – an example == of the existing teamwork among members of the global GW detector network.
+	https://arxiv.org/pdf/2203.04014.pdf#page=21&search=ligo%20virgo ; ran at EGO during O3 an instance of the Seismon framework, developed by LIGO to == process earthquake early warnings provided by the US Geological Survey (USGS) [31]
+7	https://arxiv.org/pdf/2203.04231.pdf#page=3&search=ligo%20virgo ; blue), LIGO (blue) and LISA Pathﬁnder (dark blue). Purple areas == are from optomechanical systems levitating in a linear Paul trap49
+
+7 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	sambaran@astro.uni-bonn.de?subject=Your%20preprint%20https://arxiv.org/pdf/2109.14612.pdf
+2	?subject=Your%20preprint%20https://arxiv.org/pdf/2112.05448.pdf
+3	lgp@st.gxu.edu.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2202.09961.pdf
+4	mmould@star.sr.bham.ac.uk?subject=Your%20preprint%20https://arxiv.org/pdf/2203.03651.pdf
+5	dhruva96@mit.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2203.03849.pdf
+6	?subject=Your%20preprint%20https://arxiv.org/pdf/2203.04014.pdf
+7	abassi@units.it?subject=Your%20preprint%20https://arxiv.org/pdf/2203.04231.pdf
+
+
+18 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2108.08430.pdf
+2	https://arxiv.org/pdf/2108.13256.pdf
+3	https://arxiv.org/pdf/2109.14612.pdf
+4	https://arxiv.org/pdf/2112.05448.pdf
+5	https://arxiv.org/pdf/2112.13120.pdf
+6	https://arxiv.org/pdf/2202.09961.pdf
+7	https://arxiv.org/pdf/2203.03464.pdf
+8	https://arxiv.org/pdf/2203.03629.pdf
+9	https://arxiv.org/pdf/2203.03643.pdf
+10	https://arxiv.org/pdf/2203.03651.pdf
+11	https://arxiv.org/pdf/2203.03672.pdf
+12	https://arxiv.org/pdf/2203.03849.pdf
+13	https://arxiv.org/pdf/2203.03956.pdf
+14	https://arxiv.org/pdf/2203.04014.pdf
+15	https://arxiv.org/pdf/2203.04209.pdf
+16	https://arxiv.org/pdf/2203.04231.pdf
+17	https://arxiv.org/pdf/2203.04273.pdf
+18	https://arxiv.org/pdf/2203.04283.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

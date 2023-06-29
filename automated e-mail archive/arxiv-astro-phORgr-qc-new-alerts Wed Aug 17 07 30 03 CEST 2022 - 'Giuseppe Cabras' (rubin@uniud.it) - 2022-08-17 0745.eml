@@ -1,0 +1,97 @@
+Received: from uniud.it (2603:10a6:500:32::17) by
+ DB3PR0302MB9016.eurprd03.prod.outlook.com (2603:10a6:10:439::22) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5525.11 via Mailbox
+ Transport; Wed, 17 Aug 2022 05:47:28 +0000
+Received: by uniud.it (sSMTP sendmail emulation); Wed, 17 Aug 2022 07:45:06 +0200
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Wed, 17 Aug 2022 07:45:06 +0200
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Wed Aug 17 07:30:03 CEST 2022
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 17 Aug 2022 05:47:28.1923
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 40399a76-c5e0-4b2e-f33e-08da8013f81f
+X-MS-Exchange-Organization-AuthSource:
+ DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: MR2P264CA0077.FRAP264.PROD.OUTLOOK.COM
+ (2603:10a6:500:32::17) To DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: gc@uniud.it
+Message-ID:
+ <DB3PR0302MB90160FA1F3A0B4BE92EB4CFFC86A9@DB3PR0302MB9016.eurprd03.prod.outlook.com>
+MIME-Version: 1.0
+
+<div class="list-dateline">Submissions received from  Mon 15 Aug 22  to  Tue 16 Aug 22, announced Wed, 17 Aug 22</div>
+119 new astro-phORgr-qc preprint found (with repetitions)
+106 new astro-phORgr-qc pdf processed
+119 occurrences of LIGO word
+94 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2203.13252.pdf#page=3&search=ligo%20virgo ; magnitude compared to advanced LIGO [26–28] while not being explicitly pre-identiﬁed as == lensing events through the association of multiple images [29]. The number of events with
+2	https://arxiv.org/pdf/2204.11730.pdf#page=2&search=ligo%20virgo ; (Fishbach et al. 2021; Tiwari 2022; The LIGO Scientiﬁc == Collaboration et al. 2021c).
+	https://arxiv.org/pdf/2204.11730.pdf#page=5&search=ligo%20virgo ; with Advanced LIGO at design sensitivity is zh = 1.9, as calculated == with the gravitational wave distance calculator described in Chen
+3	https://arxiv.org/pdf/2208.07380.pdf#page=1&search=ligo%20virgo ; of general relativity (GR). While many exact nonlinear solutions are known [1, 2], LIGO observables—gravitational == waves (GWs) from merging binary black holes (BHs)—
+4	https://arxiv.org/pdf/2208.07773.pdf#page=2&search=ligo%20virgo ; potential progenitors of massive BH mergers detected by LIGO. == Despite a rather tight orbit, it was reported that the O-type
+
+4 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	ezquiaga@uchicago.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2203.13252.pdf
+2	chrisbelczynski@gmail.com?subject=Your%20preprint%20https://arxiv.org/pdf/2204.11730.pdf
+3	kmitman@caltech.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2208.07380.pdf
+4	vramachandran@uni-heidelberg.de?subject=Your%20preprint%20https://arxiv.org/pdf/2208.07773.pdf
+
+
+14 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2112.15059.pdf
+2	https://arxiv.org/pdf/2202.13559.pdf
+3	https://arxiv.org/pdf/2202.13875.pdf
+4	https://arxiv.org/pdf/2203.13252.pdf
+5	https://arxiv.org/pdf/2204.11293.pdf
+6	https://arxiv.org/pdf/2204.11730.pdf
+7	https://arxiv.org/pdf/2208.06844.pdf
+8	https://arxiv.org/pdf/2208.07374.pdf
+9	https://arxiv.org/pdf/2208.07379.pdf
+10	https://arxiv.org/pdf/2208.07380.pdf
+11	https://arxiv.org/pdf/2208.07667.pdf
+12	https://arxiv.org/pdf/2208.07757.pdf
+13	https://arxiv.org/pdf/2208.07762.pdf
+14	https://arxiv.org/pdf/2208.07773.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

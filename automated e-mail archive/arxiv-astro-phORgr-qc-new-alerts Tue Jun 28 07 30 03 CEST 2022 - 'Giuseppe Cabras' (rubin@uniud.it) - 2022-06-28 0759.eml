@@ -1,0 +1,154 @@
+Received: from AM9PR03MB6882.eurprd03.prod.outlook.com (2603:10a6:20b:283::8)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Tue, 28 Jun 2022
+ 06:00:29 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=uniud.it;
+Received: from DB3PR0302MB3417.eurprd03.prod.outlook.com (2603:10a6:8:c::24)
+ by AM9PR03MB6882.eurprd03.prod.outlook.com (2603:10a6:20b:283::8) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5373.18; Tue, 28 Jun
+ 2022 06:00:28 +0000
+Received: from DB3PR0302MB3417.eurprd03.prod.outlook.com
+ ([fe80::d88e:55f7:3acf:bd5]) by DB3PR0302MB3417.eurprd03.prod.outlook.com
+ ([fe80::d88e:55f7:3acf:bd5%5]) with mapi id 15.20.5373.018; Tue, 28 Jun 2022
+ 06:00:28 +0000
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Tue, 28 Jun 2022 07:59:03 +0200
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Tue Jun 28 07:30:03 CEST 2022
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 28 Jun 2022 06:00:26.5900
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 5669ac57-84ad-41ba-81d8-08da58cb7f6e
+X-MS-Exchange-Organization-AuthSource:
+ DB3PR0302MB3417.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: MR1P264CA0027.FRAP264.PROD.OUTLOOK.COM
+ (2603:10a6:501:2f::14) To DB3PR0302MB3417.eurprd03.prod.outlook.com
+ (2603:10a6:8:c::24)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: rubin@uniud.it
+Message-ID:
+ <DB3PR0302MB3417853E6B5A45556AC41816C8B89@DB3PR0302MB3417.eurprd03.prod.outlook.com>
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 5669ac57-84ad-41ba-81d8-08da58cb7f6e
+X-MS-TrafficTypeDiagnostic: AM9PR03MB6882:EE_
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DB3PR0302MB3417.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5669ac57-84ad-41ba-81d8-08da58cb7f6e
+X-MS-Exchange-CrossTenant-AuthSource: DB3PR0302MB3417.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 28 Jun 2022 06:00:27.9337
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: sTRmK5XYcJ2nJ9dDrjNqRF5fEUKHHvBd5cvXCCHSAHxdPioAL7ojHKmmlVbNMjQf
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM9PR03MB6882
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.4002615
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5373.017
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	d8AWasH3Ihdm7Te8whNLtOf0gYzu9zf26r6TvuyyEYTgQGSPoRbYCpBeHqNvJUVFA3dQ4ZVtUPd5r9Q8om8Gi/P1VLxytA9+OsgUfGptoiGnsfRtXECk4nKdRDznwQD8AzBei05+rAkvRuXa/9F5ElhO+TDzmX/7LG+Xzw74S561LPLObDsdF6JIcIpxluj8BUxVLOo0qqEzEtPB7s24jMnKWH0Vai9ue3G9YrS+Y7QCKbZcyH3bXj6f6aGQIPI9XFi00KsKzz4K0rB8Urs1OeDahDge0BZOZEAtLMzIlKQC9Bf/bXdioPOH5r4bGjHKRp14Ko9jlaY5TWg58FuIM9n5Ee7qBkM2HKeX0X4DeM8q2Da1eCp9BkZY0E4wQ3RnYqj4a2e28dNtUQScCJgr5lIeBDOOkd8XIO2NoLNssFwiUiGPoKm0ha8A61p95MwFliGrxjWs1Eh/82gIqJvWEcROABVBezaLhnecQTflbVme54Img25+oHp0V/PjnUkzlmBOCrbH95pgNB71p+KM74ES1l84NdMeEXXcT+QM3P2t90+NNU1RC5bT4zeH5HK5BEqyLFHXa/YsXVNVjYTkYMkZWC1+MqG1Id/w6OSe+M6LJmVoUQZ4ZoYIS4ewFDvvB3xLEOY0T5WDM3pD6gIy9iQIHkWPj5ivMIfDQ2p20TJoVptZIM0FBOLZVvZgvcuxBbE/Ep29sSiamz+IhPD1nN31iTaQAOWXYSV54wnnO6eYKWmCCyWOo7FjysCyQ9N8lcwWE4h8z/rrF9Oq2ZSGr3W3MXG8+cd8oceUi4yF3TQ=
+MIME-Version: 1.0
+
+<div class="list-dateline">Submissions received from  Fri 24 Jun 22  to  Mon 27 Jun 22, announced Tue, 28 Jun 22</div>
+227 new astro-phORgr-qc preprint found (with repetitions)
+192 new astro-phORgr-qc pdf processed
+421 occurrences of LIGO word
+410 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2105.11279.pdf#page=1&search=ligo%20virgo ; Ground-based GW detectors, such as Advanced LIGO == 
+2	https://arxiv.org/pdf/2112.02299.pdf#page=6&search=ligo%20virgo ; network, the angle between the normal vectors of LIGO == 
+3	https://arxiv.org/pdf/2204.02619.pdf#page=5&search=ligo%20virgo ; and CHE, above which the CHE channel dominates the LIGO– == det
+4	https://arxiv.org/pdf/2206.11932.pdf#page=2&search=ligo%20virgo ; in each detector at the time of the signal, rather pointing to remaining data quality issues beyond the original glitch-subtraction [1]. We also re-analyze the LIGO == Livingston data above 50 Hz, while leaving LIGO Hanford data intact and conﬁrm that all evidence for spinprecession disappears.
+	https://arxiv.org/pdf/2206.11932.pdf#page=7&search=ligo%20virgo ; by LIGO and contains additional power. BayesWave’s == “CBC+glitch” analysis is able to separate the part of the
+	https://arxiv.org/pdf/2206.11932.pdf#page=7&search=ligo%20virgo ; SNR that is consistent to the one inferred from LIGO == only. The “remaining” power is assigned to a glitch with
+	https://arxiv.org/pdf/2206.11932.pdf#page=8&search=ligo%20virgo ; DATA QUALITY ISSUES ==  LIGO
+	https://arxiv.org/pdf/2206.11932.pdf#page=8&search=ligo%20virgo ; merger phase. This is expected from the fact that LIGO == Livingston supports spin-precession as well as Fig. 4.
+	https://arxiv.org/pdf/2206.11932.pdf#page=12&search=ligo%20virgo ; Overall, given the uncertainty surrounding the LIGO == Livingston glitch mitigation, we cannot conclude that
+5	https://arxiv.org/pdf/2206.12673.pdf#page=6&search=ligo%20virgo ; incorporate both kinds of noises to generate the datasets ==  Gaussian noise generated by advanced LIGO’s PSD at
+6	https://arxiv.org/pdf/2206.12874.pdf#page=1&search=ligo%20virgo ; horizon for advanced LIGO O5 detector is ∼ 180 Mpc. The detection of such GW signal associated == with the X-ray plateau would be a smoking gun that the central engine of GRB is a magnetar.
+7	https://arxiv.org/pdf/2206.13128.pdf#page=2&search=ligo%20virgo ; observed by advanced LIGO can probe the compact dark == matter. There are many subsequent studies using the lensing
+8	https://arxiv.org/pdf/2206.13224.pdf#page=2&search=ligo%20virgo ; wave detectors enhanced by PT-symmetric conﬁgurations, in comparison to the conventional detuned LIGO conﬁguration. The detector dynamics here are described by Eq. (2). The parameters we == used here is based on mapping the sample parameters in Tab. I of the
+	https://arxiv.org/pdf/2206.13224.pdf#page=7&search=ligo%20virgo ; within the LIGO control band. == 
+
+8 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	chunyuzhang@hust.edu.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2105.11279.pdf
+2	chunyuzhang@hust.edu.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2112.02299.pdf
+3	Simone.Bavera@unige.ch?subject=Your%20preprint%20https://arxiv.org/pdf/2204.02619.pdf
+4	?subject=Your%20preprint%20https://arxiv.org/pdf/2206.11932.pdf
+5	a.reza@nikhef.nl?subject=Your%20preprint%20https://arxiv.org/pdf/2206.12673.pdf
+6	dmwei@pmo.ac.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2206.12874.pdf
+7	zxli918@bnu.edu.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2206.13128.pdf
+8	myqphy@hust.edu.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2206.13224.pdf
+
+
+27 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2009.00036.pdf
+2	https://arxiv.org/pdf/2105.11279.pdf
+3	https://arxiv.org/pdf/2105.12132.pdf
+4	https://arxiv.org/pdf/2106.05043.pdf
+5	https://arxiv.org/pdf/2107.11384.pdf
+6	https://arxiv.org/pdf/2111.02027.pdf
+7	https://arxiv.org/pdf/2112.02299.pdf
+8	https://arxiv.org/pdf/2112.02534.pdf
+9	https://arxiv.org/pdf/2112.14564.pdf
+10	https://arxiv.org/pdf/2201.00560.pdf
+11	https://arxiv.org/pdf/2201.04552.pdf
+12	https://arxiv.org/pdf/2201.12368.pdf
+13	https://arxiv.org/pdf/2203.01725.pdf
+14	https://arxiv.org/pdf/2203.09092.pdf
+15	https://arxiv.org/pdf/2204.02619.pdf
+16	https://arxiv.org/pdf/2204.07297.pdf
+17	https://arxiv.org/pdf/2206.11932.pdf
+18	https://arxiv.org/pdf/2206.12437.pdf
+19	https://arxiv.org/pdf/2206.12439.pdf
+20	https://arxiv.org/pdf/2206.12673.pdf
+21	https://arxiv.org/pdf/2206.12874.pdf
+22	https://arxiv.org/pdf/2206.12907.pdf
+23	https://arxiv.org/pdf/2206.12991.pdf
+24	https://arxiv.org/pdf/2206.13128.pdf
+25	https://arxiv.org/pdf/2206.13224.pdf
+26	https://arxiv.org/pdf/2206.13320.pdf
+27	https://arxiv.org/pdf/2206.13335.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

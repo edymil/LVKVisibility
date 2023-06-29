@@ -1,0 +1,293 @@
+Received: from HE1PR0302MB2793.eurprd03.prod.outlook.com (2603:10a6:3:ef::21)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Thu, 28 Apr 2022
+ 05:48:47 +0000
+Received: from DB6PR07CA0116.eurprd07.prod.outlook.com (2603:10a6:6:2c::30) by
+ HE1PR0302MB2793.eurprd03.prod.outlook.com (2603:10a6:3:ef::21) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5186.23; Thu, 28 Apr 2022 05:48:45 +0000
+Received: from DB5EUR01FT089.eop-EUR01.prod.protection.outlook.com
+ (2603:10a6:6:2c:cafe::66) by DB6PR07CA0116.outlook.office365.com
+ (2603:10a6:6:2c::30) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5206.6 via Frontend
+ Transport; Thu, 28 Apr 2022 05:48:44 +0000
+Authentication-Results: spf=pass (sender IP is 209.85.221.45)
+ smtp.mailfrom=gmail.com; dkim=fail (signature did not verify)
+ header.d=gmail.com;dmarc=pass action=none header.from=gmail.com;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.221.45 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.221.45; helo=mail-wr1-f45.google.com;
+Received: from mail-wr1-f45.google.com (209.85.221.45) by
+ DB5EUR01FT089.mail.protection.outlook.com (10.152.5.156) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5206.12 via Frontend Transport; Thu, 28 Apr 2022 05:48:44 +0000
+Received: by mail-wr1-f45.google.com with SMTP id t6so5232802wra.4
+        for <giuseppe.cabras@uniud.it>; Wed, 27 Apr 2022 22:48:44 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=message-id:from:date:to:to:to:to:to:to:to:to:to:subject;
+        bh=Pn+4o4cWcCRiTTJtw0b1CDN9nrNLzl0MN41we8MPB0E=;
+        b=YPBc4p42d7IfqmSPY4LjsOf1DwQBNUipmiJ6rpMruC+3NUwJFopi47SQ+deII9LVuE
+         UzHmt3PloWk3CHPcagjmFkUarJoEI2/WiB/g4yo5/LpY3mq0JyeGw0F8WDzDvTi4iOFC
+         kX59AYofuxvGgL1gKsg//AnHtU5298cCHgVVvrGq6fsxMl5Uf3jP1kNFqU5qHt3Uk3pz
+         hh0zk6+ItjkjJekQJny5AsVEy1Sx2yy+kJATBJNs3JhG+zqD/UmrbE8HRd9VQjtrvlup
+         9D9d/wGgAVpNO4kvL3dqfBysbim/C16Ol4OLBdCk0JCGeciKQoTd0qj41ppDWrh6biGk
+         fmXQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:message-id:from:date:to:to:to:to:to:to:to:to:to
+         :subject;
+        bh=Pn+4o4cWcCRiTTJtw0b1CDN9nrNLzl0MN41we8MPB0E=;
+        b=PRoTHYf0obsBXw9qVcfc+5Eg6bfy2uY7LJsROKvr+2sEcBwRMAMjUwrQ+jZ3n9uHu0
+         5pO+5MqQyPPBFewoXyduGQgiDUvo9AE313Vfj1w+XGKK9wGpU13Es0U8ZqzmaWM6ba4N
+         jMK9V20Mhwzdd7TETAbuQd4lWzScC5dNxxMtCdjAyXmGlWHhZjFACNtYYxyHEn3U6AKn
+         DxJCivDI3yNiAZ3veCs3/kjBRAsLkMEk84IaZUZOag6S/ESGdV5TdEQhZJ1c01swpg4C
+         MHIAabXBq3M081T3V8XSUwMnNzCvosLAdnvKdo7HXgIBd9O4p3lXRzedJa8iC1cnGLSB
+         5jfQ==
+X-Gm-Message-State: AOAM531SBuPsE2vG8maYbOpf6zXx+dZ0zeh1HvU4HD1PSLLnKNjhGkcD
+	HTsNDsr+/CzItRNJnR8h97M90SVnnd1Ssw==
+X-Google-Smtp-Source: ABdhPJxz4YF+zxLMdQl4DOmqp870twMA9t/QI9fltlu2P/4GTp985x0rxagkLLJhs3epvbjoghIVdA==
+X-Received: by 2002:a05:6000:18d0:b0:209:199b:77bd with SMTP id w16-20020a05600018d000b00209199b77bdmr25714546wrq.537.1651124923001;
+        Wed, 27 Apr 2022 22:48:43 -0700 (PDT)
+Return-Path: giuseppe.cabras@gmail.com
+Received: from lugh.fisica.uniud.it (lugh.fisica.uniud.it. [158.110.40.216])
+        by smtp.gmail.com with ESMTPSA id d9-20020adfa349000000b0020ae7671d70sm6197206wrb.81.2022.04.27.22.48.41
+        for <giuseppe.cabras@uniud.it>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 27 Apr 2022 22:48:42 -0700 (PDT)
+Message-ID: <626a2aba.1c69fb81.1b33c.5aac@mx.google.com>
+From: giuseppe.cabras@gmail.com
+X-Google-Original-From: gc@lugh.fisica.uniud.it
+Received: by lugh.fisica.uniud.it (sSMTP sendmail emulation); Thu, 28 Apr 2022 07:48:29 +0200
+Date: Thu, 28 Apr 2022 07:48:29 +0200
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Thu Apr 28 07:30:04 CEST 2022
+X-MS-Exchange-Organization-ExpirationStartTime: 28 Apr 2022 05:48:44.3300
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 067918c8-359f-4b05-6317-08da28dac1a7
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+Content-Type: text/plain
+X-MS-Exchange-Organization-AuthSource:
+ DB5EUR01FT089.eop-EUR01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 067918c8-359f-4b05-6317-08da28dac1a7
+X-MS-TrafficTypeDiagnostic: HE1PR0302MB2793:EE_
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:209.85.221.45;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SFE;H:mail-wr1-f45.google.com;PTR:mail-wr1-f45.google.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 28 Apr 2022 05:48:44.3300
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 067918c8-359f-4b05-6317-08da28dac1a7
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-AuthSource:
+ DB5EUR01FT089.eop-EUR01.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: HE1PR0302MB2793
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.6059089
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5206.014
+X-Microsoft-Antispam-Mailbox-Delivery:
+	wl:1;pcwl:1;ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(810001)(250001)(410001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?elU3WVBsMEM2T3ZKWEFoc1hVU2hXY0lYQWhpUG1Gbmg5ZkZNR2RqMTFINzlq?=
+ =?utf-8?B?R2FLRjk4aGd2MDNTZTd3NlllbVBQT3hqTC81anQ0QnZUbEhSK0pTcXpFaDBN?=
+ =?utf-8?B?ZUpnSmZUU2N6Qit3U0dySkYvSG9mdytHaW9iUlcyWHg1S0ZvUk9WUWRyWXdH?=
+ =?utf-8?B?bCtoaUdiWmphaXJJNFhDZzVqQUpGeEM2UmtBZ2g1cmtmL29LWVB1bHlzN3l2?=
+ =?utf-8?B?ZFNtWWlDWTdTQm54azl2eWRwb1ZYZkttRVRwcDNwRTEzb0JOL3crOGRwRjA1?=
+ =?utf-8?B?YWppbWZmQnByS1kyT3EvM0xqbjFTOTRvSDU3MW1xanFLUVZLZlVpTmQ5Zkd5?=
+ =?utf-8?B?eXhFai9zakRDd1lnSFRrYmNOd2hzNnZLdlV1M0NZeGVlUXYxc0pvSVpsYnVN?=
+ =?utf-8?B?UlU1cWVOOVNMeFBONGp1M2Rob29VSEVuUUZOVG5BYmlhZ3FnTEFxWWppYkFn?=
+ =?utf-8?B?V3NuUmREOGJ4QkxLK05oa09pc1NjM05QMXpXbGU1dTQ1U056ekx1ZWxyQkFm?=
+ =?utf-8?B?VEUzZkFPYms5Nm5aKzFNeTYxQ21TSjdPS3hBKzRDOWhSYTRucGFDSUJiYW1u?=
+ =?utf-8?B?WHFxd0ZJQ0JvNHV6NHczQnBjS0pUQndBeUk4QXBIKzRhQ29pKytGU0VjK1p1?=
+ =?utf-8?B?ckRsRGJzeTlibjhhV20xMDBKc0x4YklXeHVoRUxnbFBBQVdmb1ZFVHJTRUlM?=
+ =?utf-8?B?VFFsSTBhdmJBcG5vY0dobUQzTDd3ajJDNGJKcDMxMXlmam43c3hpTWQ3T1Nu?=
+ =?utf-8?B?U05VeDNSbXpMTGFpQmNsUkg4eThjaXNhS3RjVGpqMEhDcnBPK2xjY0hmd2Jm?=
+ =?utf-8?B?c1JVWWdqVnZVOE8vSUxrOHRvalpLeTR1TTlNMU1Zd2h5V2k0aktDd2Z6NFlv?=
+ =?utf-8?B?MTdGdm1LbG1RTG1yYzJsbldyRks0L29rM0FINnNNamxsNHNFT25DWUhQNGtU?=
+ =?utf-8?B?a0taaDJhOVBLNk5jRm9YdDAxK04vWGhKRXlPNGxRc2VMNVhCTCtnalpqcmFh?=
+ =?utf-8?B?b3dxL1VKVFVjQzhHaTRZTnNVVGFsLzRpMHhMVGdMcWpQL2tKY1hvSGZXSFhq?=
+ =?utf-8?B?V0xZQ2ZjQkFPbnhKcWxOYzlMUXVlZWxuU1Y4MFNFdWNQKy82LytCOUltbU55?=
+ =?utf-8?B?VmNRR0Z5aXFDT20yV0JYTHVNVXlLWUpxY1dxelhpZDlQLzlQWW9kMURMOXVK?=
+ =?utf-8?B?TUI4WlpqcFk4bUhrNFkrTVhnTmVlWTA5UTEveCsySkllZHpRRE9GT01WZ3Bx?=
+ =?utf-8?B?Z04wOHI5RWVsU2d2RFBLRXhtMDR1OUlaZDRzUjIreVlVWmpPOXF3YjJOeUhl?=
+ =?utf-8?B?TzRocjZKcGhsQmc2SXJFd3Nlb1BjMTdkUVJZakJFUmRwNzNuL2JuTDF0VTRJ?=
+ =?utf-8?B?R3pQTkNmRVd4Nys2UHNJenc1Z2pNK21yTUdjYkZOWXJGaSt3MXBIeE95R2Zv?=
+ =?utf-8?B?TEQwUWczWVYxZGtoeVVSQ3FWZUg2VWMzb0kwVytCdGNkM2o0cHR2aTBwQ0xq?=
+ =?utf-8?B?dk4zamdZVmZOSWR2WEZyOXJKK21nYzhJRTBzOW9ZZklLTW5lL0lRTEdvc0Q4?=
+ =?utf-8?B?NFdoR2Ftc2FZb1crVjR3OGNqc0UzVllpREN0YnZCRzlSb2RhelNWbWZUeVlk?=
+ =?utf-8?B?aTFlNGx3Vlp6Y1BmdU9zMmV3RjNBN3FTOEhGNWZ5djErWVJrWkpXN3JZcWV4?=
+ =?utf-8?B?WjVnMDJxSG8xdXFPeFdublM4WFdtMThHcDVCeTltQ3ZPWDFRYWx4dGQxVGVi?=
+ =?utf-8?B?SjJIaEJpVEg1VzZQM01tVkdUdDg1L290Sm8wVTg0UVJPU2xLQU1xWHk0MVIw?=
+ =?utf-8?B?MERzOHo1UE9YQW8xME9lZjhwNHNxdlVEMFE2bzVGc3RhaTZ4VnhQU3UvZ1Z1?=
+ =?utf-8?B?TFFYMDVqckxLdlQwdHNTMzdFaWJLbWJBbUpPOW5YTGtTbWlvbXJsTmY5M3cz?=
+ =?utf-8?B?a01HK1FiMVBqOVp0MlAyNjMvbENGYStWc1NQT3BJWGV3TGVJd3hVSlE1UlV0?=
+ =?utf-8?B?bEQwY084NWhZWVpLZExJdGpNUktFdTViS1Z3WE9tQ0NDelRnOG1nY3dLalo1?=
+ =?utf-8?B?RDZpQW1ycTJJOVQzWTJYeXJNV2hYWUR0NXg4YnNOdmc1OVpjSFdIM1hncE9H?=
+ =?utf-8?B?Y0dWaUt4R0hxWTRqQjVBVHFsMzF0dEVJaitrQ3AxN0xYcUlJclJ0czdFUHMw?=
+ =?utf-8?B?SHdmMjFzcHZVVVhBckVLL01PUllrRTNiNklUL1dRMDV3amtUbUJCQi80OGNV?=
+ =?utf-8?B?ck91bGE4MHNEQkloUDRhaEVKcEFkT3F6aW9DMlRUK1ExYWlnYW5BS1FqRXZo?=
+ =?utf-8?B?NTJhTkhjS2t3SlI3YXFac3RiSkNtd3hkcHpQeDE5cUJwUUJVZGZzcTMxaFc4?=
+ =?utf-8?B?aWZIdUpYSWk5M2l1VEUzWVR1dExBRDJZK3I3d2gvZFp4R1M0SCt0cEFkQWcy?=
+ =?utf-8?B?SVNGdlU0eldES0tJR01XOVhYS3RQL1VNU2xjSUp2K2pNSTZ5NzFrZE9EK1VG?=
+ =?utf-8?B?VStobjZmR3lzM0VDbVE4TlhXc1o3SUduSUtGcmMwTVFmbmlPekwxRTd6N24w?=
+ =?utf-8?Q?gdxknM4SxZuSSgpYvpCXdpbCTF/z0v?=
+MIME-Version: 1.0
+
+n
+<div class="list-dateline">Submissions received from  Tue 26 Apr 22  to  Wed 27 Apr 22, announced Thu, 28 Apr 22</div>
+146 new astro-phORgr-qc preprint found (with repetitions)
+129 new astro-phORgr-qc pdf processed
+214 occurrences of LIGO word
+86 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/1910.01718.pdf#page=5&search=ligo%20virgo ; that the constraints on local cosmic strings recently published by LIGO consider three separate Nambu-Goto == models [21].
+2	https://arxiv.org/pdf/2012.03856.pdf#page=9&search=ligo%20virgo ; background by LIGO [136] and the black dots shows the limits from the LIGO merger rate [137]. == 
+3	https://arxiv.org/pdf/2109.08154.pdf#page=2&search=ligo%20virgo ; in LIGO). Consider for example a BBH with component == masses of 30 M orbiting a 103 M IMBH at a distance
+4	https://arxiv.org/pdf/2112.01409.pdf#page=1&search=ligo%20virgo ; LIGO [3] opens a new window to test the fundamental physics and the problem above. Among diﬀerent GW == sources, phase transition gravitational waves (PTGWs)
+	https://arxiv.org/pdf/2112.01409.pdf#page=1&search=ligo%20virgo ; attracted a lot of attention and might be tested in various GWexperiments, including LIGO, TianQin [8, 9], == LISA [10], Taiji [11], Square Kilometre Array (SKA) [12],
+5	https://arxiv.org/pdf/2112.06947.pdf#page=13&search=ligo%20virgo ; (Ginsburg et al. 2019), ligo.skymap (Singer & Price 2016; == Singer et al. 2016), Matplotlib (Hunter 2007), MOCPy (Boch
+6	https://arxiv.org/pdf/2112.09586.pdf#page=1&search=ligo%20virgo ; While LIGO mostly observes solar mass binary mergers, LISA will be able to observe IMBHs with masses == ranging from 102 ∼ 106 M . IMBHs have been detected,
+7	https://arxiv.org/pdf/2204.12504.pdf#page=3&search=ligo%20virgo ; bayestar-localize-coincs tools from the ligo.skymap public library5 . == The GW detection rates have been estimated by combining
+	https://arxiv.org/pdf/2204.12504.pdf#page=8&search=ligo%20virgo ; work makes use of the ligo.skymap scientiﬁc software package == (https
+8	https://arxiv.org/pdf/2204.12506.pdf#page=9&search=ligo%20virgo ; In order to calculate eccentricities at LIGO’s frequency band == we used the following scheme
+9	https://arxiv.org/pdf/2204.12510.pdf#page=5&search=ligo%20virgo ; LIGO - APR == 
+	https://arxiv.org/pdf/2204.12510.pdf#page=5&search=ligo%20virgo ; LIGO - SLy4 == 
+	https://arxiv.org/pdf/2204.12510.pdf#page=6&search=ligo%20virgo ; LIGO - SLy4 == 
+	https://arxiv.org/pdf/2204.12510.pdf#page=6&search=ligo%20virgo ; LIGO - APR == 
+	https://arxiv.org/pdf/2204.12510.pdf#page=7&search=ligo%20virgo ; LIGO - APR == 
+	https://arxiv.org/pdf/2204.12510.pdf#page=7&search=ligo%20virgo ; LIGO - SLy4 == 
+10	https://arxiv.org/pdf/2204.12567.pdf#page=2&search=ligo%20virgo ; the multi-messenger astronomy. The ﬁrst experimental detection carry out by the LIGO collaboration [5] in 2015 was the event GW150914 [6]; and since then, there have been around == ﬁfty conﬁrmed ﬁndings, most of them were generated by black holes binary systems. On
+	https://arxiv.org/pdf/2204.12567.pdf#page=21&search=ligo%20virgo ; Since the ﬁrst observation of GWs due to BBH (GW150914), the LIGO collaboration has == detected more than ﬁfty astrophysical events with expected and unexpected characteristics,
+11	https://arxiv.org/pdf/2204.12869.pdf#page=4&search=ligo%20virgo ; GW frequency 𝑓 . For their LIGO Science Run 5 (S5) data, Abadie == et al. (2011) found that at least 90% of injected signals were detectable
+	https://arxiv.org/pdf/2204.12869.pdf#page=5&search=ligo%20virgo ; they would be for Advanced LIGO (at design sensitivity, Aasi et al. == 2015). The results of this are shown in Figure 5.
+	https://arxiv.org/pdf/2204.12869.pdf#page=6&search=ligo%20virgo ; Figure 5. Histogram showing the SNR attainable by Advanced LIGO at == design sensitivity for the predicted GWs from glitches for the Vela pulsar.
+12	https://arxiv.org/pdf/2204.12977.pdf#page=5&search=ligo%20virgo ; comparable with the 90 per cent credible intervals on LVK’s distance posteriors on individual GW detections (The LIGO Scientiﬁc == Collaboration et al. 2021b, hereafter LVK2021). More generally, an
+	https://arxiv.org/pdf/2204.12977.pdf#page=8&search=ligo%20virgo ; arrives. We construct 𝑝 det ( M, 𝐷) for a given LIGO sensitivity using == sensitivity curves based on Martynov et al. (2016) and take account
+	https://arxiv.org/pdf/2204.12977.pdf#page=8&search=ligo%20virgo ; incoming signals from close to LIGO’s horizon following Chen et al. == (2021). We therefore write the total number of magniﬁed GWs that
+	https://arxiv.org/pdf/2204.12977.pdf#page=8&search=ligo%20virgo ; are available to be detected per year at Earth if LIGO is operating as == 
+	https://arxiv.org/pdf/2204.12977.pdf#page=8&search=ligo%20virgo ; sensitivity of LIGO and other GW detectors ignores the presence of a == network of detectors and assumes that GW waveforms used to search
+	https://arxiv.org/pdf/2204.12977.pdf#page=8&search=ligo%20virgo ; the volume to which LIGO is sensitive, and thus considering only == 𝑞 = 1 is both well-motivated by data and not a signiﬁcant source
+	https://arxiv.org/pdf/2204.12977.pdf#page=9&search=ligo%20virgo ; the cosmic star formation rate history and LIGO’s constraints on == evolution to date. This forces 𝛼 for these two models to be steeper
+	https://arxiv.org/pdf/2204.12977.pdf#page=9&search=ligo%20virgo ; 5/20.2 4 M detected by LIGO in their third run, compared with that computed from our BH mass function models (Section 3.3.3), using Equation 25 == with lensing turned oﬀ. The model curves adopt R 0 = 18.3 Gpc−3 yr−1 =
+	https://arxiv.org/pdf/2204.12977.pdf#page=10&search=ligo%20virgo ; detected to date by LIGO, namely a steeply declining BH mass == function and possible structure (i.e. peaks) in the mass function
+	https://arxiv.org/pdf/2204.12977.pdf#page=10&search=ligo%20virgo ; reproduce the broad features of the source-frame chirp mass distribution of BH-BH mergers from LIGO’s third run. We use the population == of detected BH-BH mergers for this purpose, and not NS-NS merger
+	https://arxiv.org/pdf/2204.12977.pdf#page=10&search=ligo%20virgo ; detected to date by LIGO. == 
+	https://arxiv.org/pdf/2204.12977.pdf#page=10&search=ligo%20virgo ; LIGO sensitivity and compact object mass function, expressed as the ratio == of the number of detectable events magniﬁed by 𝜇 ≥ 2 to the number of
+	https://arxiv.org/pdf/2204.12977.pdf#page=10&search=ligo%20virgo ; predict that when LIGO reaches “A+” sensitivity in its ﬁfth run == 0.1 per cent of NS-NS merger detections and 0.2 per cent of
+	https://arxiv.org/pdf/2204.12977.pdf#page=10&search=ligo%20virgo ; LIGO’s ﬁrst run. These increases are due to improvements in LIGO’s == sensitivity from run to run, which reduces the lens magniﬁcation
+	https://arxiv.org/pdf/2204.12977.pdf#page=10&search=ligo%20virgo ; required to detect a source beyond LIGO’s horizon, and thus increases == the probability of detection (Equation 20). These predictions are
+	https://arxiv.org/pdf/2204.12977.pdf#page=10&search=ligo%20virgo ; lensed NS-NS mergers in LIGO’s ﬁfth run are comparable with the == relative rates for lensed BH-BH mergers in their ﬁrst run. This is
+	https://arxiv.org/pdf/2204.12977.pdf#page=10&search=ligo%20virgo ; detectable by LIGO will for the ﬁrst time approach one per year in == their fourth run (Table 3), with a handful of detections per year in their
+	https://arxiv.org/pdf/2204.12977.pdf#page=10&search=ligo%20virgo ; year during the ﬁfth run, i.e. when LIGO is operating at its A+ == sensitivity (Table 3). The dominant uncertainty on these rates is the
+	https://arxiv.org/pdf/2204.12977.pdf#page=11&search=ligo%20virgo ; Table 3. Predicted absolute number of detectable lensed (magniﬁed by 𝜇 ≥ 2) GWs per year as a function of LIGO sensitivity and compact object mass function. == O1
+	https://arxiv.org/pdf/2204.12977.pdf#page=11&search=ligo%20virgo ; ﬁrst detection in LIGO’s upcoming runs, it is important to consider == how to recognise a lensed detection among the growing number of
+	https://arxiv.org/pdf/2204.12977.pdf#page=11&search=ligo%20virgo ; detections that LIGO will make. We address this in the following == Sections, based on predictions of the mass, distance, magniﬁcation,
+	https://arxiv.org/pdf/2204.12977.pdf#page=11&search=ligo%20virgo ; ﬁve of LIGO’s runs considered in this article (dashed contours in == Figure 6). As LIGO becomes more sensitive from one run to the
+	https://arxiv.org/pdf/2204.12977.pdf#page=11&search=ligo%20virgo ; Figure 6). As LIGO becomes more sensitive from one run to the == next, the distance out to which it is possible to detect gravitationally
+	https://arxiv.org/pdf/2204.12977.pdf#page=11&search=ligo%20virgo ; distant sources within the LIGO horizon as its sensitivity improves. == This is summarised in Figure 7, where we see that the typical lens
+	https://arxiv.org/pdf/2204.12977.pdf#page=11&search=ligo%20virgo ; of lensed BH-BH mergers are predicted to be a regular occurrence in LIGO’s == ﬁfth run and beyond, and detection of lensed NS-NS mergers are predicted
+	https://arxiv.org/pdf/2204.12977.pdf#page=11&search=ligo%20virgo ; to become more likely the longer that LIGO operates at A+ sensitivity or == better in its ﬁfth run. In this ﬁgure 𝑁det is lower than the integral of 𝑁det
+	https://arxiv.org/pdf/2204.12977.pdf#page=11&search=ligo%20virgo ; from Equation 25 by a factor equal to LIGO’s duty cycle, which is taken to == be 0.6 in their ﬁrst two runs and 0.7 in later runs. The durations of the ﬁrst
+	https://arxiv.org/pdf/2204.12977.pdf#page=12&search=ligo%20virgo ; Figure 6. Predicted distributions of gravitationally magniﬁed NS-NS (red contours) and BH-BH (blue contours) merger detections in LIGO’s third (left panel) == and ﬁfth (right panel) runs for our Baseline models. Solid and dashed contours show the 𝑚- 𝐷 (i.e. as inferred by LIGO) and 𝑚-𝐷 (i.e. true intrinsic values)
+	https://arxiv.org/pdf/2204.12977.pdf#page=12&search=ligo%20virgo ; and ﬁfth (right panel) runs for our Baseline models. Solid and dashed contours show the 𝑚- 𝐷 (i.e. as inferred by LIGO) and 𝑚-𝐷 (i.e. true intrinsic values) == distributions respectively. In each case the thicker (inner) and thinner (outer) contours encircle 50 and 90 per cent of the predicted magniﬁed population
+	https://arxiv.org/pdf/2204.12977.pdf#page=12&search=ligo%20virgo ; individual compact objects that LIGO infer assuming 𝜇 = 1 for the binary compact mergers that they have detected. The thick black curve in each panel shows == LIGO’s horizon for equal mass mergers.
+	https://arxiv.org/pdf/2204.12977.pdf#page=12&search=ligo%20virgo ; LIGO’s horizon for equal mass mergers. == 
+	https://arxiv.org/pdf/2204.12977.pdf#page=12&search=ligo%20virgo ; function of sensitivity achieved/forecast in LIGO’s ﬁrst ﬁve runs, for BH-BH == mergers (left) and NS-NS mergers (right) respectively.
+	https://arxiv.org/pdf/2204.12977.pdf#page=12&search=ligo%20virgo ; 5 per cent of them having 𝑚 > 50 M in LIGO’s third and ﬁfth runs == respectively. The “ordinariness” of the predicted 𝑚 values of lensed
+	https://arxiv.org/pdf/2204.12977.pdf#page=13&search=ligo%20virgo ; respectively, at the sensitivity forecast for LIGO’s ﬁfth run. Distributions are shown for typical galaxy-scale (𝜃E = 1 arcsec, 𝜅E = 0.5, 𝜂E = 1) and cluster-scale == (𝜃E = 10 arcsec, 𝜅E = 0.8, 𝜂E = 0.5) lenses, as discussed in Section 2.5.
+	https://arxiv.org/pdf/2204.12977.pdf#page=13&search=ligo%20virgo ; former are typically less strongly magniﬁed than the latter. In LIGO’s == ﬁfth run lensed BH-BH mergers have entered the regime of lowmagniﬁcation strong-lensing (2 < 𝜇 < 10; Figure 7), whilst lensed
+	https://arxiv.org/pdf/2204.12977.pdf#page=13&search=ligo%20virgo ; Figure 6 that essentially all LIGO detections within 1 decade in 𝐷 == of the LIGO horizon and with compact object masses in the range
+	https://arxiv.org/pdf/2204.12977.pdf#page=13&search=ligo%20virgo ; of the LIGO horizon and with compact object masses in the range == 2 < 𝑚 < 100 M are candidate lensed detections. It is therefore
+	https://arxiv.org/pdf/2204.12977.pdf#page=13&search=ligo%20virgo ; evolution, 2.5 < 𝑚 < 5 M (Figure 6). Indeed, LIGO have already == detected objects in this region of parameter space that have attracted
+	https://arxiv.org/pdf/2204.12977.pdf#page=13&search=ligo%20virgo ; also motivate the identiﬁcation of LIGO detections as a candidate == lensed object (e.g. Dai et al. 2020; The LIGO Scientiﬁc Collaboration et al. 2021a). This strategy has two main disadvantages. Firstly,
+	https://arxiv.org/pdf/2204.12977.pdf#page=14&search=ligo%20virgo ; of the distributions shown in Figure 6 for LIGO’s fourth and ﬁfth == runs (Table 5).
+	https://arxiv.org/pdf/2204.12977.pdf#page=15&search=ligo%20virgo ; curves show the predicted 170817-like lightcurve for lens magniﬁcations representative of lensed NS-NS detections in LIGO’s fourth and ﬁfth runs respectively == (Table 5). Similarly, the upper and lower dashed curves are representative of the fourth and ﬁfth runs respectively. The green (upper) and pink (lower) shaded
+	https://arxiv.org/pdf/2204.12977.pdf#page=15&search=ligo%20virgo ; mergers, concentrating on LIGO’s ﬁfth run, and demonstrating the sensitivity == to the chirp mass (left) and mass ratio (right) of lensed NS-NS mergers
+	https://arxiv.org/pdf/2204.12977.pdf#page=15&search=ligo%20virgo ; in LIGO’s fourth run when the typical lens magniﬁcation will be 𝜇 == 400. Given the predicted detection rates (Figure 5) it is more realistic
+	https://arxiv.org/pdf/2204.12977.pdf#page=15&search=ligo%20virgo ; to look ahead to A+ sensitivity in LIGO’s ﬁfth run and beyond, at == which point the predicted light curves peak at apparent magnitudes
+	https://arxiv.org/pdf/2204.12977.pdf#page=16&search=ligo%20virgo ; (following their practice in their third run) LIGO announce estimates == of 𝐷, sky localisation, and the probability that one of the compact
+	https://arxiv.org/pdf/2204.12977.pdf#page=16&search=ligo%20virgo ; candidates can be identiﬁed through their detection by LIGO in the == lower mass gap, we can at least be conﬁdent that our predictions for
+	https://arxiv.org/pdf/2204.12977.pdf#page=16&search=ligo%20virgo ; by LIGO and announced as a public alert. Observations will therefore == need to be triggered in response to such a detection. In the context of
+	https://arxiv.org/pdf/2204.12977.pdf#page=16&search=ligo%20virgo ; information by LIGO in low latency would help to constrain our == model predictions for the lensed kilonova lightcurve. For example,
+	https://arxiv.org/pdf/2204.12977.pdf#page=17&search=ligo%20virgo ; 0.94) that we followed up in LIGO’s third run were later identiﬁed == as having chirp masses of M
+	https://arxiv.org/pdf/2204.12977.pdf#page=17&search=ligo%20virgo ; observations to be useful for other science interests and gaining access to mass-related information from LIGO in low latency will both == go a long way to optimising the observations for mutual beneﬁt across
+	https://arxiv.org/pdf/2204.12977.pdf#page=17&search=ligo%20virgo ; available to be detected will encroach on one per year during LIGO’s == fourth and ﬁfth runs respectively. The predicted rates are relatively
+13	https://arxiv.org/pdf/2204.12978.pdf#page=3&search=ligo%20virgo ; The event (announced as S190930s) was detected by both LIGO L1 == and H1 on September 30, 2019 at 13
+	https://arxiv.org/pdf/2204.12978.pdf#page=5&search=ligo%20virgo ; collaboration, with a sky localisation consistent with both LIGO and == IceCube (HAWC Collaboration 2019), but oﬀset with respect to the
+	https://arxiv.org/pdf/2204.12978.pdf#page=9&search=ligo%20virgo ; prospected for LIGO’s ﬁfth run, with predicted lensed rates around == one per year (Smith et al. 2022). Our candidate lensed BNS strategy
+
+13 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	a.drew@damtp.cam.ac.uk?subject=Your%20preprint%20https://arxiv.org/pdf/1910.01718.pdf
+2	gaoqing1024@swu.edu.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2012.03856.pdf
+3	vstroko1@jhu.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2109.08154.pdf
+4	liyp@ihep.ac.cn?subject=Your%20preprint%20https://arxiv.org/pdf/2112.01409.pdf
+5	leo.p.singer@nasa.gov?subject=Your%20preprint%20https://arxiv.org/pdf/2112.06947.pdf
+6	nbecker@itp.uni-frankfurt.de?subject=Your%20preprint%20https://arxiv.org/pdf/2112.09586.pdf
+7	barbara.patricelli@pi.infn.it?subject=Your%20preprint%20https://arxiv.org/pdf/2204.12504.pdf
+8	yael.raveh@campus.technion.ac.il?subject=Your%20preprint%20https://arxiv.org/pdf/2204.12506.pdf
+9	goncalo.castro@uniroma1.it?subject=Your%20preprint%20https://arxiv.org/pdf/2204.12510.pdf
+10	alejandroc.lagos@alumnos.udg.mx?subject=Your%20preprint%20https://arxiv.org/pdf/2204.12567.pdf
+11	g.yim@soton.ac.uk?subject=Your%20preprint%20https://arxiv.org/pdf/2204.12869.pdf
+12	gps@star.sr.bham.ac.uk?subject=Your%20preprint%20https://arxiv.org/pdf/2204.12977.pdf
+13	mbianconi@star.sr.bham.ac.uk?subject=Your%20preprint%20https://arxiv.org/pdf/2204.12978.pdf
+
+
+17 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/1910.01718.pdf
+2	https://arxiv.org/pdf/2012.03856.pdf
+3	https://arxiv.org/pdf/2109.08154.pdf
+4	https://arxiv.org/pdf/2112.01409.pdf
+5	https://arxiv.org/pdf/2112.06947.pdf
+6	https://arxiv.org/pdf/2112.07705.pdf
+7	https://arxiv.org/pdf/2112.09586.pdf
+8	https://arxiv.org/pdf/2203.02670.pdf
+9	https://arxiv.org/pdf/2204.12504.pdf
+10	https://arxiv.org/pdf/2204.12506.pdf
+11	https://arxiv.org/pdf/2204.12510.pdf
+12	https://arxiv.org/pdf/2204.12520.pdf
+13	https://arxiv.org/pdf/2204.12567.pdf
+14	https://arxiv.org/pdf/2204.12869.pdf
+15	https://arxiv.org/pdf/2204.12909.pdf
+16	https://arxiv.org/pdf/2204.12977.pdf
+17	https://arxiv.org/pdf/2204.12978.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

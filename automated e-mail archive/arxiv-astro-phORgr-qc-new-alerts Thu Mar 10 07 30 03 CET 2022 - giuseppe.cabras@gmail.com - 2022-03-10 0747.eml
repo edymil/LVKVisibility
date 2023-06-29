@@ -1,0 +1,129 @@
+Return-Path: <giuseppe.cabras@gmail.com>
+Received: from lugh.fisica.uniud.it (lugh.fisica.uniud.it. [158.110.40.216])
+        by smtp.gmail.com with ESMTPSA id b15-20020adfc74f000000b001e888b871a0sm3402303wrh.87.2022.03.09.22.46.58
+        for <giuseppe.cabras@uniud.it>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 09 Mar 2022 22:47:00 -0800 (PST)
+Message-ID: <62299ee4.1c69fb81.c2c0b.cd89@mx.google.com>
+From: giuseppe.cabras@gmail.com
+X-Google-Original-From: gc@lugh.fisica.uniud.it
+Received: by lugh.fisica.uniud.it (sSMTP sendmail emulation); Thu, 10 Mar 2022 07:47:43 +0100
+Date: Thu, 10 Mar 2022 07:47:43 +0100
+To: giuseppe.cabras@uniud.it
+To: livia.conti@pd.infn.it
+To: milotti@ts.infn.it
+To: cohadon@lkb.upmc.fr
+To: davide.guerra@uv.es
+To: trovato@apc.in2p3.fr
+To: andrea.virtuoso@hotmail.com
+To: jerome.novak@obspm.fr
+To: pablobarneo@icc.ub.edu
+Subject: arxiv-astro-phORgr-qc-new-alerts Thu Mar 10 07:30:03 CET 2022
+Content-Type: text/plain
+MIME-Version: 1.0
+
+n
+<div class="list-dateline">Submissions received from  Tue  8 Mar 22  to  Wed  9 Mar 22, announced Thu, 10 Mar 22</div>
+140 new astro-phORgr-qc preprint found (with repetitions)
+125 new astro-phORgr-qc pdf processed
+148 occurrences of LIGO word
+93 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2107.00741.pdf#page=1&search=ligo%20virgo ; enter the LIGO band. Moreover, the KL mechanism is == expected to reduce the merger time due to the larger
+2	https://arxiv.org/pdf/2107.12793.pdf#page=1&search=ligo%20virgo ; few years by LIGO [20] has opened up a new era that has == the potential to answer all these fundamental questions
+3	https://arxiv.org/pdf/2112.12108.pdf#page=2&search=ligo%20virgo ; measurements from LIGO, and the neutron star mass and == 
+	https://arxiv.org/pdf/2112.12108.pdf#page=4&search=ligo%20virgo ; 2. The LIGO 68% conﬁdence limits on the mass-weighted == 
+	https://arxiv.org/pdf/2112.12108.pdf#page=4&search=ligo%20virgo ; systems, orbital inclination in the case of LIGO, the parameters characterizing the geometry of the hot spot on == 
+	https://arxiv.org/pdf/2112.12108.pdf#page=5&search=ligo%20virgo ; PREX+NICER+LIGO == 
+	https://arxiv.org/pdf/2112.12108.pdf#page=5&search=ligo%20virgo ; PREX+NICER+LIGO/EM == 
+	https://arxiv.org/pdf/2112.12108.pdf#page=5&search=ligo%20virgo ; NICER+LIGO == 
+	https://arxiv.org/pdf/2112.12108.pdf#page=5&search=ligo%20virgo ; NICER+LIGO/EM == 
+	https://arxiv.org/pdf/2112.12108.pdf#page=8&search=ligo%20virgo ; LIGO == 
+4	https://arxiv.org/pdf/2203.04438.pdf#page=18&search=ligo%20virgo ; transitions, etc.) in current and future GW detectors and recently searched by LIGO[82– == 84]. However such study is beyond the scope of the present manuscript and will taken up
+5	https://arxiv.org/pdf/2203.04528.pdf#page=5&search=ligo%20virgo ; will be surveyed with higher sensitivity by an upgraded Advanced LIGO (A+ [50]) and third-generation observatories == (e.g., the Einstein Telescope [51] and Cosmic Explorer [52]),
+6	https://arxiv.org/pdf/2203.04634.pdf#page=1&search=ligo%20virgo ; limit of the LIGO frequency band). Present bounds on == non-GR deformation parameters [10] assume that binaries are quasi-circular when entering the detectors’ frequency band (and are well-modelled by circular waveform
+	https://arxiv.org/pdf/2203.04634.pdf#page=2&search=ligo%20virgo ; BHs (SMBHs) will enter the LIGO band with eccentricity ≥ 0.5. Reference [46] studied the stellar mass BHs == that form density cusps due to mass segregation near
+	https://arxiv.org/pdf/2203.04634.pdf#page=2&search=ligo%20virgo ; will have eccentricities > 0.9 when they enter the LIGO == band. Reference [48] studied hierarchical triple BH systems in GCs, predicting that ∼ 30% of those systems will
+	https://arxiv.org/pdf/2203.04634.pdf#page=2&search=ligo%20virgo ; in LIGO and 3G detectors, considering the neglect of == high-PN-order terms, spins, eccentricity, and tidal deformation. He found that even small eccentricities (e0 ∼
+	https://arxiv.org/pdf/2203.04634.pdf#page=2&search=ligo%20virgo ; binary eccentricity become signiﬁcant when binaries enter the LIGO band with an initial orbital eccentricity of == e0 ≥ 0.01 to 0.1. These systematic biases will aﬀect the
+	https://arxiv.org/pdf/2203.04634.pdf#page=5&search=ligo%20virgo ; The above formalism is applied to the LIGO [82] and == Cosmic Explorer (CE) [60] detectors. We use the LIGO
+	https://arxiv.org/pdf/2203.04634.pdf#page=5&search=ligo%20virgo ; Cosmic Explorer (CE) [60] detectors. We use the LIGO == noise PSD from Eq. (4.7) of [83]. For CE, we use the
+	https://arxiv.org/pdf/2203.04634.pdf#page=5&search=ligo%20virgo ; PSD from Eq. (3.7) of [84]. When evaluating the integrals in Eq. (3.1) and (3.2), the lower frequency of integration is chosen to be 10 Hz for LIGO and 5 Hz for CE == (corresponding to the detectors’ low-frequency sensitivity
+	https://arxiv.org/pdf/2203.04634.pdf#page=5&search=ligo%20virgo ; Hz for both LIGO and CE. == 
+	https://arxiv.org/pdf/2203.04634.pdf#page=5&search=ligo%20virgo ; (1790.35) in the LIGO (CE) bands, respectively. The == spins are assumed to be aligned with the orbital angular
+	https://arxiv.org/pdf/2203.04634.pdf#page=5&search=ligo%20virgo ; tricity e0 in the LIGO band. Systematic bias increases == as the eccentricity of the source increases. (Recall that
+	https://arxiv.org/pdf/2203.04634.pdf#page=5&search=ligo%20virgo ; δ ϕ−2 = ϕ−2 are shown separately (for LIGO and CE) in == ˆ
+	https://arxiv.org/pdf/2203.04634.pdf#page=6&search=ligo%20virgo ; parameter e0 for various sources in the LIGO band. The eccentricity e0 is deﬁned at 10 Hz. Systematic errors are shown by == slanted solid lines. (Note that these are the absolute values of the systematic errors.) The 1σ statistical errors are shown by
+	https://arxiv.org/pdf/2203.04634.pdf#page=8&search=ligo%20virgo ; factor ∼ 10 improvement in sensitivity relative to LIGO, == the measurement precision of δ ϕ−2 improves by a factor
+	https://arxiv.org/pdf/2203.04634.pdf#page=8&search=ligo%20virgo ; (LIGO) the systematic errors exceed the statistical errors == at e0 0.04, with lower mass systems exceeding the statistical errors at smaller eccentricities. For M = 15M ,
+	https://arxiv.org/pdf/2203.04634.pdf#page=8&search=ligo%20virgo ; sults for LIGO; the bottom for CE. The system parameters == and labelling scheme are the same as in Figures 1 and 2. In
+	https://arxiv.org/pdf/2203.04634.pdf#page=8&search=ligo%20virgo ; 20%–70% error) with a LIGO detector. The 2PN, 2.5PN == log, and 3PN coeﬃcients are poorly constrained. This
+	https://arxiv.org/pdf/2203.04634.pdf#page=8&search=ligo%20virgo ; and 2.5PN log coeﬃcients improve by a factor ∼ 10 relative to the constraints with LIGO, with the ﬁrst three coeﬃcients reaching fractional constraints σa ∼ 0.01–0.07. == The 3PN and higher coeﬃcients show a less signiﬁcant
+	https://arxiv.org/pdf/2203.04634.pdf#page=8&search=ligo%20virgo ; for LIGO. This improves by a factor of order ∼ 100 == for the CE detector. The improved measurement precision of the dipole coeﬃcient arises because it acts as
+	https://arxiv.org/pdf/2203.04634.pdf#page=8&search=ligo%20virgo ; compared to the LIGO case (e0 ≈ 0.005–0.01). While == systematic errors are independent of SNR, the excellent
+	https://arxiv.org/pdf/2203.04634.pdf#page=8&search=ligo%20virgo ; for a binary observed with a given M and e0 (in comparison to the systematic error in LIGO). The magnitude of == the systematic errors are also many orders of magnitude
+	https://arxiv.org/pdf/2203.04634.pdf#page=9&search=ligo%20virgo ; compared to LIGO. The source has a longer inspiral and == executes more GW cycles in the CE band. This both
+	https://arxiv.org/pdf/2203.04634.pdf#page=9&search=ligo%20virgo ; errors at e0 0.04 for LIGO. For CE, systematic biases == become comparable to statistical errors at e0
+	https://arxiv.org/pdf/2203.04634.pdf#page=9&search=ligo%20virgo ; The magnitude of the systematic errors on the dipole coeﬃcient are roughly similar for LIGO and CE. In contrast == to the non-negative PN order coeﬃcients (k ≥ 0) shown
+	https://arxiv.org/pdf/2203.04634.pdf#page=9&search=ligo%20virgo ; eccentricities as small as ≈ 0.04 for LIGO. In the case == of third-generation detectors such as CE, even smaller
+	https://arxiv.org/pdf/2203.04634.pdf#page=9&search=ligo%20virgo ; the δ ϕ0 panel of Figure 2. In Figure 1 (LIGO) this eﬀect is not == ˆ
+	https://arxiv.org/pdf/2203.04634.pdf#page=9&search=ligo%20virgo ; material is based upon work supported by the LIGO Laboratory, a major facility fully funded by the National Science Foundation. This paper has been assigned the LIGO == preprint number P2200073.
+
+6 preprints with alerts
+=================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+=================================================================== 
+1	rsc4@illinois.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2107.00741.pdf
+2	debu@iitg.ac.in?subject=Your%20preprint%20https://arxiv.org/pdf/2107.12793.pdf
+3	equawilliam.newton@tamuc.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2112.12108.pdf
+4	anish.ghoshal@fuw.edu.pl?subject=Your%20preprint%20https://arxiv.org/pdf/2203.04438.pdf
+5	?subject=Your%20preprint%20https://arxiv.org/pdf/2203.04528.pdf
+6	pankajsaini@cmi.ac.in?subject=Your%20preprint%20https://arxiv.org/pdf/2203.04634.pdf
+
+
+19 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2106.10576.pdf
+2	https://arxiv.org/pdf/2107.00741.pdf
+3	https://arxiv.org/pdf/2107.12793.pdf
+4	https://arxiv.org/pdf/2110.00766.pdf
+5	https://arxiv.org/pdf/2112.08711.pdf
+6	https://arxiv.org/pdf/2112.12108.pdf
+7	https://arxiv.org/pdf/2203.02759.pdf
+8	https://arxiv.org/pdf/2203.04331.pdf
+9	https://arxiv.org/pdf/2203.04438.pdf
+10	https://arxiv.org/pdf/2203.04477.pdf
+11	https://arxiv.org/pdf/2203.04528.pdf
+12	https://arxiv.org/pdf/2203.04634.pdf
+13	https://arxiv.org/pdf/2203.04757.pdf
+14	https://arxiv.org/pdf/2203.04758.pdf
+15	https://arxiv.org/pdf/2203.04777.pdf
+16	https://arxiv.org/pdf/2203.04782.pdf
+17	https://arxiv.org/pdf/2203.04798.pdf
+18	https://arxiv.org/pdf/2203.04893.pdf
+19	https://arxiv.org/pdf/2203.04908.pdf
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+
