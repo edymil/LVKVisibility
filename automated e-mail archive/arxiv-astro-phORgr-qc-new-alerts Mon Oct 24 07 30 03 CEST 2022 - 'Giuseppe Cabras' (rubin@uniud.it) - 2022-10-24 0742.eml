@@ -1,0 +1,133 @@
+Received: from DU2PR03MB9885.eurprd03.prod.outlook.com (2603:10a6:10:499::17)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Mon, 24 Oct 2022
+ 05:33:39 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=uniud.it;
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22) by DU2PR03MB9885.eurprd03.prod.outlook.com
+ (2603:10a6:10:499::17) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5723.32; Mon, 24 Oct
+ 2022 05:33:38 +0000
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::435:554f:a05d:9e7]) by DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::435:554f:a05d:9e7%7]) with mapi id 15.20.5746.021; Mon, 24 Oct 2022
+ 05:33:38 +0000
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Mon, 24 Oct 2022 07:42:22 +0200
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Mon Oct 24 07:30:03 CEST 2022
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 24 Oct 2022 05:33:37.4578
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 5cb6e404-a958-4f4c-ec84-08dab5814d0e
+X-MS-Exchange-Organization-AuthSource:
+ DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: ZR0P278CA0168.CHEP278.PROD.OUTLOOK.COM
+ (2603:10a6:910:45::23) To DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: rubin@uniud.it
+Message-ID:
+ <DB3PR0302MB90163AAFB88E00B3FC2E1A7BC82E9@DB3PR0302MB9016.eurprd03.prod.outlook.com>
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB3PR0302MB9016:EE_|DU2PR03MB9885:EE_
+X-MS-Office365-Filtering-Correlation-Id: 5cb6e404-a958-4f4c-ec84-08dab5814d0e
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DB3PR0302MB9016.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5cb6e404-a958-4f4c-ec84-08dab5814d0e
+X-MS-Exchange-CrossTenant-AuthSource: DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 24 Oct 2022 05:33:38.5972
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: D6CKa/eXqpsYcxftCBDsfBwmSApDbnoAJGbmpjuSHbx4JIJRRnxcaJ7VQgH3yODd
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DU2PR03MB9885
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.8232981
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5746.023
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	UjWfgaZ3XHlYjAp+Vd21g5WaU5tmJOPdpIe2kJwpwqRD52KwAkb1wHK/i6YlMrKv7uV+mpaBMsHSrkH7tDLU+oAte5E7BqNoiKRuWTYgIktgt1akreoa/Y4jCFG+Neob7HnwY7TaDTPKEjZWbHlVX8+RHinQMVpoJvZqIrP131Yv0wZk129JomVZm4KXFTWH6Wz0g8rlM5Flo+h56CPLc63u3+4uKVtab1grLqURArhPq0K8H+euu9Hl4YZbteM74d3cietmGrgZLFLTKH2Tj4i4IZkxP8KR0Ymfwjhbyjxo6Ad0XPg9DfzJ1JSFnTwNSKv/GQ2bwLJ4z0pAEAU23C2zva5DRxRVqGvQLNgZTHpOQoYGsrXyBsgXQt2NpmjlQO3qJJVD7Q+ZxHs9h9UedTexbygQFqcLFdoREG9VbDhh8tp9Vs47i/wAJuPJW0TOa0w4r/k/+lvs8jGzWP9o9EozoWYvm2NFxfUtkPpfUT7eQTGOJi+coBK9Xrwd6o1OsX9q9vAlewcwfxfRH9KBWhiBm5S5WJ36wUS6NnRilOJxmeiwYhBVUyT6w1Cv+h44Ay/cseZbDK4nTory9hc/n6pACglcjXukNtV7MxP6gWpFyyQYLaQ/XXJbu2FTlAO6kuIWzo9oTBIHwVuazjQrRvlzk8+dRQIMBF0KK66S9vH2pyRMvgax1mHY2kbfB11y4CKf8OcX2FUy5slqto4Xk2a+WsSDfbyMlsg4N+B/JUqMGCuf+NDBR+MXNhHlqFaF3gHhIoQYtqANhmVFV5GmDsImy2O4LXsSNUwVtQvSP8JBrHlUuGW08zQ8/v79LAuQ2Ow51f3zDPlDnISN/slVUih34re7dBaMTcLAGtoEYVrmJG5nUHD90OpoimhhWZc5
+MIME-Version: 1.0
+
+RUN /home/gc/bin/check_LVC2 release 20220920 by gc
+<div class="list-dateline">Submissions received from  Thu 20 Oct 22  to  Fri 21 Oct 22, announced Mon, 24 Oct 22</div>
+129 new astro-phORgr-qc preprint found (with repetitions)
+115 new astro-phORgr-qc pdf processed
+78 occurrences of LIGO word
+71 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2110.10962.pdf#page=1&search=ligo%20virgo ; as LIGO [3], the planned laser interferometer space-based antenna (LISA) [4] and by studies on the B-mode polarization of the cosmic background radiation [5]. On top of
+	https://arxiv.org/pdf/2110.10962.pdf#page=10&search=ligo%20virgo ; space-based interferometers such as LIGO and LISA, are accounted as small detectors. We proceed by assuming
+
+1 preprints with alerts
+==================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+==================================================================== 
+1	fateme.shojaei@irap.omp.eu?subject=Your%20preprint%20https://arxiv.org/pdf/2110.10962.pdf
+
+
+13 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2110.10962.pdf
+2	https://arxiv.org/pdf/2203.09004.pdf
+3	https://arxiv.org/pdf/2207.00030.pdf
+4	https://arxiv.org/pdf/2208.04356.pdf
+5	https://arxiv.org/pdf/2209.03222.pdf
+6	https://arxiv.org/pdf/2210.11491.pdf
+7	https://arxiv.org/pdf/2210.11641.pdf
+8	https://arxiv.org/pdf/2210.11651.pdf
+9	https://arxiv.org/pdf/2210.11681.pdf
+10	https://arxiv.org/pdf/2210.11821.pdf
+11	https://arxiv.org/pdf/2210.11935.pdf
+12	https://arxiv.org/pdf/2210.12120.pdf
+13	https://arxiv.org/pdf/2210.12139.pdf
+
+========================================= 
+=CUMULASTIVE STATISTICS SINCE 01/09/2022= 
+========================================= 
+5936  total new astro-phORgr-qc preprint found (with repetitions)
+5276  tota new astro-phORgr-qc pdf processed
+6046  total occurrences of LIGO word
+4550  total occurrences of VIRGO word
+175  total preprints with alerts
+739 total preprints mention LIGO
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

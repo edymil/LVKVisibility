@@ -1,0 +1,142 @@
+Received: from PAXPR03MB7824.eurprd03.prod.outlook.com (2603:10a6:102:20a::16)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Thu, 24 Nov 2022
+ 06:40:23 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=uniud.it;
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22) by PAXPR03MB7824.eurprd03.prod.outlook.com
+ (2603:10a6:102:20a::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5857.19; Thu, 24 Nov
+ 2022 06:40:22 +0000
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::115c:1eae:b54e:374]) by DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::115c:1eae:b54e:374%3]) with mapi id 15.20.5857.017; Thu, 24 Nov 2022
+ 06:40:20 +0000
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Thu, 24 Nov 2022 07:49:34 +0100
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Thu Nov 24 07:30:02 CET 2022
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 24 Nov 2022 06:40:19.3584
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ f895a158-6253-4ad9-bc6f-08dacde6c12e
+X-MS-Exchange-Organization-AuthSource:
+ DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: ZR2P278CA0014.CHEP278.PROD.OUTLOOK.COM
+ (2603:10a6:910:50::20) To DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: rubin@uniud.it
+Message-ID:
+ <DB3PR0302MB901683175BE07F8F2D19513DC80F9@DB3PR0302MB9016.eurprd03.prod.outlook.com>
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB3PR0302MB9016:EE_|PAXPR03MB7824:EE_
+X-MS-Office365-Filtering-Correlation-Id: f895a158-6253-4ad9-bc6f-08dacde6c12e
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DB3PR0302MB9016.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-Network-Message-Id: f895a158-6253-4ad9-bc6f-08dacde6c12e
+X-MS-Exchange-CrossTenant-AuthSource: DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 24 Nov 2022 06:40:20.4844
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: dBRxI4ffRioOK9/13xzZqS0RY3TPnO1pAQzr/lIH94SNVOH4Br8Z205MXmBCyFx5
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PAXPR03MB7824
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.9452350
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5834.015
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	6uvWVAUngFYnQ/whdP9rcTB6rwoSUTIN+Wc9B6lyNTA/6Dc3xZAvbYlD/pz0zYYLi6UtWfO01c7vkvlYyVZW2L7pc0QCnVlFMqxOPkRfEWQ0mqiGY4M9C3bt4Yi/W1gHxY1vFhdQ9WTftevzxwW31d0RviR0y1vLwVmLR2KOW/PCZF4EFKmy9Qp2wvw4YEprTwEY/2tEFsb4JR9ZgJylLOWUobN94/utBUIqE7zDtAJm6/hqQWkRRDzFAEAx9t5ZVM71/pQ+fNm0Xo4V+G4rL6PQn2rNIB67s8cYd/SRucysIZv69WmBkNwWzV4162cKV7IqJN2UQdh544WRiB7LIsu8Rt6Y8zUoeckTVP2A3SmTZ3bhohlGThHA2DjiRxNSz2uLWL15irbt8YsuUUCPAmJ/S/wt0vUq2fXoFyR3aTDaJowHx4RgMEUXK/UkHAFfclTjIZotr3MnBr/1tX4g/PjD/sNiW9p9jTXFNaxELD6b4o51uvkM5LK9lCZMT5CQiJtAI0R0tFD5sMcrSYNXPfs/QAJkEtIgYLLmmDL2qxLf96fwUxMNmBjYYTXlI1ehgt6BqRt36qj7NK6vdjh1qoFhrEpp4Od2xvdFVnEAqLKZtX/EN2idLSP8M/2n3HFUZMnjHfXrnUv0WLL6/1iw+T0Huj3dhqOp/MupYXPK7RnuBKf4mo21o169ZL2WWcCeEeQMqaSBuZ3E6eBmZcoG/Yg+BV4de7KTOfyHBABQ9pTY1PeEDIpyHb19vc5ZRm2wydCkRQFzoAyQjFzMBQZsoDufs7kS2mKxjDIZUKkinrc=
+MIME-Version: 1.0
+
+RUN /home/gc/bin/check_LVC2 release 20221121 by gc
+<div class="list-dateline">Submissions received from  Tue 22 Nov 22  to  Wed 23 Nov 22, announced Thu, 24 Nov 22</div>
+130 new astro-phORgr-qc preprint found (with repetitions)
+119 new astro-phORgr-qc pdf processed
+120 occurrences of LIGO word
+98 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2211.13120.pdf#page=1&search=ligo%20virgo ; sources like binaries in hyperbolic orbits. This can be in the realm of observations by Advanced-LIGO, Einstein-Telescope, or LISA for stellar mass black-holes scattered by the super-massive black-hole at the
+	https://arxiv.org/pdf/2211.13120.pdf#page=2&search=ligo%20virgo ; threshold of detectors like Advanced LIGO with a threshold of ∼ 10 Hz, they lose their eccentricities due to gravitational radiation reaction. However, there can be other initial conﬁgurations of binary star orbits which could give rise to large eccentricity orbits by the time the frequency enters the Advanced LIGO threshold [33, 34]. An eccentric
+	https://arxiv.org/pdf/2211.13120.pdf#page=2&search=ligo%20virgo ; rise to large eccentricity orbits by the time the frequency enters the Advanced LIGO threshold [33, 34]. An eccentric binary can be formed by capture from an unbound orbit [35, 36]. An initial three body system may eject one of the
+	https://arxiv.org/pdf/2211.13120.pdf#page=2&search=ligo%20virgo ; [34] at future detectors like Advanced-LIGO. A determination of eccentricity of the orbits of the coalescent binary will be possible at Advanced-LIGO by improving the low frequency sensitivity [42]. Experimental determination of both
+	https://arxiv.org/pdf/2211.13120.pdf#page=2&search=ligo%20virgo ; be possible at Advanced-LIGO by improving the low frequency sensitivity [42]. Experimental determination of both the memory signal and the eccentricity of the orbit affect the signal near the low-frequency threshold of the detector,
+	https://arxiv.org/pdf/2211.13120.pdf#page=2&search=ligo%20virgo ; be seen in Advanced LIGO by combining the signals from multiple events [52]. The memory signal from several unresolved binary event mergers may be observed as a cumulative change over time in the pulsar timing residuals
+	https://arxiv.org/pdf/2211.13120.pdf#page=2&search=ligo%20virgo ; bursts of gravitational waves [58–64] which may be detectable at Advanced LIGO or Einstein Telescope [65, 66]. For hyperbolic orbits the nonlinear memory appears at the 2.5-PN level in the waveforem. This is contrary to
+	https://arxiv.org/pdf/2211.13120.pdf#page=22&search=ligo%20virgo ; from data by the future detectors like Advanced-LIGO, Einstein Telescope and LISA. 
+
+1 preprints with alerts
+==================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+==================================================================== 
+1	arpan20@iitk.ac.in?subject=Your%20preprint%20https://arxiv.org/pdf/2211.13120.pdf
+
+
+16 preprints mention LIGO
+======================================================================================= 
+=List of preprints mention LIGO with version nubar [subject area] and submission date = 
+======================================================================================= 
+1	https://arxiv.org/pdf/2201.00607.pdf#page=1: arXiv:2201.00607v2 [astro-ph.CO] 23 Nov 2022
+2	https://arxiv.org/pdf/2206.03814.pdf#page=1: arXiv:2206.03814v3 [gr-qc] 23 Nov 2022
+3	https://arxiv.org/pdf/2207.14423.pdf#page=1: arXiv:2207.14423v2 [gr-qc] 23 Nov 2022
+4	https://arxiv.org/pdf/2210.06608.pdf#page=1: arXiv:2210.06608v2 [gr-qc] 23 Nov 2022
+5	https://arxiv.org/pdf/2210.15186.pdf#page=1: arXiv:2210.15186v2 [gr-qc] 23 Nov 2022
+6	https://arxiv.org/pdf/2211.03368.pdf#page=1: arXiv:2211.03368v2 [hep-ph] 23 Nov 2022
+7	https://arxiv.org/pdf/2211.11585.pdf#page=1: arXiv:2211.11585v2 [gr-qc] 23 Nov 2022
+8	https://arxiv.org/pdf/2211.12683.pdf#page=1: arXiv:2211.12683v1 [gr-qc] 23 Nov 2022
+9	https://arxiv.org/pdf/2211.12730.pdf#page=1: arXiv:2211.12730v1 [nucl-th] 23 Nov 2022
+10	https://arxiv.org/pdf/2211.12766.pdf#page=1: arXiv:2211.12766v1 [astro-ph.CO] 23 Nov 2022
+11	https://arxiv.org/pdf/2211.12808.pdf#page=1: arXiv:2211.12808v1 [nucl-th] 23 Nov 2022
+12	https://arxiv.org/pdf/2211.12947.pdf#page=1: arXiv:2211.12947v1 [gr-qc] 23 Nov 2022
+13	https://arxiv.org/pdf/2211.12951.pdf#page=1: arXiv:2211.12951v1 [astro-ph.GA] 23 Nov 2022
+14	https://arxiv.org/pdf/2211.12965.pdf#page=1: arXiv:2211.12965v1 [astro-ph.CO] 23 Nov 2022
+15	https://arxiv.org/pdf/2211.13111.pdf#page=1: arXiv:2211.13111v1 [gr-qc] 23 Nov 2022
+16	https://arxiv.org/pdf/2211.13120.pdf#page=1: arXiv:2211.13120v1 [gr-qc] 23 Nov 2022
+
+========================================= 
+=CUMULASTIVE STATISTICS SINCE 01/09/2022= 
+========================================= 
+9866  total new astro-phORgr-qc preprint found (with repetitions)
+8757  tota new astro-phORgr-qc pdf processed
+11092  total occurrences of LIGO word
+9315  total occurrences of VIRGO word
+316  total preprints with alerts
+1252 total preprints mention LIGO
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

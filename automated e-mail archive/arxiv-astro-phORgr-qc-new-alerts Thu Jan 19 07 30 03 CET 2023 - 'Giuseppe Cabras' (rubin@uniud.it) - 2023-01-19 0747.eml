@@ -1,0 +1,157 @@
+Received: from AM9PR03MB6835.eurprd03.prod.outlook.com (2603:10a6:20b:281::17)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Thu, 19 Jan 2023
+ 06:38:54 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=uniud.it;
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22) by AM9PR03MB6835.eurprd03.prod.outlook.com
+ (2603:10a6:20b:281::17) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6002.25; Thu, 19 Jan
+ 2023 06:38:53 +0000
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::115c:1eae:b54e:374]) by DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::115c:1eae:b54e:374%9]) with mapi id 15.20.5986.023; Thu, 19 Jan 2023
+ 06:38:53 +0000
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Thu, 19 Jan 2023 07:47:03 +0100
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Thu Jan 19 07:30:03 CET 2023
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 19 Jan 2023 06:38:52.4874
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ f1c3f941-72de-40aa-4813-08daf9e7d489
+X-MS-Exchange-Organization-AuthSource:
+ DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: ZR0P278CA0057.CHEP278.PROD.OUTLOOK.COM
+ (2603:10a6:910:21::8) To DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: rubin@uniud.it
+Message-ID:
+ <DB3PR0302MB9016088CDBF566904DD1FC84C8C49@DB3PR0302MB9016.eurprd03.prod.outlook.com>
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB3PR0302MB9016:EE_|AM9PR03MB6835:EE_
+X-MS-Office365-Filtering-Correlation-Id: f1c3f941-72de-40aa-4813-08daf9e7d489
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DB3PR0302MB9016.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-Network-Message-Id: f1c3f941-72de-40aa-4813-08daf9e7d489
+X-MS-Exchange-CrossTenant-AuthSource: DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 19 Jan 2023 06:38:53.6605
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: olOPw0iomXrauK9xI+CL59KS/cW81PprG3VZ/fuOhEzmI1XqEuKV2h1aky5xPS0d
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM9PR03MB6835
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.7460370
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5986.023
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	U5gRhKNCj+y2n1uBvhsPmkKPDKsIVPLfRPxlKqWApb2bghBo4F1eOmdPswanaECHzUxwT4P4eF5WOgfRxLPqVIsKVsz+nvoskwvx0OIgLuu1JNT+rQqK923XJx8Jf1hhWQ+6W76Fegxm6Jzg1PWnbpsrzslndNIRlSowJEUfEyA/zYqsm+32/J+Z0o6nS5E/fmJM36WwdBzRaVq0diEWZ96k49p/GFJfoR9L18q0aVx8DidpZWU49pzrW1SQ2Ok1nvSKI+ckY2Dg8bwvlJTIDKpbEwAmrUOOq0b9uBOfjTrIQ3ksRUROqDYj1bRQ9R8/n6JqrpG8qJvlqokL3pUPa+oV69olsu+stgeDPZQH3P8fsuJxwIOpxEz9V6ZLuzcfRTg5ELE1Km/MCShQ/EqGKsd1GONREBKQCkmdGoPUL/l9ZJlCkRR/WLNHaSvhEdoI2ZCiiFssCzWtH2QQHj6EQdiBr/PSf1eYukxCR7FHJW052SWYLaAx1k59vLPwt3sE5vEEUSACH5IvAYgfPqUzLqG14WNXaRJ37zsLFluZeO+SDx0S7+Ejr0Su7JDR+DHVTVnIEBxqZsqkMZxiHdJ5kyjUbtZWqxZK1E8URCVAeXzXhn5C5ScHucKev+wAnNXxjHZIyK4b3/YJWjWYYbiXRP/3QvgoLFDK9/qv4U4CMiA6e2nErG+3RKBNZyuFEvsyLzInb3em4QeYFsCm7ElS/roH7x4mlc4EWBWZoKZH4zSn5f/pHNZPFp9kGQ1yao5yC2byQDnGZ3qguZ+MXvh1TTtS33B9/QvK5Y1BJBFcUH5Do/gV0PnEqPPqRPlZAGIf5o6RiNkdAqEurLIxECvw66dfp29KgrioVz6Lx4vL328cMHe5rJTxAcr2nhymdfZaJyxWhlVb2AcJIVvU/FjCUw==
+MIME-Version: 1.0
+
+RUN /home/gc/bin/check_LVC2 release 20221130 by gc
+<div class="list-dateline">Submissions received from  Tue 17 Jan 23  to  Wed 18 Jan 23, announced Thu, 19 Jan 23</div>
+174 new astro-phORgr-qc preprint found (with repetitions)
+164 new astro-phORgr-qc pdf processed
+321 occurrences of LIGO word
+93 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2111.15608.pdf#page=11&search=ligo%20virgo ; can produce an electromagnetic (EM) counterpart. Indeed, on August 17, 2017, LIGO detected its ﬁrst binary NS (BNS) merger, GW170817 (Abbott et al. 2016), at
+	https://arxiv.org/pdf/2111.15608.pdf#page=12&search=ligo%20virgo ; BH formation, and relativistic phenomena. LIGO reported detections of the ﬁrst NS-BH mergers in its O3 observing run (Gottlieb et al. 2018). However, either the
+	https://arxiv.org/pdf/2111.15608.pdf#page=12&search=ligo%20virgo ; months beginning in 2028 with LIGO India added, dramatically improving the number of well-localized BNS events. In O4 to O5 to O6, the expected rate of BNS
+2	https://arxiv.org/pdf/2209.15066.pdf#page=2&search=ligo%20virgo ; LIGO  https
+3	https://arxiv.org/pdf/2301.07253.pdf#page=2&search=ligo%20virgo ; plots of |h(f )|, we display a counter example signal (dashed line) and the sensitivity curves of the Advanced LIGO (aLIGO)’s design power spectral density (PSD) (dotted dark grey) and the Einstein Telescope (ET)’s design PSD [20] (dotted light grey) for comparison.
+	https://arxiv.org/pdf/2301.07253.pdf#page=2&search=ligo%20virgo ; the Advanced LIGO (aLIGO)’s design sensitivity [22], that also can be acquired from the PYCBC . PSD module of P YCBC. In addition, to obtain the ﬁnal form of s(t), we employ
+4	https://arxiv.org/pdf/2301.07456.pdf#page=2&search=ligo%20virgo ; GW pulse, modelled on the merger event, GW150914, detected by the LIGO experiment, leads to a signiﬁcant increase in the ﬂuctuations in a fuzzy dark matter. Simultaneous,
+5	https://arxiv.org/pdf/2301.07522.pdf#page=4&search=ligo%20virgo ; at her discretion to approve the proposed Advanced LIGO Project change in scope, enabling plans for the relocation of an advanced detector to India”.
+	https://arxiv.org/pdf/2301.07522.pdf#page=4&search=ligo%20virgo ; number of Indian researchers were already members of the global LIGO Scientiﬁc Collaboration (LSC) and part of the discovery [5, 6], 3) a suitable site for the LIGO-India detector was identiﬁed in the state of Maharashtra and
+	https://arxiv.org/pdf/2301.07522.pdf#page=5&search=ligo%20virgo ; LIGO Scientiﬁc Collaboration was about $ 130 million. 
+	https://arxiv.org/pdf/2301.07522.pdf#page=5&search=ligo%20virgo ; light technology and improved mirror coating, called LIGO A+, the mature sensitivity is projected to reach beyond 300 Mpc. Advanced LIGO started
+	https://arxiv.org/pdf/2301.07522.pdf#page=5&search=ligo%20virgo ; sensitivity is projected to reach beyond 300 Mpc. Advanced LIGO started its operation (O1) in 2015 with a range above 60 Mpc, and progressively
+	https://arxiv.org/pdf/2301.07522.pdf#page=9&search=ligo%20virgo ; another example, after decommissioning the initial LIGO interferometer, an experienced team took about 5 years to assemble and commission the aLIGO
+	https://arxiv.org/pdf/2301.07522.pdf#page=15&search=ligo%20virgo ; a sensitivity matching the two LIGO instruments in the USA. However, the signiﬁcant delay does aﬀect its role as an instrument for discovery. What is
+	https://arxiv.org/pdf/2301.07522.pdf#page=17&search=ligo%20virgo ; and the LIGO laboratories (Caltech and MIT). It cannot be that the NSF and LIGO laboratories are unaware of the steadily diminishing scientiﬁc and
+	https://arxiv.org/pdf/2301.07522.pdf#page=18&search=ligo%20virgo ; using the components fabricated for a third LIGO interferometer seems to be the implementation of the LIGO-India project. In my view, there seems to
+	https://arxiv.org/pdf/2301.07522.pdf#page=18&search=ligo%20virgo ; to LIGO A+ detector, to be completed by 2026 [9, 14]. The technology additions envisaged are mature squeezed light quantum measurement and
+	https://arxiv.org/pdf/2301.07522.pdf#page=20&search=ligo%20virgo ; the Voyager upgrade in the LIGO facility. Post 2036, we can expect the beginnings of the 10 km class Cosmic Explorer and Einstein Telescope.
+	https://arxiv.org/pdf/2301.07522.pdf#page=21&search=ligo%20virgo ; relevance, was based on the announced projections on the systematic upgrades and developments beyond LIGO A+ design, which is the one to be implemented in LIGO-India. However, these projections naturally have some
+
+5 preprints with alerts
+==================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+==================================================================== 
+1	srk@astro.caltech.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2111.15608.pdf
+2	marccortes@udec.cl?subject=Your%20preprint%20https://arxiv.org/pdf/2209.15066.pdf
+3	kyungmin.kim@ewha.ac.kr?subject=Your%20preprint%20https://arxiv.org/pdf/2301.07253.pdf
+4	shreyansh.dave@tifr.res.in?subject=Your%20preprint%20https://arxiv.org/pdf/2301.07456.pdf
+5	unni@tifr.res.in?subject=Your%20preprint%20https://arxiv.org/pdf/2301.07522.pdf
+
+
+16 preprints mention LIGO
+======================================================================================= 
+=List of preprints mention LIGO with version nubar [subject area] and submission date = 
+======================================================================================= 
+1	https://arxiv.org/pdf/2111.15608.pdf#page=1: arXiv:2111.15608v3 [astro-ph.GA] 18 Jan 2023
+2	https://arxiv.org/pdf/2208.04971.pdf#page=1: arXiv:2208.04971v2 [astro-ph.IM] 18 Jan 2023
+3	https://arxiv.org/pdf/2209.10697.pdf#page=1: arXiv:2209.10697v4 [astro-ph.EP] 18 Jan 2023
+4	https://arxiv.org/pdf/2209.15066.pdf#page=1: arXiv:2209.15066v2 [astro-ph.GA] 18 Jan 2023
+5	https://arxiv.org/pdf/2212.13573.pdf#page=1: arXiv:2212.13573v2 [hep-ph] 18 Jan 2023
+6	https://arxiv.org/pdf/2301.07111.pdf#page=1: arXiv:2301.07111v1 [astro-ph.HE] 17 Jan 2023
+7	https://arxiv.org/pdf/2301.07215.pdf#page=1: arXiv:2301.07215v1 [gr-qc] 17 Jan 2023
+8	https://arxiv.org/pdf/2301.07230.pdf#page=1: arXiv:2301.07230v1 [astro-ph.CO] 18 Jan 2023
+9	https://arxiv.org/pdf/2301.07253.pdf#page=1: arXiv:2301.07253v1 [gr-qc] 18 Jan 2023
+10	https://arxiv.org/pdf/2301.07323.pdf#page=1: arXiv:2301.07323v1 [astro-ph.HE] 18 Jan 2023
+11	https://arxiv.org/pdf/2301.07376.pdf#page=1: arXiv:2301.07376v1 [astro-ph.HE] 18 Jan 2023
+12	https://arxiv.org/pdf/2301.07456.pdf#page=1: arXiv:2301.07456v1 [hep-ph] 18 Jan 2023
+13	https://arxiv.org/pdf/2301.07522.pdf#page=1: arXiv:2301.07522v1 [astro-ph.IM] 16 Jan 2023
+14	https://arxiv.org/pdf/2301.07675.pdf#page=1: arXiv:2301.07675v1 [gr-qc] 18 Jan 2023
+15	https://arxiv.org/pdf/2301.07680.pdf#page=1: arXiv:2301.07680v1 [gr-qc] 18 Jan 2023
+16	https://arxiv.org/pdf/2301.07697.pdf#page=1: arXiv:2301.07697v1 [astro-ph.CO] 18 Jan 2023
+
+========================================= 
+=CUMULASTIVE STATISTICS SINCE 01/09/2022= 
+========================================= 
+15477  total new astro-phORgr-qc preprint found (with repetitions)
+13766  total new astro-phORgr-qc pdf processed
+16655  total occurrences of LIGO word
+13307  total occurrences of VIRGO word
+509  total preprints with alerts
+1908 total preprints mention LIGO
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

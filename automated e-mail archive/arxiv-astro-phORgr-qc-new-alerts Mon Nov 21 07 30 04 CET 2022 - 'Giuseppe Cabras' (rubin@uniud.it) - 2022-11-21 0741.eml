@@ -1,0 +1,185 @@
+Received: from AS4PR03MB8280.eurprd03.prod.outlook.com (2603:10a6:20b:4ce::7)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Mon, 21 Nov 2022
+ 06:32:43 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=uniud.it;
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22) by AS4PR03MB8280.eurprd03.prod.outlook.com
+ (2603:10a6:20b:4ce::7) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5834.15; Mon, 21 Nov
+ 2022 06:32:42 +0000
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::6718:4c7d:cf45:ef2]) by DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::6718:4c7d:cf45:ef2%5]) with mapi id 15.20.5834.015; Mon, 21 Nov 2022
+ 06:32:42 +0000
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Mon, 21 Nov 2022 07:41:57 +0100
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Mon Nov 21 07:30:04 CET 2022
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 21 Nov 2022 06:32:39.6308
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ ba1bd673-8cac-4735-9e8c-08dacb8a2fec
+X-MS-Exchange-Organization-AuthSource:
+ DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: MR1P264CA0107.FRAP264.PROD.OUTLOOK.COM
+ (2603:10a6:501:50::26) To DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: rubin@uniud.it
+Message-ID:
+ <DB3PR0302MB90161A93919F130753D8F274C80A9@DB3PR0302MB9016.eurprd03.prod.outlook.com>
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB3PR0302MB9016:EE_|AS4PR03MB8280:EE_
+X-MS-Office365-Filtering-Correlation-Id: ba1bd673-8cac-4735-9e8c-08dacb8a2fec
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DB3PR0302MB9016.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-Network-Message-Id: ba1bd673-8cac-4735-9e8c-08dacb8a2fec
+X-MS-Exchange-CrossTenant-AuthSource: DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 21 Nov 2022 06:32:42.4275
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: Qz7Mtb/vnskMOK3vr6IyVf0Dn9ExGowqFwUqRy8t2b8YIL74QoMopyq8nvVHn5Og
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS4PR03MB8280
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.8938452
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5834.011
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	tooaoM8M+m6WSgjYU7A/+CczbUs1VW7Q/kY+FImZvuVQjEa8vDysamLiLAYP2+Fevs9KAE5Yl2elMG6PgH9c0zsZgq2DYAWrWE00E4utBCzf/pn66uSfTBu6B/hVzL4b1T0alucFfiVBJ40YlpnnazkdS83P5HG7HNwYto+L2q5LJMcjgZ8+588SUDCr7VE5A6enX0P67XmtqZGmT6sy1ILNY91RLL6+H/jwWeiPSCSykyOy8JrV44plC8YRg6m2UYelKOJpnltJ4O55VjQG0G+Ki4P7ZYq4xgt1GqWp4I4DGr7bJvG5DdGUvnxnFfWZaL7LNUkvqInTxEzBA1PVG7xK/AaFfl0YNiC0gBny8NmeotmumS9TagibA+ZFDMhMDFmYN2aXHV2ijDIuhVqnqi+GM1pY5dNQ5uJnYS+S2fV4Qk4iTC+vycT1UDXoPB6TQJEZs0Zt6ixnGtRkRa4XNhEAe6xGtK3ilyCENC1dqeXJMCWzqcx/96X/2ZH23WmGRzDS9IKan15QsHIxTvyBN2aS1scyTA9NfmEc1ln7vaYKjKVNYW2J/8OGj/8DlJ/NuPQDVg1XVpSrE1TD0RO/JKHaO3UrYPaXy2Jt+weI353/QiG9kJ4nxyjg9erKWWMPkeaPg7XQpPDFRJhRjtD8Hu9Ix6Pu2+3XSQCIJf40QmrthPFwNqhj/GokgPrqN70obpCz4s5yJXayTuhO+a7AIo2WGxHODzJyVT4hiU/urWRjgBgMLgE/gaVZhipjO9FwA73vLUImN9CParECLsVZ1AVDl4eIqlBzDJ7sZibnqSs=
+MIME-Version: 1.0
+
+RUN /home/gc/bin/check_LVC2 release 20220920 by gc
+<div class="list-dateline">Submissions received from  Thu 17 Nov 22  to  Fri 18 Nov 22, announced Mon, 21 Nov 22</div>
+131 new astro-phORgr-qc preprint found (with repetitions)
+118 new astro-phORgr-qc pdf processed
+251 occurrences of LIGO word
+118 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2204.12869.pdf#page=4&search=ligo%20virgo ; GW frequency 𝑓 . For their LIGO Science Run 5 (S5) data, Abadie et al. (2011) found that at least 90% of injected signals were detectable
+	https://arxiv.org/pdf/2204.12869.pdf#page=5&search=ligo%20virgo ; that we can consider what they would be for Advanced LIGO (at design sensitivity, Aasi et al. 2015). The results of this are shown in
+	https://arxiv.org/pdf/2204.12869.pdf#page=6&search=ligo%20virgo ; Figure 5. Histogram showing the SNR attainable by Advanced LIGO at design sensitivity for the predicted GWs from glitches for the Vela pulsar.
+2	https://arxiv.org/pdf/2205.01434.pdf#page=1&search=ligo%20virgo ; Control noise is a limiting factor in the low-frequency performance of the LIGO gravitational-wave detectors. In this paper we model the eﬀects of using new sensors called HoQIs to control the suspension resonances.
+	https://arxiv.org/pdf/2205.01434.pdf#page=1&search=ligo%20virgo ; moves the optics of the interferometer. The LIGO observatory has seismic isolation systems consisting of cascaded passive10 and active isolation11,12 to suppress this movement noise, and facilitate gravitational wave detection. Passive isolation is achieved through the use of
+	https://arxiv.org/pdf/2205.01434.pdf#page=1&search=ligo%20virgo ; Despite the success of these isolation systems in reducing direct vibration coupling, Advanced LIGO’s lowfrequency sensitivity is limited at 10 − 20 Hz by ‘global control noise’ from the interferometer’s Alignment Sensing and Control (ASC) and the auxiliary Length Sensing
+	https://arxiv.org/pdf/2205.01434.pdf#page=2&search=ligo%20virgo ; on measurements from LIGO, and produces output metrics that are relevant for global interferometer controls. While there are currently no models that correctly predict the detector sensitivity based on local suspension
+	https://arxiv.org/pdf/2205.01434.pdf#page=2&search=ligo%20virgo ; modiﬁcation of previous models that includes the design parameters for the new Big BeamSplitter Suspension (BBSS), which is the ﬁrst Advanced LIGO suspension to receive a major upgrade42 . Previous suspensions show excellent agreement between the MIMO model and measured transfer functions, with the exception of cross-couplings, which are not included in the
+	https://arxiv.org/pdf/2205.01434.pdf#page=2&search=ligo%20virgo ; 2. PRESENTED OPPORTUNITY  THE LIGO A+ BIG
+	https://arxiv.org/pdf/2205.01434.pdf#page=2&search=ligo%20virgo ; One of the LIGO A+ upgrades, planned for after the upcoming fourth observing run, is the installation
+	https://arxiv.org/pdf/2205.01434.pdf#page=2&search=ligo%20virgo ; in Figure 2. The baseline LIGO damping design uses BOSEMs45 mounted on the cage to measure and actuate on the beamsplitter top mass (M1) (we call this ‘M1
+	https://arxiv.org/pdf/2205.01434.pdf#page=3&search=ligo%20virgo ; noise model of the LIGO beamsplitter suspension used in the current observing run49 , and updated the geometry
+	https://arxiv.org/pdf/2205.01434.pdf#page=5&search=ligo%20virgo ; 1.5 Hz. It is diﬃcult to further reduce the noise of LIGO’s DACs and signiﬁcant gains can only be made my reducing the actuation strength. This will require a systems
+	https://arxiv.org/pdf/2205.01434.pdf#page=5&search=ligo%20virgo ; LIGO interferometers’ total noise budget for the 10 − 20 Hz region. Steps are being taken to model non-linear
+	https://arxiv.org/pdf/2205.01434.pdf#page=5&search=ligo%20virgo ; Reducing the RMS motion of LIGO’s suspended optics allows for a reduction of interferometric sensing and control bandwidths, and therefore reduced control forces
+	https://arxiv.org/pdf/2205.01434.pdf#page=6&search=ligo%20virgo ; feed-forward control. These aspects will improve the sensitivity of the LIGO interferometers in the control-noiselimited 10 − 20 Hz region. 
+3	https://arxiv.org/pdf/2206.06004.pdf#page=1&search=ligo%20virgo ; Advanced LIGO sensitivity design. Compared to more complex approaches, such as convolutional neural networks, our framework, even using the simple ground model described in the paper, has
+4	https://arxiv.org/pdf/2208.09949.pdf#page=3&search=ligo%20virgo ; contradicting the bounds from Big-Bang Nucleosynthesis (BBN) and LIGO [63, 64] – this happens even though the TRH is very high. II) Typically, a peak-dip-peak signal gets imprinted, and the
+	https://arxiv.org/pdf/2208.09949.pdf#page=11&search=ligo%20virgo ; BBN bound on eﬀective neutrino species [63] as well as the constraint on the SGWB by the LIGO [64].
+	https://arxiv.org/pdf/2208.09949.pdf#page=12&search=ligo%20virgo ; This happens for most of the benchmark points in Fig.4 (see Fig.5 and the corresponding benchmarks in Set C, which do not violate the BBN and LIGO bounds). The BBN constraint reads fhigh
+	https://arxiv.org/pdf/2208.09949.pdf#page=12&search=ligo%20virgo ; the LIGO constraint in a much simpler way. We consider a reference frequency fLIGO = 25 Hz and discard the GWs having amplitude more than 2.2 × 10−9 [88], i.e., we allow the spectrum
+	https://arxiv.org/pdf/2208.09949.pdf#page=12&search=ligo%20virgo ; LIGO bounds. Although both of them put a severe constraint on the parameter space, ruling out heavier RH neutrino masses, note that they also represent the fact that if the NANO-Grav
+	https://arxiv.org/pdf/2208.09949.pdf#page=12&search=ligo%20virgo ; result is due to the inﬂationary GWs, future LIGO runs, or more generally, the detectors at the 
+	https://arxiv.org/pdf/2208.09949.pdf#page=13&search=ligo%20virgo ; FIG. 6. Constraints on the g −Mi parameter space from BBN (light green) and LIGO (blue). These regions represent the GWs violating BBN and LIGO bounds.
+	https://arxiv.org/pdf/2208.09949.pdf#page=13&search=ligo%20virgo ; represent the GWs violating BBN and LIGO bounds. 
+	https://arxiv.org/pdf/2208.09949.pdf#page=17&search=ligo%20virgo ; III) A valid overall GW spectrum must not contradict the BBN and LIGO bounds. In Fig.7 (Fig.8) we show the numerically extracted parameter spaces on the vΦ − Mi plane for g = 10−3(−4) , which
+	https://arxiv.org/pdf/2208.09949.pdf#page=17&search=ligo%20virgo ; BBN and LIGO bounds. Large Mi s are disallowed for smaller values of vΦ . In this region, the produced entropy is signiﬁcantly less. Therefore, for a large spectral index nT (= 0.8), the GW
+	https://arxiv.org/pdf/2208.09949.pdf#page=17&search=ligo%20virgo ; amplitudes contradict the BBN and the LIGO bounds easily. • The parameter space never exhibits ΩBGW (fdip ) > Ωstrings (fdip ). Otherwise, the BGWs
+	https://arxiv.org/pdf/2208.09949.pdf#page=18&search=ligo%20virgo ; signiﬁcantly small so that the BBN and the LIGO bounds are strongly violated. We conclude by pointing out that we work with unconventional values of g and λ, which in general are taken as
+	https://arxiv.org/pdf/2208.09949.pdf#page=18&search=ligo%20virgo ; on such inﬂationary GWs become testable. Although the LIGO and BBN severely constrain the model parameter space, we show that if the PTA results are due to blue-tilted inﬂationary GWs,
+5	https://arxiv.org/pdf/2211.09978.pdf#page=22&search=ligo%20virgo ; planned LIGO upgrade, require signiﬁcantly larger facilities and a number of technological upgrades. Both are challenging requirements that the HEP community is well-equipped to meet.
+	https://arxiv.org/pdf/2211.09978.pdf#page=40&search=ligo%20virgo ; Measuring the spectrum of this stochastic background with LIGO or with future GW observatories would determine the energy scale of the PQ transition and then via the axion model, uniquely determine the mass of
+	https://arxiv.org/pdf/2211.09978.pdf#page=51&search=ligo%20virgo ; the 10 kg scale mirrors of the LIGO gravitational wave observatory could potentially be detected as the clumps traversed within the near ﬁeld of the 4 km long interferometers [151]. Proposed larger observatories
+	https://arxiv.org/pdf/2211.09978.pdf#page=58&search=ligo%20virgo ; gravitational wave observatories. As a case study, LIGO may already be sensitive to the stochastic power spectrum from Peccei-Quinn phase transition in QCD axion models if a particularly violent phase transition
+	https://arxiv.org/pdf/2211.09978.pdf#page=59&search=ligo%20virgo ; LIGO Voyager upgrade in which the existing fused silica mirrors may be replaced with crystalline silicon mirrors which can be more easily thermalized to avoid geometric distortions from heating, and the Cosmic
+6	https://arxiv.org/pdf/2211.10010.pdf#page=6&search=ligo%20virgo ; and LIGO India [80]) in the future, Fisher matrices in modeled broadband searches will be much better conditioned so that specialized regularization techniques will
+	https://arxiv.org/pdf/2211.10010.pdf#page=7&search=ligo%20virgo ; We generate simulated CSD time series via Equation (18). We also add simulated Gaussian noise consistent with the representative LIGO noise curve [84, 85]. To verify the pipeline implementation, we use Equaˆ
+7	https://arxiv.org/pdf/2211.10118.pdf#page=5&search=ligo%20virgo ; sensitivities of the advanced LIGO and the Einstein Telescope detectors, and the gravitational wave spectrogram, respectively, where coloured dashed lines indicate various characteristic
+
+7 preprints with alerts
+==================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+==================================================================== 
+1	g.yim@soton.ac.uk?subject=Your%20preprint%20https://arxiv.org/pdf/2204.12869.pdf
+2	jvdongen@nikhef.nl?subject=Your%20preprint%20https://arxiv.org/pdf/2205.01434.pdf
+3	?subject=Your%20preprint%20https://arxiv.org/pdf/2206.06004.pdf
+4	satyabrata.datta@saha.ac.in?subject=Your%20preprint%20https://arxiv.org/pdf/2208.09949.pdf
+5	?subject=Your%20preprint%20https://arxiv.org/pdf/2211.09978.pdf
+6	lxxiao@caltech.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2211.10010.pdf
+7	ecker@itp.uni-frankfurt.de?subject=Your%20preprint%20https://arxiv.org/pdf/2211.10118.pdf
+
+
+23 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2112.03869.pdf
+2	https://arxiv.org/pdf/2204.12869.pdf
+3	https://arxiv.org/pdf/2205.01434.pdf
+4	https://arxiv.org/pdf/2206.06004.pdf
+5	https://arxiv.org/pdf/2208.03004.pdf
+6	https://arxiv.org/pdf/2208.04605.pdf
+7	https://arxiv.org/pdf/2208.09949.pdf
+8	https://arxiv.org/pdf/2208.10648.pdf
+9	https://arxiv.org/pdf/2209.06196.pdf
+10	https://arxiv.org/pdf/2209.07546.pdf
+11	https://arxiv.org/pdf/2211.09826.pdf
+12	https://arxiv.org/pdf/2211.09886.pdf
+13	https://arxiv.org/pdf/2211.09922.pdf
+14	https://arxiv.org/pdf/2211.09978.pdf
+15	https://arxiv.org/pdf/2211.10007.pdf
+16	https://arxiv.org/pdf/2211.10010.pdf
+17	https://arxiv.org/pdf/2211.10087.pdf
+18	https://arxiv.org/pdf/2211.10118.pdf
+19	https://arxiv.org/pdf/2211.10123.pdf
+20	https://arxiv.org/pdf/2211.10184.pdf
+21	https://arxiv.org/pdf/2211.10263.pdf
+22	https://arxiv.org/pdf/2211.10357.pdf
+23	https://arxiv.org/pdf/2211.10433.pdf
+
+========================================= 
+=CUMULASTIVE STATISTICS SINCE 01/09/2022= 
+========================================= 
+9237  total new astro-phORgr-qc preprint found (with repetitions)
+8198  tota new astro-phORgr-qc pdf processed
+10144  total occurrences of LIGO word
+8772  total occurrences of VIRGO word
+297  total preprints with alerts
+1159 total preprints mention LIGO
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

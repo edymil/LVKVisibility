@@ -1,0 +1,150 @@
+Received: from VI1PR03MB6559.eurprd03.prod.outlook.com (2603:10a6:800:193::7)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Thu, 15 Sep 2022
+ 05:39:44 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=uniud.it;
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22) by VI1PR03MB6559.eurprd03.prod.outlook.com
+ (2603:10a6:800:193::7) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5632.15; Thu, 15 Sep
+ 2022 05:39:42 +0000
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::5286:9ed6:fd2a:9d7b]) by DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::5286:9ed6:fd2a:9d7b%5]) with mapi id 15.20.5612.019; Thu, 15 Sep 2022
+ 05:39:42 +0000
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Thu, 15 Sep 2022 07:49:10 +0200
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Thu Sep 15 07:30:04 CEST 2022
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Sep 2022 05:39:40.8173
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 8862f869-ddb6-4997-ef1b-08da96dcaf86
+X-MS-Exchange-Organization-AuthSource:
+ DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: MR1P264CA0148.FRAP264.PROD.OUTLOOK.COM
+ (2603:10a6:501:54::13) To DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: rubin@uniud.it
+Message-ID:
+ <DB3PR0302MB9016749C9C2A4E9E9DBA98ACC8499@DB3PR0302MB9016.eurprd03.prod.outlook.com>
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB3PR0302MB9016:EE_|VI1PR03MB6559:EE_
+X-MS-Office365-Filtering-Correlation-Id: 8862f869-ddb6-4997-ef1b-08da96dcaf86
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DB3PR0302MB9016.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-Network-Message-Id: 8862f869-ddb6-4997-ef1b-08da96dcaf86
+X-MS-Exchange-CrossTenant-AuthSource: DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Sep 2022 05:39:41.9099
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: fXtzePYCYTGTUAjoK/D9b4rbWd+M1PJCWBec1pPs+iF3ZDZNxJgWY/wKVOpMtmcX
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: VI1PR03MB6559
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.1616658
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5612.022
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	AZaLntQXhIaeVHazaH92LvVkOs1W34jz/Uqphqo5LcVXFkkbod0sLJzgwpLKrZyRWjpqwkWEdiDxin6NwDBPX8fOKo9zHtgxLA4Qx+LK7o+7gSJUPs1O0zo5eH8eFFGrPYqh423V5y5lva+zYkeV3+h/paOISrlEaG/nISkO7CvRP0OLcRmc4wEMChywhDsjySpYKLIkDvLajXZwxEXGJVNDI5OQyvgyZoQM6Fw+BhfZC80Dx5bws02k9md+XY7mg519gC2CQJtclig3lwomF3Los5w4r0WsdmtOsISgNUvz4+UftLZ+HoE6pL/m5Mrzf1KUxfKQMg4R5U9cb9Dl2ZMUbD8pHT44a93JQXmH1XLbw6hhdeuI4MoHMql2wdmamGGtkp+aM+W1pGcZvakx+zbpvgQrCxWEgoGjMvZsTh6NDxzGWB2C7CKm3DuyP7kjhnv9WpsM8RN/JQYmInAG/BK/IMtlkm3z59ZXZFxvzM64AsO3F3eNpf19741fPgKaR8002z4uaAWHoeSB105FAPfEK25pE4CeLlb53q9AXPNiFhyHhpEGc0bZS8VB9azdOv2jo0DwEMRk6d7Wu4VmGPSVBjd5n2xLoN80FPZGh7bSaVpyFkeGzbNQA8FVsyQE+nkzBK8nD/Ej/J/Esdizm6e2QyyyPK2xp3EsuhvYV+R7sfrVwNqdz7apQxEUnrq2J4CZz6ACBb7SKld4Iqa2aksyyouvqaGhMtyubboJl7zotdh2C6bQSe1aWQK9iZkcQITLvfjQVJBPyf6Or19jZd+2giVO6k7V5wt8uZM6fcQzlE7hJk0Jj7OzZFBHsrst6vhrEoV6saPzMQ+OQpqdqBLfEGX1XSmmcuKNjRfNYNw=
+MIME-Version: 1.0
+
+RUN check_LVC2 release 20220906 from Giuseppe Cabras
+<div class="list-dateline">Submissions received from  Tue 13 Sep 22  to  Wed 14 Sep 22, announced Thu, 15 Sep 22</div>
+146 new astro-phORgr-qc preprint found (with repetitions)
+131 new astro-phORgr-qc pdf processed
+90 occurrences of LIGO word
+75 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/1910.01063.pdf#page=1&search=ligo%20virgo ; Advanced LIGO have detected gravitational waves (GWs) from compact binary mergers. These GWs have
+	https://arxiv.org/pdf/1910.01063.pdf#page=6&search=ligo%20virgo ; compared to the host galaxy identiﬁcation by LIGO observation. This value is proportional to d6 due to
+	https://arxiv.org/pdf/1910.01063.pdf#page=6&search=ligo%20virgo ; the case of LIGO observation. Multi-messenger (GW and EM) observations, will enable us to put unprecedented constraints on WD-WD
+2	https://arxiv.org/pdf/2206.13588.pdf#page=1&search=ligo%20virgo ; LIGO’s ﬁndings do not violate the mass gap, contrary to usual claims. We indeed ﬁnd that typical stellar black hole masses can ﬁt LIGO’s data for a considerable range of compactness
+	https://arxiv.org/pdf/2206.13588.pdf#page=1&search=ligo%20virgo ; typical stellar black hole masses can ﬁt LIGO’s data for a considerable range of compactness values. We calculate the black hole entropy in this context, which leads to a generalised black
+	https://arxiv.org/pdf/2206.13588.pdf#page=2&search=ligo%20virgo ; LIGO. Not only has it been the strongest evidence for the gravitational radiation, but it also opened up new avenues for astrophysical exploration. The comparison of LIGO’s data to templates from
+	https://arxiv.org/pdf/2206.13588.pdf#page=2&search=ligo%20virgo ; up new avenues for astrophysical exploration. The comparison of LIGO’s data to templates from numerical relativity has shown that the observed signal had been produced by the coalescence of a
+	https://arxiv.org/pdf/2206.13588.pdf#page=2&search=ligo%20virgo ; LIGO’s data has been interpreted using general relativity, which, despite its success in the weakﬁeld and classical regimes, has faced many downfalls at quantum scales. Moreover, general relativity alone cannot account for the anomalous galaxy rotation curves or even dark energy. The quest for
+	https://arxiv.org/pdf/2206.13588.pdf#page=2&search=ligo%20virgo ; led to a plethora of alternatives to general relativity. Interpreting LIGO’s data within other models could then completely change their conclusions.
+	https://arxiv.org/pdf/2206.13588.pdf#page=12&search=ligo%20virgo ; Using the masses observed at LIGO, that is M(1) = 29 M , M(2) = 36 M leads to
+	https://arxiv.org/pdf/2206.13588.pdf#page=12&search=ligo%20virgo ; LIGO is often used as evidence for the absence of an upper mass gap. Nevertheless, the diﬀerence between ADM and proper masses that originates from the aforementioned non-linearities requires
+	https://arxiv.org/pdf/2206.13588.pdf#page=12&search=ligo%20virgo ; qV ∼ 1. Applying Eq. (4.26) for each of the masses observed at LIGO (M(1) = 29 M , M(2) = 36 M and M(f ) = 62 M ) [2], one ﬁnds
+	https://arxiv.org/pdf/2206.13588.pdf#page=13&search=ligo%20virgo ; ﬁnal ADM black hole mass after the emission of the GW150914 measured by LIGO can thus satisfy the proper mass gap found for typical scenarios of stellar black holes.
+3	https://arxiv.org/pdf/2207.06910.pdf#page=5&search=ligo%20virgo ; waveform models in Python, and an interface to the LIGO Algorithm Library, LAL, which allows to use all the waveforms available in that library.
+	https://arxiv.org/pdf/2207.06910.pdf#page=6&search=ligo%20virgo ; These waveform models have been translated from their C implementation in the LIGO Algorithm Library, LAL, into a pure Python version. We carefully checked that our Python implementation accurately reproduces the original LAL
+	https://arxiv.org/pdf/2207.06910.pdf#page=7&search=ligo%20virgo ; LIGO_L = signal . GWSignal ( mywf , psd_path = ' path / to / LIGO / L 1 / psd ' , detector_shape = 'L ' , det_lat = 3 0 . 6 , det_long = - 9 0 . 8 , det_xax = 2 4 3 .)
+	https://arxiv.org/pdf/2207.06910.pdf#page=8&search=ligo%20virgo ; LIGO India, Hingoli, IN 
+4	https://arxiv.org/pdf/2209.06459.pdf#page=1&search=ligo%20virgo ; GW150914 – by the Advanced LIGO observatory marked the beginning of the new era in gravitational-wave astronomy [1, 2]. GWs carry information about their source,
+5	https://arxiv.org/pdf/2209.06531.pdf#page=25&search=ligo%20virgo ; LIGO is about 10 Hz) while space-based interferometers like LISA [148] will have a peak sensitivity at 10−2 Hz, suﬃcient to explore gravitational wave emission from binaries in our Galaxy and vastly increase
+
+5 preprints with alerts
+==================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+==================================================================== 
+1	kinugawa@icrr.u-tokyo.ac.jp?subject=Your%20preprint%20https://arxiv.org/pdf/1910.01063.pdf
+2	casadio@bo.infn.it?subject=Your%20preprint%20https://arxiv.org/pdf/2206.13588.pdf
+3	Francesco.Iacovelli@unige.ch?subject=Your%20preprint%20https://arxiv.org/pdf/2207.06910.pdf
+4	marius.oancea@univie.ac.at?subject=Your%20preprint%20https://arxiv.org/pdf/2209.06459.pdf
+5	?subject=Your%20preprint%20https://arxiv.org/pdf/2209.06531.pdf
+
+
+9 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/1910.01063.pdf
+2	https://arxiv.org/pdf/2102.07363.pdf
+3	https://arxiv.org/pdf/2203.05003.pdf
+4	https://arxiv.org/pdf/2206.13588.pdf
+5	https://arxiv.org/pdf/2207.06910.pdf
+6	https://arxiv.org/pdf/2209.06052.pdf
+7	https://arxiv.org/pdf/2209.06237.pdf
+8	https://arxiv.org/pdf/2209.06459.pdf
+9	https://arxiv.org/pdf/2209.06531.pdf
+
+========================================= 
+=CUMULASTIVE STATISTICS SINCE 01/09/2022= 
+========================================= 
+1703  total new astro-phORgr-qc preprint found (with repetitions)
+1516  tota new astro-phORgr-qc pdf processed
+1641  total occurrences of LIGO word
+1177  total occurrences of VIRGO word
+49  total preprints with alerts
+199 total preprints mention LIGO
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+

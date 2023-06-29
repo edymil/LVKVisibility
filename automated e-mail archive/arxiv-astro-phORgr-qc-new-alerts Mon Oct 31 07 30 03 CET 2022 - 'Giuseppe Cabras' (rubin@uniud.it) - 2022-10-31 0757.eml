@@ -1,0 +1,215 @@
+Received: from AM7PR03MB6279.eurprd03.prod.outlook.com (2603:10a6:20b:133::13)
+ by AM6PR0302MB3208.eurprd03.prod.outlook.com with HTTPS; Mon, 31 Oct 2022
+ 06:48:56 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=uniud.it;
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22) by AM7PR03MB6279.eurprd03.prod.outlook.com
+ (2603:10a6:20b:133::13) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5769.18; Mon, 31 Oct
+ 2022 06:48:55 +0000
+Received: from DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::6718:4c7d:cf45:ef2]) by DB3PR0302MB9016.eurprd03.prod.outlook.com
+ ([fe80::6718:4c7d:cf45:ef2%4]) with mapi id 15.20.5769.016; Mon, 31 Oct 2022
+ 06:48:55 +0000
+From: "Giuseppe Cabras" <rubin@uniud.it>
+Date: Mon, 31 Oct 2022 07:57:30 +0100
+To: <giuseppe.cabras@uniud.it>, <livia.conti@pd.infn.it>,
+	<milotti@ts.infn.it>, <cohadon@lkb.upmc.fr>, <davide.guerra@uv.es>,
+	<trovato@apc.in2p3.fr>, <andrea.virtuoso@hotmail.com>,
+	<jerome.novak@obspm.fr>, <pablobarneo@icc.ub.edu>
+Subject: arxiv-astro-phORgr-qc-new-alerts Mon Oct 31 07:30:03 CET 2022
+Content-Type: text/plain
+X-MS-Exchange-Organization-ExpirationStartTime: 31 Oct 2022 06:48:53.9899
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 19c803fb-e389-4fbc-4667-08dabb0bfa03
+X-MS-Exchange-Organization-AuthSource:
+ DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 06
+X-ClientProxiedBy: ZRAP278CA0010.CHEP278.PROD.OUTLOOK.COM
+ (2603:10a6:910:10::20) To DB3PR0302MB9016.eurprd03.prod.outlook.com
+ (2603:10a6:10:439::22)
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+Return-Path: rubin@uniud.it
+Message-ID:
+ <DB3PR0302MB9016C2F98BDEDB8FDF46CFD6C8379@DB3PR0302MB9016.eurprd03.prod.outlook.com>
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB3PR0302MB9016:EE_|AM7PR03MB6279:EE_
+X-MS-Office365-Filtering-Correlation-Id: 19c803fb-e389-4fbc-4667-08dabb0bfa03
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DB3PR0302MB9016.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-Network-Message-Id: 19c803fb-e389-4fbc-4667-08dabb0bfa03
+X-MS-Exchange-CrossTenant-AuthSource: DB3PR0302MB9016.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 31 Oct 2022 06:48:55.3358
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 6e6ade15-296c-4224-ac58-1c8ec2fd53a8
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: eXJLBk9X1kfZa7pdAu2gFVvo6NRUVGv3w5sNysQwwDzGCcJEvpYx4WevKqV+fIuI
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM7PR03MB6279
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.4846908
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5769.015
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	e921FFx3V0HUURMpzKEgQicVbDuj/VDmsmFsSquWyDAQJOMqZylQqaVhQjbPZx8FEeUzwBKVOMZgjEohfOAdnLS3Us61Z+cAlreHA3wmUdNL4vtwIg4M+tGzVZZNI95Z+02H7za1cMj8zI5NDNCuNpggB5smRmVjQk/xSDs7J3K5GcUT37hDptkhh9kciSDT9GZuO3aN1nBPh68CfxAP/GccOI7IFkxdlrcdtDXZ9ujzv6h5aZ2YMHra9sIV949yjSBgO29a1iAic5sbY4yeZNBOjDNvzKTAOnC2JX3MKFvkgNnrwJO27mxzDOLsanoODXv8sWe6lKSpLd1h5l9/9VKDQCgA3tnxLVfDtwyaLudCEYBO9yzw610LHa5GRRrw9fUYyw0PLDyLCStnNwExEjqMzBkDkqz0kcD/spohWH+AMFu03z3PgqKIz7rfjjya3kzpyzFX+jbTS31ITtBFtVThU4k5N4Ocg/sc99MngU0o7OwWlU0PGExlBB8VQfB1qUyf5Mt7ZyIfLW5CxFtpOSV5UzgHRY3iK7cq8RDcP+sy8NIC7BzRoJT27oOSB/SxTOX+mDYl43Hm8oAX42dUbtEH0yopo5QqBL7iSHWHvi2ZWKVOKdiqtWJfzWcSg36mLBuT+tQ4scQ4LpppIceb5ri1bPxDjbSAMXXFhX5avzzTqEcfoPJ9qu6AzZEhPysh9BsCsAKql0XvPjhZMDq7GjYQb0KY8LYbWki1lm/niLPdDXd7QGgZOqumKPPTSBiA9ZGhatjsFDCi9VbLVaVsB9Bu7ywmcKcmOdi5fHcfxcDrpQAl/i035Gkgw64bVDgny2aNygTF14BbQctUe17m+L3kKaKdLuNO47kayKmss/8hV/ZzfD2bsHd/jbvtnfea
+MIME-Version: 1.0
+
+RUN /home/gc/bin/check_LVC2 release 20220920 by gc
+<div class="list-dateline">Submissions received from  Thu 27 Oct 22  to  Fri 28 Oct 22, announced Mon, 31 Oct 22</div>
+136 new astro-phORgr-qc preprint found (with repetitions)
+113 new astro-phORgr-qc pdf processed
+573 occurrences of LIGO word
+925 occurrences of VIRGO word
+
+================================ 
+=    List of 2 lines alerts    = 
+================================ 
+1	https://arxiv.org/pdf/2002.01606.pdf#page=2&search=ligo%20virgo ; of the LIGO second observing run (O2) contains 99 days of clean data for searching the isotropic background [30]
+2	https://arxiv.org/pdf/2012.13101.pdf#page=1&search=ligo%20virgo ; Neutron-Star Mergers in Real LIGO Data using Deep Learning Plamen G. Krasteva,∗, Kiranjyot Gillb , V. Ashley Villarb,c , Edo Bergerb
+	https://arxiv.org/pdf/2012.13101.pdf#page=1&search=ligo%20virgo ; from binary neutron-star mergers in real LIGO data. We show for the ﬁrst time that artiﬁcial neural networks can promptly detect and characterize binary neutron star gravitational-wave signals in real LIGO data, and distinguish
+	https://arxiv.org/pdf/2012.13101.pdf#page=1&search=ligo%20virgo ; promptly detect and characterize binary neutron star gravitational-wave signals in real LIGO data, and distinguish them from noise and signals from coalescing black-hole binaries. We illustrate this key result by demonstrating that our
+	https://arxiv.org/pdf/2012.13101.pdf#page=1&search=ligo%20virgo ; Observatory (LIGO) [1] conﬁrmed the last remaining prediction of General Relativity and initiated a new era of gravitational astrophysics, which enables observations of
+	https://arxiv.org/pdf/2012.13101.pdf#page=1&search=ligo%20virgo ; MMA sources [5, 6]. The third observing LIGO run (O3) has identiﬁed tens of candidate GW signals [7], of which
+	https://arxiv.org/pdf/2012.13101.pdf#page=2&search=ligo%20virgo ; work [32] they extended their Deep Filtering method to detection and characterization of GW BBH signals in real advanced LIGO noise with similar performance. Thereafter, DL algorithms have been applied in GW astrophysics for
+	https://arxiv.org/pdf/2012.13101.pdf#page=2&search=ligo%20virgo ; weak GW signals from BNS coalescence in simulated LIGO noise.
+	https://arxiv.org/pdf/2012.13101.pdf#page=2&search=ligo%20virgo ; mergers in real LIGO noise. We show, for the ﬁrst time, that DL can be used for both detection and parameter estimation of GW signals from BNS mergers embedded in
+	https://arxiv.org/pdf/2012.13101.pdf#page=2&search=ligo%20virgo ; LIGO noise. These results are a step towards achieving real-time detection and inference of GWs from BNS (and
+	https://arxiv.org/pdf/2012.13101.pdf#page=3&search=ligo%20virgo ; the LIGO Algorithm Library (LALSuite [41]). Speciﬁcally, for the BNS signals, we use the TaylorF2 waveform model
+	https://arxiv.org/pdf/2012.13101.pdf#page=3&search=ligo%20virgo ; We obtained real LIGO data from the LIGO GW Open Science Center (GWOSC) [47], where we used speciﬁcally
+	https://arxiv.org/pdf/2012.13101.pdf#page=3&search=ligo%20virgo ; (since BBH signals are considerably shorter than BNS signals), to reassure robustness of the network against temporal translations. Diﬀerent realizations of real LIGO noise are superimposed on top of the signals, while the waveform amplitude is scaled to achieve a predeﬁned optimal
+	https://arxiv.org/pdf/2012.13101.pdf#page=3&search=ligo%20virgo ; Figure 1  Sample BNS and BBH signals injected in real LIGO
+	https://arxiv.org/pdf/2012.13101.pdf#page=3&search=ligo%20virgo ; additive whitened real LIGO noise of unit variance. This time series is an example of the data sets used to train, validate and test the
+	https://arxiv.org/pdf/2012.13101.pdf#page=3&search=ligo%20virgo ; mergers in real LIGO noise. 
+	https://arxiv.org/pdf/2012.13101.pdf#page=4&search=ligo%20virgo ; optimally with real LIGO noise with colored PSD. (The architecture of the detection CNN used here is shown in
+	https://arxiv.org/pdf/2012.13101.pdf#page=4&search=ligo%20virgo ; adding multiple realizations of real LIGO noise and shifting in time. Speciﬁcally, for the training data sets we use ∼151,000 data samples with BNS component masses of 1
+	https://arxiv.org/pdf/2012.13101.pdf#page=5&search=ligo%20virgo ; to real LIGO data containing all 11 GW events from O1 and O2 as published in the Gravitational Wave Transient
+	https://arxiv.org/pdf/2012.13101.pdf#page=5&search=ligo%20virgo ; containing the GWTC-1 events from the LIGO GWOSC and prepared the required input for the detection CNN
+	https://arxiv.org/pdf/2012.13101.pdf#page=5&search=ligo%20virgo ; the sensitivity of detecting GW signals embedded in real LIGO noise from the test data set. It is seen that all curves saturate for optimal
+	https://arxiv.org/pdf/2012.13101.pdf#page=6&search=ligo%20virgo ; LIGO noise. The ﬁgure shows the probability of detection of each GW event from the Gravitational-Wave Transient Catalog, GWTC-1 [4], and demonstrates the ability of the CNN to identify real BNS and BBH GW events with high conﬁdence. Note the probability of detection
+	https://arxiv.org/pdf/2012.13101.pdf#page=6&search=ligo%20virgo ; the model trained on GW signals embedded in real LIGO noise, it detects and classiﬁes correctly all real GW events.
+	https://arxiv.org/pdf/2012.13101.pdf#page=6&search=ligo%20virgo ; distinct cases (simulated Gaussian noise and real LIGO noise), emphasizes the importance of using realistic GW
+	https://arxiv.org/pdf/2012.13101.pdf#page=6&search=ligo%20virgo ; LIGO noise. The mean absolute error is shown as a function of the optimal matched-ﬁlter SNR. The neural network was trained over
+	https://arxiv.org/pdf/2012.13101.pdf#page=7&search=ligo%20virgo ; LIGO noise at SNR=15. The best ﬁt is a normal inverse Gaussian distribution with parameters a = 189.63 and b = 90.40 (see Eq. (2)),
+	https://arxiv.org/pdf/2012.13101.pdf#page=7&search=ligo%20virgo ; mergers in real LIGO noise. In particular, the error uncertainties take into account only the errors incurred in predicting the component masses due to the use of different noise realizations in the waveform template generation process. Evaluating and understanding the error uncertainties can be further improved by recasting the
+	https://arxiv.org/pdf/2012.13101.pdf#page=7&search=ligo%20virgo ; data containing the glitch events from the LIGO GWOSC and prepared the required input for the detection CNN
+	https://arxiv.org/pdf/2012.13101.pdf#page=9&search=ligo%20virgo ; signals in real LIGO noise. These results pave the way towards realizing real-time detection and parameter estimation of GW signals involving neutron stars, where rapid
+3	https://arxiv.org/pdf/2203.08998.pdf#page=3&search=ligo%20virgo ; implemented in the LIGO Scientiﬁc Collaboration Algorithm Library (LALSuite) [LAL], the Eﬀective-one-Body approach (EOB) [22, 23, 24] and the phenomenological
+4	https://arxiv.org/pdf/2205.01555.pdf#page=7&search=ligo%20virgo ; the two LIGO instruments. First, during the last month of the Observation Run 2 (O2) in August 2017 (with, most notably, the compact binary mergers GW170814 and
+	https://arxiv.org/pdf/2205.01555.pdf#page=11&search=ligo%20virgo ; original instrument to a second-generation detector, similarly to what LIGO has done with its two interferometers [2], located in Hanford (WA, USA) and Livingston (LA,
+	https://arxiv.org/pdf/2205.01555.pdf#page=11&search=ligo%20virgo ; detector [16] (the Advanced LIGO upgrade project had already started). The 
+	https://arxiv.org/pdf/2205.01555.pdf#page=12&search=ligo%20virgo ; O2, which had started on November 30, 2016 for the two LIGO interferometers [17]. On August 14, 2017, the AdV detector made its ﬁrst detection of a GW. That event,
+	https://arxiv.org/pdf/2205.01555.pdf#page=12&search=ligo%20virgo ; labelled GW170814, was also recorded by the two LIGO interferometers. It was the ﬁrst ever triple detection of a binary black hole coalescence, allowing an unprecedented
+	https://arxiv.org/pdf/2205.01555.pdf#page=19&search=ligo%20virgo ; the similar times in LIGO, in order to maximize the two-detector network coverage. Maintenance, limited to about 4 hr per week, was used to look after the detector
+	https://arxiv.org/pdf/2205.01555.pdf#page=41&search=ligo%20virgo ; light glitches in LIGO during the O3 run [73]. Furthermore, adaptive analysis can be used to daily monitor the onset and time evolution of scattered light noise in connection
+	https://arxiv.org/pdf/2205.01555.pdf#page=51&search=ligo%20virgo ; by LIGO [97]. The DQR framework is triggered by GraceDB through the LVAlert protocol. A JSON
+	https://arxiv.org/pdf/2205.01555.pdf#page=52&search=ligo%20virgo ; developed by LIGO, is lighter and more versatile than the GraceDB user interface  it
+5	https://arxiv.org/pdf/2210.14400.pdf#page=4&search=ligo%20virgo ; The physical reality of these objects was recently put to test by LIGO which is supposed to have detected the gravitational waves generated in the ﬁnal stage of the in-spiraling of two black holes. Rainer
+6	https://arxiv.org/pdf/2210.14934.pdf#page=3&search=ligo%20virgo ; as potential DM candidates [9–11] after the ﬁrst LIGO detection of a Gravitational Wave (GW) signal emitted from a binary BH merger [12].
+7	https://arxiv.org/pdf/2210.15633.pdf#page=7&search=ligo%20virgo ; years, alongside the two Advanced LIGO instruments. First during the last month of the Observation Run 2 (O2) in August 2017 (with, most notably, the compact binary
+	https://arxiv.org/pdf/2210.15633.pdf#page=11&search=ligo%20virgo ; original instrument to a second-generation detector, similarly to what LIGO has done with its two interferometers [2], located in Hanford (WA, USA) and Livingston (LA,
+	https://arxiv.org/pdf/2210.15633.pdf#page=12&search=ligo%20virgo ; Observing Run O2, which had started on November 30th , 2016 for the two LIGO interferometers [18]. On August 14th , 2017, the AdV detector made its ﬁrst detection
+	https://arxiv.org/pdf/2210.15633.pdf#page=12&search=ligo%20virgo ; of a GW. That event, labeled GW170814, was also recorded by the two LIGO interferometers. It was the ﬁrst ever triple detection of a binary black hole coalescence,
+	https://arxiv.org/pdf/2210.15633.pdf#page=18&search=ligo%20virgo ; the similar times in LIGO, in order to maximize the two-detector network coverage. Maintenance, limited to about 4 hr per week, was used to look after the detector
+8	https://arxiv.org/pdf/2210.15634.pdf#page=27&search=ligo%20virgo ; allowed to characterize the origin of scattered light glitches in LIGO during the O3 run [43]. Furthermore, adaptive analysis can be used to monitor daily the onset and
+	https://arxiv.org/pdf/2210.15634.pdf#page=37&search=ligo%20virgo ; by LIGO [67]. The DQR framework is triggered by GraceDB through the LVAlert protocol. A JSON
+	https://arxiv.org/pdf/2210.15634.pdf#page=37&search=ligo%20virgo ; server. The DQR format [67], originally developed by LIGO, is lighter and more versatile than the GraceDB user interface
+	https://arxiv.org/pdf/2210.15634.pdf#page=39&search=ligo%20virgo ; developed by our LIGO colleagues  iDQ [69] to help identifying glitches in the GW strain
+9	https://arxiv.org/pdf/2210.15888.pdf#page=1&search=ligo%20virgo ; present the ﬁrst deep learning based results of classiﬁcation of GW signals from NSBH mergers in real LIGO data. We show for the ﬁrst time that a deep neural network can successfully distinguish all three classes of compact binary mergers
+	https://arxiv.org/pdf/2210.15888.pdf#page=1&search=ligo%20virgo ; samples of real LIGO noise with injected BBH, BNS, and NSBH GW signals, and we show that our network has high sensitivity and accuracy. Most importantly, we successfully recover the two conﬁrmed NSBH events to-date (GW200105
+	https://arxiv.org/pdf/2210.15888.pdf#page=2&search=ligo%20virgo ; algorithms have been applied by increasing number of research groups to detect GW BBH events in both simulated Gaussian noise and realistic LIGO data (e.g., Refs. [31, 32, 33, 34, 35, 36, 37]).
+	https://arxiv.org/pdf/2210.15888.pdf#page=2&search=ligo%20virgo ; LIGO data [39], and distinguish them from detector noise and BBH signals. In our later work [39] we applied a CNN
+	https://arxiv.org/pdf/2210.15888.pdf#page=2&search=ligo%20virgo ; Following Krastev [38] and Krastev et al. [39], we construct a large data-set of templates of real LIGO noise with injected simulated BBH, BNS, and NSBH waveform
+	https://arxiv.org/pdf/2210.15888.pdf#page=2&search=ligo%20virgo ; To simulate GW CBC signals, we use the LIGO Algorithm Library Suite (LALSuite) [41] to generate BBH, BNS, and NSBH waveforms. In particular, we used the SEOBNRv2 [42], TaylorF2 [43], and
+	https://arxiv.org/pdf/2210.15888.pdf#page=3&search=ligo%20virgo ; LIGO catalog. 
+	https://arxiv.org/pdf/2210.15888.pdf#page=4&search=ligo%20virgo ; rate at ﬁxed signal-to-noise ratios and false positive rates for simulated BBH, BNS, and NSBH signals embedded in real LIGO noise. At ρopt ≥ 13, all signals are detected and correctly classiﬁed.
+	https://arxiv.org/pdf/2210.15888.pdf#page=5&search=ligo%20virgo ; GW strain data for these events from the LIGO GWOSC through the catalogs provided by PyCBC [56], and preprocessed them following the procedure described in subsection 2.1. For events where multiple detectors were online,
+	https://arxiv.org/pdf/2210.15888.pdf#page=6&search=ligo%20virgo ; LIGO Inferred Event Type BBH
+	https://arxiv.org/pdf/2210.15888.pdf#page=6&search=ligo%20virgo ; GW190426 152155 is reclassiﬁed as a marginal event [57]. Additionally, the LIGO inferred component masses for GW191219 163120 and GW200210 092254 are out-of-distribution for our model. See text for details.
+10	https://arxiv.org/pdf/2210.16305.pdf#page=16&search=ligo%20virgo ; LIGO 
+	https://arxiv.org/pdf/2210.16305.pdf#page=16&search=ligo%20virgo ; instead. Both ﬁgures also show the design sensitivity of the currently running LIGO [133– 136] and future interferometers LISA [137, 138] and ET [139, 140] as well as proposed
+	https://arxiv.org/pdf/2210.16305.pdf#page=17&search=ligo%20virgo ; LIGO 
+
+10 preprints with alerts
+==================================================================== 
+=List of submitter to contact (click on the link to edit an e-mail)= 
+==================================================================== 
+1	?subject=Your%20preprint%20https://arxiv.org/pdf/2002.01606.pdf
+2	plamenlrastev@fas.harvard.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2012.13101.pdf
+3	babiuc@marshall.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2203.08998.pdf
+4	?subject=Your%20preprint%20https://arxiv.org/pdf/2205.01555.pdf
+5	?subject=Your%20preprint%20https://arxiv.org/pdf/2210.14400.pdf
+6	lorenzo.piga@unipr.it?subject=Your%20preprint%20https://arxiv.org/pdf/2210.14934.pdf
+7	?subject=Your%20preprint%20https://arxiv.org/pdf/2210.15633.pdf
+8	?subject=Your%20preprint%20https://arxiv.org/pdf/2210.15634.pdf
+9	rqiu@college.harvard.edu?subject=Your%20preprint%20https://arxiv.org/pdf/2210.15888.pdf
+10	John.Ellis@cern.ch?subject=Your%20preprint%20https://arxiv.org/pdf/2210.16305.pdf
+
+
+24 preprints mention LIGO
+================================ 
+=List of preprints mention LIGO= 
+================================ 
+1	https://arxiv.org/pdf/2002.01606.pdf
+2	https://arxiv.org/pdf/2012.13101.pdf
+3	https://arxiv.org/pdf/2111.06488.pdf
+4	https://arxiv.org/pdf/2203.08740.pdf
+5	https://arxiv.org/pdf/2203.08998.pdf
+6	https://arxiv.org/pdf/2204.11169.pdf
+7	https://arxiv.org/pdf/2205.01555.pdf
+8	https://arxiv.org/pdf/2205.10166.pdf
+9	https://arxiv.org/pdf/2210.12834.pdf
+10	https://arxiv.org/pdf/2210.14400.pdf
+11	https://arxiv.org/pdf/2210.14934.pdf
+12	https://arxiv.org/pdf/2210.15633.pdf
+13	https://arxiv.org/pdf/2210.15634.pdf
+14	https://arxiv.org/pdf/2210.15671.pdf
+15	https://arxiv.org/pdf/2210.15684.pdf
+16	https://arxiv.org/pdf/2210.15739.pdf
+17	https://arxiv.org/pdf/2210.15888.pdf
+18	https://arxiv.org/pdf/2210.15935.pdf
+19	https://arxiv.org/pdf/2210.16094.pdf
+20	https://arxiv.org/pdf/2210.16130.pdf
+21	https://arxiv.org/pdf/2210.16143.pdf
+22	https://arxiv.org/pdf/2210.16266.pdf
+23	https://arxiv.org/pdf/2210.16278.pdf
+24	https://arxiv.org/pdf/2210.16305.pdf
+
+========================================= 
+=CUMULASTIVE STATISTICS SINCE 01/09/2022= 
+========================================= 
+6715  total new astro-phORgr-qc preprint found (with repetitions)
+5964  tota new astro-phORgr-qc pdf processed
+7458  total occurrences of LIGO word
+6765  total occurrences of VIRGO word
+209  total preprints with alerts
+847 total preprints mention LIGO
+
+================================ 
+=Body of mail template follows = 
+================================ 
+
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+
