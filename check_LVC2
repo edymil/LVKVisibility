@@ -1,0 +1,230 @@
+#!/bin/sh
+version=`date --reference=$0 +%Y%m%d`
+today=$(date '+%Y-%m-%d')
+cd  /home/gc/LVCheck2
+subjectlist="astro-ph gr-qc"
+allsubject="astro-phORgr-qc"
+curl -s https://export.arxiv.org/list/astro-ph/new|grep "Submissions received from ">astro-ph-current-submission
+if ! cmp -s astro-ph-current-submission astro-ph-current-submission-o; then
+ mkdir arxiv.org
+ # save files
+ mv arxiv-$allsubject-new-pdf.list arxiv-$allsubject-new-pdf.list-o
+ rm -rf arxiv.org/pdf-$allsubject
+ mv arxiv.org/pdf arxiv.org/pdf-$allsubject
+ mkdir arxiv.org/pdf
+ rm -rf arxiv.org/txt-$allsubject
+ mv arxiv.org/txt arxiv.org/txt-$allsubject
+ mkdir arxiv.org/txt
+
+rm arxiv-$allsubject-new-alerts.txt
+# e-mail To: header 
+while read p; do  
+ echo "To: $p">> arxiv-$allsubject-new-alerts.txt ; 
+done < mailing.list
+
+
+# e-mail Subject: header 
+ echo "Subject: arxiv-$allsubject-new-alerts "`date` >> arxiv-$allsubject-new-alerts.txt
+ echo \n >> arxiv-$allsubject-new-alerts.txt
+ echo "">> arxiv-$allsubject-new-alerts.txt
+ echo "RUN ${0} release $version by `whoami`">> arxiv-$allsubject-new-alerts.txt
+
+
+for subject in $subjectlist; do
+ curl -s "https://export.arxiv.org/list/$subject/new?skip=0&show=1000"|grep -oP ".{0,0}arXiv:.{0,10}"|awk -F ':' '{print "curl -s https://export.arxiv.org/pdf/"$2".pdf>arxiv.org/pdf/"$2".pdf"}'>> arxiv-$allsubject-new-pdf.list
+done 
+
+# new list
+ cat astro-ph-current-submission >> arxiv-$allsubject-new-alerts.txt
+ mv astro-ph-current-submission astro-ph-current-submission-o
+
+# download all new pdf files
+sort arxiv-$allsubject-new-pdf.list|uniq> today_pdf.list
+ /bin/sh today_pdf.list;
+
+
+ # statistics
+ a=`wc -l <arxiv-$allsubject-new-pdf.list`
+ echo $a" new $allsubject preprint found (with repetitions)">> arxiv-$allsubject-new-alerts.txt
+ b=`ls -1 arxiv.org/pdf|wc -l`
+ echo $b" new $allsubject pdf processed">> arxiv-$allsubject-new-alerts.txt
+ c=`pdfgrep --color never -c -iHn Ligo arxiv.org/pdf/*.pdf|awk -F ':' '{print $2}'| paste -sd+ | bc`
+ echo $c" occurrences of LIGO word">> arxiv-$allsubject-new-alerts.txt
+ d=`pdfgrep --color never -c -iHn Virgo arxiv.org/pdf/*.pdf|awk -F ':' '{print $2}'| paste -sd+ | bc`
+ echo $d" occurrences of VIRGO word">> arxiv-$allsubject-new-alerts.txt
+# alert string
+
+ pdfgrep --color never -C 256 -c -iHn Ligo arxiv.org/pdf/*.pdf|grep -v ':0'|awk -F ':' '{print $1}'>f1.txt
+ pdfgrep --color never -C 256 -iHn Ligo arxiv.org/pdf/*.pdf>f2.txt
+ 
+# grep all lines with (case insensitive word) LIGO that do not include (case insensitive word) VIRGO
+cat f2.txt|grep -iw Ligo |grep -iv virgo >all-alerts.txt
+
+# suppress unnecessary alerts words like 'LIGO Document' ... 'California Institute of Technology'
+cat all-alerts.txt|grep -iv 'LIGO Document'|grep -iv 'ligo.org'|grep -iv 'Ligo-'> suppress1.txt
+cat suppress1.txt|grep -iv 'Hanford'|grep -iv 'Livingston'|grep -iv 'California Institute of Technology'>suppress2.txt
+
+# count alert pdf only
+cat suppress2.txt|awk -F : -v word=$1 -v count=1 '{ if (word == $1) { print "\t" $0 } else { print count "\t" $0; count++;word=$1 } }'>ca.txt
+cat suppress2.txt|awk -F : -v word=$1 -v count=1 '{ if (word != $1) { print count "\t" $1; count++;word=$1 } }'>cal.txt
+cat cal.txt |awk -F '\t' '{ print $2 }'>ca_list.txt
+
+echo "================================ " > fs.txt
+echo "=        List of alerts        = " >> fs.txt
+echo "================================ " >> fs.txt
+
+cat ca.txt >> fs.txt 
+
+echo "================================ " >> fs.txt
+echo "=   List of preprints alerts   = " >> fs.txt
+echo "================================ " >> fs.txt
+
+
+cat cal.txt >> fs.txt
+
+# 2 line grep from txt converted preprints
+
+cat ca_list.txt | awk '{ print "pdftotext ",$0 }'> pdftotext.list
+/bin/sh pdftotext.list
+mv arxiv.org/pdf/*.txt arxiv.org/txt/
+
+#Remove all lines after line starting with [1] or with the only word: 'References'...'ACKNOWLEDGEMENTS'
+for FILE in arxiv.org/txt/*.txt; do sed '/^\[1\]/,$ d' -i.o $FILE ; done
+for FILE in arxiv.org/txt/*.txt; do sed '/^References$/,$ d' -i.bck1 $FILE ; done
+for FILE in arxiv.org/txt/*.txt; do sed '/^REFERENCES$/,$ d' -i.bck2 $FILE ; done
+for FILE in arxiv.org/txt/*.txt; do sed '/^Acknowledgments$/,$ d' -i.bck3 $FILE ; done
+for FILE in arxiv.org/txt/*.txt; do sed '/^ACKNOWLEDGMENTS$/,$ d' -i.bck4 $FILE ; done
+for FILE in arxiv.org/txt/*.txt; do sed '/^Acknowledgements$/,$ d' -i.bck5 $FILE ; done
+for FILE in arxiv.org/txt/*.txt; do sed '/^ACKNOWLEDGEMENTS$/,$ d' -i.bck6 $FILE ; done
+
+
+cat suppress2.txt|awk -F : '{print $1":"$2":"}'>suppress2pre.txt
+cat suppress2.txt|sed 's/pdf/txt/'|sed 's/pdf/txt/'|awk -F : '{ print "grep -A 1 -H -F \""$3"\" " $1 }'|sed 's/-F " /-F "/'>tmp.list
+cat tmp.list|awk -v q=\' '{print $0 "|sed "q":a;N;$!ba;s/\\n/ /"q}'>grep2command.list
+/bin/sh grep2command.list>ligo2l.txt
+cat ligo2l.txt|sed 's&arxiv.org/txt/[0-9][0-9][0-9][0-9].[0-9][0-9][0-9][0-9][0-9].txt-&:&'>ligo2lc.txt
+
+cat ligo2lc.txt|grep "arxiv.org" |sed 's&/txt/&/pdf/&'|sed 's&.txt:&.pdf:&'>ligo2lpdf.txt
+
+cat ligo2lpdf.txt|awk '!x[$0]++'>suppress2l.txt
+cat suppress2.txt|sed 's/: /:/'>suppress2s.txt
+cat suppress2l.txt|sed 's/ :/:/'>suppress2ls.txt 
+
+awk -F : 'NR==FNR {h[$2] = $3; next}($3 in h) {print $1":"$2":"$3" "h[$3]}' suppress2ls.txt suppress2s.txt|uniq > suppress2_2lp.txt
+
+cat suppress2_2lp.txt|sed 's&\tarxiv.org/pdf/[0-9][0-9][0-9][0-9].[0-9][0-9][0-9][0-9][0-9].pdf:& : &'>suppress2_2l.txt
+grep -iv virgo suppress2_2l.txt| grep -v ' == \[' >suppress2_2l-v.txt
+cat suppress2_2l-v.txt|awk -F : '{print $1":"$2" ; "$3}'> suppress2lf-vl.txt
+
+# Suppress more false positive also with == in a middle (separator between the two lines), like 'LIGO Laboratory' ... 'LIGO band'
+cp suppress2lf-vl.txt suppress_temp1.txt
+grep -E -iv 'LIGO Laboratory' suppress_temp1.txt > suppress_temp2.txt
+grep -E -iv 'LIGO detector' suppress_temp2.txt > suppress_temp1.txt
+grep -E -iv 'LIGO Design' suppress_temp1.txt > suppress_temp2.txt
+grep -E -iv 'LIGO range' suppress_temp2.txt > suppress_temp1.txt
+grep -E -iv 'LIGO context' suppress_temp1.txt > suppress_temp2.txt
+grep -E -iv 'LIGO band' suppress_temp2.txt > suppress_temp1.txt
+grep -E -iv 'like LIGO' suppress_temp1.txt > suppress_temp2.txt
+grep -iv "(.*LIGO Scienti.*Collaboration.*20.*)" suppress_temp2.txt > suppress_temp1.txt
+grep -iv  "(.*LIGO Scien" suppress_temp1.txt > suppress_temp2.txt
+grep -iv  "LIGO Scien.*Collaboration.*20.*)" suppress_temp2.txt > suppress_temp1.txt
+grep -iv  "LIGO site" suppress_temp1.txt > suppress_temp2.txt
+grep -iv  "LIGO Livingston" suppress_temp2.txt > suppress_temp1.txt
+grep -iv  "LIGO Hanford" suppress_temp1.txt > suppress_temp2.txt
+
+cat suppress_temp2.txt > suppress2lf.txt
+
+
+# count alert pdf only
+cat suppress2lf.txt|awk -F : -v word=$1 -v count=1 '{ if (word == $1) { print "\t" $0 } else { print count "\t" $0; count++;word=$1 } }'>ca2l.txt
+cat suppress2lf.txt|awk -F : -v word=$1 -v count=1 '{ if (word != $1) { print count "\t" $1; count++;word=$1 } }'>cal2l.txt
+cat suppress2lf.txt|awk -F : -v word=$1 -v count=1 '{ if (word != $1) { print $1; count++;word=$1 } }'| sed 's/pdf/txt/g'>cal2lfiles.txt
+cat cal.txt |awk -F '\t' '{ print $2 }'>ca_list.txt
+
+echo ""> fs.txt
+echo "================================ " >> fs.txt
+echo "=    List of 2 lines alerts    = " >> fs.txt
+echo "================================ " >> fs.txt
+
+cat ca2l.txt >> fs.txt 
+
+echo "">> fs.txt
+e=`cat cal2lfiles.txt|wc -l`
+echo $e" preprints with alerts">> fs.txt
+echo "==================================================================== " >> fs.txt
+echo "=List of submitter to contact (click on the link to edit an e-mail)= " >> fs.txt
+echo "==================================================================== " >> fs.txt
+
+
+# Extract e-mail address of first author
+cat cal2lfiles.txt | while read LINE; do grep -i -o -m 1 '[A-Z0-9._%+-]\+@[A-Z0-9.-]\+\.[A-Z]\{2,4\}'  $LINE | head -n 1|tr -d '\n' ; echo -n ":"; echo $LINE ; done > m.list
+
+cat m.list|sed 's*:*?subject=Your%20preprint%20*'| sed 's*txt*pdf*'| sed 's*txt*pdf*' > mpdf.list
+cat mpdf.list|awk -F : -v word=$1 -v count=1 '{ if (word != $1) { print count "\t" $1; count++;word=$1 } }' >> fs.txt 
+
+
+
+#Exctract preprint version
+cat f1.txt| awk '{print "pdfgrep -nH arXiv " $0 "|grep ':1:'"}'>v.commandlist
+/bin/sh v.commandlist> v.list
+
+# List preprints mention LIGO
+echo "">> fs.txt
+
+echo "">> fs.txt
+f=`cat f1.txt|wc -l`
+echo $f" preprints mention LIGO">> fs.txt
+cat v.list|awk -F : -v word=$1 -v count=1 '{ if (word != $1) { print count "\t" $0; count++;word=$1 } }'>caf1.txt
+echo "======================================================================================= " >> fs.txt
+echo "=List of preprints mention LIGO with version nubar [subject area] and submission date = " >> fs.txt
+echo "======================================================================================= " >> fs.txt
+cat caf1.txt >> fs.txt
+echo "">> fs.txt
+echo "========================================= " >> fs.txt
+echo "=CUMULASTIVE STATISTICS SINCE 01/09/2022= " >> fs.txt
+echo "========================================= " >> fs.txt
+cp counters.csv counters.csv.prev
+cat counters.csv|awk -F ',' -v a=$a -v b=$b -v c=$c -v d=$d -v e=$e -v f=$f '{print $1+=a, ",", $2+=b, ",", $3+=c, ",", $4+=d, ",", $5+=e, ",", $6+=f}'>counters.tmp
+cat counters.tmp|awk -F ',' -v allsubj=$allsubject '{print $1" total new "allsubj" preprint found (with repetitions)"}'| sed 's/^ *//g'>> fs.txt
+cat counters.tmp|awk -F ',' -v allsubj=$allsubject '{print $2" total new "allsubj" pdf processed"}'| sed 's/^ *//g'>> fs.txt
+cat counters.tmp|awk -F ',' '{print $3" total occurrences of LIGO word"}'| sed 's/^ *//g'>> fs.txt
+cat counters.tmp|awk -F ',' '{print $4" total occurrences of VIRGO word"}'| sed 's/^ *//g'>> fs.txt
+cat counters.tmp|awk -F ',' '{print $5" total preprints with alerts"}'| sed 's/^ *//g'>> fs.txt
+cat counters.tmp|awk -F ',' '{print $6" total preprints mention LIGO"}'| sed 's/^ *//g'>> fs.txt
+cp counters.tmp counters.csv
+
+echo $today","$b","$f","$e","$c","$d"," >>STATISTICS.CSV
+
+echo "">> fs.txt
+echo "================================ " >> fs.txt
+echo "=Body of mail template follows = " >> fs.txt
+echo "================================ " >> fs.txt
+
+
+cat fs.txt|sed 's/:/#page=/'|sed 's/ ; /\&search=ligo%20virgo ; /'|sed 's&arxiv.org&https://arxiv.org&g'>> arxiv-$allsubject-new-alerts.txt
+
+# Show e-mail template for the author
+echo "
+Dear colleague,
+we write to you about your recent preprint in subject. We note that your paper does not properly recognize the role of Advanced Virgo and/or of the Virgo Collaboration to Gravitational Wave science.
+
+For example, you write: ...
+
+A biased narrative of the scientific developments can produce detrimental effects, both in the short and in the long term. It affects the work of hundreds of people working within the Virgo collaboration. A proper recognition of our role can also affect future funding of the field in Europe.
+
+Therefore we kindly ask you to have a second look at your paper and consider rephrasing it in the highlighted parts. We are of course open to discuss this with you. Should you choose to do so, please reply to this message.
+
+Best regards,
+
+Livia Conti, the Virgo Outreach coordinator
+
+Pierre-Francois Cohadon, Virgo Outreach co-coordinator
+">> arxiv-$allsubject-new-alerts.txt
+
+# send e-mail
+while read p; do  
+/usr/sbin/ssmtp  -f"rubin@uniud.it" -F"Giuseppe Cabras" $p < arxiv-$allsubject-new-alerts.txt ; 
+done < mailing.list
+
+# end
+fi
